@@ -10,12 +10,11 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Custom styles for highlighted spans to ensure consistent padding and appearance */
+        /* Custom styles for highlighted spans */
         .name-highlight {
             padding: 2px 4px;
             border-radius: 4px;
-            color: #1f2937; /* A dark gray for good contrast on light backgrounds */
-            font-weight: 500;
+            color: #1f2937; /* A dark gray for good contrast */
         }
         /* Style for the output area to preserve formatting */
         #output {
@@ -30,8 +29,8 @@
     <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl">
         <header class="text-center mb-8">
             <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">First-Use Name Highlighter</h1>
-            <p class="mt-2 text-lg text-gray-600">Paste your text below to highlight the first mention of each person's name.</p>
-            <p class="mt-1 text-sm text-gray-500">This helps verify correct spelling and usage (full name first).</p>
+            <p class="mt-2 text-lg text-gray-600">Highlights the first use of a full name (bold) and subsequent uses of the last name.</p>
+            <p class="mt-1 text-sm text-gray-500">This helps verify correct name usage patterns in your text.</p>
         </header>
 
         <main>
@@ -46,7 +45,7 @@
             <div id="results-container" class="mt-8 bg-white p-6 rounded-xl shadow-md border border-gray-200 hidden">
                  <div class="flex justify-between items-center mb-4 border-b pb-3 border-gray-200">
                     <h2 class="text-2xl font-bold text-gray-800">Highlighted Result</h2>
-                    <div id="legend" class="flex flex-wrap gap-2 justify-end"></div>
+                    <div id="legend" class="flex flex-wrap gap-x-4 gap-y-2 justify-end"></div>
                  </div>
                 <div id="output" class="text-base text-gray-700"></div>
             </div>
@@ -60,17 +59,19 @@
     <script>
         // A palette of distinct, pleasant background colors for highlighting
         const HIGHLIGHT_COLORS = [
-            '#fdba74', // orange-300
-            '#a5b4fc', // indigo-300
-            '#6ee7b7', // emerald-300
-            '#fca5a5', // red-300
-            '#93c5fd', // blue-300
-            '#d8b4fe', // purple-300
-            '#fde047', // yellow-300
-            '#a7f3d0', // green-200
-            '#f9a8d4', // pink-300
+            '#fdba74', '#a5b4fc', '#6ee7b7', '#fca5a5', '#93c5fd',
+            '#d8b4fe', '#fde047', '#a7f3d0', '#f9a8d4',
         ];
 
+        /**
+         * Escapes special characters in a string for use in a regular expression.
+         * @param {string} str The string to escape.
+         * @returns {string} The escaped string.
+         */
+        function escapeRegex(str) {
+            return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+        
         /**
          * Escapes HTML special characters to prevent them from being interpreted as HTML.
          * @param {string} str The string to escape.
@@ -88,77 +89,99 @@
         function processText() {
             const inputText = document.getElementById('inputText').value;
             if (!inputText.trim()) {
-                alert("Please paste some text into the input box first.");
+                document.getElementById('output').textContent = "Please paste some text into the input box first.";
+                document.getElementById('results-container').classList.remove('hidden');
+                document.getElementById('legend').innerHTML = '';
                 return;
             }
 
-            // Using regex to find potential names (two or more capitalized words).
-            // This is a practical approximation for finding names in a browser environment.
+            // Regex to find potential names (two or more capitalized words).
             const nameRegex = /\b([A-Z][a-z'’]+(?:\s+[A-Z][a-z'’-]+)+)\b/g;
-            
-            let match;
-            const allMentions = [];
-            while ((match = nameRegex.exec(inputText)) !== null) {
-                allMentions.push({
-                    name: match[0],
-                    index: match.index,
-                    length: match[0].length,
-                });
+            const matches = inputText.match(nameRegex) || [];
+            const uniqueFullNames = [...new Set(matches)];
+
+            if (uniqueFullNames.length === 0) {
+                document.getElementById('output').textContent = "No potential names (e.g., 'First Last') were found. The tool looks for sequences of two or more capitalized words.";
+                document.getElementById('results-container').classList.remove('hidden');
+                document.getElementById('legend').innerHTML = '';
+                return;
             }
 
-            if (allMentions.length === 0) {
-                 document.getElementById('output').textContent = "No potential names (like 'First Last') were found. The highlighter looks for sequences of two or more capitalized words.";
-                 document.getElementById('results-container').classList.remove('hidden');
-                 document.getElementById('legend').innerHTML = ''; // Clear legend
-                 return;
-            }
+            // --- Data Preparation ---
+            const personData = new Map();
+            const termToFullNameMap = new Map();
+            const searchTerms = [];
+            const lastNameCounts = new Map();
 
-            const highlightedNames = new Set();
-            const nameColorMap = new Map();
-            let colorIndex = 0;
+            // First, count occurrences of each last name to identify conflicts.
+            uniqueFullNames.forEach(name => {
+                const parts = name.split(/\s+/);
+                const lastName = parts[parts.length - 1];
+                lastNameCounts.set(lastName, (lastNameCounts.get(lastName) || 0) + 1);
+            });
 
-            let outputHtml = '';
+            // Build data structures for replacement.
             let legendHtml = '';
-            let lastIndex = 0;
+            uniqueFullNames.forEach((fullName, index) => {
+                const parts = fullName.split(/\s+/);
+                const lastName = parts[parts.length - 1];
+                const color = HIGHLIGHT_COLORS[index % HIGHLIGHT_COLORS.length];
+                const isLastNameUnique = lastNameCounts.get(lastName) === 1;
 
-            // Sort mentions by their appearance in the text
-            allMentions.sort((a, b) => a.index - b.index);
-            
-            const escapedInputText = escapeHtml(inputText);
+                personData.set(fullName, { lastName, color, isLastNameUnique, firstUseFound: false });
+                
+                termToFullNameMap.set(fullName, fullName);
+                searchTerms.push(fullName);
 
-            for (const mention of allMentions) {
-                // Append the text between the last mention and this one
-                outputHtml += escapedInputText.substring(lastIndex, mention.index);
-
-                // If this is the first time we are seeing this name, highlight it.
-                if (!highlightedNames.has(mention.name)) {
-                    // Assign a color if it doesn't have one yet
-                    if (!nameColorMap.has(mention.name)) {
-                        const color = HIGHLIGHT_COLORS[colorIndex % HIGHLIGHT_COLORS.length];
-                        nameColorMap.set(mention.name, color);
-                        colorIndex++;
-
-                        // Add to the legend
-                        legendHtml += `<span class="name-highlight" style="background-color: ${color};">${escapeHtml(mention.name)}</span>`;
-                    }
-                    
-                    const highlightColor = nameColorMap.get(mention.name);
-                    outputHtml += `<span class="name-highlight" style="background-color: ${highlightColor};">${escapeHtml(mention.name)}</span>`;
-                    
-                    // Mark this name as highlighted
-                    highlightedNames.add(mention.name);
-                } else {
-                    // If it's a subsequent mention, just add the plain text.
-                    outputHtml += escapeHtml(mention.name);
+                if (isLastNameUnique) {
+                    termToFullNameMap.set(lastName, fullName);
+                    searchTerms.push(lastName);
                 }
+                
+                // Add person to legend
+                legendHtml += `<span class="name-highlight" style="background-color: ${color};">${escapeHtml(fullName)}</span>`;
+            });
 
-                lastIndex = mention.index + mention.length;
+            // Sort terms by length descending to match "John Smith" before "Smith".
+            searchTerms.sort((a, b) => b.length - a.length);
+
+            const combinedRegex = new RegExp(`\\b(${searchTerms.map(escapeRegex).join('|')})\\b`, 'g');
+            
+            // --- HTML Generation ---
+            let outputHtml = '';
+            let lastIndex = 0;
+            let result;
+
+            while ((result = combinedRegex.exec(inputText)) !== null) {
+                const matchedTerm = result[0];
+                
+                // Append the text between the last match and this one
+                outputHtml += escapeHtml(inputText.substring(lastIndex, result.index));
+                
+                const fullName = termToFullNameMap.get(matchedTerm);
+                const person = personData.get(fullName);
+
+                // Case 1: First use of the full name. Highlight and bold.
+                if (matchedTerm === fullName && !person.firstUseFound) {
+                    outputHtml += `<span class="name-highlight font-bold" style="background-color: ${person.color};">${escapeHtml(matchedTerm)}</span>`;
+                    person.firstUseFound = true; // Mark as found
+                } 
+                // Case 2: Subsequent use of a unique last name. Highlight only.
+                else if (person.isLastNameUnique && matchedTerm === person.lastName && person.firstUseFound) {
+                     outputHtml += `<span class="name-highlight" style="background-color: ${person.color};">${escapeHtml(matchedTerm)}</span>`;
+                }
+                // Case 3: Any other match (e.g., repeated full name, non-unique last name) is rendered as plain text.
+                else {
+                    outputHtml += escapeHtml(matchedTerm);
+                }
+                
+                lastIndex = result.index + matchedTerm.length;
             }
 
-            // Append any remaining text after the last mention
-            outputHtml += escapedInputText.substring(lastIndex);
-            
-            // Display the results
+            // Append any remaining text after the last match.
+            outputHtml += escapeHtml(inputText.substring(lastIndex));
+
+            // Display the results.
             document.getElementById('output').innerHTML = outputHtml;
             document.getElementById('legend').innerHTML = legendHtml;
             document.getElementById('results-container').classList.remove('hidden');
