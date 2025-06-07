@@ -1,1 +1,1 @@
-github.io/repository
+[Names checker](naming-names.html)
