@@ -1,3 +1,197 @@
-https://jonathangerhardson.substack.com
-https://bsky.app/profile/jongerhardson.bsky.social\
-jon.gerhardson at proton.me 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive GIS Map</title>
+    
+    <!-- Leaflet.js CSS - Required for map rendering -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="" />
+    
+    <!-- Tailwind CSS for styling UI elements -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Set body and html to full height to allow the map to fill the screen */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden; /* Prevent scrollbars on the body */
+        }
+        
+        /* The map container must have a defined height */
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Custom styling for Leaflet popups to match the modern theme */
+        .leaflet-popup-content-wrapper {
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+        .leaflet-popup-content {
+            margin: 15px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .leaflet-popup-tip {
+            background: #ffffff;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- The DIV element where the map will be rendered -->
+    <div id="map"></div>
+
+    <!-- Leaflet.js JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- 1. INITIALIZE THE MAP ---
+            // Set the initial coordinates to Amherst, MA, and a suitable zoom level.
+            const initialCoords = [42.3732, -72.5199]; // [latitude, longitude]
+            const initialZoom = 14;
+
+            // Initialize the map and set its view.
+            const map = L.map('map').setView(initialCoords, initialZoom);
+
+            // --- 2. DEFINE BASEMAP LAYERS ---
+            // These are the underlying map tiles. We'll add a few options.
+
+            // A clean, light-themed map from CartoDB
+            const cartoLight = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                subdomains: 'abcd',
+                maxZoom: 20
+            });
+            
+            // A standard, detailed OpenStreetMap view
+            const osmStreet = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            });
+
+            // A satellite imagery layer from Esri
+            const esriSatellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+            });
+
+            // Add the default basemap (Carto Light) to the map on load.
+            cartoLight.addTo(map);
+
+            // --- 3. ADD MARKERS & OVERLAYS ---
+            // These are the data points you want to display on top of the map.
+
+            // Sample data for points of interest in Amherst
+            const pointsOfInterest = [
+                {
+                    lat: 42.3910,
+                    lng: -72.5264,
+                    name: 'University of Massachusetts Amherst',
+                    description: 'A major public research university.'
+                },
+                {
+                    lat: 42.3709,
+                    lng: -72.5170,
+                    name: 'Amherst College',
+                    description: 'A private liberal arts college.'
+                },
+                {
+                    lat: 42.3712,
+                    lng: -72.5213,
+                    name: 'Emily Dickinson Museum',
+                    description: 'The former home of the famous American poet.'
+                },
+                {
+                    lat: 42.3753,
+                    lng: -72.5200,
+                    name: 'Amherst Town Common',
+                    description: 'The central park in downtown Amherst.'
+                }
+            ];
+
+            // Create an array to hold the marker objects
+            const poiMarkers = [];
+
+            // Loop through the data and create a marker for each point
+            pointsOfInterest.forEach(point => {
+                const marker = L.marker([point.lat, point.lng]);
+                
+                // Create the popup content with Tailwind CSS classes for styling
+                const popupContent = `
+                    <div class="space-y-1">
+                        <h3 class="font-bold text-lg text-gray-800">${point.name}</h3>
+                        <p class="text-gray-600">${point.description}</p>
+                    </div>
+                `;
+                
+                marker.bindPopup(popupContent);
+                poiMarkers.push(marker);
+            });
+            
+            // Create a Layer Group from the markers array. This allows us to treat them as a single layer.
+            const poiLayer = L.layerGroup(poiMarkers).addTo(map);
+
+
+            // --- 4. ADD LAYER CONTROL ---
+            // This UI element allows users to toggle layers on and off.
+
+            // Define the base maps object for the control.
+            const baseMaps = {
+                "Street View": osmStreet,
+                "Light Theme": cartoLight,
+                "Satellite": esriSatellite
+            };
+
+            // Define the overlay maps object for the control.
+            const overlayMaps = {
+                "Points of Interest": poiLayer
+            };
+
+            // Add the layer control to the top right of the map.
+            L.control.layers(baseMaps, overlayMaps, { position: 'topright' }).addTo(map);
+
+            // --- 5. ADD INTERACTIVITY ---
+            // Handle map events like clicks.
+
+            // Create a popup that can be reused.
+            const clickPopup = L.popup();
+
+            // Function to handle map clicks
+            function onMapClick(e) {
+                const lat = e.latlng.lat.toFixed(5);
+                const lng = e.latlng.lng.toFixed(5);
+
+                const popupContent = `
+                    <div class="text-center space-y-2">
+                        <h3 class="font-semibold text-gray-700">Clicked Coordinates</h3>
+                        <p class="text-sm font-mono bg-gray-100 p-2 rounded">
+                            Lat: ${lat}<br>Lon: ${lng}
+                        </p>
+                    </div>
+                `;
+
+                clickPopup
+                    .setLatLng(e.latlng)
+                    .setContent(popupContent)
+                    .openOn(map);
+            }
+
+            // Listen for click events on the map.
+            map.on('click', onMapClick);
+        });
+    </script>
+</body>
+</html>
