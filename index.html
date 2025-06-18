@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editable Business Cards</title>
+    <title>Your Name - Portfolio</title>
     <!-- Tailwind CSS for styling the page -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Font from the original SVG -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    
     <style>
-        /* Screen-only styles for the paper preview */
-        body { background-color: #e5e7eb; font-family: 'Inter', sans-serif; }
+        /* General Page Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* A light gray background for the whole page */
+        }
 
-        .main-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; padding: 2rem; }
+        /* --- Styles from your Business Card App --- */
 
         /* The container that simulates the 8.5x11 paper on screen */
         #print-area {
@@ -28,7 +32,10 @@
             box-sizing: border-box;
         }
 
-        #controls { width: 380px; flex-shrink: 0; }
+        #controls {
+            width: 380px;
+            flex-shrink: 0;
+        }
         
         /* The grid that holds the 10 business cards */
         #card-grid {
@@ -50,6 +57,8 @@
         
         input[type="number"] { -moz-appearance: textfield; }
         input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+        /* --- Print Specific Styles --- */
 
         /* Define the paper size and layout for printing */
         @page {
@@ -75,7 +84,7 @@
                 padding: 0; 
             }
 
-             /* Hide the dashed SVG border when printing */
+            /* Hide the dashed SVG border when printing */
             .card svg {
                 border: none;
             }
@@ -83,179 +92,224 @@
 
     </style>
 </head>
-<body class="bg-gray-200">
+<body class="text-gray-800">
 
-    <!-- Header -->
-    <header class="bg-white p-4 shadow-md print:hidden sticky top-0 z-10">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-800">Business Card Editor</h1>
-            <div>
-                <button id="update-btn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300 mr-2">
-                    Update Cards
-                </button>
-                <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
-                    Print
-                </button>
-            </div>
+    <!-- Main Page Header -->
+    <header class="bg-gray-800 text-white p-6 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Jonathan Gerhardson</h1>
+            <p class="mt-2 text-xl text-gray-300">Investigative Journalist & Developer</p>
         </div>
     </header>
 
-    <div class="main-container">
-        <!-- Controls for editing the card -->
-        <div id="controls" class="bg-white p-6 rounded-lg shadow-md print:hidden space-y-4">
-            <h2 class="text-xl font-bold border-b pb-2">Editable Text Lines</h2>
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-4 md:p-8">
 
-            <!-- Line 1 Controls -->
-            <div class="space-y-2 border-b pb-3">
-                <label class="block text-sm font-medium text-gray-700">Line 1</label>
-                <input type="text" id="line1-text" value="JONATHAN GERHARDSON" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                <div class="grid grid-cols-3 gap-2">
-                    <input type="number" id="line1-x" value="75" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
-                    <input type="number" id="line1-y" value="178" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
-                    <input type="number" id="line1-size" value="16" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
-                </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <select id="line1-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                        <option value="normal">Normal</option>
-                        <option value="bold" selected>Bold</option>
-                    </select>
-                    <input type="color" id="line1-color" value="#000000" class="h-10 w-full rounded-md border-gray-300">
+        <!-- Bio Section -->
+        <section id="bio" class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 border-b pb-3 mb-4">About Me</h2>
+            <!-- 
+            *************************************************
+            * *
+            * WRITE YOUR BIO HERE!                        *
+            * Replace the text inside the <p> tag below.  *
+            * *
+            *************************************************
+            -->
+            <p class="text-lg text-gray-700 leading-relaxed">
+Jonathan Gerhardson is a journalist and writer based in Massachuestts. <br>
+<a href="https://muckrack.com/jonathan-gerhardson/articles">Find my recent bylines here.</a> <br>
+
+I self publish some notes and shoter stories at <a href="jonathangerhardson.substack.com">jonathangerhardson.substack.com</a> <br>
+Browse my publlic records repository at <a href="https://archive.org/details/@jgerhardson">The Internet Archive</a> <br>
+Look at some dumb vibe coded software I've made at <a href="https://github.com/JonGerhardson"> https://github.com/JonGerhardson</a> <br>
+Follow me on bsky <a href="https://bsky.app/profile/jongerhardson.bsky.social">@jongerhardson</a> <br>
+
+      </p>
+        </section>
+
+        <!-- Business Card Project Section -->
+        <section id="project-business-cards" class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-gray-900 border-b pb-3 mb-6">Project: Editable Business Cards</h2>
+            
+            <!-- This is the header for the application itself -->
+            <div class="bg-gray-100 p-4 shadow-md rounded-lg print:hidden sticky top-0 z-10 flex flex-wrap justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-800">Card Editor</h3>
+                <div>
+                    <button id="update-btn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300 mr-2 mt-2 sm:mt-0">
+                        Update Cards
+                    </button>
+                    <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300 mt-2 sm:mt-0">
+                        Print
+                    </button>
                 </div>
             </div>
 
-            <!-- Line 2 Controls -->
-            <div class="space-y-2 border-b pb-3">
-                <label class="block text-sm font-medium text-gray-700">Line 2</label>
-                <input type="text" id="line2-text" value="Investigative Journalist" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                <div class="grid grid-cols-3 gap-2">
-                    <input type="number" id="line2-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
-                    <input type="number" id="line2-y" value="80" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
-                    <input type="number" id="line2-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+            <!-- This container holds the controls and the paper preview -->
+            <div class="flex flex-wrap justify-center gap-8 bg-gray-200 p-4 rounded-lg">
+                <!-- Controls for editing the card -->
+                <div id="controls" class="bg-white p-6 rounded-lg shadow-md print:hidden space-y-4">
+                    <h2 class="text-xl font-bold border-b pb-2">Editable Text Lines</h2>
+
+                    <!-- Line 1 Controls -->
+                    <div class="space-y-2 border-b pb-3">
+                        <label class="block text-sm font-medium text-gray-700">Line 1</label>
+                        <input type="text" id="line1-text" value="JONATHAN GERHARDSON" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <div class="grid grid-cols-3 gap-2">
+                            <input type="number" id="line1-x" value="75" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                            <input type="number" id="line1-y" value="178" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                            <input type="number" id="line1-size" value="16" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <select id="line1-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                                <option value="normal">Normal</option>
+                                <option value="bold" selected>Bold</option>
+                            </select>
+                            <input type="color" id="line1-color" value="#000000" class="h-10 w-full rounded-md border-gray-300">
+                        </div>
+                    </div>
+
+                    <!-- Line 2 Controls -->
+                    <div class="space-y-2 border-b pb-3">
+                        <label class="block text-sm font-medium text-gray-700">Line 2</label>
+                        <input type="text" id="line2-text" value="Investigative Journalist" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <div class="grid grid-cols-3 gap-2">
+                            <input type="number" id="line2-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                            <input type="number" id="line2-y" value="80" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                            <input type="number" id="line2-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <select id="line2-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                                <option value="normal" selected>Normal</option>
+                                <option value="bold">Bold</option>
+                            </select>
+                            <input type="color" id="line2-color" value="#000000" class="h-10 w-full rounded-md border-gray-300">
+                        </div>
+                    </div>
+
+                    <!-- Line 3 Controls -->
+                    <div class="space-y-2 border-b pb-3">
+                        <label class="block text-sm font-medium text-gray-700">Line 3</label>
+                        <input type="text" id="line3-text" value="xxxxxxxxxx | xsignalx" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <div class="grid grid-cols-3 gap-2">
+                            <input type="number" id="line3-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                            <input type="number" id="line3-y" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                            <input type="number" id="line3-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <select id="line3-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                                <option value="normal" selected>Normal</option>
+                                <option value="bold">Bold</option>
+                            </select>
+                            <input type="color" id="line3-color" value="#CF3424" class="h-10 w-full rounded-md border-gray-300">
+                        </div>
+                    </div>
+
+                    <!-- Line 4 Controls -->
+                    <div class="space-y-2 border-b pb-3">
+                        <label class="block text-sm font-medium text-gray-700">Line 4</label>
+                        <input type="text" id="line4-text" value="jon.gerhardson@proton.me" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <div class="grid grid-cols-3 gap-2">
+                            <input type="number" id="line4-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                            <input type="number" id="line4-y" value="60" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                            <input type="number" id="line4-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <select id="line4-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                                <option value="normal" selected>Normal</option>
+                                <option value="bold">Bold</option>
+                            </select>
+                            <input type="color" id="line4-color" value="#22C55E" class="h-10 w-full rounded-md border-gray-300">
+                        </div>
+                    </div>
+
+                     <!-- Line 5 Controls -->
+                    <div class="space-y-2 border-b pb-3">
+                        <label class="block text-sm font-medium text-gray-700">Line 5</label>
+                        <input type="text" id="line5-text" value="jongerhardson.github.io" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <div class="grid grid-cols-3 gap-2">
+                            <input type="number" id="line5-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                            <input type="number" id="line5-y" value="100" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                            <input type="number" id="line5-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <select id="line5-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                                <option value="normal" selected>Normal</option>
+                                <option value="bold">Bold</option>
+                            </select>
+                            <input type="color" id="line5-color" value="#CF3424" class="h-10 w-full rounded-md border-gray-300">
+                        </div>
+                    </div>
+
+                    <!-- Line 6 Controls -->
+                    <div class="space-y-2 border-b pb-3">
+                        <label class="block text-sm font-medium text-gray-700">Line 6</label>
+                        <input type="text" id="line6-text" value="This is a public records request" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <div class="grid grid-cols-3 gap-2">
+                            <input type="number" id="line6-x" value="30" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                            <input type="number" id="line6-y" value="120" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                            <input type="number" id="line6-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <select id="line6-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                                <option value="normal" selected>Normal</option>
+                                <option value="bold">Bold</option>
+                            </select>
+                            <input type="color" id="line6-color" value="#3B82F6" class="h-10 w-full rounded-md border-gray-300">
+                        </div>
+                    </div>
+
+                    <!-- Line 7 Controls -->
+                    <div class="space-y-2 border-b pb-3">
+                        <label class="block text-sm font-medium text-gray-700">Line 7</label>
+                        <input type="text" id="line7-text" value="per Mass. GL c. 66, s. 10; (attached)" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <div class="grid grid-cols-3 gap-2">
+                            <input type="number" id="line7-x" value="30" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                            <input type="number" id="line7-y" value="140" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                            <input type="number" id="line7-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <select id="line7-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                                <option value="normal" selected>Normal</option>
+                                <option value="bold">Bold</option>
+                            </select>
+                            <input type="color" id="line7-color" value="#CF3424" class="h-10 w-full rounded-md border-gray-300">
+                        </div>
+                    </div>
+
+                     <!-- Line 8 Controls -->
+                    <div class="space-y-2 pb-3">
+                        <label class="block text-sm font-medium text-gray-700">Line 8</label>
+                        <input type="text" id="line8-text" value="" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <div class="grid grid-cols-3 gap-2">
+                            <input type="number" id="line8-x" value="10" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                            <input type="number" id="line8-y" value="10" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                            <input type="number" id="line8-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <select id="line8-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                                <option value="normal" selected>Normal</option>
+                                <option value="bold">Bold</option>
+                            </select>
+                            <input type="color" id="line8-color" value="#000000" class="h-10 w-full rounded-md border-gray-300">
+                        </div>
+                    </div>
+
                 </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <select id="line2-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                        <option value="normal" selected>Normal</option>
-                        <option value="bold">Bold</option>
-                    </select>
-                    <input type="color" id="line2-color" value="#000000" class="h-10 w-full rounded-md border-gray-300">
+
+                <!-- This div represents the 8.5x11 inch paper -->
+                <div id="print-area">
+                    <div id="card-grid"> <!-- Cards will be generated by JavaScript here --> </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Line 3 Controls -->
-            <div class="space-y-2 border-b pb-3">
-                <label class="block text-sm font-medium text-gray-700">Line 3</label>
-                <input type="text" id="line3-text" value="xxxxxxxxxx | xsignalx" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                <div class="grid grid-cols-3 gap-2">
-                    <input type="number" id="line3-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
-                    <input type="number" id="line3-y" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
-                    <input type="number" id="line3-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
-                </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <select id="line3-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                        <option value="normal" selected>Normal</option>
-                        <option value="bold">Bold</option>
-                    </select>
-                    <input type="color" id="line3-color" value="#CF3424" class="h-10 w-full rounded-md border-gray-300">
-                </div>
-            </div>
+    </main>
 
-            <!-- Line 4 Controls -->
-            <div class="space-y-2 border-b pb-3">
-                <label class="block text-sm font-medium text-gray-700">Line 4</label>
-                <input type="text" id="line4-text" value="jon.gerhardson@proton.me" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                <div class="grid grid-cols-3 gap-2">
-                    <input type="number" id="line4-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
-                    <input type="number" id="line4-y" value="60" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
-                    <input type="number" id="line4-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
-                </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <select id="line4-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                        <option value="normal" selected>Normal</option>
-                        <option value="bold">Bold</option>
-                    </select>
-                    <input type="color" id="line4-color" value="#22C55E" class="h-10 w-full rounded-md border-gray-300">
-                </div>
-            </div>
-
-             <!-- Line 5 Controls -->
-            <div class="space-y-2 border-b pb-3">
-                <label class="block text-sm font-medium text-gray-700">Line 5</label>
-                <input type="text" id="line5-text" value="jongerhardson.github.io" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                <div class="grid grid-cols-3 gap-2">
-                    <input type="number" id="line5-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
-                    <input type="number" id="line5-y" value="100" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
-                    <input type="number" id="line5-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
-                </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <select id="line5-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                        <option value="normal" selected>Normal</option>
-                        <option value="bold">Bold</option>
-                    </select>
-                    <input type="color" id="line5-color" value="#CF3424" class="h-10 w-full rounded-md border-gray-300">
-                </div>
-            </div>
-
-            <!-- Line 6 Controls -->
-            <div class="space-y-2 border-b pb-3">
-                <label class="block text-sm font-medium text-gray-700">Line 6</label>
-                <input type="text" id="line6-text" value="This is a public records request" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                <div class="grid grid-cols-3 gap-2">
-                    <input type="number" id="line6-x" value="30" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
-                    <input type="number" id="line6-y" value="120" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
-                    <input type="number" id="line6-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
-                </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <select id="line6-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                        <option value="normal" selected>Normal</option>
-                        <option value="bold">Bold</option>
-                    </select>
-                    <input type="color" id="line6-color" value="#3B82F6" class="h-10 w-full rounded-md border-gray-300">
-                </div>
-            </div>
-
-            <!-- Line 7 Controls -->
-            <div class="space-y-2 border-b pb-3">
-                <label class="block text-sm font-medium text-gray-700">Line 7</label>
-                <input type="text" id="line7-text" value="per Mass. GL c. 66, s. 10; (attached)" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                <div class="grid grid-cols-3 gap-2">
-                    <input type="number" id="line7-x" value="30" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
-                    <input type="number" id="line7-y" value="140" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
-                    <input type="number" id="line7-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
-                </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <select id="line7-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                        <option value="normal" selected>Normal</option>
-                        <option value="bold">Bold</option>
-                    </select>
-                    <input type="color" id="line7-color" value="#CF3424" class="h-10 w-full rounded-md border-gray-300">
-                </div>
-            </div>
-
-             <!-- Line 8 Controls -->
-            <div class="space-y-2 pb-3">
-                <label class="block text-sm font-medium text-gray-700">Line 8</label>
-                <input type="text" id="line8-text" value="" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                <div class="grid grid-cols-3 gap-2">
-                    <input type="number" id="line8-x" value="10" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
-                    <input type="number" id="line8-y" value="10" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
-                    <input type="number" id="line8-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
-                </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <select id="line8-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
-                        <option value="normal" selected>Normal</option>
-                        <option value="bold">Bold</option>
-                    </select>
-                    <input type="color" id="line8-color" value="#000000" class="h-10 w-full rounded-md border-gray-300">
-                </div>
-            </div>
-
-        </div>
-
-        <!-- This div represents the 8.5x11 inch paper -->
-        <div id="print-area">
-            <div id="card-grid"> <!-- Cards will be generated by JavaScript here --> </div>
-        </div>
-    </div>
+    <!-- Page Footer -->
+    <footer class="text-center p-6 mt-12 bg-gray-800 text-gray-300">
+        <p>Copyright &copy; 2024 - Jonathan Gerhardson</p>
+    </footer>
     
     <script>
         const updateBtn = document.getElementById('update-btn');
@@ -286,10 +340,10 @@
             // Return the complete SVG structure with the generated text elements
             return `
                 <svg viewBox="0 0 336 192" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="336" height="192" fill="#FFFFFF"/>
-                  <g font-family="'Alfa Slab One', cursive">
-                    ${textElements}
-                  </g>
+                    <rect width="336" height="192" fill="#FFFFFF"/>
+                    <g font-family="'Alfa Slab One', cursive">
+                        ${textElements}
+                    </g>
                 </svg>
             `;
         };
