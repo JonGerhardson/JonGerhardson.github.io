@@ -3,195 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive GIS Map</title>
-    
-    <!-- Leaflet.js CSS - Required for map rendering -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-        crossorigin="" />
-    
-    <!-- Tailwind CSS for styling UI elements -->
+    <title>Editable Business Cards</title>
+    <!-- Tailwind CSS for styling the page -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom Styles -->
+    <!-- Google Font from the original SVG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <style>
-        /* Set body and html to full height to allow the map to fill the screen */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            overflow: hidden; /* Prevent scrollbars on the body */
+        /* Screen-only styles for the paper preview */
+        body { background-color: #e5e7eb; font-family: 'Inter', sans-serif; }
+
+        .main-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; padding: 2rem; }
+
+        /* The container that simulates the 8.5x11 paper on screen */
+        #print-area {
+            width: 8.5in;
+            height: 11in;
+            margin: 2rem auto;
+            background-color: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            /* This padding simulates the print margins on screen */
+            padding: 0.5in 0.75in;
+            box-sizing: border-box;
         }
+
+        #controls { width: 380px; flex-shrink: 0; }
         
-        /* The map container must have a defined height */
-        #map {
+        /* The grid that holds the 10 business cards */
+        #card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 3.5in);
+            grid-template-rows: repeat(5, 2in);
+            justify-content: center;
+            align-content: center;
             width: 100%;
             height: 100%;
         }
 
-        /* Custom styling for Leaflet popups to match the modern theme */
-        .leaflet-popup-content-wrapper {
-            border-radius: 8px;
-            background-color: #ffffff;
+        /* Dashed border for on-screen guide */
+        .card svg {
+            width: 100%;
+            height: 100%;
+            border: 1px dashed #ccc;
         }
-        .leaflet-popup-content {
-            margin: 15px;
-            font-size: 14px;
-            line-height: 1.5;
+        
+        input[type="number"] { -moz-appearance: textfield; }
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+        /* Define the paper size and layout for printing */
+        @page {
+            size: 8.5in 11in;
+            /* We recommend setting margins to "None" in the browser's print dialog */
+            margin: 0; 
         }
-        .leaflet-popup-tip {
-            background: #ffffff;
-        }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-gray-100">
 
-    <!-- The DIV element where the map will be rendered -->
-    <div id="map"></div>
+        @media print {
+            /* Hide everything except the print area */
+            body * { visibility: hidden; }
+            #print-area, #print-area * { visibility: visible; }
 
-    <!-- Leaflet.js JavaScript -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossorigin=""></script>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // --- 1. INITIALIZE THE MAP ---
-            // Set the initial coordinates to Amherst, MA, and a suitable zoom level.
-            const initialCoords = [42.3732, -72.5199]; // [latitude, longitude]
-            const initialZoom = 14;
-
-            // Initialize the map and set its view.
-            const map = L.map('map').setView(initialCoords, initialZoom);
-
-            // --- 2. DEFINE BASEMAP LAYERS ---
-            // These are the underlying map tiles. We'll add a few options.
-
-            // A clean, light-themed map from CartoDB
-            const cartoLight = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-                subdomains: 'abcd',
-                maxZoom: 20
-            });
-            
-            // A standard, detailed OpenStreetMap view
-            const osmStreet = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            });
-
-            // A satellite imagery layer from Esri
-            const esriSatellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-                attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-            });
-
-            // Add the default basemap (Carto Light) to the map on load.
-            cartoLight.addTo(map);
-
-            // --- 3. ADD MARKERS & OVERLAYS ---
-            // These are the data points you want to display on top of the map.
-
-            // Sample data for points of interest in Amherst
-            const pointsOfInterest = [
-                {
-                    lat: 42.3910,
-                    lng: -72.5264,
-                    name: 'University of Massachusetts Amherst',
-                    description: 'A major public research university.'
-                },
-                {
-                    lat: 42.3709,
-                    lng: -72.5170,
-                    name: 'Amherst College',
-                    description: 'A private liberal arts college.'
-                },
-                {
-                    lat: 42.3712,
-                    lng: -72.5213,
-                    name: 'Emily Dickinson Museum',
-                    description: 'The former home of the famous American poet.'
-                },
-                {
-                    lat: 42.3753,
-                    lng: -72.5200,
-                    name: 'Amherst Town Common',
-                    description: 'The central park in downtown Amherst.'
-                }
-            ];
-
-            // Create an array to hold the marker objects
-            const poiMarkers = [];
-
-            // Loop through the data and create a marker for each point
-            pointsOfInterest.forEach(point => {
-                const marker = L.marker([point.lat, point.lng]);
-                
-                // Create the popup content with Tailwind CSS classes for styling
-                const popupContent = `
-                    <div class="space-y-1">
-                        <h3 class="font-bold text-lg text-gray-800">${point.name}</h3>
-                        <p class="text-gray-600">${point.description}</p>
-                    </div>
-                `;
-                
-                marker.bindPopup(popupContent);
-                poiMarkers.push(marker);
-            });
-            
-            // Create a Layer Group from the markers array. This allows us to treat them as a single layer.
-            const poiLayer = L.layerGroup(poiMarkers).addTo(map);
-
-
-            // --- 4. ADD LAYER CONTROL ---
-            // This UI element allows users to toggle layers on and off.
-
-            // Define the base maps object for the control.
-            const baseMaps = {
-                "Street View": osmStreet,
-                "Light Theme": cartoLight,
-                "Satellite": esriSatellite
-            };
-
-            // Define the overlay maps object for the control.
-            const overlayMaps = {
-                "Points of Interest": poiLayer
-            };
-
-            // Add the layer control to the top right of the map.
-            L.control.layers(baseMaps, overlayMaps, { position: 'topright' }).addTo(map);
-
-            // --- 5. ADD INTERACTIVITY ---
-            // Handle map events like clicks.
-
-            // Create a popup that can be reused.
-            const clickPopup = L.popup();
-
-            // Function to handle map clicks
-            function onMapClick(e) {
-                const lat = e.latlng.lat.toFixed(5);
-                const lng = e.latlng.lng.toFixed(5);
-
-                const popupContent = `
-                    <div class="text-center space-y-2">
-                        <h3 class="font-semibold text-gray-700">Clicked Coordinates</h3>
-                        <p class="text-sm font-mono bg-gray-100 p-2 rounded">
-                            Lat: ${lat}<br>Lon: ${lng}
-                        </p>
-                    </div>
-                `;
-
-                clickPopup
-                    .setLatLng(e.latlng)
-                    .setContent(popupContent)
-                    .openOn(map);
+            /* Make the print area fill the entire page */
+            #print-area {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 8.5in;
+                height: 11in;
+                margin: 0;
+                /* Remove padding to allow the grid to be centered on the whole page */
+                padding: 0; 
             }
 
-            // Listen for click events on the map.
-            map.on('click', onMapClick);
+             /* Hide the dashed SVG border when printing */
+            .card svg {
+                border: none;
+            }
+        }
+
+    </style>
+</head>
+<body class="bg-gray-200">
+
+    <!-- Header -->
+    <header class="bg-white p-4 shadow-md print:hidden sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Business Card Editor</h1>
+            <div>
+                <button id="update-btn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300 mr-2">
+                    Update Cards
+                </button>
+                <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                    Print
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Controls for editing the card -->
+        <div id="controls" class="bg-white p-6 rounded-lg shadow-md print:hidden space-y-4">
+            <h2 class="text-xl font-bold border-b pb-2">Editable Text Lines</h2>
+
+            <!-- Line 1 Controls -->
+            <div class="space-y-2 border-b pb-3">
+                <label class="block text-sm font-medium text-gray-700">Line 1</label>
+                <input type="text" id="line1-text" value="JONATHAN GERHARDSON" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <div class="grid grid-cols-3 gap-2">
+                    <input type="number" id="line1-x" value="75" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                    <input type="number" id="line1-y" value="178" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                    <input type="number" id="line1-size" value="16" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <select id="line1-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <option value="normal">Normal</option>
+                        <option value="bold" selected>Bold</option>
+                    </select>
+                    <input type="color" id="line1-color" value="#000000" class="h-10 w-full rounded-md border-gray-300">
+                </div>
+            </div>
+
+            <!-- Line 2 Controls -->
+            <div class="space-y-2 border-b pb-3">
+                <label class="block text-sm font-medium text-gray-700">Line 2</label>
+                <input type="text" id="line2-text" value="Investigative Journalist" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <div class="grid grid-cols-3 gap-2">
+                    <input type="number" id="line2-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                    <input type="number" id="line2-y" value="80" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                    <input type="number" id="line2-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <select id="line2-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <option value="normal" selected>Normal</option>
+                        <option value="bold">Bold</option>
+                    </select>
+                    <input type="color" id="line2-color" value="#000000" class="h-10 w-full rounded-md border-gray-300">
+                </div>
+            </div>
+
+            <!-- Line 3 Controls -->
+            <div class="space-y-2 border-b pb-3">
+                <label class="block text-sm font-medium text-gray-700">Line 3</label>
+                <input type="text" id="line3-text" value="xxxxxxxxxx | xsignalx" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <div class="grid grid-cols-3 gap-2">
+                    <input type="number" id="line3-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                    <input type="number" id="line3-y" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                    <input type="number" id="line3-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <select id="line3-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <option value="normal" selected>Normal</option>
+                        <option value="bold">Bold</option>
+                    </select>
+                    <input type="color" id="line3-color" value="#CF3424" class="h-10 w-full rounded-md border-gray-300">
+                </div>
+            </div>
+
+            <!-- Line 4 Controls -->
+            <div class="space-y-2 border-b pb-3">
+                <label class="block text-sm font-medium text-gray-700">Line 4</label>
+                <input type="text" id="line4-text" value="jon.gerhardson@proton.me" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <div class="grid grid-cols-3 gap-2">
+                    <input type="number" id="line4-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                    <input type="number" id="line4-y" value="60" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                    <input type="number" id="line4-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <select id="line4-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <option value="normal" selected>Normal</option>
+                        <option value="bold">Bold</option>
+                    </select>
+                    <input type="color" id="line4-color" value="#22C55E" class="h-10 w-full rounded-md border-gray-300">
+                </div>
+            </div>
+
+             <!-- Line 5 Controls -->
+            <div class="space-y-2 border-b pb-3">
+                <label class="block text-sm font-medium text-gray-700">Line 5</label>
+                <input type="text" id="line5-text" value="jongerhardson.github.io" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <div class="grid grid-cols-3 gap-2">
+                    <input type="number" id="line5-x" value="40" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                    <input type="number" id="line5-y" value="100" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                    <input type="number" id="line5-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <select id="line5-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <option value="normal" selected>Normal</option>
+                        <option value="bold">Bold</option>
+                    </select>
+                    <input type="color" id="line5-color" value="#CF3424" class="h-10 w-full rounded-md border-gray-300">
+                </div>
+            </div>
+
+            <!-- Line 6 Controls -->
+            <div class="space-y-2 border-b pb-3">
+                <label class="block text-sm font-medium text-gray-700">Line 6</label>
+                <input type="text" id="line6-text" value="This is a public records request" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <div class="grid grid-cols-3 gap-2">
+                    <input type="number" id="line6-x" value="30" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                    <input type="number" id="line6-y" value="120" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                    <input type="number" id="line6-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <select id="line6-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <option value="normal" selected>Normal</option>
+                        <option value="bold">Bold</option>
+                    </select>
+                    <input type="color" id="line6-color" value="#3B82F6" class="h-10 w-full rounded-md border-gray-300">
+                </div>
+            </div>
+
+            <!-- Line 7 Controls -->
+            <div class="space-y-2 border-b pb-3">
+                <label class="block text-sm font-medium text-gray-700">Line 7</label>
+                <input type="text" id="line7-text" value="per Mass. GL c. 66, s. 10; (attached)" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <div class="grid grid-cols-3 gap-2">
+                    <input type="number" id="line7-x" value="30" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                    <input type="number" id="line7-y" value="140" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                    <input type="number" id="line7-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <select id="line7-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <option value="normal" selected>Normal</option>
+                        <option value="bold">Bold</option>
+                    </select>
+                    <input type="color" id="line7-color" value="#CF3424" class="h-10 w-full rounded-md border-gray-300">
+                </div>
+            </div>
+
+             <!-- Line 8 Controls -->
+            <div class="space-y-2 pb-3">
+                <label class="block text-sm font-medium text-gray-700">Line 8</label>
+                <input type="text" id="line8-text" value="" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                <div class="grid grid-cols-3 gap-2">
+                    <input type="number" id="line8-x" value="10" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="X">
+                    <input type="number" id="line8-y" value="10" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Y">
+                    <input type="number" id="line8-size" value="14" class="w-full rounded-md border-gray-300 shadow-sm sm:text-sm" placeholder="Size">
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <select id="line8-weight" class="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm">
+                        <option value="normal" selected>Normal</option>
+                        <option value="bold">Bold</option>
+                    </select>
+                    <input type="color" id="line8-color" value="#000000" class="h-10 w-full rounded-md border-gray-300">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- This div represents the 8.5x11 inch paper -->
+        <div id="print-area">
+            <div id="card-grid"> <!-- Cards will be generated by JavaScript here --> </div>
+        </div>
+    </div>
+    
+    <script>
+        const updateBtn = document.getElementById('update-btn');
+        const grid = document.getElementById('card-grid');
+        const NUM_LINES = 8; // The total number of editable lines
+
+        // Function to generate the SVG for one card based on all input values
+        const createCardSVG = () => {
+            let textElements = '';
+            
+            // Loop through each line's controls to build the text elements
+            for (let i = 1; i <= NUM_LINES; i++) {
+                const text = document.getElementById(`line${i}-text`).value;
+                
+                // Skip creating an element if the text is empty
+                if (!text) continue;
+
+                const x = document.getElementById(`line${i}-x`).value;
+                const y = document.getElementById(`line${i}-y`).value;
+                const size = document.getElementById(`line${i}-size`).value;
+                const weight = document.getElementById(`line${i}-weight`).value;
+                const color = document.getElementById(`line${i}-color`).value;
+                
+                // Append the new <text> SVG element to the string
+                textElements += `<text x="${x}" y="${y}" font-size="${size}" font-weight="${weight}" fill="${color}">${text}</text>\n`;
+            }
+
+            // Return the complete SVG structure with the generated text elements
+            return `
+                <svg viewBox="0 0 336 192" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="336" height="192" fill="#FFFFFF"/>
+                  <g font-family="'Alfa Slab One', cursive">
+                    ${textElements}
+                  </g>
+                </svg>
+            `;
+        };
+
+        // Function to clear the grid and generate 10 new cards
+        const generateCards = () => {
+            grid.innerHTML = '';
+            const cardSVG = createCardSVG();
+            for (let i = 0; i < 10; i++) {
+                const cardWrapper = document.createElement('div');
+                cardWrapper.className = 'card';
+                cardWrapper.innerHTML = cardSVG;
+                grid.appendChild(cardWrapper);
+            }
+        };
+
+        // Add event listener to the manual update button
+        updateBtn.addEventListener('click', generateCards);
+        
+        // Add event listeners to all inputs to update the cards in real-time
+        const allInputs = document.querySelectorAll('#controls input, #controls select');
+        allInputs.forEach(input => {
+            input.addEventListener('input', generateCards);
         });
+
+        // Generate the initial set of cards when the page loads
+        window.onload = generateCards;
+
     </script>
 </body>
 </html>
