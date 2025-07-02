@@ -81,38 +81,39 @@
             </div>
 
             <div class="footer">
-                <p>Source: Analysis based on Axon spending records and Chicopee Police Department Use of Force reports (FY2017-FY2022).</p>
-                <p>Disclaimer: The analysis assumes all non-software spending from Axon was for Taser-related equipment.</p>
+                <p><strong>Sources:</strong> Use of force data from PoliceData.org/Samuel Sinyangwe via <a href="https://www.muckrock.com/foi/chicopee-489/police-data-collection-2017-2022-chicopee-police-department-160589/#file-1168932" class="underline hover:text-blue-600">MuckRock</a>. Spending data from <a href="https://www.chicopeema.gov/343/Open-Checkbook" class="underline hover:text-blue-600">Chicopee Open Checkbook</a>.</p>
             </div>
         </div>
     </div>
 
     <script>
+        const chartData = {
+            labels: ['FY 2017', 'FY 2018', 'FY 2019', 'FY 2020', 'FY 2021', 'FY 2022'],
+            datasets: [{
+                label: 'Taser Uses',
+                data: [26, 44, 46, 49, 36, 23],
+                borderColor: 'rgba(59, 130, 246, 1)', // Blue
+                backgroundColor: 'rgba(59, 130, 246, 0.3)',
+                fill: true,
+                tension: 0.4,
+                yAxisID: 'y',
+            }, {
+                label: 'Cost Per Use ($)',
+                data: [596.26, 883.86, 780.21, 741.63, 1891.34, 2556.52],
+                borderColor: 'rgba(239, 68, 68, 1)', // Red
+                backgroundColor: 'rgba(239, 68, 68, 0.4)',
+                fill: true,
+                tension: 0.4,
+                yAxisID: 'y1',
+                pointBackgroundColor: '#fff',
+                pointBorderColor: 'rgba(239, 68, 68, 1)',
+            }]
+        };
+
         const ctx = document.getElementById('taserChart').getContext('2d');
         const taserChart = new Chart(ctx, {
             type: 'line',
-            data: {
-                labels: ['FY 2017', 'FY 2018', 'FY 2019', 'FY 2020', 'FY 2021', 'FY 2022'],
-                datasets: [{
-                    label: 'Taser Uses',
-                    data: [26, 44, 46, 49, 36, 23],
-                    borderColor: 'rgba(59, 130, 246, 1)', // Blue
-                    backgroundColor: 'rgba(59, 130, 246, 0.3)',
-                    fill: true,
-                    tension: 0.4,
-                    yAxisID: 'y',
-                }, {
-                    label: 'Cost Per Use ($)',
-                    data: [596.26, 883.86, 780.21, 741.63, 1891.34, 2556.52],
-                    borderColor: 'rgba(239, 68, 68, 1)', // Red
-                    backgroundColor: 'rgba(239, 68, 68, 0.4)',
-                    fill: true,
-                    tension: 0.4,
-                    yAxisID: 'y1',
-                    pointBackgroundColor: '#fff',
-                    pointBorderColor: 'rgba(239, 68, 68, 1)',
-                }]
-            },
+            data: chartData,
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
@@ -120,34 +121,20 @@
                     title: {
                         display: true,
                         text: 'Taser Uses vs. Cost Per Use (FY2017-FY2022)',
-                        font: {
-                            size: 18,
-                            weight: 'bold'
-                        },
-                        padding: {
-                            top: 10,
-                            bottom: 30
-                        },
+                        font: { size: 18, weight: 'bold' },
+                        padding: { top: 10, bottom: 30 },
                         color: '#1e293b'
                     },
-                    legend: {
-                        labels: {
-                            color: '#334155'
-                        }
-                    },
+                    legend: { labels: { color: '#334155' } },
                     tooltip: {
                         mode: 'index',
                         intersect: false,
                         backgroundColor: '#1e293b',
-                        titleFont: {
-                            weight: 'bold'
-                        },
+                        titleFont: { weight: 'bold' },
                         callbacks: {
                             label: function(context) {
                                 let label = context.dataset.label || '';
-                                if (label) {
-                                    label += ': ';
-                                }
+                                if (label) { label += ': '; }
                                 if (context.dataset.yAxisID === 'y1') {
                                     label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
                                 } else {
@@ -160,49 +147,24 @@
                 },
                 scales: {
                     x: {
-                        grid: {
-                            display: false
-                        },
-                        ticks: {
-                            color: '#475569'
-                        }
+                        grid: { display: false },
+                        ticks: { color: '#475569' }
                     },
                     y: {
                         type: 'linear',
                         display: true,
                         position: 'left',
-                        title: {
-                            display: true,
-                            text: 'Number of Taser Uses',
-                            font: {
-                                weight: 'bold'
-                            },
-                            color: '#1e293b'
-                        },
-                        grid: {
-                            drawOnChartArea: false, 
-                        },
-                        ticks: {
-                            color: '#475569'
-                        },
-                         beginAtZero: true
+                        title: { display: true, text: 'Number of Taser Uses', font: { weight: 'bold' }, color: '#1e293b' },
+                        grid: { drawOnChartArea: false },
+                        ticks: { color: '#475569' },
+                        beginAtZero: true
                     },
                     y1: {
                         type: 'logarithmic',
                         display: true,
                         position: 'right',
-                        title: {
-                            display: true,
-                            text: 'Cost Per Use ($) - Logarithmic Scale',
-                            font: {
-                                weight: 'bold'
-                            },
-                            color: '#1e293b'
-                        },
-                        grid: {
-                            drawOnChartArea: true,
-                            color: 'rgba(0,0,0,0.05)'
-                        },
+                        title: { display: true, text: 'Cost Per Use ($) - Logarithmic Scale', font: { weight: 'bold' }, color: '#1e293b' },
+                        grid: { drawOnChartArea: true, color: 'rgba(0,0,0,0.05)' },
                         ticks: {
                             color: '#475569',
                             callback: function(value, index, values) {
@@ -219,4 +181,3 @@
     </script>
 </body>
 </html>
-
