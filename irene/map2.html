@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicopee Camera & Census Map</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="irene.png">
+
+    <!-- Leaflet.js CSS & Script -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Leaflet.heat Plugin -->
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+
+    <!-- Leaflet.markercluster Plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            border-bottom: 1px solid #dee2e6;
+            text-align: center;
+            z-index: 1000;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .header p.note { /* Style for the new note */
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+        #map {
+            width: 100%;
+            flex-grow: 1;
+            background-color: #f0f0f0;
+        }
+        .leaflet-popup-content-wrapper {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .leaflet-popup-content {
+            margin: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 300px !important;
+        }
+        .popup-header {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .popup-stat {
+            margin-bottom: 5px;
+        }
+        .popup-camera-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        .legend {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            line-height: 18px;
+            color: #555;
+        }
+        .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.9;
+            border: 1px solid #999;
+        }
+        .download-control {
+            background: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .download-control a {
+            text-decoration: none;
+            color: #0078A8;
+            display: block;
+            padding: 2px 5px;
+        }
+        .download-control a:hover {
+            text-decoration: underline;
+            background-color: #f0f0f0;
+        }
+
+        /* Custom cluster icon styling */
+        .marker-cluster-small { background-color: rgba(181, 226, 140, 0.6); }
+        .marker-cluster-small div { background-color: rgba(110, 204, 57, 0.6); }
+
+        .marker-cluster-medium { background-color: rgba(241, 211, 87, 0.6); }
+        .marker-cluster-medium div { background-color: rgba(240, 194, 12, 0.6); }
+
+        .marker-cluster-large { background-color: rgba(253, 156, 115, 0.6); }
+        .marker-cluster-large div { background-color: rgba(241, 128, 23, 0.6); }
+
+        .marker-cluster {
+            background-clip: padding-box;
+            border-radius: 20px; /* Make it a circle */
+            text-align: center;
+        }
+        .marker-cluster div {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+            margin-top: 5px;
+            text-align: center;
+            border-radius: 15px; /* Make it a circle */
+            font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+            color: #fff;
+            line-height: 30px;
+        }
+        .marker-cluster span {
+            line-height: 30px; /* Vertically center the text */
+        }
+
+        /* Styles for heatmap legend */
+        .heatmap-legend .gradient-bar {
+            height: 15px;
+            width: 100%;
+            background: linear-gradient(to right, #ffffff, #ff0000); /* Example gradient */
+            margin-bottom: 5px;
+        }
+        .heatmap-legend .labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TKTKTKTKTKTKTKKTK</h1>
+        <p class="note">Note: Camera coordinates are approximate and represent the general location of the camera.</p>
+    </div>
+    <div id="map"></div>
+    <script>
+        // --- Initialize the map and set its view to Chicopee, MA coordinates ---
+        const map = L.map('map').setView([42.155, -72.59], 13);
+
+        // --- Add a base tile layer from OpenStreetMap ---
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        console.log("Map initialized and base layer added.");
+
+        // --- File Paths ---
+        const cameraPointsURL = 'camera_map_points.geojson';
+        const censusAnalysisURL = 'camera_income_analysis.geojson';
+
+        // --- Layer Groups ---
+        const incomeLayer = L.layerGroup();
+        const cameraLocationsLayer = L.layerGroup(); // This layer will now contain the cluster group
+        const durationHeatmapLayer = L.layerGroup();
+        const cameraDensityHeatmapLayer = L.layerGroup(); // Renamed from viewsHeatmapLayer
+
+        // --- Custom iconCreateFunction for Marker Clustering ---
+        // This function now simply counts the number of individual camera markers within a cluster
+        // and displays that sum on the cluster icon.
+        function createClusterCustomIcon(cluster) {
+            const count = cluster.getChildCount(); // Get the number of markers in this cluster
+
+            // Determine the class based on the total number of cameras for visual scaling
+            let c = ' marker-cluster-';
+            if (count < 10) {
+                c += 'small';
+            } else if (count < 100) {
+                c += 'medium';
+            } else {
+                c += 'large';
+            }
+
+            // Return a new DivIcon with the totalCameras count
+            return new L.DivIcon({ html: '<div><span>' + count + '</span></div>', className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
+        }
+
+        // --- Create a Marker Cluster Group for camera locations with custom icon function ---
+        const cameraClusterGroup = L.markerClusterGroup({
+            iconCreateFunction: createClusterCustomIcon // Apply the custom icon function here
+        });
+
+        // --- Popup Function for individual camera markers ---
+        function createPopupContent(feature) {
+            const props = feature.properties;
+            // Use camera_id as the primary header, fallback to location_name if camera_id is missing
+            const header = props.camera_id || props.location_name || "Camera Details";
+
+            // Access properties directly from feature.properties as they are now aggregated per unique camera
+            return `
+                <div class="popup-header">${header}</div>
+                <div class="popup-stat"><strong>Location:</strong> ${props.location_name ?? 'N/A'}</div>
+                <div class="popup-stat"><strong>Object Type:</strong> ${props.object_type ?? 'N/A'}</div>
+                <div class="popup-stat"><strong>Total Views:</strong> ${props.total_views_for_this_camera ?? 'N/A'}</div>
+                <div class="popup-stat"><strong>Total Duration:</strong> ${(props.total_duration_minutes_for_this_camera ?? 0).toFixed(2)} min</div>
+                <div class="popup-stat">
+                    <strong>Unique Users:</strong>
+                    <ul class="popup-camera-list">${(props.unique_users_for_this_camera || []).map(u => `<li>${u}</li>`).join('')}</ul>
+                </div>
+            `;
+        }
+
+        // --- Helper function for fetching and parsing JSON data ---
+        async function fetchJSON(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status} for URL: ${url}`);
+                }
+                return await response.json();
+            } catch (error) {
+                console.error(`Failed to fetch or parse JSON from ${url}:`, error);
+                throw error; // Re-throw to propagate the error and show user message
+            }
+        }
+
+        // --- Main Data Loading and Processing Function ---
+        async function loadMapData() {
+            try {
+                console.log("Attempting to load map data...");
+                const [cameraData, censusData] = await Promise.all([
+                    fetchJSON(cameraPointsURL),
+                    fetchJSON(censusAnalysisURL)
+                ]);
+                console.log("Successfully fetched all data.");
+
+                // --- 1. Process Camera Data ---
+                const durationHeatPoints = [];
+                const cameraDensityHeatPoints = []; // Stores points for camera density heatmap
+                let allCameraBounds = L.latLngBounds([]); // To collect bounds of all camera points
+
+                if (cameraData && cameraData.features) {
+                    cameraData.features.forEach(feature => {
+                        if (!feature.geometry || !feature.geometry.coordinates) return;
+                        const [lng, lat] = feature.geometry.coordinates;
+                        const props = feature.properties; // Get properties directly
+
+                        // Create a standard Leaflet marker
+                        const marker = L.marker([lat, lng], {
+                            feature: feature
+                        });
+                        marker.bindPopup(createPopupContent(feature));
+                        cameraClusterGroup.addLayer(marker); // Add marker to the cluster group
+
+                        // Extend bounds for each camera point
+                        allCameraBounds.extend([lat, lng]);
+
+                        // Add points for heatmaps
+                        const duration = parseFloat(props.total_duration_minutes_for_this_camera) || 0;
+                        durationHeatPoints.push([lat, lng, duration]);
+                        cameraDensityHeatPoints.push([lat, lng, 1]); // Each unique camera contributes 1 to density
+                    });
+                    console.log(`Processed ${cameraData.features.length} unique camera features.`);
+                }
+
+                // Add the entire cluster group to the cameraLocationsLayer
+                cameraLocationsLayer.addLayer(cameraClusterGroup);
+
+                // Create and add heatmap layers
+                if (durationHeatPoints.length > 0) {
+                    L.heatLayer(durationHeatPoints, { radius: 25, blur: 15 }).addTo(durationHeatmapLayer);
+                }
+                if (cameraDensityHeatPoints.length > 0) {
+                    L.heatLayer(cameraDensityHeatPoints, { radius: 25, blur: 15 }).addTo(cameraDensityHeatmapLayer);
+                }
+                console.log("Heatmap layers created.");
+
+                // --- 2. Process Census Data ---
+                let allCensusBounds = L.latLngBounds([]); // To collect bounds of all census tracts
+                if (censusData && censusData.features) {
+                    const censusGeoJsonLayer = L.geoJSON(censusData, {
+                        style: styleIncome,
+                        onEachFeature: (feature, layer) => {
+                            const props = feature.properties;
+                            layer.bindPopup(`
+                                <strong>Tract:</strong> ${props.TractName ?? 'N/A'}<br>
+                                <strong>Median Income:</strong> $${(props.MedianHouseholdIncome || 0).toLocaleString()}<br>
+                                <strong>Total Cameras in Tract:</strong> ${Math.round(props.TotalCameras ?? 0)}
+                            `);
+                            // Extend bounds for each census tract
+                            if (layer.getBounds) { // Polygons have getBounds
+                                allCensusBounds.extend(layer.getBounds());
+                            }
+                        }
+                    }).addTo(incomeLayer);
+                    console.log(`Processed ${censusData.features.length} census features.`);
+                }
+
+                // --- 3. Create Controls and add default layer ---
+                setupControls();
+                cameraLocationsLayer.addTo(map); // Add the layer containing the cluster group to the map
+                console.log("Controls set up and default layer added. Map should be fully functional.");
+
+                // --- Adjust map view to fit all data ---
+                let combinedBounds = L.latLngBounds([]);
+                if (allCameraBounds.isValid()) {
+                    combinedBounds.extend(allCameraBounds);
+                }
+                if (allCensusBounds.isValid()) {
+                    combinedBounds.extend(allCensusBounds);
+                }
+
+                if (combinedBounds.isValid()) {
+                    map.fitBounds(combinedBounds.pad(0.1)); // Add a small padding
+                    console.log("Map view adjusted to fit all data.");
+                } else {
+                    console.warn("No valid data bounds found to adjust map view. Using default view.");
+                }
+
+            } catch (error) {
+                console.error("A critical error occurred during map data loading:", error);
+                const errorDiv = document.createElement('div');
+                errorDiv.innerHTML = 'Failed to load map data. Please ensure "camera_map_points.geojson" and "camera_income_analysis.geojson" are in the same directory as this HTML file. Check the developer console (F12) for details.';
+                errorDiv.style.cssText = 'position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background: rgba(255, 0, 0, 0.7); color: white; border-radius: 8px; z-index: 2000; text-align: center;';
+                document.body.appendChild(errorDiv);
+            }
+        }
+
+        // --- Helper function for Income Layer Styling ---
+        function getColor(d) {
+            // Reverted to solid color scheme for income overlay
+            return d > 100000 ? '#084081' : // Darkest blue
+                   d > 80000  ? '#0868ac' : // Dark blue
+                   d > 60000  ? '#2b8cbe' : // Strong blue (for 60k-79k, including ~63k)
+                   d > 45000  ? '#4eb3d3' : // Medium blue
+                   d > 30000  ? '#7bccc4' : // Light blue-green
+                   d > 15000  ? '#a8ddb5' : // Light green
+                                '#e0f3db'; // Very light green
+        }
+
+        function styleIncome(feature) {
+            // Defensive check: Ensure feature and its properties exist
+            if (!feature || !feature.properties) {
+                console.warn("styleIncome received an invalid feature or missing properties:", feature);
+                return {
+                    fillColor: '#ccc', // Default fallback color
+                    weight: 0,
+                    opacity: 0,
+                    color: 'transparent',
+                    fillOpacity: 0
+                };
+            }
+            return {
+                fillColor: getColor(feature.properties.MedianHouseholdIncome), // Reverted to fillColor
+                weight: 2,
+                opacity: 1,
+                color: 'white',
+                dashArray: '3',
+                fillOpacity: 0.65 // Reverted fillOpacity
+            };
+        }
+
+        // --- Setup Map Controls (Layer Switcher, Legend, Download) ---
+        function setupControls() {
+            // --- Main Layer Control ---
+            const baseMaps = {
+                "Camera Locations": cameraLocationsLayer,
+                "Duration Heatmap": durationHeatmapLayer,
+                "Camera Density Heatmap": cameraDensityHeatmapLayer
+            };
+            const overlayMaps = {
+                "Median Income": incomeLayer
+            };
+            L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(map);
+
+            // --- Legend Control for Median Income ---
+            const incomeLegend = L.control({position: 'bottomright'});
+            incomeLegend.onAdd = function (map) {
+                const div = L.DomUtil.create('div', 'info legend');
+                const grades = [0, 15000, 30000, 45000, 60000, 80000, 100000];
+                const colors = ['#e0f3db', '#a8ddb5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081']; // Corresponding solid colors for legend
+                let labels = ['<strong>Median Household Income</strong>']; // Reverted legend title
+
+                // Loop through income grades and generate a label with a colored square for each
+                for (let i = 0; i < grades.length; i++) {
+                    labels.push(
+                        '<i style="background:' + colors[i] + '"></i> ' + // Use solid color for legend square
+                        '$' + grades[i].toLocaleString() + (grades[i + 1] ? '&ndash;$' + (grades[i + 1] - 1).toLocaleString() : '+'));
+                }
+                div.innerHTML = labels.join('<br>');
+                return div;
+            };
+            incomeLegend.addTo(map);
+
+            // --- Legend Control for Heatmaps ---
+            const heatmapLegend = L.control({position: 'bottomleft'});
+            heatmapLegend.onAdd = function (map) {
+                const div = L.DomUtil.create('div', 'info legend heatmap-legend');
+                div.innerHTML = `
+                    <strong>Heatmap Intensity</strong><br>
+                    <div class="gradient-bar" style="background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,0,0,1));"></div>
+                    <div class="labels">
+                        <span>Lower</span>
+                        <span>Higher</span>
+                    </div>
+                    <p style="font-size:0.75em; margin-top: 5px; margin-bottom: 0;">(Density/Duration)</p>
+                `;
+                return div;
+            };
+            heatmapLegend.addTo(map);
+
+
+            // --- Download Control for GeoJSON data ---
+            L.Control.Download = L.Control.extend({
+                onAdd: function(map) {
+                    var container = L.DomUtil.create('div', 'leaflet-control download-control');
+                    container.innerHTML = `
+                        <strong style="display: block; margin-bottom: 5px; padding: 0 5px;">Download Data</strong>
+                        <a href="${cameraPointsURL}" download="camera_map_points.geojson">Camera Points</a>
+                        <a href="${censusAnalysisURL}" download="camera_income_analysis.geojson">Census Analysis</a>
+                    `;
+                    // Prevent click events from propagating to the map
+                    L.DomEvent.disableClickPropagation(container);
+                    return container;
+                },
+            });
+            new L.Control.Download({ position: 'bottomleft' }).addTo(map);
+        }
+
+        // --- Start the application by loading map data ---
+        loadMapData();
+    </script>
+</body>
+</html>
