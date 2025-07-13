@@ -6,6 +6,7 @@
     <title>Chicopee Camera & Census Map</title>
 
     <!-- Favicon -->
+    <!-- Note: 'irene.png' needs to be in the same directory as this HTML file for the favicon to display. -->
     <link rel="icon" type="image/png" href="irene.png">
 
     <!-- Leaflet.js CSS & Script -->
@@ -95,33 +96,17 @@
             opacity: 0.9;
             border: 1px solid #999;
         }
-        .download-control {
-            background: white;
-            padding: 5px;
-            border-radius: 5px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
-        .download-control a {
-            text-decoration: none;
-            color: #0078A8;
-            display: block;
-            padding: 2px 5px;
-        }
-        .download-control a:hover {
-            text-decoration: underline;
-            background-color: #f0f0f0;
-        }
+
 
         /* Custom cluster icon styling */
-        .marker-cluster-small { background-color: rgba(181, 226, 140, 0.6); }
-        .marker-cluster-small div { background-color: rgba(110, 204, 57, 0.6); }
+        .marker-cluster-small { background-color: rgba(241, 211, 87, 0.6); }
+        .marker-cluster-small div { background-color: rgba(240, 194, 12, 0.6); }
 
         .marker-cluster-medium { background-color: rgba(241, 211, 87, 0.6); }
         .marker-cluster-medium div { background-color: rgba(240, 194, 12, 0.6); }
 
-        .marker-cluster-large { background-color: rgba(253, 156, 115, 0.6); }
-        .marker-cluster-large div { background-color: rgba(241, 128, 23, 0.6); }
-
+        .marker-cluster-large { background-color: rgba(241, 211, 87, 0.6); }
+        .marker-cluster-large div { background-color: rgba(240, 194, 12, 0.6); }
         .marker-cluster {
             background-clip: padding-box;
             border-radius: 20px; /* Make it a circle */
@@ -139,40 +124,42 @@
             line-height: 30px;
         }
         .marker-cluster span {
-            line-height: 30px; /* Vertically center the text */
+            line-height: 30px; 
         }
 
-        /* Styles for heatmap legend */
-        .heatmap-legend .gradient-bar {
-            height: 15px;
-            width: 100%;
-            background: linear-gradient(to right, #ffffff, #ff0000); /* Example gradient */
-            margin-bottom: 5px;
+        /* Updated: CSS filter for the OSM tile layer */
+        .osm-custom-filter {
+            filter: invert(1) saturate(0.66) brightness(1);
         }
-        .heatmap-legend .labels {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.8em;
+        /* Style for the embedded video player */
+        .popup-video {
+            width: 100%;
+            max-width: 280px; /* Adjust based on popup max-width */
+            height: auto;
+            margin-top: 10px;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>TKTKTKTKTKTKTKKTK</h1>
-        <p class="note">Note: Camera coordinates are approximate and represent the general location of the camera. <a href=https://example.com> "Read about the methodology here."</a> </p>
+        <p class="note">Note: Camera coordinates are approximate and represent the general location of the camera. <a href="https://github.com/JonGerhardson/JonGerhardson.github.io/tree/main/irene"> "Read about the methodology here."</a> </p>
     </div>
     <div id="map"></div>
     <script>
         // --- Initialize the map and set its view to Chicopee, MA coordinates ---
-        const map = L.map('map').setView([42.155, -72.59], 13);
+        const map = L.map('map').setView([42.155, -72.59], 13); // Default view, will be updated if target camera found
 
-        // --- Add a base tile layer from OpenStreetMap ---
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        // --- Add a base tile layer from OpenStreetMap with a custom class for filtering ---
+        const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            className: 'osm-custom-filter' // Assign the custom class here
         }).addTo(map);
-        console.log("Map initialized and base layer added.");
+        console.log("Map initialized and base layer added with custom filter class.");
 
         // --- File Paths ---
+        // These GeoJSON files must be in the same directory as this HTML file.
         const cameraPointsURL = 'camera_map_points.geojson';
         const censusAnalysisURL = 'camera_income_analysis.geojson';
 
@@ -207,14 +194,35 @@
             iconCreateFunction: createClusterCustomIcon // Apply the custom icon function here
         });
 
+        // --- Define video files associated with specific camera IDs ---
+        // Each camera_id now maps to an array containing only its corresponding video file.
+        const videoFilesMap = {
+            "Granby Rd and Montgomery St - 360 - 1": [
+                "Granby Rd and Montgomery St - 360 - 1.mp4"
+            ],
+            "Granby Rd and Montgomery St - 360 - 2": [
+                "Granby Rd and Montgomery St - 360 - 2.mp4"
+            ],
+            "Granby Rd and Montgomery St - 360 - 3": [
+                "Granby Rd and Montgomery St - 360 - 3.mp4"
+            ],
+            "Granby Rd and Montgomery St - 360 - 4": [
+                "Granby Rd and Montgomery St - 360 - 4.mp4"
+            ],
+            "Granby Rd and Montgomery St - 360 - PTZ": [
+                "Granby Rd & Montgomery St - 360 - PTZ.mp4"
+            ]
+            // Add other camera_ids and their associated videos here if needed
+            // Example: "Another Camera ID": ["video_for_another_camera.mp4"]
+        };
+
         // --- Popup Function for individual camera markers ---
         function createPopupContent(feature) {
             const props = feature.properties;
             // Use camera_id as the primary header, fallback to location_name if camera_id is missing
             const header = props.camera_id || props.location_name || "Camera Details";
 
-            // Access properties directly from feature.properties as they are now aggregated per unique camera
-            return `
+            let popupHtml = `
                 <div class="popup-header">${header}</div>
                 <div class="popup-stat"><strong>Location:</strong> ${props.location_name ?? 'N/A'}</div>
                 <div class="popup-stat"><strong>Object Type:</strong> ${props.object_type ?? 'N/A'}</div>
@@ -225,6 +233,26 @@
                     <ul class="popup-camera-list">${(props.unique_users_for_this_camera || []).map(u => `<li>${u}</li>`).join('')}</ul>
                 </div>
             `;
+
+            // Add embedded video players if associated with this camera ID
+            const videosForThisCamera = videoFilesMap[props.camera_id];
+            if (videosForThisCamera && videosForThisCamera.length > 0) {
+                popupHtml += `<div class="popup-stat"><strong>Videos:</strong></div>`;
+                videosForThisCamera.forEach(videoFileName => {
+                    popupHtml += `
+                        <div class="popup-video-container">
+                            <video controls class="popup-video">
+                                <source src="${videoFileName}" type="video/mp4">
+                                Your browser does not support the video tag for "${videoFileName}". Please ensure it's in MP4 format.
+                            </video>
+                            <small>${videoFileName}</small>
+                        </div>
+                    `;
+                });
+
+            }
+
+            return popupHtml;
         }
 
         // --- Helper function for fetching and parsing JSON data ---
@@ -251,6 +279,8 @@
                 ]);
                 console.log("Successfully fetched all data.");
 
+                let targetCameraMarker = null; // To store a reference to the specific camera marker
+
                 // --- 1. Process Camera Data ---
                 const durationHeatPoints = [];
                 const cameraDensityHeatPoints = []; // Stores points for camera density heatmap
@@ -268,6 +298,12 @@
                         });
                         marker.bindPopup(createPopupContent(feature));
                         cameraClusterGroup.addLayer(marker); // Add marker to the cluster group
+
+                        // Check if this is the target camera and store its marker
+                        if (props.camera_id === "Granby Rd and Montgomery St - 360 - 1") {
+                            targetCameraMarker = marker;
+                            console.log(`Found target camera "Granby Rd and Montgomery St - 360 - 1" marker.`);
+                        }
 
                         // Extend bounds for each camera point
                         allCameraBounds.extend([lat, lng]);
@@ -318,20 +354,28 @@
                 cameraLocationsLayer.addTo(map); // Add the layer containing the cluster group to the map
                 console.log("Controls set up and default layer added. Map should be fully functional.");
 
-                // --- Adjust map view to fit all data ---
-                let combinedBounds = L.latLngBounds([]);
-                if (allCameraBounds.isValid()) {
-                    combinedBounds.extend(allCameraBounds);
-                }
-                if (allCensusBounds.isValid()) {
-                    combinedBounds.extend(allCensusBounds);
-                }
-
-                if (combinedBounds.isValid()) {
-                    map.fitBounds(combinedBounds.pad(0.1)); // Add a small padding
-                    console.log("Map view adjusted to fit all data.");
+                // --- Adjust map view and open popup for target camera ---
+                if (targetCameraMarker) {
+                    // Use zoomToShowLayer to ensure the marker is visible before opening the popup
+                    cameraClusterGroup.zoomToShowLayer(targetCameraMarker, () => {
+                        targetCameraMarker.openPopup();
+                        console.log("Map view adjusted to target camera coordinates and popup opened.");
+                    });
                 } else {
-                    console.warn("No valid data bounds found to adjust map view. Using default view.");
+                    let combinedBounds = L.latLngBounds([]);
+                    if (allCameraBounds.isValid()) {
+                        combinedBounds.extend(allCameraBounds);
+                    }
+                    if (allCensusBounds.isValid()) {
+                        combinedBounds.extend(allCensusBounds);
+                    }
+
+                    if (combinedBounds.isValid()) {
+                        map.fitBounds(combinedBounds.pad(0.1)); // Add a small padding
+                        console.log("Map view adjusted to fit all data.");
+                    } else {
+                        console.warn("No valid data bounds found to adjust map view. Using default view.");
+                    }
                 }
 
             } catch (error) {
@@ -345,14 +389,14 @@
 
         // --- Helper function for Income Layer Styling ---
         function getColor(d) {
-            // Reverted to solid color scheme for income overlay
+            // Reverted to original blue color scheme for income overlay
             return d > 100000 ? '#084081' : // Darkest blue
-                   d > 80000  ? '#0868ac' : // Dark blue
-                   d > 60000  ? '#2b8cbe' : // Strong blue (for 60k-79k, including ~63k)
-                   d > 45000  ? '#4eb3d3' : // Medium blue
-                   d > 30000  ? '#7bccc4' : // Light blue-green
-                   d > 15000  ? '#a8ddb5' : // Light green
-                                '#e0f3db'; // Very light green
+                           d > 80000  ? '#a8ddb5' : // Dark blue
+                           d > 60000  ? '#7bccc4' : // Strong blue (for 60k-79k, including ~63k)
+                           d > 45000  ? '#4eb3d3' : // Medium blue
+                           d > 30000  ? '#2b8cbe' : // Light blue-green
+                           d > 15000  ? '#0868ac' : // Light green
+                                        '#e0f3db'; // Very light green
         }
 
         function styleIncome(feature) {
@@ -372,12 +416,12 @@
                 weight: 2,
                 opacity: 1,
                 color: 'white',
-                dashArray: '3',
-                fillOpacity: 0.65 // Reverted fillOpacity
+                dashArray: '4',
+                fillOpacity: 0.45 // Reverted fillOpacity
             };
         }
 
-        // --- Setup Map Controls (Layer Switcher, Legend, Download) ---
+        // --- Setup Map Controls (Layer Switcher, Legend) ---
         function setupControls() {
             // --- Main Layer Control ---
             const baseMaps = {
@@ -395,8 +439,10 @@
             incomeLegend.onAdd = function (map) {
                 const div = L.DomUtil.create('div', 'info legend');
                 const grades = [0, 15000, 30000, 45000, 60000, 80000, 100000];
-                const colors = ['#e0f3db', '#a8ddb5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081']; // Corresponding solid colors for legend
-                let labels = ['<strong>Median Household Income</strong>']; // Reverted legend title
+                // Reverted colors for the legend to match the original blue scheme
+               
+                const colors = [ '#084081', '#0868ac', '#2b8cbe', '#4eb3d3', '#7bccc4', '#a8ddb5', '#e0f3db' ]
+                let labels = ['<strong>Median Household Income</strong>'];
 
                 // Loop through income grades and generate a label with a colored square for each
                 for (let i = 0; i < grades.length; i++) {
@@ -409,39 +455,11 @@
             };
             incomeLegend.addTo(map);
 
-            // --- Legend Control for Heatmaps ---
-            const heatmapLegend = L.control({position: 'bottomleft'});
-            heatmapLegend.onAdd = function (map) {
-                const div = L.DomUtil.create('div', 'info legend heatmap-legend');
-                div.innerHTML = `
-                    <strong>Heatmap Intensity</strong><br>
-                    <div class="gradient-bar" style="background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,0,0,1));"></div>
-                    <div class="labels">
-                        <span>Lower</span>
-                        <span>Higher</span>
-                    </div>
-                    <p style="font-size:0.75em; margin-top: 5px; margin-bottom: 0;">(Density/Duration)</p>
-                `;
-                return div;
-            };
-            heatmapLegend.addTo(map);
+            // --- Removed Heatmap Legend Control ---
+            // The heatmap legend control was removed as per your request.
 
-
-            // --- Download Control for GeoJSON data ---
-            L.Control.Download = L.Control.extend({
-                onAdd: function(map) {
-                    var container = L.DomUtil.create('div', 'leaflet-control download-control');
-                    container.innerHTML = `
-                        <strong style="display: block; margin-bottom: 5px; padding: 0 5px;">Download Data</strong>
-                        <a href="${cameraPointsURL}" download="camera_map_points.geojson">Camera Points</a>
-                        <a href="${censusAnalysisURL}" download="camera_income_analysis.geojson">Census Analysis</a>
-                    `;
-                    // Prevent click events from propagating to the map
-                    L.DomEvent.disableClickPropagation(container);
-                    return container;
-                },
-            });
-            new L.Control.Download({ position: 'bottomleft' }).addTo(map);
+            // --- Removed Download Control for GeoJSON data ---
+            // The download control was removed as per your request.
         }
 
         // --- Start the application by loading map data ---
