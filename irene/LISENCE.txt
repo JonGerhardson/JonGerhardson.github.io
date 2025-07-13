@@ -1,4 +1,4 @@
-
+This lisence does not apply to the geojson data files in this directory. Please see data lisence for more information. 
 Copyright 2025 Jonathan Gerhardson 
 BSD 3-Clause License
 
