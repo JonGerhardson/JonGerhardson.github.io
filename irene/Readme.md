@@ -17,4 +17,4 @@ Median income data comes from the 2023 ACS Five-Year Estimates Data Profiles for
 
 This information is presented as-is for educational purposes only and is provided without warranty. See the License for details.
 
-If you would like to submit a correction or update, please email jon.gerhardson at proton.me.
+If you would like to submit a correction or update, please email **jon.gerhardson at proton.me**
