@@ -17,7 +17,7 @@ In one specific case, Szot Park, cameras are spread across a large area represen
 
 Median income data is derived from the 2023 ACS Five-Year Estimates Data Profiles for Hampden County, Massachusetts, specifically tables DP03 and DP05 from census.gov.
 
-Embedded video footage was obtained via public records request and was downscaled and converted from .mkv to .mp4 due to technical constraints. An ONVIF compatible metadata stream was not provided to me with the footage. The person appearing on a bicyle in said footage is the author of this map.
+Embedded video footage was obtained via public records request and was downscaled and converted from .mkv to .mp4 due to technical constraints. An ONVIF compatible metadata stream was not provided to me with the footage. The person appearing on a bicycle in said footage is the author of this map.
 
 This information is presented as-is for educational purposes only and is provided without warranty. See the License for details.
 
