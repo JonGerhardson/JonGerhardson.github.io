@@ -1,4 +1,4 @@
-The map in this directory was made using publicly avaialable information. It is a best-effort but may not be complete. It is based on records from January 1 to June 29, 2025. 
+The map in this directory was made using publicly avaialable information. It is a best-effort but may not be complete. It is based on records from January 1 to June 29, 2025. It shows 369 unique items extracted from audit logs for the Chicopee Police Department's use of Axon Fusus software. 
 
 
 A map shows a single point for each camera. Multisensor/360-degree cameras are counted once per lens, which is consistent with how Chicopee PD records them in their audit logs and on their website. In preparing this story, I observed the following increases in the number of listed cameras on connectchicopee.org:
