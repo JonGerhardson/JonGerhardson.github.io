@@ -13,7 +13,7 @@ Camera locations are approximate, based on a combination of in-person observatio
 
 Those logs are available in their original format at the [Internet Archive](https://archive.org/details/fusus-audit-export-live-view-may-june-2025). Data as it appears in the map is available in this github directory as [geojson files](https://github.com/JonGerhardson/JonGerhardson.github.io/blob/main/irene/camera_map_points.geojson) under a Creative Commons License, CC 4.0 International NC-BY-SA. 
 
-In one specific case, Szot Park, cameras are spread across a large area represented by a single address. Multiple points were added semi-randomly within that zone after in-person observation. This was done to show the distribution of cameras but does not necessarily map any particular camera to its exact GPS coordinates. For example, the bathhouse camera may appear in the football field. Other locations were updated if an ```object_name``` corresponded to a known address.
+In one specific case, Szot Park, cameras are spread across a large area represented by a single address. Multiple points were added semi-randomly within that zone after in-person observation. This was done to more accurately show the distribution of cameras across the city, but does not necessarily map any particular camera to its exact GPS coordinates. For example, the bathhouse camera may appear in the football field. This applies to cameras with an object name containing "Szot" only. Other locations were updated if an ```object_name``` corresponded to a known address, and are believed to be approximately accurate. 
 
 Median income data is derived from the 2023 ACS Five-Year Estimates Data Profiles for Hampden County, Massachusetts, specifically tables DP03 and DP05 from census.gov.
 
