@@ -1,3 +1,5 @@
+The map in this directory was made using publicly avaialable information. It is a best-effort but may not be complete. It is based on records from January 1 to June 29, 2025. 
+
 
 A map shows a single point for each camera. Multisensor/360-degree cameras are counted once per lens, which is consistent with how Chicopee PD records them in their audit logs and on their website. In preparing this story, I observed the following increases in the number of listed cameras on connectchicopee.org:
 
