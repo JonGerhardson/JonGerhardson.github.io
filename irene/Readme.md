@@ -13,7 +13,7 @@ Those logs are available in their original format at the [Internet Archive](http
 
 In one specific case, Szot Park, cameras are spread across a large area represented by a single address. Multiple points were added semi-randomly within that zone after an in-person observation. This was done to show the distribution of cameras but does not necessarily map any particular camera to its exact GPS coordinates. For example, the bathhouse camera may appear in the football field. Other locations were updated if an ```object_name``` corresponded to a known address.
 
-Median income data comes from the 2023 ACS Five-Year Estimates Data Profiles for Hampden County, Massachusetts, specifically tables DP03 and DP05 from census.gov.
+Median income data is derived from the 2023 ACS Five-Year Estimates Data Profiles for Hampden County, Massachusetts, specifically tables DP03 and DP05 from census.gov.
 
 This information is presented as-is for educational purposes only and is provided without warranty. See the License for details.
 
