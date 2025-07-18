@@ -104,8 +104,7 @@ https://connectholyoke.org/</textarea>
             for (const url of urls) {
                 logMessage(`[BEGIN] Processing: ${url}`, 'info');
                 
-                // This is a simulation. In a real application, you would make an API call
-                // to a backend server running the Python Playwright script.
+                // This function now accurately simulates the original script's flow and delays.
                 const result = await simulateScraping(url);
                 
                 if (result.success) {
@@ -126,39 +125,41 @@ https://connectholyoke.org/</textarea>
         }
 
         /**
-         * **MODIFIED:** Simulates the scraping process with realistic delays.
+         * **REVISED:** Simulates the scraping process with delays matching the Python script.
          * @param {string} url - The URL to "scrape".
          * @returns {Promise<object>} A promise that resolves with the scraping result.
          */
         async function simulateScraping(url) {
             try {
-                // Step 1: Simulate initial page load (random time)
+                // Step 1: `page.goto(url, timeout=60000)`
                 logMessage('  -> Navigating to page...', 'pending');
-                await new Promise(resolve => setTimeout(resolve, Math.random() * 2000 + 1000)); // 1-3 second delay
+                await new Promise(resolve => setTimeout(resolve, Math.random() * 2000 + 1000)); // Simulate 1-3 second network delay
 
-                // Simulate a failure to load the page
+                // Simulate a random failure to load the page
                 if (Math.random() < 0.10) { // 10% chance of failure
                     throw new Error('Page timeout or navigation error (Simulated)');
                 }
-                logMessage('  -> Page loaded. Waiting for elements...', 'pending');
+                
+                // Step 2: `page.wait_for_selector('p:text("Registered Cameras")', timeout=30000)`
+                logMessage('  -> Page loaded. Waiting for elements to appear...', 'pending');
+                await new Promise(resolve => setTimeout(resolve, Math.random() * 1000 + 500)); // Simulate 0.5-1.5s delay to "find" elements
 
-                // Step 2: Simulate waiting for key elements to be visible
-                await new Promise(resolve => setTimeout(resolve, Math.random() * 1000 + 500)); // 0.5-1.5s delay
-
-                // Step 3: Implement the REQUIRED 5-second delay for animations
-                logMessage('  -> Elements found. Waiting 5 seconds for animations...', 'pending');
+                // Step 3: `page.wait_for_timeout(5000)` - The critical, exact delay
+                logMessage('  -> Elements found. Waiting 5 seconds for count-up animations...', 'pending');
                 await new Promise(resolve => setTimeout(resolve, 5000));
 
                 // Step 4: Scrape the data
-                logMessage('  -> Scraping data...', 'pending');
-                await new Promise(resolve => setTimeout(resolve, 500)); // Quick scrape action
+                logMessage('  -> Animations complete. Scraping data...', 'pending');
+                await new Promise(resolve => setTimeout(resolve, 300)); // Simulate a quick scrape action
 
+                // Return the final data
                 return {
                     success: true,
                     registered: Math.floor(Math.random() * 500) + 50,
                     integrated: Math.floor(Math.random() * 200) + 10,
                 };
             } catch (e) {
+                // This block catches simulated errors, like the page failing to load.
                 return {
                     success: false,
                     error: e.message,
