@@ -1,12 +1,14 @@
 The map in this directory was made using publicly avaialable information. It is a best-effort but may not be complete. It is based on records from January 1 to June 29, 2025. It shows 369 unique items extracted from audit logs for the Chicopee Police Department's use of Axon Fusus software. 
 
 
-A map shows a single point for each camera. Multisensor/360-degree cameras are counted once per lens, which is consistent with how Chicopee PD records them in their audit logs and on their website. In preparing this story, I observed the following increases in the number of listed cameras on connectchicopee.org:
+A map shows a single point for each camera. Multisensor/360-degree cameras are counted once per lens, which is consistent with how Chicopee PD records them in their audit logs and on their website. In preparing this story, I observed the following increases in the number of listed cameras on connectchicopee.org.
 ```
 Timestamp,URL,Registered Cameras,Integrated Cameras
 2025-07-09 15:55:06,https://connectchicopee.org/,56,476
 2025-07-13 19:29:43,https://connectchicopee.org/,66,476
 ```
+(I made a little gizmo that lets you keep track yourself see this [repo](https://github.com/JonGerhardson/axon-fusus-analysis-tools/tree/main/connect-counter).
+ 
 "Registered" cameras, along with body and dash cameras, are not counted on this map. Neither are logs of views for recorded camera footage, only live views are included. Several hundred rows of data from the Live View logs were ommited due to missing timestamps that neither Axon or Chicopee PD could explain. 
 
 Camera locations are approximate, based on a combination of in-person observations and public records. To get GPS coordinates, known or presumed camera addresses were geocoded using an API service. In most cases, this location was taken from the ```location_name``` in Axon Fusus audit logs. 
