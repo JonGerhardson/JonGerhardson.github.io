@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gFLOCK Plate-o-Matic</title>
+    
+    <link rel="icon" type="image/png" href="irene.png">
+
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tone.js is no longer needed for synth, but we keep it in case of future audio processing needs. For now, we use a standard Audio object. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.min.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles to supplement Tailwind */
+        body {
+            font-family: 'Mochiy-Pop-One', sans-serif;
+            /* Background image placeholder */
+            background-image: url('/home/jon/plate-sanity/Screenshot from 2025-08-23 17-45-08.png');
+            background-size: contain;
+            
+            color: pink;
+}
+        /* Simple fade-in animation for result cards */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-pink-50 text-gray-700 min-h-screen flex items-center justify-center p-4">
+
+    <!-- Music Toggle Button -->
+    <button id="music-toggle" class="fixed top-4 right-4 z-50 bg-pink-400 text-white rounded-full h-14 w-14 flex items-center justify-center shadow-lg hover:bg-pink-500 transition-all transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-pink-300">
+        <!-- Music On Icon -->
+      <!--<svg id="music-on-icon" xmlns="http://www.w3.org/2000/svg" width="1" height="1" viewBox="0 0 0 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music-4 hidden"><path d="M9 18V5l12-2v13"/><path d="m9 9 12-2"/><circle cx="1" cy="1" r="0.1"/><circle cx="18" cy="16" r="3"/></svg>
+        <!-- Music Off Icon -->
+        <!<svg id="music-off-icon" xmlns="http://www.w3.org/2000/svg" width="1" height="1" viewBox="0 0 0 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volume-x"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></svg>
+    </button>
+
+    <!-- Main Container -->
+    <div class="w-full max-w-2xl bg-white/0 backdrop-blur-xl border border-white/0 shadow-2xl shadow-pink-200/0  p-6 md:p-8 space-y-6">
+        
+        <div class="text-center">
+            <h1 class="text-6xl md:text-7xl font-bold text-pink-600">gFLOCK</h1>
+            <h2 class="text-2xl text-pink-500 mt-2">can this plate exist?</h2>
+            <p class="text-pink-400 mt-2">Enter a license plate to see if it's a valid format!</p>
+            <p class="text-pink-400 mt-2"> Note: This app does not know if a plate number is real or not, if it's registration is expired, or anything of that nature. It uses regex to make sure any given string does not violate the rules set by each U.S. state for lisence plate numbers. It might not even do that correctly. As-is, no warranties. </p>
+        </div>
+
+        <!-- Input Section -->
+        <div class="flex flex-col sm:flex-row gap-3">
+            <input type="text" id="plateInput" placeholder="Type a plate number here! ♡" class="w-full px-5 py-3 text-lg text-pink-800 bg-pink-50 border-2 border-pink-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-pink-300 focus:border-pink-400 transition">
+            <button id="validateBtn" class="bg-pink-500 text-white font-bold text-lg px-8 py-3 rounded-2xl shadow-lg shadow-pink-500/30 hover:bg-pink-600 transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                Check!
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="m12 3-1.9 1.9-1.1-3-1.1 3L6 6l3 1.1-3 1.1 1.9 1.9 1.1 3 1.1-3L12 18l-1.9-1.9-1.1 3-1.1-3L6 18l3-1.1-3-1.1L7.9 12 6 10.1l-1.1 3-1.9-1.9L1.9 12l3-1.1-3-1.1L6 6l1.9 1.9 1.1-3 1.1 3L12 3Z"/><path d="M21 12h-2"/><path d="M12 21v-2"/></svg>
+            </button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" class="space-y-4"></div>
+
+        <!-- Batch Processing Section -->
+        <div class="border-t-2 border-dashed border-pink-200 pt-6 space-y-4">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-pink-600">Process a Bunch!</h2>
+                <p class="text-pink-400 mt-1">Upload a .csv file to check lots of plates~</p>
+            </div>
+            
+            <div>
+                <label for="csvFileInput" class="flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-pink-300 rounded-2xl cursor-pointer bg-pink-50 hover:bg-pink-100 transition">
+                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 mb-3 text-pink-400"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m16 16-4-4-4 4"/></svg>
+                        <p class="text-lg text-pink-500">♡ Click to Upload a CSV File ♡</p>
+                    </div>
+                </label>
+                <input id="csvFileInput" type="file" class="hidden" accept=".csv"/>
+            </div>
+
+            <div id="batchResultsContainer" class="hidden space-y-3">
+                <h3 class="text-xl font-semibold text-center text-pink-500">Here are your results!</h3>
+                <textarea id="csvOutput" readonly class="w-full h-48 p-3 bg-pink-50 border-2 border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+                <button id="downloadCsvBtn" class="w-full bg-green-500 text-white font-bold py-3 rounded-xl hover:bg-green-600 transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                    Download Results
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Data Definitions ---
+        // This data remains unchanged as it's the core logic.
+        const rules = [
+            { "state": "Alabama", "vehicle_class": "Passenger", "regex": "^[1-9][0-9]?[A-Z0-9]{5,6}$", "years_active": "2022-Pres", "constraints": { "exclude_global": ["I", "O", "Q"], "coded_info": { "type": "County", "positions": [0, 2], "mapping_key": "alabama_county_codes" } }, "notes": "Identified by the mandatory numeric county code (1-67) at the beginning of the plate.", "identification_confidence": "High", "confidence_score": 99 },
+            { "state": "Hawaii", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{3}$", "years_active": "1991-Pres", "constraints": { "coded_info": { "type": "Prefix", "positions": [0, 1], "mapping_key": "hawaii_county_codes" } }, "notes": "Identified by the first letter, which is a mandatory county code (e.g., H for Hawai'i County).", "identification_confidence": "High", "confidence_score": 98 },
+            { "state": "Idaho", "vehicle_class": "Passenger", "regex": "^(1A|1B|1C|1G|1L|1M|1T|1U|2C|2L|B|C|E|F|G|J|K|L|M|N|O|P|S|T|V|W)[A-Z0-9\\s]+$", "years_active": "2008-Pres", "constraints": { "coded_info": { "type": "Prefix", "positions": [0, 2], "mapping_key": "idaho_county_codes" } }, "notes": "Identified by the one or two character county code prefix (e.g., 1A for Ada, B for Bannock).", "identification_confidence": "High", "confidence_score": 99 },
+            { "state": "Montana", "vehicle_class": "Passenger", "regex": "^[1-9][0-9]?[A-Z0-9\\s]+$", "years_active": "Current", "constraints": { "coded_info": { "type": "County", "positions": [0, 2], "mapping_key": "montana_county_codes" } }, "notes": "Identified by the mandatory numeric county code (1-56) at the beginning of the plate.", "identification_confidence": "High", "confidence_score": 99 },
+            { "state": "Nebraska", "vehicle_class": "Passenger", "regex": "^[1-9][0-9]?[A-Z0-9\\s]+$", "years_active": "Current", "constraints": { "coded_info": { "type": "County", "positions": [0, 2], "mapping_key": "nebraska_county_codes" } }, "notes": "Identified by the mandatory numeric county code (1-93) at the beginning of the plate.", "identification_confidence": "High", "confidence_score": 99 },
+            { "state": "South Dakota", "vehicle_class": "Passenger", "regex": "^[1-9][0-9]?[A-Z0-9\\s]+$", "years_active": "Current", "constraints": { "coded_info": { "type": "County", "positions": [0, 2], "mapping_key": "south_dakota_county_codes" } }, "notes": "Identified by the mandatory numeric county code (1-67) at the beginning of the plate.", "identification_confidence": "High", "confidence_score": 99 },
+            { "state": "Wyoming", "vehicle_class": "Passenger", "regex": "^[1-9][0-9]?[A-Z0-9\\s]+$", "years_active": "Current", "constraints": { "coded_info": { "type": "County", "positions": [0, 2], "mapping_key": "wyoming_county_codes" } }, "notes": "Identified by the mandatory numeric county code (1-23) at the beginning of the plate.", "identification_confidence": "High", "confidence_score": 99 },
+            { "state": "West Virginia", "vehicle_class": "Passenger", "regex": "^[1-9OND][A-Z]{2}[0-9]{3}$", "years_active": "Current", "constraints": { "coded_info": { "type": "Month", "positions": [0, 1], "mapping_key": "west_virginia_month_codes" } }, "notes": "Identified by the first character, which indicates the expiration month (1-9, O, N, D).", "identification_confidence": "High", "confidence_score": 98 },
+            { "state": "Massachusetts", "vehicle_class": "Passenger", "regex": "^[0-9A-Z]+[0-9]$", "years_active": "1993-Pres", "constraints": { "exclude_global": ["Q", "U"], "coded_info": { "type": "Month", "positions": [-1, 0], "mapping_key": "massachusetts_month_codes" } }, "notes": "Identified by the last digit, which indicates the expiration month (0-9).", "identification_confidence": "High", "confidence_score": 98 },
+            { "state": "Missouri", "vehicle_class": "Passenger", "regex": "^[A-Z]{2}[0-9][A-Z][0-9][A-Z]$", "years_active": "2008-Pres", "constraints": { "exclude_global": ["I", "O", "Q"], "coded_info": { "type": "Month", "positions": [0, 1], "mapping_key": "missouri_month_codes" } }, "notes": "Identified by the unique AB1 C2D format and the first letter, which indicates the expiration month.", "identification_confidence": "High", "confidence_score": 98 },
+            { "state": "California", "vehicle_class": "Passenger", "regex": "^[1-9][A-Z]{3}[0-9]{3}$", "years_active": "1980-Pres", "constraints": { "positional": [ { "position": 1, "exclude": ["I", "O", "Q"] }, { "position": 3, "exclude": ["I", "O", "Q"] } ] }, "notes": "Unique 1ABC234 format. Identified by the positional rule where I, O, and Q are only allowed in the second letter position.", "identification_confidence": "High", "confidence_score": 95 },
+            { "state": "California", "vehicle_class": "Future Passenger", "regex": "^[0-9]{3}[A-Z]{3}[0-9]$", "years_active": "~2027-", "constraints": { "exclude_global": ["I", "O", "Q"] }, "notes": "Projected future format 123ABC4. Assumes standard I/O/Q exclusions.", "identification_confidence": "High", "confidence_score": 95 },
+            { "state": "Delaware", "vehicle_class": "Passenger", "regex": "^[1-9][0-9]{0,5}$", "years_active": "1969-Pres", "constraints": {}, "notes": "Identified by the all-numeric format with up to 6 digits.", "identification_confidence": "High", "confidence_score": 95 },
+            { "state": "Texas", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2012-Pres", "constraints": { "exclude_global": ["A", "E", "I", "O", "U", "Q"] }, "notes": "Identified by the powerful rule excluding all vowels (A, E, I, O, U) and Q.", "identification_confidence": "High", "confidence_score": 99 },
+            { "state": "Tennessee", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2022-Pres", "constraints": { "exclude_global": ["A", "E", "I", "O", "U"] }, "notes": "Identified by the powerful rule excluding all vowels (A, E, I, O, U).", "identification_confidence": "High", "confidence_score": 99 },
+            { "state": "New Mexico", "vehicle_class": "Passenger (Chile)", "regex": "^[A-Z]{4}[0-9]{2}$", "years_active": "Current", "constraints": { "exclude_global": ["E", "I", "O", "Q", "U", "V"] }, "notes": "Unique ABCD12 format combined with a very strict character exclusion list.", "identification_confidence": "High", "confidence_score": 95 },
+            { "state": "Kentucky", "vehicle_class": "Passenger", "regex": "^[A-Z][0-9][A-Z][0-9]{3}$", "years_active": "2021-Pres", "constraints": { "exclude_global": ["I", "Q", "U"] }, "notes": "Unique A1B 234 format combined with character exclusions.", "identification_confidence": "High", "confidence_score": 95 },
+            { "state": "Maryland", "vehicle_class": "Passenger", "regex": "^[0-9][A-Z]{2}[0-9]{4}$", "years_active": "2016-Pres", "constraints": {}, "notes": "Relatively unique 1AB2345 format.", "identification_confidence": "High", "confidence_score": 95 },
+            { "state": "Nevada", "vehicle_class": "Passenger", "regex": "^[0-9]{3}[0-9][A-Z][0-9]$", "years_active": "2024-Pres", "constraints": { "exclude_global": ["I", "O", "Q"] }, "notes": "Unique mixed alphanumeric format 123-4A5.", "identification_confidence": "High", "confidence_score": 95 },
+            { "state": "Utah", "vehicle_class": "Passenger (Life Elevated)", "regex": "^[A-Z][0-9]{2}[0-9]{3}[A-Z]{2}$", "years_active": "2007-Pres", "constraints": { "exclude_global": ["I", "O", "Q"] }, "notes": "Unique A12 3BC format.", "identification_confidence": "High", "confidence_score": 95 },
+            { "state": "Arkansas", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{2}[A-Z]$", "years_active": "2021-Pres", "constraints": { "exclude_global": ["Q"] }, "notes": "The current ABC 12D format is fairly unique.", "identification_confidence": "Medium-High", "confidence_score": 85 },
+            { "state": "North Carolina", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2010-Pres", "constraints": { "exclude_global": ["G", "I", "O", "Q", "U"], "positional": [{"position": 1, "range": ["A", "M"]}] }, "notes": "Common format, but confidence is raised by the strict positional rule (2nd letter is A-M) and global exclusions.", "identification_confidence": "Medium-High", "confidence_score": 90 },
+            { "state": "Arizona", "vehicle_class": "Passenger", "regex": "^[A-Z0-9]{6,7}$", "years_active": "2008-Pres", "constraints": { "exclude_global": ["I", "O", "Q", "U"] }, "notes": "Generic alphanumeric formats, but the I/O/Q/U exclusion rule provides a strong filter.", "identification_confidence": "Medium", "confidence_score": 70 },
+            { "state": "Connecticut", "vehicle_class": "Passenger", "regex": "^[A-Z]{2}[0-9]{5}$", "years_active": "2015-Pres", "constraints": {}, "notes": "Format AB-12345 is shared with Illinois but is less common nationally.", "identification_confidence": "Medium", "confidence_score": 65 },
+            { "state": "Illinois", "vehicle_class": "Passenger", "regex": "^[A-Z]{2}[0-9]{5}$", "years_active": "2017-Pres", "constraints": {}, "notes": "Format AB-12345 is shared with Connecticut.", "identification_confidence": "Medium", "confidence_score": 65 },
+            { "state": "Maine", "vehicle_class": "Passenger", "regex": "^[0-9]{4}[A-Z]{2}$", "years_active": "1999-Pres", "constraints": {}, "notes": "The 1234 AB format is less common than standard 6-character formats.", "identification_confidence": "Medium", "confidence_score": 75 },
+            { "state": "New Hampshire", "vehicle_class": "Passenger", "regex": "^[1-9][0-9]{5,6}$", "years_active": "1999-Pres", "constraints": {}, "notes": "All-numeric format, with the 7-digit length being more distinctive.", "identification_confidence": "Medium", "confidence_score": 70 },
+            { "state": "New Jersey", "vehicle_class": "Passenger", "regex": "^[A-Z][0-9]{2}[A-Z]{3}$", "years_active": "2014-Pres", "constraints": { "exclude_global": ["I", "O", "Q"] }, "notes": "The A12-BCD format is less common than generic 6-character patterns.", "identification_confidence": "Medium", "confidence_score": 75 },
+            { "state": "Vermont", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{3}$", "years_active": "1990-Pres", "constraints": { "exclude_global": ["I", "J", "O", "Q", "U"] }, "notes": "Common format, but the extensive list of excluded letters provides a reasonably strong filter.", "identification_confidence": "Medium", "confidence_score": 60 },
+            { "state": "Washington", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2010-Pres", "constraints": { "positional": [{"position": 2, "exclude": ["I", "O", "Q"]}] }, "notes": "Common format, but the positional rule for the third letter provides a useful filter.", "identification_confidence": "Medium", "confidence_score": 60 },
+            { "state": "Oregon", "vehicle_class": "Passenger", "regex": "^[0-9]{3}[A-Z]{3}$", "years_active": "2004-Pres", "constraints": { "positional": [{"position": 0, "exclude": ["A", "I", "O"]}] }, "notes": "Common format, but confidence is slightly raised by the rule excluding entire letter series (A, I, O).", "identification_confidence": "Low-Medium", "confidence_score": 50 },
+            { "state": "Alaska", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{3}$", "years_active": "2010-Pres", "constraints": {}, "notes": "Highly ambiguous ABC-123 format used by numerous states.", "identification_confidence": "Low", "confidence_score": 30 },
+            { "state": "Colorado", "vehicle_class": "Passenger", "regex": "^[A-Z]{4}[0-9]{2}$", "years_active": "2018-Pres", "constraints": {}, "notes": "Format ABC-D12 is somewhat ambiguous.", "identification_confidence": "Low", "confidence_score": 40 },
+            { "state": "Georgia", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2012-Pres", "constraints": { "exclude_global": ["I", "O", "Q"] }, "notes": "Highly ambiguous ABC-1234 format.", "identification_confidence": "Low", "confidence_score": 25 },
+            { "state": "Iowa", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{3}$", "years_active": "2012-Pres", "constraints": { "positional": [{"position": 2, "exclude": ["I", "O", "Q"]}] }, "notes": "Highly ambiguous ABC-123 format with a weak positional filter.", "identification_confidence": "Low", "confidence_score": 35 },
+            { "state": "Louisiana", "vehicle_class": "Passenger", "regex": "^[0-9]{3}[A-Z]{3}$", "years_active": "2016-Pres", "constraints": {}, "notes": "Highly ambiguous 123-ABC format.", "identification_confidence": "Low", "confidence_score": 30 },
+            { "state": "Michigan", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2013-Pres", "constraints": { "exclude_global": ["I", "O"] }, "notes": "Highly ambiguous ABC-1234 format.", "identification_confidence": "Low", "confidence_score": 25 },
+            { "state": "Minnesota", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{3}$", "years_active": "2017-Pres", "constraints": {}, "notes": "Highly ambiguous ABC-123 format. M/N/P series are reserved but not a strong filter.", "identification_confidence": "Low", "confidence_score": 30 },
+            { "state": "New York", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2020-Pres", "constraints": { "exclude_global": ["I", "O", "Q"] }, "notes": "Highly ambiguous ABC-1234 format.", "identification_confidence": "Low", "confidence_score": 25 },
+            { "state": "Ohio", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2021-Pres", "constraints": { "positional": [{"position": 0, "exclude": ["I", "O"]}, {"position": 2, "exclude": ["I", "O"]}] }, "notes": "Highly ambiguous ABC-1234 format with a weak positional filter (I/O only in 2nd position).", "identification_confidence": "Low", "confidence_score": 35 },
+            { "state": "Pennsylvania", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2017-Pres", "constraints": { "exclude_global": ["I", "O", "Q", "U"], "positional": [{"position": 1, "exclude": ["A", "E"]}] }, "notes": "Highly ambiguous ABC-1234 format. Filters are not strong enough to overcome ambiguity.", "identification_confidence": "Low", "confidence_score": 35 },
+            { "state": "South Carolina", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{3}$", "years_active": "2023-Pres", "constraints": {}, "notes": "Highly ambiguous ABC-123 format.", "identification_confidence": "Low", "confidence_score": 30 },
+            { "state": "Virginia", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2014-Pres", "constraints": {}, "notes": "Highly ambiguous ABC-1234 format.", "identification_confidence": "Low", "confidence_score": 20 },
+            { "state": "Wisconsin", "vehicle_class": "Passenger", "regex": "^[A-Z]{3}[0-9]{4}$", "years_active": "2017-Pres", "constraints": { "exclude_global": ["I", "O", "Q"] }, "notes": "Highly ambiguous ABC-1234 format.", "identification_confidence": "Low", "confidence_score": 25 }
+        ];
+        
+        const codedData = {
+            alabama_county_codes: Array.from({length: 67}, (_, i) => i + 1),
+            hawaii_county_codes: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'R', 'S', 'T', 'W', 'Y', 'Z'],
+            idaho_county_codes: ['1A', 'B', 'C', '1B', '2C', 'E', 'F', '1C', 'G', '1G', 'J', 'K', '1L', 'L', '1M', 'M', 'N', 'O', 'P', 'S', '1T', 'T', 'V', 'W', '2L', '1U'],
+            montana_county_codes: Array.from({length: 56}, (_, i) => i + 1),
+            nebraska_county_codes: Array.from({length: 93}, (_, i) => i + 1),
+            south_dakota_county_codes: Array.from({length: 67}, (_, i) => i + 1),
+            wyoming_county_codes: Array.from({length: 23}, (_, i) => i + 1),
+            west_virginia_month_codes: ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'O', 'N', 'D'],
+            massachusetts_month_codes: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],
+            missouri_month_codes: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y']
+        };
+
+        // --- DOM Elements ---
+        const plateInput = document.getElementById('plateInput');
+        const validateBtn = document.getElementById('validateBtn');
+        const resultsContainer = document.getElementById('results');
+        const csvFileInput = document.getElementById('csvFileInput');
+        const batchResultsContainer = document.getElementById('batchResultsContainer');
+        const csvOutput = document.getElementById('csvOutput');
+        const downloadCsvBtn = document.getElementById('downloadCsvBtn');
+        const musicToggleBtn = document.getElementById('music-toggle');
+       //const musicOnIcon = document.getElementById('music-on-icon');
+        //const musicOffIcon = document.getElementById('music-off-icon');
+
+        // --- Music Setup ---
+        let musicInitialized = false;
+        let musicPlaying = false;
+        let backgroundMusic;
+
+        /**
+         * Initializes the Audio object for background music.
+         */
+        function setupMusic() {
+            if (musicInitialized) return;
+            // Replace 'placeholder.wav' with the actual URL to your audio file
+            backgroundMusic = new Audio('gecs.wav');
+            backgroundMusic.loop = true;
+            musicInitialized = true;
+        }
+        
+        // --- Initialization ---
+        document.addEventListener('DOMContentLoaded', () => {
+            musicToggleBtn.addEventListener('click', () => {
+                // Initialize music on first interaction if not already done
+                if (!musicInitialized) {
+                    setupMusic();
+                }
+
+                // Toggle play/pause
+                if (musicPlaying) {
+                    backgroundMusic.pause();
+                } else {
+                    backgroundMusic.play().catch(e => console.error("Audio playback failed:", e));
+                }
+                musicPlaying = !musicPlaying;
+
+                // Update icon visibility
+                musicOnIcon.classList.toggle('hidden', !musicPlaying);
+                musicOffIcon.classList.toggle('hidden', musicPlaying);
+            });
+
+            validateBtn.addEventListener('click', handleValidation);
+            plateInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') handleValidation();
+            });
+            csvFileInput.addEventListener('change', handleFileUpload);
+            downloadCsvBtn.addEventListener('click', handleDownload);
+        });
+
+        /**
+         * Main handler for the validation process.
+         */
+        function handleValidation() {
+            // Initialize and play music on the first validation click
+            if (!musicInitialized) {
+                setupMusic();
+            }
+            if (backgroundMusic && backgroundMusic.paused) {
+                backgroundMusic.play().catch(e => console.error("Audio playback failed:", e));
+                musicPlaying = true;
+                musicOnIcon.classList.remove('hidden');
+                musicOffIcon.classList.add('hidden');
+            }
+
+            const plateStr = plateInput.value;
+            if (!plateStr) {
+                displayError("Please type in a plate number first!~");
+                return;
+            }
+            const preprocessedPlate = plateStr.replace(/[^A-Z0-9]/gi, '').toUpperCase();
+            const matches = findMatches(preprocessedPlate);
+            renderResults(matches, preprocessedPlate);
+        }
+
+        /**
+         * Finds all matching state rules for a given plate string.
+         * @param {string} plate - The preprocessed license plate string.
+         * @returns {Array} - An array of matching rule objects.
+         */
+        function findMatches(plate) {
+            if (plate.length < 3 || plate.length > 8) return []; 
+            
+            const potentialMatches = [];
+            for (const rule of rules) {
+                const regex = new RegExp(rule.regex);
+                if (!regex.test(plate)) continue;
+
+                let isMatch = true;
+                if (rule.constraints.exclude_global) {
+                    for (const char of rule.constraints.exclude_global) {
+                        if (plate.includes(char)) { isMatch = false; break; }
+                    }
+                }
+                if (!isMatch) continue;
+
+                if (rule.constraints.positional) {
+                    for (const posRule of rule.constraints.positional) {
+                        const charAtIndex = plate.charAt(posRule.position);
+                        if (posRule.exclude && posRule.exclude.includes(charAtIndex)) { isMatch = false; break; }
+                        if (posRule.include && !posRule.include.includes(charAtIndex)) { isMatch = false; break; }
+                        if (posRule.range && (charAtIndex < posRule.range[0] || charAtIndex > posRule.range[1])) { isMatch = false; break; }
+                    }
+                }
+                if (!isMatch) continue;
+
+                if (rule.constraints.coded_info) {
+                    const info = rule.constraints.coded_info;
+                    let code = (info.positions[0] === -1) ? plate.slice(-1) : plate.substring(info.positions[0], info.positions[1]);
+
+                    if (info.type === 'County') {
+                        const countyCodeMatch = plate.match(/^[0-9]{1,2}/);
+                        if (countyCodeMatch) {
+                            if (!codedData[info.mapping_key].includes(parseInt(countyCodeMatch[0]))) isMatch = false;
+                        } else { isMatch = false; }
+                    } else if (info.type === 'Month') {
+                        if (!codedData[info.mapping_key].includes(code)) isMatch = false;
+                    } else if(info.type === 'Prefix') {
+                        if (!codedData[info.mapping_key].some(prefix => plate.startsWith(prefix))) isMatch = false;
+                    }
+                }
+                if (!isMatch) continue;
+
+                potentialMatches.push(rule);
+            }
+            return potentialMatches;
+        }
+
+        /**
+         * Renders the validation results to the DOM.
+         * @param {Array} matches - An array of matching rule objects.
+         * @param {string} originalPlate - The original user input.
+         */
+        function renderResults(matches, originalPlate) {
+            resultsContainer.innerHTML = ''; 
+
+            if (matches.length === 0) {
+                displayError(`Couldn't find any matches for "${originalPlate}"... Sorry!`);
+                return;
+            }
+
+            const title = document.createElement('h2');
+            title.className = "text-2xl font-bold text-pink-500 text-center";
+            title.textContent = `Results for "${originalPlate}"!`;
+            resultsContainer.appendChild(title);
+
+            matches.sort((a, b) => b.confidence_score - a.confidence_score);
+            matches.forEach(match => resultsContainer.appendChild(createResultCard(match)));
+        }
+
+        /**
+         * Creates an HTML card element for a single match result.
+         * @param {object} match - A single matching rule object.
+         * @returns {HTMLElement} - The created card element.
+         */
+        function createResultCard(match) {
+            const card = document.createElement('div');
+            card.className = 'bg-white p-4 rounded-xl border border-pink-100 shadow-md animate-fade-in';
+            
+            const confidenceLevel = match.identification_confidence.toLowerCase();
+            let bgColorClass = 'bg-gray-400';
+            if (confidenceLevel === 'high') bgColorClass = 'bg-green-500';
+            else if (confidenceLevel === 'medium-high') bgColorClass = 'bg-blue-500';
+            else if (confidenceLevel === 'medium') bgColorClass = 'bg-yellow-500';
+            else if (confidenceLevel === 'low-medium') bgColorClass = 'bg-orange-500';
+            else if (confidenceLevel === 'low') bgColorClass = 'bg-red-500';
+
+            card.innerHTML = `
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-pink-600">${match.state}</span>
+                    <span class="text-sm font-semibold text-white px-3 py-1 rounded-full ${bgColorClass}">
+                        ${match.confidence_score}% Match!
+                    </span>
+                </div>
+                <p class="text-left text-sm mt-2 text-gray-500">${match.notes}</p>
+            `;
+            return card;
+        }
+
+        /**
+         * Displays an error message in the results container.
+         * @param {string} message - The error message to display.
+         */
+        function displayError(message) {
+            resultsContainer.innerHTML = `<div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg text-center" role="alert">${message}</div>`;
+        }
+
+        /**
+         * Handles the CSV file upload and processing.
+         * @param {Event} event - The file input change event.
+         */
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => processCsvData(e.target.result);
+            reader.readAsText(file);
+        }
+
+        /**
+         * Processes the text content of a CSV file.
+         * @param {string} csvContent - The string content of the CSV file.
+         */
+        function processCsvData(csvContent) {
+            const lines = csvContent.split(/\r?\n/).filter(line => line.trim() !== '');
+            const header = ['plate number', 'isplate?[1/0]', 'result1', 'result2', 'result3', 'result4', 'result5'];
+            const outputRows = [header];
+
+            for (const line of lines) {
+                const plate = line.trim();
+                const preprocessedPlate = plate.replace(/[^A-Z0-9]/gi, '').toUpperCase();
+                const matches = findMatches(preprocessedPlate);
+
+                const row = [plate];
+                if (matches.length > 0) {
+                    row.push(1); // isplate = 1
+                    matches.sort((a, b) => b.confidence_score - a.confidence_score);
+                    for (let i = 0; i < 5; i++) {
+                        row.push(matches[i] ? `"${matches[i].confidence_score} - ${matches[i].state}"` : '');
+                    }
+                } else {
+                    row.push(0); // isplate = 0
+                    for (let i = 0; i < 5; i++) row.push('');
+                }
+                outputRows.push(row);
+            }
+            
+            const outputCsv = outputRows.map(row => row.join(',')).join('\n');
+            csvOutput.value = outputCsv;
+            batchResultsContainer.classList.remove('hidden');
+            batchResultsContainer.classList.add('block');
+        }
+
+        /**
+         * Handles downloading the processed CSV results.
+         */
+        function handleDownload() {
+            const csvContent = csvOutput.value;
+            if (!csvContent) return;
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement("a");
+            const url = URL.createObjectURL(blob);
+            link.setAttribute("href", url);
+            link.setAttribute("download", "plate_validation_results.csv");
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+    </script>
+</body>
+</html>
