@@ -32,7 +32,7 @@
             Are you in the Epstein files?
         </h1>
         <p class="text-gray-600 mb-6 text-center">
-            Enter a name to find out. 
+            Enter a name to find out.
         </p>
 
         <!-- Search Input and Button -->
@@ -40,7 +40,7 @@
             <input 
                 type="text" 
                 id="nameInput"
-                placeholder="Enter name "
+                placeholder="Enter name"
                 class="flex-grow w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
             >
             <button 
@@ -50,9 +50,12 @@
             >
                 Search
             </button>
-        </p>
-            Based on data from the <a href="https://oversight.house.gov/release/oversight-committee-releases-additional-epstein-estate-documents/">House Oversight Committee</a>. 
         </div>
+        
+        <!-- Data Source Link -->
+        <p class="text-xs text-gray-500 text-center mt-3">
+        Data from the <a href="https://oversight.house.gov/release/oversight-committee-releases-additional-epstein-estate-documents/" class="text-indigo-600 hover:underline" target="_blank" rel="noopener noreferrer">House Oversight Committee</a>.
+        </p>
 
         <!-- Loading Message -->
         <div id="loadingMessage" class="flex items-center justify-center gap-2 text-gray-500 mt-6">
@@ -64,14 +67,25 @@
         <div id="result" class="mt-8 text-center min-h-[50px] flex items-center justify-center">
             <!-- Result will be injected here -->
         </div>
+
+        <!-- Page Counter -->
+        <div id="counter" class="text-center text-sm text-gray-400 mt-6 invisible">
+            <!-- Page counter will be injected here -->
+        </div>
     </div>
 
-    <script>
+    <script type="module">
+        // Firebase Imports
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc, setDoc, setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
         // Use a Map to store names (lowercase) and their counts.
         const nameMap = new Map();
 
         /**
-         * 
+         * Robustly parses the CSV text (name,count) and populates the nameMap.
+         * Handles quoted fields, escaped quotes (""), and newlines within fields.
          */
         function parseCsvAndFillMap(csvText) {
             // Skip header line
@@ -158,8 +172,55 @@
             nameMap.delete("");
         }
 
+        // Function to check the name, called by the button
+        function checkName() {
+            const input = document.getElementById('nameInput').value;
+            const resultDiv = document.getElementById('result');
+            
+            // Get the exact string from the input, trim whitespace, and convert to lowercase
+            const nameToFind = input.trim().toLowerCase(); 
+
+            if (nameMap.has(nameToFind)) {
+                const count = nameMap.get(nameToFind);
+                const timesText = count === 1 ? 'time' : 'times';
+                resultDiv.innerHTML = `Yes, ${count} ${timesText}.`;
+                // Apply large, bold, green styles
+                resultDiv.className = 'mt-8 text-center min-h-[50px] flex items-center justify-center text-4xl font-bold text-green-600';
+            } else {
+                resultDiv.innerHTML = "No.";
+                // Apply smaller, black styles
+                resultDiv.className = 'mt-8 text-center min-h-[50px] flex items-center justify-center text-xl font-medium text-black';
+            }
+        }
+        // Attach checkName to the window object so onclick can find it
+        window.checkName = checkName;
+
+
+        /**
+         * Initializes Firebase, authenticates, and updates the page counter.
+         */
+        async function updatePageCounter(db) {
+            const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+            const counterRef = doc(db, `/artifacts/${appId}/public/data/analytics/pageCounter`);
+            const counterSpan = document.getElementById('counter');
+
+            try {
+                const docSnap = await getDoc(counterRef);
+                let newCount = 1;
+                if (docSnap.exists()) {
+                    newCount = (docSnap.data().count || 0) + 1;
+                }
+                // Use setDoc to create or overwrite
+                await setDoc(counterRef, { count: newCount });
+                counterSpan.textContent = `Page Views: ${newCount.toLocaleString()}`;
+            } catch (error) {
+                console.error("Error updating counter:", error);
+                counterSpan.textContent = "Page Views: 1"; // Fallback
+            }
+        }
+
         // Populate the map by fetching the CSV when the page loads
-        window.onload = function() {
+        window.onload = async function() {
             const searchButton = document.getElementById('searchButton');
             const loadingMessage = document.getElementById('loadingMessage');
             const nameInput = document.getElementById('nameInput');
@@ -167,6 +228,33 @@
             // Disable search button initially
             searchButton.disabled = true;
 
+            // --- Initialize Firebase and Update Counter ---
+            try {
+                // Use provided Firebase config
+                const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
+                const app = initializeApp(firebaseConfig);
+                const db = getFirestore(app);
+                const auth = getAuth(app);
+                setLogLevel('Debug'); // Enable Firestore debug logging
+
+                // Authenticate
+                if (typeof __initial_auth_token !== 'undefined') {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+                
+                // Update counter after auth
+                await updatePageCounter(db);
+
+            } catch (error) {
+                console.error("Firebase init or counter error:", error);
+                const counterSpan = document.getElementById('counter');
+                counterSpan.textContent = "Counter unavailable";
+            }
+            
+            // --- Fetch and Parse CSV ---
+            // This runs in parallel with Firebase init
             fetch('names_found_in_001.csv')
                 .then(response => {
                     if (!response.ok) {
@@ -198,27 +286,6 @@
                     if (spinner) spinner.style.display = 'none';
                 });
         };
-
-        // Function to check the name, called by the button
-        function checkName() {
-            const input = document.getElementById('nameInput').value;
-            const resultDiv = document.getElementById('result');
-            
-            // Get the exact string from the input, trim whitespace, and convert to lowercase
-            const nameToFind = input.trim().toLowerCase(); 
-
-            if (nameMap.has(nameToFind)) {
-                const count = nameMap.get(nameToFind);
-                const timesText = count === 1 ? 'time' : 'times';
-                resultDiv.innerHTML = `Yes, ${count} ${timesText}.`;
-                // Apply large, bold, green styles
-                resultDiv.className = 'mt-8 text-center min-h-[50px] flex items-center justify-center text-4xl font-bold text-green-600';
-            } else {
-                resultDiv.innerHTML = "No.";
-                // Apply smaller, black styles
-                resultDiv.className = 'mt-8 text-center min-h-[50px] flex items-center justify-center text-xl font-medium text-black';
-            }
-        }
     </script>
 
 </body>
