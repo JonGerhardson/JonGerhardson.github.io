@@ -40,7 +40,7 @@
             <input 
                 type="text" 
                 id="nameInput"
-                placeholder="Enter name or string..."
+                placeholder="Enter name "
                 class="flex-grow w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
             >
             <button 
@@ -50,6 +50,8 @@
             >
                 Search
             </button>
+        </p>
+            Based on data from the <a href="https://oversight.house.gov/release/oversight-committee-releases-additional-epstein-estate-documents/">House Oversight Committee</a>. 
         </div>
 
         <!-- Loading Message -->
@@ -69,8 +71,7 @@
         const nameMap = new Map();
 
         /**
-         * Robustly parses the CSV text (name,count) and populates the nameMap.
-         * Handles quoted fields, escaped quotes (""), and newlines within fields.
+         * 
          */
         function parseCsvAndFillMap(csvText) {
             // Skip header line
