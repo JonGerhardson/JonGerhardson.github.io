@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Name Lookup</title>
     <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn/tailwindcss.com"></script>
     <style>
         /* Use the Inter font loaded by Tailwind */
         body {
@@ -53,8 +53,8 @@
         </div>
         
         <!-- Data Source Link -->
-        <p class="text-xs text-gray-500 text-center mt-3">
-        Data from the <a href="https://oversight.house.gov/release/oversight-committee-releases-additional-epstein-estate-documents/" class="text-indigo-600 hover:underline" target="_blank" rel="noopener noreferrer">House Oversight Committee</a>.
+        <p class="text-xs text-gray-400 text-center mt-3">
+            Based on data from the <a href="https://oversight.house.gov/release/oversight-committee-releases-additional-epstein-estate-documents/" class="text-indigo-600 hover:underline" target="_blank" rel="noopener noreferrer">House Oversight Committee</a>.
         </p>
 
         <!-- Loading Message -->
@@ -68,9 +68,10 @@
             <!-- Result will be injected here -->
         </div>
 
-        <!-- Page Counter -->
-        <div id="counter" class="text-center text-sm text-gray-400 mt-6 invisible">
-            <!-- Page counter will be injected here -->
+        <!-- Search Counter -->
+        <!-- Changed to text-xs as requested -->
+        <div id="counter" class="text-center text-xs text-gray-400 mt-6">
+            Total Searches: 0
         </div>
     </div>
 
@@ -82,6 +83,13 @@
 
         // Use a Map to store names (lowercase) and their counts.
         const nameMap = new Map();
+        
+        // --- Globals for Firebase and Counter ---
+        let db;
+        let counterRef;
+        let currentSearchCount = 0;
+        const counterSpan = document.getElementById('counter');
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
 
         /**
          * Robustly parses the CSV text (name,count) and populates the nameMap.
@@ -172,8 +180,51 @@
             nameMap.delete("");
         }
 
+        /**
+         * Loads the initial search count from Firebase.
+         */
+        async function loadInitialCounter() {
+            if (!counterRef) return; // Guard if Firebase init fails
+            
+            counterSpan.textContent = "Loading searches...";
+            try {
+                const docSnap = await getDoc(counterRef);
+                if (docSnap.exists()) {
+                    currentSearchCount = docSnap.data().count || 0;
+                }
+                counterSpan.textContent = `Total Searches: ${currentSearchCount.toLocaleString()}`;
+            } catch (error) {
+                console.error("Error loading counter:", error);
+                counterSpan.textContent = "Total Searches: 0"; // Fallback
+            }
+        }
+
+        /**
+         * Increments the search counter locally and updates Firebase.
+         */
+        async function incrementSearchCounter() {
+            if (!counterRef) return; // Guard if Firebase init fails
+
+            currentSearchCount++;
+            // Update UI immediately for responsiveness
+            counterSpan.textContent = `Total Searches: ${currentSearchCount.toLocaleString()}`;
+            
+            // Asynchronously update Firebase
+            try {
+                // Use setDoc to create or overwrite
+                await setDoc(counterRef, { count: currentSearchCount });
+            } catch (error) {
+                console.error("Error updating counter:", error);
+                // If this fails, the local count will be out of sync
+                // On next page load, it will correct itself.
+            }
+        }
+
         // Function to check the name, called by the button
         function checkName() {
+            // Increment the counter on every search click
+            incrementSearchCounter();
+
             const input = document.getElementById('nameInput').value;
             const resultDiv = document.getElementById('result');
             
@@ -183,10 +234,25 @@
             if (nameMap.has(nameToFind)) {
                 const count = nameMap.get(nameToFind);
                 const timesText = count === 1 ? 'time' : 'times';
-                resultDiv.innerHTML = `Yes, ${count} ${timesText}.`;
-                // Apply large, bold, green styles
-                resultDiv.className = 'mt-8 text-center min-h-[50px] flex items-center justify-center text-4xl font-bold text-green-600';
+                
+                // --- NEW: Show image with text overlay ---
+                resultDiv.innerHTML = `
+                    <div class="relative w-full max-w-sm rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/400x200/666666/ffffff?text=bill.jpg" 
+                             alt="Placeholder Image" 
+                             onerror="this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found'"
+                             class="w-full h-auto object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center p-4 bg-black bg-opacity-40">
+                            <span class="text-4xl font-bold text-white text-center drop-shadow-md">
+                                Yes, ${count} ${timesText}.
+                            </span>
+                        </div>
+                    </div>
+                `;
+                // Reset class to remove old text styles
+                resultDiv.className = 'mt-8 text-center min-h-[50px] flex items-center justify-center';
             } else {
+                // --- Show "No." as before ---
                 resultDiv.innerHTML = "No.";
                 // Apply smaller, black styles
                 resultDiv.className = 'mt-8 text-center min-h-[50px] flex items-center justify-center text-xl font-medium text-black';
@@ -195,29 +261,6 @@
         // Attach checkName to the window object so onclick can find it
         window.checkName = checkName;
 
-
-        /**
-         * Initializes Firebase, authenticates, and updates the page counter.
-         */
-        async function updatePageCounter(db) {
-            const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-            const counterRef = doc(db, `/artifacts/${appId}/public/data/analytics/pageCounter`);
-            const counterSpan = document.getElementById('counter');
-
-            try {
-                const docSnap = await getDoc(counterRef);
-                let newCount = 1;
-                if (docSnap.exists()) {
-                    newCount = (docSnap.data().count || 0) + 1;
-                }
-                // Use setDoc to create or overwrite
-                await setDoc(counterRef, { count: newCount });
-                counterSpan.textContent = `Page Views: ${newCount.toLocaleString()}`;
-            } catch (error) {
-                console.error("Error updating counter:", error);
-                counterSpan.textContent = "Page Views: 1"; // Fallback
-            }
-        }
 
         // Populate the map by fetching the CSV when the page loads
         window.onload = async function() {
@@ -228,12 +271,12 @@
             // Disable search button initially
             searchButton.disabled = true;
 
-            // --- Initialize Firebase and Update Counter ---
+            // --- Initialize Firebase and Load Counter ---
             try {
                 // Use provided Firebase config
                 const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
                 const app = initializeApp(firebaseConfig);
-                const db = getFirestore(app);
+                db = getFirestore(app); // Assign to global 'db'
                 const auth = getAuth(app);
                 setLogLevel('Debug'); // Enable Firestore debug logging
 
@@ -244,17 +287,20 @@
                     await signInAnonymously(auth);
                 }
                 
-                // Update counter after auth
-                await updatePageCounter(db);
+                // Define the counter reference
+                counterRef = doc(db, `/artifacts/${appId}/public/data/analytics/pageCounter`);
+                
+                // Load the initial count from Firebase
+                await loadInitialCounter();
 
             } catch (error) {
-                console.error("Firebase init or counter error:", error);
-                const counterSpan = document.getElementById('counter');
+                console.error("Firebase init or counter load error:", error);
                 counterSpan.textContent = "Counter unavailable";
             }
             
             // --- Fetch and Parse CSV ---
-            // This runs in parallel with Firebase init
+            // Using a placeholder for the CSV path. 
+            // Replace 'names_found_in_001.csv' if the file is hosted elsewhere.
             fetch('names_found_in_001.csv')
                 .then(response => {
                     if (!response.ok) {
@@ -272,7 +318,10 @@
                     // Add 'Enter' key listener to the input field
                     nameInput.addEventListener('keydown', function(event) {
                         if (event.key === 'Enter') {
-                            checkName();
+                            // Only search if the button is not disabled
+                            if (!searchButton.disabled) {
+                                checkName();
+                            }
                         }
                     });
                 })
