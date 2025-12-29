@@ -819,6 +819,23 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .header {
+                padding: 12px 16px;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .header-controls {
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .header-controls .btn {
+                padding: 8px 12px;
+                font-size: 0.75rem;
+            }
+
             .module-body {
                 padding: 24px 20px;
                 justify-content: center;
@@ -826,6 +843,58 @@
 
             .mixer-section {
                 grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                display: none;
+            }
+
+            .header-controls .btn {
+                padding: 8px 10px;
+                font-size: 0.6875rem;
+            }
+
+            /* Icon-only buttons on very small screens */
+            .header-controls .btn span:not(.dice-icon):not(.reset-icon) {
+                display: none;
+            }
+
+            .rack {
+                padding: 0 12px;
+            }
+
+            .module-header {
+                padding: 12px 24px;
+            }
+
+            .module-body {
+                padding: 20px 16px;
+                gap: 16px;
+            }
+
+            .knob-group {
+                min-width: 80px;
+            }
+
+            .knob {
+                width: 56px;
+                height: 56px;
+            }
+
+            .knob-inner {
+                width: 42px;
+                height: 42px;
+            }
+
+            .mixer-section {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 16px 12px;
+            }
+
+            .fader-track {
+                height: 100px;
             }
         }
     </style>
