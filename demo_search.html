@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Center Search (Demo)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .search-box {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        #query {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        select {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button#searchBtn {
+            padding: 12px 24px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button#helpBtn {
+            padding: 12px 18px;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .result-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .result-city {
+            font-weight: bold;
+            color: #444;
+        }
+
+        .result-date {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .result-title a {
+            font-size: 1.2em;
+            color: #0066cc;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .result-title a:hover {
+            text-decoration: underline;
+        }
+
+        .result-meta {
+            font-size: 0.8em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .snippet {
+            font-family: monospace;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .highlight {
+            background-color: #fffacd;
+            font-weight: bold;
+            padding: 2px 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .badge-recent {
+            background: #e6f4ea;
+            color: #1e8e3e;
+        }
+
+        .badge-archive {
+            background: #fce8e6;
+            color: #c5221f;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: black;
+        }
+
+        .help-table td {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* View Page Styles */
+        .view-page {
+            display: none;
+        }
+
+        .header {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .meta {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            font-family: monospace;
+            white-space: pre-wrap;
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .actions {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            background: #0052a3;
+        }
+
+        .back {
+            text-decoration: none;
+            color: #666;
+            display: inline-block;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="searchContainer">
+        <h1>Agenda Center Search (Demo)</h1>
+        <div class="search-box">
+            <input type="text" id="query" placeholder="Search agendas... (Type 'globe')"
+                onkeypress="if(event.key === 'Enter') performSearch()" autofocus>
+
+            <select id="search_type">
+                <option value="content">Content</option>
+                <option value="filename">Filename</option>
+                <option value="city">City</option>
+                <option value="all">All Fields</option>
+            </select>
+
+            <button id="searchBtn" onclick="performSearch()">Search</button>
+            <button id="helpBtn" title="Search Help">?</button>
+        </div>
+        <div id="results"></div>
+    </div>
+
+    <!-- Help Modal -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Search Help</h2>
+            <p>Use these operators to refine your search:</p>
+            <table class="help-table" width="100%">
+                <tr>
+                    <td><strong>city:Name</strong></td>
+                    <td>Filter by city (e.g., <code>city:Boston</code>)</td>
+                </tr>
+                <tr>
+                    <td><strong>county:Name</strong></td>
+                    <td>Filter by county (e.g., <code>county:Essex</code>)</td>
+                </tr>
+                <tr>
+                    <td><strong>[List]</strong></td>
+                    <td>Multiple values (e.g., <code>city:[Boston, Danvers]</code>)</td>
+                </tr>
+                <tr>
+                    <td><strong>"phrase"</strong></td>
+                    <td>(Standard text search)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- MOCKED VIEW PAGES -->
+    <div class="container view-page" id="view-147">
+        <a onclick="showSearch()" class="back">← Back to Search</a>
+        <div class="header">
+            <h1>Medfield_agenda.pdf</h1>
+            <div class="meta">
+                <strong>City:</strong> Medfield |
+                <strong>Date:</strong> 2026-01-06 |
+                <strong>Source:</strong> title |
+                <strong>Classification:</strong> recent
+            </div>
+            <div class="actions">
+                <a href="https://www.town.medfield.net/AgendaCenter/ViewFile/Agenda/_01062026-4723" class="btn"
+                    target="_blank">Download Original PDF</a>
+                <a href="https://www.town.medfield.net/AgendaCenter/ViewFile/Agenda/_01062026-4723"
+                    class="btn btn-secondary" target="_blank">All Meeting Materials</a>
+            </div>
+        </div>
+        <div class="content">TOWN OF MEDFIELD MEETING NOTICE
+
+            Posted in accordance with the provisions of M.G.L. c. 30A, §§18-25
+
+            This meeting will be held in a hybrid format. The Select Board will attend in person and members of the
+            public may attend in person. In addition, members of the public who wish to participate via Zoom may do so
+            by joining by one of the following options:
+
+            To join online, use this link:
+            https://medfield-net.zoom.us/j/88530366678?pwd=clhLODVKcnlDN3dFTDJWQjBCVzJ5Zz09 a. Webinar ID: 885 3036 6678
+            b. Password: 637025
+
+            To join through a conference call, dial: 929-436-2866 or 312-626-6799 or 253-215-8782 or 301-715-8592 or
+            346-248-7799 or 669-900-6833 a. Enter the Webinar ID: 885 3036 6678 b. Enter the password: 637025
+
+            The packet with meeting materials for this meeting is available at this link:
+            https://www.town.medfield.net/DocumentCenter/View/9350/Select-Board-Meeting-Packet_01062026
+
+            Board or Committee: Select Board
+
+            PLACE OF MEETING: Chenery Hall, Medfield Town House Remote participation available through Zoom
+
+            DAY, DATE, AND TIME: Tuesday, January 6, 2026 at 6:00 pm
+            Revised Agenda (Subject to Change)
+
+            Call to Order Disclosure of video recording We want to take a moment of appreciation for our Troops serving
+            around the globe in defense of our country.
+            Appointments
+
+            Marion Bonoldi, Town Clerk to request: a. A vote to Opt Out Vote By Mail for the municipal election on March
+            30, 2026 and a vote to appoint election workers for that election. b. An update on the 375th anniversary
+            parade committee and a vote to dissolve the committee.
+
+            Dan Moore, Project Manager Trinity, to request: A vote to accept the bid from Weston & Sampson for the
+            owner’s representative position requested for the Phase 01 infrastructure portion of the Medfield State
+            Hospital project at a value of $104,000 (contract to be signed at later meeting). a. Select Board Chair to
+            provide MSH funding update.
+
+            Katie Walper, Parks and Recreation Director to provide: An update on Parks and Recreation building
+            discussions.
+
+            Discussion Items (Potential Votes)
+
+            Town Meeting 2026
+
+            Town Administrator to present FY27 budget outlook. Town Administrator will submit budget requests to Warrant
+            Committee on January 13 on behalf of the Select Board.
+
+            Vote to add override placeholder on the Town Meeting 2026 Warrant.
+
+            Review current list of 2026 Town Meeting Warrant Articles - Warrant will close on Jan 13.
+
+            Action Items
+
+            Vote to accept the bid from Weston & Sampson for the owner’s representative position requested for the Phase
+            01 infrastructure portion of the Medfield State Hospital project at a value of $104,000 (contract to be
+            signed at later meeting).
+
+            Vote to authorize the Town Administrator to accept and sign the contract in order to receive the Medfield
+            Recycling Dividends Program funds under the Sustainable Materials Recovery Program. The Town of Medfield has
+            earned 10 points and will receive $6,000.
+
+            Vote to sign the standard grant agreement contract with the Commonwealth of Massachusetts for the
+            HousingWorks Infrastructure Program for $1,000,000 to be used for roadway and utility infrastructure
+            improvements to support the Medfield State Hospital Redevelopment project.
+
+            Vote to sign the contract with Maher Services, Inc. for cleaning well screen, pump removal, dissembling,
+            inspecting, detailed reporting of condition and reinstalling pump at Well 6 for $19,880.
+
+            Vote to accept the bid and sign the contract with Beta for the reconstruction of West/Route 27.
+
+            Vote to approve remaining common victualler license and amusement license for calendar year 2026: a.
+            Amusement License for Mother Anna’s b. Common Victualler License for Royal Pizza
+
+            Vote to sign the proclamation for Michael Roth for earning the rank of Eagle Scout.
+
+            Consent Agenda
+
+            Approve the Soles of Medfield 5k and 10k race request on April 11th, 2026: a. 5k route:
+            https://www.plotaroute.com/route/3183748 b. 10k route: https://www.plotaroute.com/route/3183745
+
+            Gifts
+
+            Accept $2,500.00 donation to Medfield Outreach from Smith Foundation (check is written from Medfield
+            Foundation).
+
+            Citizen Comment
+
+            Meeting Minutes
+
+            March 4, 2025
+
+            March 18, 2025
+
+            Town Administrator Updates
+
+            Next Meeting Dates
+
+            January 20
+
+            February 3
+
+            February 17
+
+            March 3
+
+            March 17
+
+            March 30 - Annual Town Election
+
+            April 7
+
+            April 21
+
+            May 4 - Annual Town Meeting
+
+            May 12
+
+            May 19
+
+            June 2
+
+            June 16
+
+            July 14
+
+            August 18
+
+            Select Board Member Reports
+
+            Actions Taken on Bills and Warrants for Payments
+
+            Informational
+
+            Xfinity TV Notice
+
+            Verizon Fios TV Programming Notice
+        </div>
+    </div>
+
+    <div class="container view-page" id="view-157">
+        <a onclick="showSearch()" class="back">← Back to Search</a>
+        <div class="header">
+            <h1>Norwell_aging_in_norwell_report.pdf</h1>
+            <div class="meta">
+                <strong>City:</strong> Norwell |
+                <strong>Date:</strong> 2023-05-11 |
+                <strong>Source:</strong> text |
+                <strong>Classification:</strong> archive
+            </div>
+            <div class="actions">
+                <a href="https://cms2.revize.com/revize/norwell/Documents/Departments/Council%20On%20Aging/aging_in_norwell_report.pdf"
+                    class="btn" target="_blank">Download Original PDF</a>
+                <a href="https://cms2.revize.com/revize/norwell/Calendar.php" class="btn btn-secondary"
+                    target="_blank">All Meeting Materials</a>
+            </div>
+        </div>
+        <div class="content">
+
+
+            Aging in Norwell:
+            A Community Needs Assessment
+
+
+
+
+            May 2023
+
+
+            Commissioned by The Town of Norwell &
+            The Norwell Council on Aging
+
+
+            Center for Social and Demographic Research on Aging
+            Gerontology Institute
+            John W. McCormack Graduate School of Policy & Global Studies
+            University of Massachusetts Boston
+
+
+            i Contributors and Acknowledgements
+
+            This report was produced by the Center for Social and Demographic Research on Aging
+            (CSDRA), a research unit within the Gerontology Institute at UMass Boston’s McCormack
+            School. The CSDRA provides resources and research expertise to communities, non-
+            governmental organizations, and other agencies through the Commonwealth.
+
+            Caitlin Coyle, PhD and Beth Rouleau, MA are primarily responsible for the contents of this
+            report. Others contributing to the project include doctoral candidate Ceara Somerville and
+            undergraduate students Daniel Caron, Himani Pachigar, Roisin O'Keeffe, and Sabrin Zahid.
+            We offer our appreciation to Susan Curtin, Director of the Norwell Council on Aging, and staff
+            members Dee Dee Rogers, Debbie Blackington for their leadership and guidance. As well, we
+            appreciate the Norwell COA Board Members: Ralph Rivkind, Maryellen Arapoff, Beata
+            Takahashi, John Mahoney (Chair), Allison Hughan, Alexis Levitt, and Kate Vaughn. We
+            acknowledge with gratitude the Town of Norwell, which provided funding for the project. As
+            well we are deeply grateful to the Norwell leaders and the many residents who shared their
+            thoughts as part of the data collection.
+
+
+            For more information, contact:
+            The Center for Social and Demographic Research on Aging
+            Gerontology Institute
+            University of Massachusetts Boston
+            CSDRA@umb.edu | 617.287.7413
+
+            Recommended Citation
+            Coyle, Caitlin and Beth Rouleau, “Aging in Norwell” (March 2023). Center for Social and
+            Demographic Research on Aging Publications.
+
+
+
+            ii
+            Dear Norwell Residents and Community Members,
+
+            As we look at the population trends across the Commonwealth and in Norwell, it’s clear that
+            communities need to be positioned to address the unique needs of an ever-changing older
+            adult population. I am pleased to present the report Aging in Norwell: A Community Needs
+            Assessment , researched and written by the expert team at the University of Massachusetts
+            Boston Gerontology Institute . This report is the result of many months of coordination and
+            planning both within the community and with outside partners. While this initiative may be
+            new to some, over the last year, many of Norwell’s residents, community and municipal
+            leaders shared their time to participate in various discussion groups and surveys. I’m grateful
+            to everyone who shared their insights, opinions, and ideas during this process.
+
+            The purpose of the project was to assess the needs and preferences of Norwell’s adult
+            residents. While we know there are challenges in supporting older residents as they age in
+            our community, there are also great opportunities for innovation. The study will aid the
+            Council on Aging in setting priorities, developing both short and long term plans, and
+            implementing specific strategies related to services, programming, outreach, space, staffing,
+            and budgeting. We also hope that the information will influence other municipal
+            departments, Town and community leaders with future planning, to improve how older
+            residents live and thrive in Norwell.
+
+            On behalf of the Council on Aging, thank you to everyone who was involved in this
+            assessment and shared their insight on how to make the Town of Norwell, including the
+            Council on Aging’s Senior Center, a strong and vibrant place to be. We are grateful to the
+            Gerontology Institute, specifically Caitlin Coyle, PhD, and her team—from coordinators and
+            graduate research assistants to undergraduate interns— for doing an outstanding job on this
+            project. Thank you to the Massachusetts Executive Office of Elder Affairs for providing
+            financial support to conduct this assessment. And finally, I thank to the Council on Aging
+            Board and the community at large for your ongoing support, vision, and engagement. I hope
+            you enjoy reading this report and are inspired to engage in the community as we truly make
+            Norwell a place for all ages!
+
+            Sincerely,
+            Susan Curtin
+            Susan Curtin, MS, Gerontologist, Director, Norwell Council on Aging
+            Norwell Council on Aging
+            P.O. Box 699, 293 Pine St., Norwell MA 02061
+            781-659-7878 (P) 781-659-0215 (F)
+
+
+
+            iii Table of Contents
+            Contributors and Acknowledgements
+            ............................................................................... i
+            Executive Summary
+            ............................................................................................................
+            1
+            Introduction
+            ......................................................................................................................
+            11
+            The Norwell Council on Aging and Senior Center
+            ................................................................... 11
+            Methods
+            .............................................................................................................................
+            14
+            Demographic Profile
+            .................................................................................................................
+            14
+            Key Informant Interviews
+            ........................................................................................................
+            14
+            Focus Groups
+            .............................................................................................................................
+            15
+            Community Survey
+            ....................................................................................................................
+            15
+            Data Analysis
+            .............................................................................................................................
+            15
+            Results
+            ...............................................................................................................................
+            16
+            Insights from Key Informants
+            .................................................................................................. 25
+            Results from Focus Groups
+            .......................................................................................................
+            28
+            Results from the Community Survey
+            ....................................................................................... 33
+            Conclusion
+            .........................................................................................................................
+            68
+            Appendix A: Community Survey Results
+            ........................................................................ 69
+
+
+
+
+            1 Executive Summary
+
+            This report describes research undertaken by the Center for Social & Demographic Research
+            on Aging within the Gerontology Institute at the University of Massachusetts Boston, on
+            behalf of the Norwell Council on Aging. The goals of this project were to investigate the needs,
+            interests, preferences, and opinions of Norwell’s residents age 50 or older. The contents of
+            this report are meant to inform the Town of Norwell, the Norwell Council on Aging and
+            Senior Center, and organizations that work with and on behalf of older residents of Norwell
+            for the purposes of planning and coordination of services. The report will also help to build
+            awareness about issues facing Norwell among community members at large.
+
+            Already, estimates suggest that 35% of Norwell’s population is age 50 or older and this trend
+            stands to continue. This results from a number of factors—that adults who have lived and
+            made Norwell home want to continue living in the community with which they are familiar
+            and near to their family and friends and perhaps residents who are moving to Norwell to be
+            closer to adult children or grandchildren. Another contributing factor includes the out-
+            migration of young people seeking employment, education, or lower costs of living
+            elsewhere. Regardless of the reason, this central overarching observation—that the older
+            population of Norwell is already large and will continue to expand—makes clear the
+            importance of considering how well features of the Town, the services and amenities
+            available, and virtually every aspect of the community align with the age demographic
+            moving forward.
+
+            In preparing for this demographic shift, the Norwell Council on Aging and the Center for
+            Social and Demographic Research on Aging at the University of Massachusetts Boston
+            partnered to conduct a study to investigate the needs, interests, preferences, and opinions of
+            the Town’s residents age 50 and older. As part of this assessment, we conducted interviews
+            and focus groups to hear from Norwell leadership, key stakeholders in the community, and
+            a diverse group of residents. In addition, a survey was developed and administered to year-
+            round Norwell residents age 50 and older. A total of 1,081 questionnaires were returned,
+            reflecting a strong return rate of 25%. Data from the U.S. Census Bureau and other sources
+            were examined in support of the project aims.
+
+            A broad range of findings are reported in this document, highlighting the many positive
+            features of Norwell as well as concerns expressed by older residents. The COA plays an
+            important leadership role in the community, serving as a resource to other Town offices
+            and organizations working in the community, and collaborating on initiatives broadly
+            beneficial to residents. The 2022 Needs Assessment process coincided with the Norwell
+            Senior Center’s 40th birthday. Town leaders and residents gathered to celebrate the COA’s
+
+
+            2 40-year impact on the community and look forward to the future. The COA also launched
+            their Dementia Friendly initiative in 2022, in response to planning needs related to the
+            increasing prevalence of dementia, and other health challenges associated with aging. This
+            needs assessment will inform the COA, and collaborative partners, in planning that builds
+            upon the success of past efforts and continues to benefit the community of Norwell.
+
+            While many of our findings, and the recommendations that follow, intersect with the scope
+            of responsibility of the Norwell Council on Aging, it is understood that responding to many
+            needs and concerns expressed in the community will require the involvement of other
+            municipal offices or community stakeholders, and some will require substantial
+            collaborative effort.
+
+            We summarize key findings and make the following recommendations to the Norwell
+            Council on Aging:
+             Residents view the Norwell COA as a vital resource to the community, both now
+            and in the future. Continued support and expanded space could grow its impact in
+            the community.
+            o 75% of survey respondents affirmed that the Norwell COA plays a role in the lives of
+            themselves, their loved ones, or neighbors.
+            o Among respondents that wrote in their thoughts on the Norwell COA, about one-
+            third mentioned that the Norwell COA is doing great things; and is only limited by is
+            physical space.
+             One respondent wrote, “ the current COA does a great job with what they have to
+            work with but the facility is inadequate. The physical space does not encourage active
+            participation or desire to even participate among town residents ."
+            o Many survey respondents wrote in about the fact that they do not currently
+            participate at the Norwell COA; but they plan to in the future and are comforted to
+            know about its operations.
+            o One respondent illustrated this sentiment by writing, “… when I am retired…I
+            will use their services. But I am so glad to have them in Town .”
+            o The desire, among Town staff and residents, to address capacity and scheduling
+            limitations at the Senior Center is reflected in collective planning to create a
+            Community Center in Norwell.
+            o More than half (55%) of survey respondents would support a
+            multigenerational community center where space and programming are
+            integrated for residents of all ages.
+
+
+
+
+
+
+            3 Recommendations:
+            o Plan for escalating demand for Senior Center programs and services –including the
+            expansion of both staffing and space.
+            o Advocate for more dedicated space for older adult programming. Specifically, space
+            to accommodate lifelong learning courses and exercise programs is needed to meet
+            the current and future preferences of Norwell residents.
+            o As the space for additional programming becomes available, expand the
+            programming staff to include an additional “activities coordinator” position that
+            assists with scheduling and planning the programming aspects of the Senior Center.
+             Demand for community-based social programs and access to information and
+            referral services is expected to escalate in coming years.
+            o Estimates from the U.S. Census Bureau show that in 2021, there were 2,073 residents
+            age 60 or older living in Norwell—comprising 19% of the total population.
+            Projections suggest that by 2030, nearly 33% of Norwell will be age 60 or older. Local
+            census numbers from 2022 indicate that 2,792 of Norwell residents (25%) is age 60
+            or older—suggesting that the community is on its way towards this increasing older
+            adult population
+            o Not only is the size of the older population growing in Norwell, but the complexity of
+            their needs is increasing. In addition to basic needs (food, housing, transportation),
+            participants identified lifelong learning, access to arts and culture, and maintaining
+            physical health as key elements of community living.
+             Among survey respondents in their 50s, 60s, and 70s, the most important
+            service offered by the Norwell COA is professional services like health
+            insurance counseling, access to a notary etc. For those in their 80s, the most
+            important program currently offered are the meal programs
+            (e.g., lunches, grab ‘n’ go meals).
+             In-home support services and information and referral services were named
+            as priorities for expanding services offered by the Norwell COA by nearly half
+            of respondents who currently participate at the Norwell COA (48%; 49%
+            respectively) and were also the top two priorities for those who do not use the
+            Norwell COA (47%; 42% respectively).
+
+            Recommendations:
+            o Currently, the Norwell Senior Center provides the only public social services in the
+            Town. As needs for social services are expected to increase in quantity and
+            complexity, address the need for additional resources to provide mental and
+            behavioral health support for current and future older residents and their families.
+
+
+            4  Consider monthly discussion panels with the Community Services coordinator
+            and guest speakers. Explore a partnership with a local university to enlist
+            social work interns who can support social service staff
+             Having more outreach staff dedicated to community outreach and education
+            could widen awareness of the Senior Center’s offerings. Consider an
+            informational insert in a utility bill to inform residents of how to access
+            programs such as the confidential application process to learn about the
+            Supplemental Nutrition Assistance Program (SNAP).
+             The perception of the Norwell COA is that it is “needs-based”—which deters
+            participation.
+            o 65% of survey respondents report never participating at the Norwell COA. Among
+            those 35% who do, most of them (63%) report only participating a few times a year.
+            o For those in their 50s and 60s, most respondents report that the number one reason
+            why they do NOT participate at the Norwell COA is because they are working or
+            because they are not old enough. For those in their 70s and 80s, the number one
+            reason was “other”, and they wrote in a reason in their own words.
+             For those who wrote in a response, the most common responses centered on
+            “not needing” to visit the Senior Center or “not being interested” in what goes
+            on at the Senior Center, suggesting that communicating the purpose of the
+            Senior Center and defining its target audience is a possible future step that
+            could draw in a wider range of residents.
+            o Similarly, among respondents in their 50s and 60s, having more knowledge about
+            what is offered would increase the likelihood of participation. For those in their 70s
+            and 80s, having programs that were better suited to their interests would make it
+            more likely for them to participate at the Norwell COA.
+            o Respondents used terms like “stigma” and “negative context” “think of the COA as an
+            organization for the very needy” to describe what prevents them and their peers from
+            participating. These sentiments suggest that a “reinvention” of the Norwell COA is
+            needed to continue attracting residents as they age.
+
+            Recommendations:
+            o Consider changing the name to be more inclusive. Creating an image that reframes
+            aging as a positive and active experience may empower residents to participate.
+             Consider soliciting ideas for a new name by facilitating a Town-wide contest.
+            o Form an ambassadors program where informed residents can promote the COA to
+            their networks and clarify the offerings of the Norwell COA.
+
+
+            5 o Continue to grow partnerships with the library, local businesses, and schools to help
+            meet the needs for additional programming opportunities targeted for older adults
+            and offer intergenerational opportunities.
+             Consider occupying a table or two at a local coffee shop or the library and
+            offer “technology drop-in” help for residents looking to learn more about
+            their devices or how to hone their technology skills. Consider recruiting local
+            residents with technology backgrounds to serve as the coaches.
+
+             Continued input from residents is needed to ensure that programming aligns
+            with interests of the community. As well, outreach and education about the broad
+            range of available programs is an ongoing effort.
+            o For those in their 50s, 60s, and 80s the most important program offered is fitness
+            activities and for those in their 70s, educational opportunities were most important.
+            The Senior Center currently offers a variety of on-site classes and virtual learning via
+            Zoom. Norwell’s Senior Center was the first in Massachusetts to partner with the
+            Senior Learning Network in 2013.
+            o When asked about future desires, respondents who currently use the Norwell COA
+            would like to see more day trips and meal programs—particularly the grab ‘n’ go
+            meals. For those who do not currently use the Norwell COA, indoor and outdoor
+            exercise were most commonly reported, followed by a desire for performances and
+            visual arts programming.
+            o Given the opportunity to write in their own ideas, respondents focused on programs
+            that enabled them to develop or hone a skill (e.g., woodworking, gardening, cooking,
+            cheese making, or business) and holistic wellness and mental health promotional
+            programs (e.g., mindfulness, meditation, Reiki, massage).
+
+            Recommendations:
+            o Advocate for new space that includes ample space for indoor exercise classes that can
+            accommodate large groups and offers access to exercise equipment (e.g., weights,
+            stationary bikes etc.). Also consider a walking track that is available to all residents.
+            o Consider a community wide contest that provides an opportunity for residents to
+            share programming ideas that reflect their interests and talents.
+            o Extend the satellite model to the business community through a partnership with
+            the local Chamber of Commerce to increase socialization, while supporting local
+            business infrastructure.
+             Explore opportunities with local restaurants and performance theaters such
+            as The Company Theater or the Duxbury Performing Arts Center to create
+            dine and engage events that include lectures, entertainment, and wellness
+            programs.
+
+
+            6 o Build upon existing and successful efforts to expand outdoor programming through
+            the creation of an “outdoor explorers” initiative.
+             Construct, or incorporate at an existing playground, intergenerational fitness
+            and play features with accessible gathering spaces for residents of all ages
+            and abilities.
+             Consider a walking trail or labyrinth; partner with the Recreation
+            department or local businesses to offer outdoor yoga and meditation
+            programs; kayaking and hiking.
+            o Coordinate with residents to identify topics and skills they can share with others and
+            pilot-test a lifelong learning program.
+             Perhaps COA Board members could facilitate special interest groups to
+            develop programs.
+             Consider a series, or otherwise ongoing program, with the Norwell Public
+            Library that would function like a course for residents.
+            o Continue to build upon successful intergenerational engagement with the schools.
+            Consider a “Reverse Mentorship” or a “Sages and Seekers”1 program. Create and
+            publicize shared theater, educational, and recreation events among residents.
+            Consider an intergenerational book club, debate team, or choir group that is led by
+            adult mentors.
+
+            Rising property taxes and related housing costs is causing financial insecurity for
+            older residents—causing many to leave the community.
+            o Cost of living, particularly rising property taxes, is named as a top concern among
+            respondents as they think about being able to stay in Norwell as they age.
+             One respondent illustrated this by writing that, “ I can’t afford to live here in
+            retirement …”
+            o One out of five residents age 65 or older is living on less than $50,000/year. This is
+            compared to just 6% of those age 45-64.
+
+            Recommendations:
+            o Continue to promote awareness of existing property tax relief programs including:
+            the local senior circuit breaker abatement that was adopted at Town Meeting, 2022
+            and tax work off program. There are between 30 and 45 people enrolled in the
+            property tax work off program each year.
+             Document the number of residents who are “turned away” from existing
+            programs due to eligibility requirements or other reasons to measure unmet
+            needs and establish recommendations for expanding eligibility or creating
+            new solutions.
+
+            1 https://sagesandseekers.org
+
+
+            7  Broaden awareness of financial support programs through an informational
+            insert in a utility bill and highlighted section on the Council on Aging website.
+            Create an email that includes a website link for other town departments to
+            share with their distribution lists.
+            o Enlist local builders, landscapers or contractors to support the Council on Aging’s
+            recently launched Norwell Neighbors, a volunteer based home repair resource
+            network.
+            o Explore other cash or discount incentive programs for volunteers.
+             There is a longstanding need to expand and diversify housing options in Norwell.
+            In addition to new development, continued support for modifications to existing
+            homes and properties will contribute to affordable, supportive, and accessible
+            housing inventory.
+            o 46% of respondents do not have a bedroom and a bathroom on the entry level of their
+            current home—an important feature as occupants age and mobility becomes more
+            challenging.
+            o 41% report needing a home repair or modification in the near future to be able to age
+            in place safely. Among them, 11% report not being able to afford such changes.
+
+            Recommendations
+            o Foster development of Accessory Dwelling Units (ADUs), a housing solution that is
+            allowed by right in Norwell since the adoption of zoning changes at Town Meeting
+            2022. Consider a workshop to highlight ADUs as a means to support aging in place
+            and provide an overview of planning considerations. See Housing Assistance
+            Corporation of Cape Cod2 to learn about technical and financial supports that
+            address obstacles to foster the creation of ADUs.
+            o Expand funding opportunities for home modifications and repairs. Consider a
+            fundraising event for Habitat for Humanity to support their critical home repair
+            program. The program provides opportunities for residents in Norwell to apply for
+            funding home modifications and volunteer contractor time.
+            o Continue to host “housing choice” lunch and lecture series with local experts (e.g.,
+            real estate agents, contractors, disability commission members, lawyers, financial
+            professionals) to encourage pro-active thinking about aging in place and inform
+            residents of local creative resources that support housing needs.
+
+
+            2 https://haconcapecod.org/adu
+
+
+
+
+            8  Many Norwell residents need support due to physical or cognitive conditions, and
+            many caregivers need help.
+            o Forty percent of survey respondents stated that they currently, or have in the past
+            two years, provided care or assistance to a person who was disabled or frail. That
+            number is highest among those age 50-59 (52% reporting having provided care) and
+            those in their 60s (44% reporting having provided care).
+            o Among caregivers, 77% in their 50s and 75% in their 60s reported that it is
+            challenging to provide care and complete their daily responsibilities.
+            o Most are caring for persons with mobility challenges (56%), and 34% are caring for
+            someone living with dementia.
+
+            Recommendations:
+            o Look at options to expand supports for caregivers and create new ways of providing
+            information about referral resources available through the COA.
+             Consider hosting a family caregiver “resource fair” as an opportunity to
+            connect the Norwell COA with family caregivers.
+             Consider developing a volunteer respite program, which would require space
+            and staff oversight, to offer residents a few hours of respite.
+             Explore ability to create an adult day program. Secure additional funding,
+            potentially through the MBTA assessment reimbursement, to facilitate the
+            expansion of existing transportation services provided by South Shore
+            Community Action Council, to neighboring area social day programs.
+             Consider launching a Momentia3 initiative among caregivers, individuals with
+            dementia, and volunteers to foster social engagement and learning in a
+            supportive environment.
+             Host an educational series at the library where caregivers can share their
+            experiences during lectures, webinars, and wellness events that offer
+            strategies and tools to support their experience as caregivers. See Elderwise4
+            and Alzheimer’s Association for free online learning and opportunities to
+            explore in person workshops.5
+            o Guided by the COA, continue to conduct community-wide dementia friendly training
+            among Town Staff and residents Dementia training was recently conducted among
+            first responders and the CERT team. The collaborative training experience with COA
+            staff led to the creation of an exceptional needs registry; this tool will allow residents
+            to self-identify with challenges that EMS should be aware of when responding to an
+            emergency.
+
+            3 Seattle’s Dementia-Friendly ‘Momentia’ Movement Grows - ChangingAging
+            4 https://www.elderwise.org/edutools-01
+            5 Alzheimer’s & Dementia Training & Education Center
+
+
+            9 o Similar to dementia friendly training, explore opportunities to establish Mental
+            Health First Aid training. See Dementia Friends,6 a training initiative that raises
+            awareness while expanding capacity to support residents through a train the trainer
+            model.
+            o Leverage Norwell’s S.A.F.E and Senior Safe programs to design intergenerational
+            events which build awareness of safety challenges that affect residents of all ages,
+            such as cyber security and fire safety. The programs bring trained firefighter
+            educators and residents together to discuss fire and life safety lesson s.
+            o Build volunteer support through a multigenerational approach7 or an informal
+            arrangement8 for gardening programs, including dementia friendly, through the
+            existing partnership with Donovan Farms. Off season, conduct flower arrangement
+            or wreath making classes. Consider obtaining donations from local event venues or
+            funeral homes that may have excess flowers.
+            o Promote musical engagement. Leverage existing partnership with South Shore
+            Conservatory to incorporate Creative Arts Therapies (CAT) such as Music Therapy,
+            Dance Therapy, and accessible yoga for all ages and levels of ability. Potentially
+            feature music therapy during a future memory café program that will be conducted
+            with grant funding provided by South Shore Elder Services.
+
+             Given its rural nature, the risk of social isolation is high in Norwell.
+            o There are features of life in Norwell that can make it easy to lose touch or self-
+            isolate—large property sizes, rural nature, lack of transportation and walkability, and
+            periods of bad weather.
+            o As well, some survey respondents report modifying their driving in some ways to
+            maintain safety (26%) and a small share report not driving at all (4%). This includes
+            15% of those respondents age 80 or older.
+            o According to American Community Survey data, 18% of Norwell residents age 65 and
+            older live alone (18%). Among survey respondents, this rate of living alone is highest
+            among those in their 80s (35%).
+            o 14% of survey respondents get together in-person with someone once a month or
+            less.
+
+            Recommendations:
+            o Promote the COA’s telephone reassurance and friendly visitor programs through
+            additional channels in Norwell (such as the Schools and Library) to reach more older
+            residents and caregivers.
+
+            6 https://dementiafriendsusa.org/
+            7https://www.aarp.org/livable-communities/livable-in-action/info-2015/how-to-create-maintain-
+            intergenerational-community-garden.html
+            8https://www.capecodtimes.com/story/lifestyle/2011/08/14/treehouse-community-garden-bring-
+            neighbors/49935281007/
+
+
+            10 o Explore opportunities to launch a Village in Norwell that will support growing needs
+            related to companionship, transportation, and home maintenance supports. See
+            Seaglass Village in Swampscott.9
+            o Engage local faith communities10, restaurants, and nonprofits to host a monthly
+            community dinner to provide a regular opportunity for residents to come together in
+            a social setting.
+            o Work together with the Public Works Department to install new, or dedicate existing,
+            “Chat Benches11” to create public spaces where socializing is encouraged.
+            o For residents with family out of Town, consider creating an “Adopt-a-grandparent12”
+            program in which local residents can meet up with younger families and do things
+            together like celebrate Grandparents Day with a luncheon or bake cookies for the
+            holidays.
+            Consider celebrating National Good Neighbor Day (9/28) or Older Americans Month
+            (May) with a series of “Let’s Talk, Norwell” programs13 in which residents come
+            together to be in conversation with one another that are exhilarating, inspiring, and
+            meaningful.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            9https://www.itemlive.com/2022/02/14/it-takes-a-village-of-seniors-in-
+            swampscott/?fbclid=IwAR1l809JuBG5G4XJD7yDLCIMN23xHUX-R5VogVwspfdVHqKlgXPL4-ZkVxQ
+            10 https://www.saintlukesscituate.com/community-dinner
+            11 https://www.bostonglobe.com/2022/09/17/metro/happy-chat-benches-encourage-strangers-sit-stay-while/
+            12 https://adoptgrandparent.org/
+            13 https://conversationsnewyork.com/
+
+
+            11 Introduction
+            Over the coming years, the population of older adults in Norwell will continue to be a large
+            share of the population as residents contemplate their choice to age in Norwell. Currently,
+            many older adults benefit from programs and services designed to address aging-related
+            needs and prolong independence, offered through the Norwell Council on Aging and the
+            Norwell Senior Center. As a municipal entity, Norwell’s Senior Center is an important and
+            valued resource, operating as the Town’s central point of contact for older residents who
+            seek services to promote healthful and fulfilling lives. Growth of the older adult population
+            therefore has special significance for the Senior Center and increasing demand for its
+            services and programs can be expected moving forward.
+
+            This report presents results of a comprehensive examination of issues relating to aging in
+            Norwell. A need assessment was undertaken to support planning efforts of the Norwell
+            Council on Aging (COA) and the community as a whole. Results presented here focus on the
+            characteristics and needs of Norwell residents who are age 50 and older, considering their
+            needs and preferences both now and in the future. While the primary goal of this report is to
+            support planning on the part of the COA, a secondary goal is to present information that will
+            be useful to other Norwell offices and organizations interacting with older residents.
+
+            The Norwell Council on Aging and Senior Center
+
+            In Massachusetts, Councils on Aging (COAs) are municipally appointed agencies meant to
+            link older residents to needed resources. Virtually every city and town in Massachusetts has
+            a COA, and in most communities, they serve as the only public social service agency. Each
+            COA is expected to establish its own priorities based on local needs and resources. Many
+            COAs are responsible for operating a senior center, a community facility housing senior
+            services and programs, along with the staff and volunteers offering them. The Norwell
+            Council on Aging is tasked with providing information and some direct services to Norwell
+            residents aged 60 and older. The COA has been in existence since 1966 and offers a wide
+            variety of programs and support services. The NCOA’s mission14 is to be a resource to the
+            community and to offer programs and services in a safe, welcoming and open environment
+            that fosters learning, social interaction, volunteerism and to enhance dignity and a
+            connection to the community.
+
+            14 https://www.townofnorwell.net/council-aging
+
+
+            12 In general, when considering the mission of Councils on Aging, observers commonly think of
+            two sets of responsibilities. First, COAs promote well-being among older residents by
+            offering activities that appeal specifically to older adults and that promote personal growth
+            and social engagement. Exercise classes, late-life learning programs, and informational
+            programs are good examples. Second, COAs provide services to older residents and their
+            families that promote physical and emotional wellness. Blood pressure clinics and
+            transportation services are common examples of such services. Many observers are not
+            aware of two additional important responsibilities of COAs. COA staff members link older
+            residents in the community to existing programs for which they may be eligible by providing
+            needed information and referring residents to appropriate programs and services. For
+            example, staff may help residents apply for income support programs or health insurance
+            made available through the state or federal government. Finally, COAs provide leadership
+            within the community around issues faced
+            by older adults, by serving on municipal
+            boards, interacting with other municipal
+            offices, and serving as resources to
+            residents and organizations.
+
+            The COA plays an important leadership
+            role in the community, serving as a
+            resource to other Town offices and
+            organizations working in the community,
+            and collaborating on initiatives broadly
+            beneficial to residents. COA services and
+            programs are funded by municipal
+            appropriation, grant support from the
+            Executive Office of Elder Affairs and other
+            sources including gifts and donations, and
+            nominal fees charged for some activities.
+            The Norwell Council on Aging (NCOA) is a municipal department. It includes seven-member
+            board of town-appointed residents. They advise the Norwell Senior Center as they provide
+            multi-purpose programs, transportation, and outreach to the community. Staff of the Council
+            on Aging includes one full-time Director, one part-time Community Services Coordinator,
+            one full-time Program Coordinator, three part-time drivers and three on-call drivers, three
+            part-time receptionists and 1 part-time custodian. COA staff actively look to partnerships
+            with other Town departments, community organizations, and local businesses to build
+            programming and resources in Norwell. The COA and high school partner each year to host
+            a Senior-to-Senior day in September and also hold an annual book discussion. Together with Norwell
+            Council on
+            AgingLeadership
+            Activities
+            ReferralServices
+
+
+            13 the Recreation and Conservation departments, a walking group was created and nature walk
+            and talk events are held. The COA also co-sponsors events with the library.
+            The Norwell Senior Center operates Monday through Friday from 8:30 a.m. to 4:30 p.m. They
+            offer an on-demand van transportation service that takes residents within Norwell and to
+            surrounding towns to destinations like grocery stores, pharmacies, libraries, and shopping.
+            Transportation to medical appointments is also available by appointment.
+            In addition to dedicated staff, and the COA Board, the Senior Center is supported by the
+            Friends of the Norwell Council on Aging (FNCOA), a 501(c)(3) nonprofit, run by dedicated
+            volunteers. The Senior Center is a better place because of the “Friends” volunteerism and
+            generosity; and their funds subsidize the programs offered by the NCOA and supplement
+            other financial needs of the organization.
+            The Norwell Senior Center celebrated its 40th birthday in 2022 and marked the occasion with
+            a public celebration. The day included a display of old photos and scrapbooks on loan from
+            the Historical Society. Sen. Patrick O’Connor and Rep. David DeCoste presented
+            proclamations recognizing the event. Visitors included members of the COA Board, Friends,
+            Fire and Police personnel, Select Board members, Town Administrator and many residents.
+            During 2022, the Norwell Senior Center continued to be a site for COVID-19 vaccinations and
+            distributed COVID test kits to residents. The COA also launched their Dementia Friendly
+            initiative with a five-part community education series. With support from the Dementia
+            Friends Action team and partnerships with the Alzheimer’s Association, local memory care
+            facilities, and home care providers, additional dementia friendly programming is being
+            developed. As well, the Norwell COA was selected as a case study for an MCOA Small & Rural
+            conference presentation on Understanding the Physical Infrastructure of a Dementia
+            Friendly Community. The presentation highlighted the use of universal design with dementia
+            friendly components to improve built space for those living with dementia. Norwell was
+            recognized for best practices that included the use of contrasting colors and ensuring that
+            surroundings feel home like or familiar. Norwell’s Senior Center will be included in future
+            presentations to architectural groups. Social events, lifelong learning courses, and exercise
+            programs are among the most popular programs that the NCOA offers---despite their
+            physical limitation of accommodating no more than 50 people in the current space.
+             7,027 social service or outreach interactions (remote/in-person) were conducted
+            with seniors and/or their family members connecting them with needed supports
+            and information about aging in the community.
+             6, 676 meals were delivered to residents in their homes. As well, 1,612 meals were
+            distributed via on-site meals at the NCOA or via a “grab and go” option.
+
+
+            14  2,040 round trip rides were provided to medical appointments, hospitals, grocery,
+            and drug stores.
+             Residents participated 1,374 times in a recreational or educational program at the
+            NCOA.
+             Residents participated 1,092 times in fitness activities at the NCOA.
+             Residents under age 60 were helped by the NCOA over 500 times with requests
+            related to information and referral, programming, and transportation.
+            Methods
+            Methods used in compiling this report include analysis of existing data. Demographic
+            material used in this report was drawn from the U.S. Census Bureau (the decennial censuses
+            and the American Community Survey), from projections generated by the Donahue Institute
+            at the University of Massachusetts, and from the Healthy Aging Data Report for Norwell
+            (Massachusetts Healthy Aging Collaborative, n.d.). Additional information about the Norwell
+            COA was retrieved from material drawn from the COA’s 2021 Annual Report as well as
+            original data collected for this study.
+            Demographic Profile
+            As an initial step toward understanding characteristics of the Town of Norwell’s older
+            population through quantitative data, we generated a demographic profile of the Town using
+            data from the decennial U.S. Census and the American Community Survey (ACS)—a large,
+            annual survey conducted by the U.S. Census Bureau. For purposes of this assessment, we
+            primarily used information drawn from the most current 5-year ACS files (2017-2021),
+            along with U.S. Census data for the Town of Norwell to summarize demographic
+            characteristics including growth of the older population, shifts in the age distribution,
+            gender, race and education distributions, householder status, living arrangements,
+            household income, and disability status.
+            Key Informant Interviews
+            In the Fall of 2022, we conducted interviews with seven individuals who currently hold
+            leadership positions in Norwell. We spoke with the Recreation Superintendent, the Chiefs of
+            Police and Fire, the Town Administrator, the Director of Planning and Community
+            Development, a select board member, and the Assistant Town Manager and Finance Director.
+            Interviews focused on the interviewees’ perceptions relating to unmet, as well as foreseeable
+            community needs; and potential solutions that promote aging in place and wellness among
+            residents. All interviews were conducted remotely via telephone or video conference.
+            Interviews ranged from 35-90 minutes.
+
+
+            15 Focus Groups
+            During the Fall of 2022, we conducted three focus groups with residents and stakeholders
+            who were recruited by the Director of the COA, with input from the COA board of directors.
+            Two groups of residents were convened. One group was comprised of “current seniors” in
+            Norwell (n=14). A second group of residents was comprised of “rising seniors” (n=9).
+            Caregivers were represented in both groups. A third focus group was made up of municipal
+            staff and community stakeholders (n=12). This group included representatives from local
+            housing sites, long-term care facilities, Veteran’s services, and local nonprofits. The current
+            seniors and community stakeholder focus groups were held at the NCOA and the focus group
+            of “rising seniors” was held via ZOOM.
+            Community Survey
+            In collaboration with the COA Board members, a community survey was developed for this
+            study and mailed to all residents aged 50 and over (N=4,378). A mailing list was obtained
+            from the Norwell Town Clerk, based on the most current municipal census. Postcards were
+            mailed to participants alerting them that they would be receiving a survey in the coming
+            weeks. Subsequently, printed surveys were mailed to Norwell residents meeting the age
+            requirement, along with a postage-paid return envelope. As well, the survey was made
+            available via the Town’s website. A total of 1,081 responses to the survey were obtained,
+            representing a strong return rate of 25% (see Table 2). Twelve percent (n=130) were
+            returned online, and the rest of the responses were returned by mail.
+
+            Data Analysis
+            Data collected for the resident survey were analyzed using simple descriptive statistics,
+            including frequencies and cross-tabulations, and are reported in full in tables contained in
+            Appendix A and throughout the results section of this report. Some responses elicited
+            through open-ended questions were extracted and cited verbatim within this report (e.g.,
+            “What are your greatest concerns about your ability to continue living in Norwell?"). Notes
+            taken during the study’s qualitative components (e.g., focus groups, key informant
+            interviews) were reviewed by project staff and used to characterize and categorize salient
+            ways in which aging issues are impacting older adults and individuals who work with older
+            adults in Norwell. We used information from all sources of data to develop recommendations
+            reported in the final section of this report.
+
+
+
+            16 Results
+
+            Age Structure and Population Growth
+            According to American Community Survey (ACS) estimates, there were about 11,258
+            residents living in the Town of Norwell in 2021. About 35% of the population (3,818)
+            individuals) were age 50 and older (See Table 1). Residents who were age 50 to 59 (1,745)
+            individuals) made up 16% of the population; residents age 60 to 79 (1,655 individuals)
+            comprised around 15%, and another 418 residents (4%) were age 80 and older.
+            Table 1. Number and percentage distribution of Norwell’s population by age category, 2021
+            Age Category Number Percentage
+            Under age 18 3,305 29%
+            Age 18 to 49 4,135 37%
+            Age 50 to 59 1,745 16%
+            Age 60 to 79 1,655 15%
+            Age 80 and older 418 4%
+            Total 11,258 100%
+            Source: American Community Survey, 2017-2021, Table B01001. Numbers are calculated
+            from 5-year survey estimates.
+            The share of Norwell’s population age 50 and older is slightly smaller than the overall state
+            of Massachusetts ( Figure 1 ). About 38% of the Massachusetts population was in the 50+ age
+            group in 2021, compared to 35% of the Norwell population. The share of Norwell residents
+            age 60 and over is close to 20% less than the state of Massachusetts as a whole and the share
+            of Norwell residents age 80 and over is the same as the estimated amount for the state as a
+            whole. In 2021, Massachusetts residents age 60 and over comprised about 24% of the
+            population, including 4% age 80 and over. In Norwell, about 19% of the population was age
+            60 or older, including 4% who were 80 years or older.
+
+
+            17
+            Source: American Community Survey, 2017-2021, Table B01001. Numbers are calculated
+            from 5-year survey estimates
+
+            As shown in Figure 2 , between 2010 and 2021, it is estimated that the growth of the Norwell
+            population grew by 7%. Estimates from the U.S. Census Bureau show that in 2021, there
+            were 2,073 residents age 60 or older living in Norwell—comprising 19% of the total
+            population. Local census numbers from 2022 indicate that 2,792 of Norwell residents (25%)
+            is age 60 or older. Projections suggest that by 2030, nearly 33% of Norwell will be age 60 or
+            older, suggesting that the community is on its way towards this increasing older adult
+            population.
+            14%
+            16%20%
+            15%4%
+            4%Massachusetts
+            NorwellFigure 1. Age Distribution in Norwell and Massachusetts
+            Age 50 to 59 Age 60 to 79 Age 80+
+
+
+            18
+            Source: 2010 data from U.S. Census, 2021 data from American Community Survey, 2017-
+            2021`, Table B25007, 2022 data from the Norwell Town Census. Projections to 2030 are
+            calculated by the UMass Donahue Institute.
+
+            Socio-Demographic Characteristics of Norwell’s Older Population
+            Norwell is less diverse than the state with respect to race. For all ages combined, about 93%
+            of Norwell residents report their race as White non-Hispanic, compared to 71% in
+            Massachusetts ( ACS, 2017-2021, Table B01001 ). Among older adults, Norwell is less diverse.
+            The majority of older residents (96%) report White race and ethnicity.
+            The remaining percentage of the population age 65 and older reported 2 or more races (2%),
+            Hispanic or Latino race/ethnicity 2%, Asian race/ethnicity (1%), and less than (<1%) report Black or
+                Hawaiian/Pacific Islander race/ ethnicity. Additionally, almost 3% of older Norwell residents speak a
+                language other than English at home (ACS, 2017-2021, Table B16004 ). Those who speak another language
+                other than English at home most commonly speak an Indo-European language (2%) and (<1%) report speaking
+                Spanish or an Asian or Pacific language at home. American Community Survey estimates on education
+                suggest that Norwell residents are well educated on average. About 42% of persons 65 and older have
+                either a bachelor’s degree 6,4677,4406,7916,3311,6651,745 1,664 1,3311,8661,6552,258 2,722508 418
+                5341,064 0%10%20%30%40%50%60%70%80%90%100% 2010 2021 2022 2030Figure 2 . Age distribution in Norwell
+                2010-2022 and projections to 2030 Under Age 50 Age 50-59 Age 60-79 Age 80+ 19 (27%) or a
+                graduate/professional (15%); ACS, 2017-2021, Table B15001 ). This educational profile contributes to the
+                vitality and character of the community, which depends on older adults who value opportunities to be
+                involved through volunteer and civic engagement activities, as well as late-life learning opportunities—
+                activities that are often present in highly educated communities. Similar to older adults living in
+                communities throughout the U.S., a large proportion of Norwell residents aged 65 and over remain in the
+                workforce. More than 28% of adults age 64 to 74 are participating in the labor force. Of those age 75
+                and older, nearly 9% remain in the workforce ( ACS, 2017–2021, Table S2301). Nearly 18% of residents age
+                65 and older report veteran status ( ACS, 2017–2021, Table B21001). As a result, many of the Town’s
+                older residents may be eligible to receive some benefits and program services based on their military
+                service or that of their spouses. Senior Center staff work closely with the Veteran Service Officer of
+                Norwell to assist veterans, their dependents, and survivors with benefits and other resources. Living
+                arrangements and housing costs of Norwell’s Older Population A majority of Norwell’s 3,567 households
+                have householders who are middle-aged or older. According to the U.S. Census Bureau, a “householder” is
+                the person reported as the head of household, typically the person in whose name the home is owned or
+                rented. In fact, about of 70% of all households in Norwell are headed by someone age 45 or older,
+                including 23% of those who are age 65 and over ( Figure 3 .) Younger than age 45,… Age 45 to 64, 47%Age
+                65 and over, 23%Figure 3. Age structure of Norwell householders 20 Source: American Community Survey,
+                2017-2021`, Table B25007. Numbers are calculated from 5-year survey estimates. Most Norwell residents
+                live in homes that they own or are purchasing (91%; Figure 4 ). Nearly 92% of residents age 45 to 64 own
+                their homes, and 87% of householders 65 and older own their homes. A sizeable share of Norwell residents
+                who are 65 and older and live alone, also own their home (71%). The much higher number of older
+                homeowners has implications for what amenities and services are likely to be needed and valued by
+                members of the community. Home maintenance and supports are often necessary for older
+                homeowners—especially those who live alone—in order to maintain comfort and safety in their homes.
+                Source: American Community Survey, 2017-2021, Tables B25007 and B25011. Numbers are calculated from
+                5-year survey estimates. Additionally, 35% of Norwell’s 3,567 households have at least one individual
+                who is age 60 or older ( ACS 2017-2021), Table B11006) . This high proportion— which is likely to
+                increase in the future— generally reflects the widespread demand for programs, services, and other 91%
+                92% 87% 71%All householders Householder age 45 to 64 Householders age 65+ One-person households (aged
+                65+)Figure 4. Percent of Norwell householders who are homeowners by age category 21 considerations that
+                address aging-related concerns, including health and caregiving needs, transportation options, and safe
+                home environments. Among the 3,720 housing structures in Norwell ( Figure 5 ), 93% are single unit
+                structures, close to 5% are housing structures that contain more than 2 housing units and the remaining
+                2% are mobile homes. Source: American Community Survey, 2017-2021, Table B25024. Numbers are calculated
+                from 5-year survey estimates. A large proportion of Norwell residents who are age 65 and older (18%)
+                live alone in their household whereas 72% live in households that include other people, such as a
+                spouse, parents, children, or grandchildren ( Figure 6 ). Additionally, 10% of Norwell residents live
+                within group quarters. 1 unit, 93%2 or more units, 5%mobile home, 2%Figure 5. Number of units in Norwell
+                housing structures 22 Source: American Community Survey, 2017-2021, Table B09020. Numbers are calculated
+                from 5-year survey estimates. With respect to household income, Norwell residents’ median household
+                income is higher than the one estimated for Massachusetts as a whole, $172,022 compared to $89,026.
+                Among Norwell’s householders those aged 45-64 have the highest median income at $215,737—which is also
+                more than the statewide median for this age group ($109,641). Among householders 65 and older, the
+                median income is $89,107, higher than the statewide median for this age group ($56,483), but lower than
+                the median income of younger Norwell householders. Older residents living alone are at the greatest
+                disadvantage in terms of household income. Given that close to 18% of residents age 65 and older live
+                alone in Norwell, these figures suggest that a sizeable number of residents are at risk of economic
+                insecurity. The economic profile of older Norwell residents relative to younger residents is further
+                illustrated in Figure 7 , which shows that the older adult population lives on a modest income. It is
+                estimated that 44% of Norwell residents age 65 and older report incomes of $100,000 or more. By
+                comparison, 80% of households headed by younger residents report this level of income. Nevertheless, a
+                share of households headed by someone age 65 and older (16%) report annual incomes under $25,000. This
+                compares with 2% of households headed by individuals age 45 to 64 having incomes under $25,000. Thus,
+                there is a sizeable segment of Norwell’s older population that is at risk of financial insecurity or
+                economic disadvantage. Lives with others 72%Lives alone 18% Lives in group quarters 10%Figure 6 . Living
+                arrangements of Norwell residents, age 65 and older Lives with others Lives alone Lives in group
+                quarters 23 As well, costs associated with housing make up a significant share of monthly costs for
+                older householders. Estimates indicate that 36% of householders age 65 and overspend 35% of their
+                monthly household income on housing costs (ACS 2017-2021, Table B25093). Source: Source: American
+                Community Survey, 2017-2021, Table B19037. Numbers are calculated from 5-year survey estimates. Note:
+                Includes only community households, not group quarters such as nursing homes. The increased likelihood
+                of acquiring a disability with age is evident in data from the ACS. 28% of Norwell residents age 65 and
+                older experience some level of disability that could impact their ability to function independently in
+                the community. About 12% of Norwell’s residents age 65 and older have one disability, and nearly 16%
+                report two or more disabilities ( Figure 8 ). Among the different types of disability that are assessed
+                in ACS, the most commonly cited by older Norwell residents 65 and older were ambulatory (17%), hearing
+                difficulties (15%), and independent living difficulties (15%) ( ACS 2017–2021, Table S1810). Other
+                disabilities experienced by older Norwell residents include cognitive difficulty (6%), self-care
+                difficulties (7%) and vision difficulties (2%). 2% 16%4% 14%15% 26%80% 44%0% 20% 40% 60% 80% 100% Age 45
+                to 64 Age 65+Figure 7. Household income distribution in Norwell by age of householder (in 2021
+                inflation-adjusted dollars) Under $25,000 $25,000 to $49,999 $50,000 to $99,999 $100,000 or more 24
+                Source: U.S. Census Bureau; American Community Survey, 2017-2021, Table C18108. One disability, 12%Two
+                or more disabilities, 16%No disability, 72%Figure 8. Percentage of Norwell residents age 65+ reporting
+                at least one disability 25 Insights from Key Informants The community of Norwell offers several
+                desirable features to residents of all ages, from its rural setting and idyllic outdoor spaces to the
+                services and resources provided by the Town. These features contribute to the desire among longtime and
+                new residents to build continuity and age in the community. Key informant discussions reflected their
+                work experiences and meaningful interaction with older residents, many of whom were described as highly
+                effective in advocating for themselves and harmonizing with other agencies and departments. Key
+                Informants also acknowledged the importance of Norwell’s Dementia Friendly planning initiative which
+                responds to the increasing prevalence of dementia, and other health challenges associated with aging.
+                During the key informant interviews, Town leaders stressed the need to focus on prominent issues related
+                to aging including economic insecurity, housing, community supports, transportation, and opportunities
+                for community engagement. Anticipation and recognition of needs are evident in Town planning initiatives
+                that seek to leverage the Town’s strengths to create an environment that is supportive and engaging for
+                all ages. Outlets for community engagement are already constrained by demand. The Council on Aging’s
+                comprehensive range of programs and services has evolved over the years from a drop-in center to a
+                multifaceted organization supporting older adults and caregivers. During the pandemic, recognition of
+                the COA’s valuable impact and capacity to support the community, in person and remotely, grew
+                significantly. Despite its value, Town leaders are aware that the Senior Center’s existing space is
+                inadequate and limits the scope of operations. In addition to limited physical capacity, the COA’s reach
+                is impacted by the perception among a number of residents that the COA’s offerings are not aligned with
+                their interests and needs, particularly those of the younger senior demographic. Key Informants
+                acknowledged that the needs and preferences of residents aging in Norwell are changing and are
+                various---suggesting that the current COA space is not a sufficient outlet for community members to
+                gather and continue their pursuit of healthy aging. Key informants acknowledged that the community has
+                not only outgrown existing COA space but also acknowledged that the Recreation Department is
+                experiencing similar space constraints. The Recreation Department has close to 5,500 registered program
+                participants. While over 2,000 registrants are enrolled in summer youth programming, the interests and
+                needs of older adults are considered in program design and there is a recognized needed to reach a
+                broader portion of the population over age 50. Adult programs include yoga, meditation, basketball,
+                volleyball, pickleball, painting, photography, and jewelry making. The high number of recreation visits
+                at multiple makeshift sites in town suggests an opportunity to bring the community together for multiple
+                offerings in one accessible location. 26 Together, the challenges, and goals of the COA and Recreation
+                departments suggest a strong opportunity to build a shared facility with innovative features and
+                increased capacity in a central location. Collaborative planning efforts are underway to create a
+                Community Center, where programs and services would be offered to the entire community of Norwell. With
+                a strong presence of longtime residents and young families, this model offers an opportunity to build
+                community enhancing intergenerational engagement while also designating space related to the interests
+                and needs of older adults. Key informants expressed that there is a sense of synergy and willingness
+                among generations that will contribute to the support and success of Norwell’s initiative to build a
+                Community Center. Cost of property taxes combined with limited downsizing options is forcing some
+                residents to leave Norwell. Affordability---related to rising costs of living and property taxes-- was
+                woven throughout the key informant discussions as a significant concern in Norwell. The tax rate is one
+                of the highest in the Commonwealth of Massachusetts and the commercial tax base is small. For retired
+                residents and those living on a fixed income, the burden of paying for health care and housing can
+                impact quality of life. The town is exploring tax relief programs and building efforts to inform
+                residents of exemption and abatement opportunities. At 2022 Town Meeting, an article passed to create a
+                local senior circuit breaker abatement. The Town of Norwell offers a 10% discount on water utility costs
+                for eligible residents over age 60 and an overlay account is maintained to offset real estate and motor
+                vehicle exemptions. The tax work program is successful and provides an opportunity for residents to
+                share their experience with the community in return for up to a $1,500 reduction on their property
+                taxes. With limited options for downsizing, the ability to remain in the community where they are
+                rooted, have contributed, and envision their future becomes a challenge. Inventory consists
+                predominantly of single-family homes, many of which reside on large lots, and were built before 1950.
+                These features are often associated with expensive maintenance and modifications that allow residents to
+                safely remain in their homes. Through grant funding and donations, the COA is addressing related needs
+                through funding and pro bono work for eligible residents. There is limited rental housing, no assisted
+                living facility, one 55+ community, a housing property on River Street, and one memory café facility.
+                The housing crisis was characterized as dramatic due to an enormous shortfall of housing created in the
+                last decade due to the economy, construction costs, and pandemic disruptions. With a growing population
+                of older adults there will be a need for an accompanying increase in housing options that are
+                affordable, supportive, and accessible. Conversations around the need to diversify inventory have
+                continued for years in Norwell. Resistance to change is a barrier to the development of 27 housing and
+                has limited proposals for additional senior and affordable options in the past. Key informants shared
+                related planning and zoning efforts underway. To support aging in place, an article was approved at 2022
+                Town Meeting allowing homeowners to create accessory dwelling units (ADUs) by right, provided
+                eligibility requirements are met. Additionally, the use of a village residential overlay district with a
+                density bonus is being explored to expand 55+ housing inventory. Community based supports are a crucial
+                tool in helping residents age in place. The COA provides a range of health-related supports and
+                transportation to healthcare providers in neighboring towns. As well, the COA offers classes to
+                encourage residents to age well. However, as people age, they are more likely to develop health
+                conditions or a disability that limits their ability to participate in the community. Key informants
+                described ways that the community is supporting some of these more vulnerable households and emphasized
+                that continued outreach and awareness is needed to ensure that residents can be supported before crises
+                arise. For example, proactive outreach is coordinated among the COA, CERT (Community Emergence Response
+                Team), Board of Health, Police and Fire. These departments have conducted training, including dementia
+                friendly, to respond to needs and health conditions of older residents. Additionally, there are
+                collaborative efforts to increase public education, conduct home safety evaluations, and leverage
+                several tools including: Commuter Aided Dispatch and the Vial for Life program. These programs support
+                the management of data that has been shared by residents and contribute to their care. Key informants
+                also shared that the caregiver support network is fragile, especially overnight. Challenges are expected
+                to grow in the coming years, prompting the need to identify resources for a sustainable caregiver
+                support network. In response to projected needs related to the increasing prevalence of dementia, a
+                volunteer team is being assembled to support Norwell’s Dementia Friendly initiative. The initiative’s
+                goal is to ensure that the community is sophisticated in its response and provision of services for the
+                growing population impacted by dementia. Accessing the community via transportation options or walking
+                is very limited— keeping Norwell a car dependent community. There is no public transportation in
+                Norwell. Transportation services are available through the COA and demand for services is generally met.
+                The Town has enhanced its ability to meet needs through additional drivers and grant funding for
+                vehicles; however, there is a need to increase access for on demand services during flexible timeframes,
+                including evenings and weekends. Key informants acknowledged there are likely many residents who are
+                unaware of available transportation options or who are unlikely to utilize transportation options due to
+                stigma or pride. Expansion of transportation options would offer flexibility, affordability, and foster
+                independence for residents who are no longer driving and at risk of becoming isolated. MBTA access does
+                not exist in Norwell but an action plan has been submitted to be 28 recognized as an adjacent MBTA
+                district, which will contribute to housing and transit- oriented development. Norwell is challenged by
+                the limited network of sidewalks and lack of walkability to basic amenities. Opportunities for residents
+                to engage in exercise, feel connected to their neighbors, and to safely access the community in which
+                they live are restricted. Norwell’s Traffic Committee communicates challenges with decision makers and
+                seeks grant funding for projects to enhance existing infrastructure. Through participation in the
+                Massachusetts DOT Complete Streets program, the Town is addressing improvements to increase
+                accessibility, safety, and walkability through the prioritization of sidewalk enhancements and new
+                construction. As sidewalk expansion occurs, efforts will be made to build walkable connections to
+                Norwell’s extensive trail network. Communication about what is available, and for whom, is an ongoing
+                challenge. While efforts are made among departments to coordinate community outreach, there is an
+                opportunity for the Town to evaluate and improve existing channels to ensure residents are aware of
+                services, and how to access them. The COA shares comprehensive information via their newsletter and
+                website; other department channels, and Norwell Spotlight TV. Feedback from the Needs Assessment
+                suggests that there are awareness gaps related to existing services including financial counseling that
+                informs residents of available tax relief programs and tools such as a reverse mortgage. For older
+                adults, technology barriers can increase the risk of missing valuable communication from the Town. The
+                COA offers equipment and Wi-Fi support through an iPad loaner program, which is grant fund by the
+                Coronavirus Aid, Relief and Economic Security (CARES) Act and Massachusetts Executive office of elder
+                affairs. Key informants stressed the need to communicate through multiple channels, including paper
+                based, and continue to inform residents of technology support programs currently provided by the COA.
+                Results from Focus Groups Themes from the three focus groups were synthesized and are described in this
+                section. Many of the issues overlap with the issues identified by key-informants; but the perspective on
+                the issues among residents is more nuanced. Focus group participants widely characterized Norwell as a
+                safe community with a beautiful landscape and access to many outdoor recreation opportunities, including
+                pathways that are accessible for all ages and abilities. Participants value Norwell’s location, which
+                offers convenient access to Boston and proximity to several amenities including hospitals, healthcare
+                providers, shopping, and restaurants. A strong sense of community is heightened by the presence of many
+                longtime residents and the network of faith organizations. Social connections are valued, and these
+                relationships contribute to the desire to stay in Norwell 29 and contribute to the community. Town
+                Departments were recognized for the range of services provided to residents; the Council on Aging was
+                specifically mentioned as an asset for older adults while the school system was recognized as a strength
+                for families in Norwell. The new Library offers a range of programs to meet diverse interests in the
+                community. Together, the strengths shared by participants contribute to the strong appeal of living in
+                Norwell and in turn to strong levels of housing appreciation. While this itself is seen as a strength,
+                it simultaneously contributes to a significant challenge that was shared by focus group participants,
+                affordability. Focus group participants recognized that Town leaders are responding to this challenge
+                through property related tax supports that reduce cost burdens associated with rising property values.
+                While Norwell’s strengths, years of friendships, and opportunities to volunteer in the community are
+                valued, they must increasingly be weighed against future concerns related to affordability and other
+                challenges, which are described below. Challenges Affordability and personal struggles are not always
+                visible. Focus group participants echoed the concerns shared throughout the key informant interviews
+                related to affordability. With limited commercial activity in Norwell, the resident tax base has
+                historically been high compared to neighboring communities. The impact of existing tax relief programs
+                is limited by eligibility restrictions, pride, and lack of awareness. There is an opportunity to connect
+                more residents to Norwell’s Community Preservation Committee (CPC) tax relief, tax deferment, and Senior
+                Circuit Breaker programs. A circuit breaker resource flyer was recently distributed to the community to
+                increase access to this underutilized resource. Costs related to housing and property maintenance often
+                prompt a need to move away from Norwell, disrupting plans for residents who have lived in the community
+                their entire lives. Members of the faith community shared that conversations with residents related to
+                struggles include financial challenges, health concerns, and mental, emotional, spiritual changes
+                occurring among older residents. At times, residents lack a local support network and pastoral care must
+                extend to concerned out-of-state family members. These struggles prompt the need for meaningful support
+                for residents who are navigating the loss of health, loss of home, and loss of their support networks.
+                The Senior Center’s space is inadequate. Inadequate space limits opportunities to expand programming,
+                which in turn lessens participation among residents who do not feel drawn, or a need, to explore
+                offerings at the Senior Center. There is a segment of the population where residents are seeking
+                engagement opportunities because they are no longer aligned with the school or yet aligned with the
+                Senior Center. There is an opportunity to re-brand the COA and minimize the perception that 30 you need
+                a need to participate – getting people there is the hardest part of building appreciation for the COA’s
+                valued offerings. While it is difficult to increase programs in the existing space, creative solutions,
+                including continued partnerships, are needed to offer programming that is appealing to a broader age
+                group. Norwell’s rural infrastructure increases the risk of isolation . Limited opportunities for
+                engagement relate to the mapping of Norwell’s housing stock, which includes homes that are set back from
+                the road on sprawling lots; a limited number of walkable neighborhoods; and no public transit. Building
+                opportunities for mobility and places to congregate are critical means to facilitate interaction among
+                residents. For the inclusion of older adults, there is a need to re-frame the sense of community around
+                seniors in a way that highlights shared interests and opportunities to create gathering spaces and
+                activities for all ages. One participant shared the need to provide guidance for individuals living and
+                aging alone and support for individuals and caregivers living with dementia. Another participant with a
+                family member living with dementia expressed gratitude toward the Town of Norwell for efforts related to
+                building dementia friendly training and features in the community. Housing options are limited;
+                waitlists are long, and costs are high. Disparities exist related to housing availability and
+                affordability as people age. There are limited options for downsizing in Norwell and a dire need to
+                build diverse options to meet the needs and preferences of the community. With increasing property
+                valuations, the property gap and associated financial benefits that once occurred while downsizing have
+                shrunk over the years. Access to affordable housing in Norwell is hindered by current practices that
+                require interaction at the state level. Improvements, where the state’s role will be minimized, are
+                developing and will increasingly allow local housing authorities to connect residents with properties in
+                Norwell, instead of forcing residents to relocate to other locations in the state. Efforts to develop
+                additional 55+ housing have not been successful. With limited housing options there are implications:
+                people stay in homes that are unsafe and do not meet their needs, or they uproot and leave town. A
+                resident shared the hope that Norwell will be a visionary community in creating diverse options,
+                including clusters of smaller homes, with access to supports and programming for residents to age in the
+                community. Demands for home maintenance and modification services are unmet. In addition to housing
+                inventory limitations, real estate professionals shared that inquiries related to home maintenance needs
+                are frequent. This suggests that additional communication channels beyond strong efforts of the Council
+                on Aging would be helpful in communicating resources including: Habitat for Humanity’s Critical Repairs
+                Program, which provides opportunities for residents in Norwell to apply for funding home modifications
+                and 31 volunteer contractor time; and The Community Preservation Committee’s Small Housing Grant. During
+                a recent downsizing event at the library, seasonal yardwork and snow removal were identified as
+                community needs. A suggestion to incentivize students or invite volunteers to be connected with
+                properties that require help during these seasonal periods. There is a need for an expanded network of
+                accessible and supportive transportation services. Norwell is a car dependent community; access to
+                reliable on demand transportation is critical for residents who are no longer driving or restrict their
+                driving. There is a need to address growing demands on the COA amidst budget constraints that impact
+                staffing levels and the number of available vehicles. Transportation for medical needs is available;
+                however, unique needs exist. Due to limited schedule availability among healthcare providers and
+                Medicare coverage changes for home-based dialysis, access to treatment is challenging. Funding support
+                is being sought to increase efficiency for patients who spend excessive time at dialysis due to lack of
+                transportation. Additionally, the need for flexible transportation to places of worship and social
+                events - movies, book clubs, library events, etc.- should be prioritized. Participants also cited
+                parking limitations, traffic concerns, excessive speeds, and narrow winding roads as challenges that
+                inhibit mobility. Access to Home Care is challenged by lack of awareness, staffing shortages and costs—
+                family caregivers are shouldering this burden. Resident participants shared concerns related to
+                accessing health and community-based supports, critical determinants of healthful aging in place.
+                Barriers that inhibit accessibility include lack of awareness, navigation difficulties, and healthcare
+                staffing shortages. For some, there is a disconnect between their needs and knowing where to turn.
+                Others are aware of resources; however, they find application processes to be overwhelming. Forms for
+                utilities, Social Security, Supplemental Nutrition Assistance Program (SNAP), Veterans related benefits,
+                MA Health, and Medicare are often complex. Also, residents may avoid reaching out and sharing
+                vulnerability due to fear of consequences such as loss of independence. Stakeholders, including COA
+                staff, South Shore Elder Services, and Norwell’s Veteran Service Officer are leading efforts to foster
+                access to these resources. Home care costs have increased significantly in recent years and staffing
+                shortages are dire. Norwell Visiting Nurse Association provides services covered through insurance;
+                however, the coverage period is small and in-home programming is limited. The continuum of care that
+                existed in the past is fractured. Many nursing homes in Massachusetts are on the verge of closing and
+                average costs are estimated to be close to $12K per month. The caregiver network is fragile, and many
+                individuals are overwhelmed. Caregivers often travel long distances across the state and more remote
+                towns are less likely to have coverage. A resident, who is also a caregiver, shared that caregiving is a
+                full-time role due to the complex process 32 of accessing resources; those without an advocate are at
+                risk of being left behind. Continued collaboration, staffing increases, and outreach efforts among
+                providers are essential to ensure that adequate resources are available and communicated to Norwell’s
+                aging population in the coming years. Communication gaps and lack of awareness inhibit access to
+                resources. Current communication channels include the COA’s monthly newsletter, Recreation Department’s
+                quarterly newsletter, Town websites, and social media. The COA newsletter is currently mailed to
+                approximately 1,425 residents; an additional 1,650 copies are printed and distributed throughout
+                Norwell. The newsletter is also distributed via email and through social media. Town wide distribution
+                is cost prohibitive. Distribution can be efficiently broadened by having the online copy shared by other
+                departments such as Recreation and the Library. Additional paper copies and sign up for the newsletter
+                could also be made available at local businesses and the post office. Being aware of and having the
+                tools to navigate resources is a challenge that is intensified by barriers related to fear, pride, and
+                technology, including poor Wi-Fi service in parts of Norwell. The COA offers valuable technology support
+                for residents, but demand has the potential to exceed available support. There is a need for a diverse
+                communication strategy that meets residents at multiple comfort levels and includes traditional phone
+                and paper- based vehicles. Participants shared that additional technology support and a communication
+                strategy that is not age segregated would broadly connect the community to resources. Additionally,
+                challenges related to readability and accessibility of information resources exist. Participants shared
+                that there is a need to improve the content of agendas and minutes shared by town committees, so
+                residents are better informed without having to attend meetings. The content of the COA newsletter is
+                highly valued; however, the formatting is dense, making it difficult to navigate. An annual COA resource
+                directory (paper and online) was suggested to reduce monthly newsletter content and improve readability.
+                33 Results from the Community Survey In this section we report key findings from each section of the
+                survey. Tables illustrating results in detail are included in Appendix A. Respondents to the community
+                survey included 1,081 individuals aged 50 and older, representing a response rate of 25% (see Table 2).
+                This is a strong return rate and reflects interest among community residents. Compared to the age
+                distribution of Norwell as a whole, we heard from fewer residents in their 50s and from more residents
+                over age 7015. To facilitate comparison of younger and older segments of the population with respect to
+                needs and interests, we often present results grouped into four age groups: age group 50-59, age group
+                60-69, age 70-79, and age 80 or older. Table 2. Community Survey Respondents Number of Responses Age
+                Distribution of Responses Age 50-59 239 23% Age 60-69 314 29% Age 70-79 329 30% Age 80+ 175 16% No
+                Response 24 2% TOTAL 1,081 100% 15 Among residents age 50+ in Norwell, 58% are age 50-59, 30% are 60-69,
+                25% are 70-79, and 14% are age 80+ (Source: American Community Survey, 2017-2021, Table B01001. Numbers
+                are calculated from 5-year survey estimates). 34 Community and Neighborhood Survey respondents included
+                residents who have lived in Norwell for many years, as well as relative newcomers. Duration of residing
+                in Norwell varies from 15% of respondents who have been in Town less than 10 years compared to 51% who
+                have lived in Norwell for more than 30 years (see Figure 9 ). These individuals offer insight based on
+                their years of experience of living in Norwell. It is also helpful, however, to hear from those who are
+                new to Norwell. Interestingly, 19% of survey respondents age 80+ have been in Norwell for less than 10
+                years (see Appendix A ). Survey data suggests more than two-thirds of respondents are committed to
+                remaining in Norwell as they age (see Figure 10 ). 8%7% 14% 20%51% < 5 years 5-9 years 10-19 years 20-29
+                years 30 years or moreFigure 9 . How long have you lived in Norwell?A commonly expressed goal of older
+                adults is to remain living in their own homes for as long as possible. Aging in place implies remaining
+                in familiar home and community settings, with supports as needed, as opposed to moving to institutional
+                settings, such as nursing homes (Salomon, 2010). By aging in place, older adults can retain their
+                independence, as well as maintain valued social relationships and engagement with the community. In
+                turn, aging in place may promote wellness by supporting physical activities that reduce risk of chronic
+                disease and by accommodating disabling conditions. 35 A majority of survey participants took the time to
+                respond to the open-ended question, “What are your greatest concerns about your ability to continue
+                living in Norwell?” Despite the high number of comments, they could readily be categorized into four key
+                areas of concern: 1) cost of property taxes—and concern about being able to remain in their
+                homes/community as a result; 2) costs of living more broadly; 3) ability to maintain current home due to
+                lack of downsizing options; 4) maintaining health and quality of life. Table 3 summarizes these
+                concerns, drawing on verbatim responses from the survey. 27%48%61%76% 41%32%30%18% 32%20%9%6% 0% 20% 40%
+                60% 80% 100%50-5960-6970-7980+Figure 10. How important is it to you to remain living in Norwell as you
+                get older? Very Important Somewhat important Slightly/Not at all important 36 Table 3. Sample responses
+                to question, “What are your greatest concerns about your ability to continue living in Norwell?” Cost of
+                Property Taxes Being able to afford to stay here. Taxes are extraordinary with little commercial base to
+                generate additional tax revenue… Can't afford to live here in retirement… Being taxed out of my home…
+                Costs of living, broad concerns about affordability Expenses are getting higher, both products and
+                services Finances. I am 92 and hope my money lasts as long as I do. Increased cost of electricity – food
+                I won't be living here much longer. It's too expensive The taxes are too high!! mostly for older people
+                who no longer have other incomes. Taxes are main reason people decide to leave Norwell Home upkeep and
+                lack of housing options My physical ability to maintain a 300 year old home and 2.4 acres of property
+                and taxes Keeping up with maintenance of home Being able to navigate our two-story home when we develop
+                mobility issues and maintaining our home, inside and out My husband’s legs are getting weaker. If he
+                eventually needs a wheelchair, I am not sure our doorways, halls etc. would be wide enough to
+                accommodate one. Maintaining health and quality of life Keeping physically fit, keeping my wife
+                physically fit. ability to drive a car Not being able to live alone and having to make plans of where to
+                go to live. Staying well enough to remain in my home. At some point I will need help to stay
+                independent. Our COA has wonderful programs to make that possible My physical ability, ability to drive,
+                ability to make decisions regarding my well being 37 Given that the number one concern about aging in
+                Norwell is the cost of property taxes and living, it is important to note that 11% of survey respondents
+                (about 105 people) do not believe they have the financial resources to meet their basic needs (see
+                Figure 11 ). 8%9%10%15% 0%2%4%6%8%10%12%14%16%18%20% Age 50-59 Age 60-69 Age 70-79 Age 80+Figure 11.
+                Percentage disagreeing with the statement, "I 
+have financial resources to meet my daily needs..." 38 Housing and Living Situation To assess the “age-friendliness” of
+                the housing stock in Norwell, respondents were asked if they currently had a bedroom and bathroom on the
+                entry-level of their home—an important feature as occupants age and mobility (up and down stairs)
+                becomes more challenging. Figure 12 shows that half do have this feature in their home (54%) and 46% do
+                not have this feature—suggesting that home modifications or a residential move may be needed for these
+                residents to age safely and well. The availability and affordability of housing that is suitable to meet
+                the changing capacity of older people are key factors that influence the ability of residents to age in
+                place, and to lead fulfilling and healthy lives into old age. Many people are attached to their current
+                home, even if the “fit” between individual capacity and the home environment decreases. Homes may become
+                too large for current needs or may become too expensive to maintain on a fixed income. Design features
+                of homes, such as the number of stories and manageability of stairs, may challenge older residents’
+                ability to remain living safely in their home. Home modifications, including installation of bathroom
+                grab bars, railings on stairs, adequate lighting throughout the home, ramps, and/or first floor
+                bathrooms, may support residents’ safety and facilitate aging in place. Programs that connect older
+                homeowners with affordable assistance for maintaining and modifying their homes and their yards can help
+                protect the value of investments, improve the neighborhoods in which older people live, and support safe
+                living. The availability of affordable housing options, especially those with accommodating features,
+                including assisted living, may allow residents who are no longer able to stay in their existing homes to
+                remain in their community. 39 Most survey respondents own their current home. Among homeowners, 50%
+                report not having a mortgage while 45% currently have a mortgage on their home—including 36% of those in
+                their 70s and 22% of those in their 80s (see Appendix A ). Survey participants were asked the type of
+                housing they would prefer if a change in health or physical ability required moving from their current
+                residence. Responses varied greatly by age group (see Figure 13 ). Among the youngest respondents, the
+                highest rated type of future housing is smaller single family homes (preferred by 60% of those in their
+                50s; and 48% of those in their 60s). Condos or townhomes were preferred options for those in their 70s
+                (39%) and assisted living was a preferred alternative for those in their 80s (41%).No, 46% Yes,
+                54%Figure 12. "Does your current residence have a bedroom and 
+bathroom on the entry-level?" 40 60%8%41%10%5%6% 48%6%40%17%11%10% 30%10%39%33%5%13% 17%11%19%41%10%11% 0% 10% 20% 30%
+                40% 50% 60% 70%Smaller single-family homeApartmentCondominium or townhomeAssisted living
+                communityCo-housing (pooling resources with friends/family)Other (please specify):Figure 13. In the next
+                5 years, if a change in your/your partner’s health or physical ability required that you move from your
+                current residence, what kind of housing would you prefer in Norwell? 80+70-79 60-69 50-59 41 The
+                majority of survey respondents live with a spouse or partner (76%), and 22% live with an adult child,
+                including 14% of those in their 70s and 80s. 15% of respondents live alone, including 14% of those in
+                their 70s and 35% of those in their 80s. Living alone has the potential to lead to social isolation and
+                has implications for services that may be needed by the older segment of the Norwell population.
+                Additionally, 13% of respondents reported living with another relative (e.g., children, grandchildren,
+                or parents). This suggests that for a small percentage of Norwell’s older residents, significant
+                childcare or other family responsibilities could play a role in their lives. Modifying one’s home (e.g.,
+                installing railings or grab bars in showers) in response to changing needs and preferences can promote
+                independence and quality of life. As well, making repairs to a home can ensure that safety and quality
+                of life is enjoyed. While a majority of respondents do not need such modifications as this time, 43%
+                report that modifications are needed (see Figure 14 ). Among them, 11% cannot afford to make these
+                changes. Given the share that need such repairs and modifications and have the resources to implement
+                them, suggestions for connecting residents with handy-person services or information about taking action
+                are made. 30% 11% 2%57%Figure 14. Does your current residence need modifications or repairs to improve
+                your ability to live in it safely for the next five years? Yes, and I can currently afford to make these
+                modifications or repairs. Yes, but I cannot currently afford to make these modifications or repairs.
+                Yes, but I am not responsible for making these modifications or repairs. No, my current residence does
+                not need repairs. 42 Transportation Survey results suggest that most respondents (96%) drive themselves.
+                Survey results show that only 4% of respondents do not drive, although this number is significantly
+                larger when looking at just those age 80 and older, as 15% of this older segment of the population do
+                not drive (see Figure 15 ). 0%10%20%30%40%50%60%70%80%90%100% Age 50-59 Age 60-69 Age 70-79 Age
+                80+Figure 15. Driving status, by age category Drivers Drives with limitations Does not
+                driveTransportation is a basic need for people of all ages who desire to lead independent, meaningful,
+                and socially engaged lives. For older adults specifically, limited transportation options can lead to
+                challenges in socializing, attending appointments, and fully participating in their community. The vast
+                majority of Americans rely primarily on private transportation to meet these needs, and most individuals
+                drive their own automobiles well into old age. Due to difficulties with transportation, individuals with
+                health conditions and disabilities that adversely affect their ability to drive safely may be unable to
+                participate in activities they previously enjoyed and valued. Indeed, a national survey of people aged
+                50 and older conducted by the AARP (2005) found that compared to older drivers, non-drivers reported
+                lower quality of life, less involvement with other people, and more isolation. 43 More than one out of
+                four respondents (26%) who do drive modify their driving to make it easier or safer. Modifications
+                include avoiding driving at night, in rush hour, or during bad weather. Modifying driving habits promote
+                safety, but may limit independence and participation, especially if other transportation options are
+                inaccessible, costly, or inconvenient. For example, older adults who avoid driving at night will
+                struggle to participate in evening community meetings and programs. Those who avoid driving in bad
+                weather may become isolated during the winter months. Transportation barriers can limit a person’s
+                access to obtaining necessary services such as medical care. Respondents were asked if within the
+                previous 12 months they had missed, cancelled, or rescheduled a medical appointment because of a lack of
+                transportation. Among all respondents, only 4% reported this experience, and even among those who drive
+                with modification, 7% indicated that this had occurred (see Figure 16 ). However, 31% of respondents who
+                don’t drive missed, cancelled, or rescheduled a medical appointment within the past year. These findings
+                suggest that transportation limitations appear to negatively impact accessing medical care for the most
+                vulnerable segments of Norwell’s older resident community. 31% 7% 1% 0%5%10%15%20%25%30%35%40%45%50% Non
+                Drivers Drives with limitations DriversFigure 16 . In the past 12 months, did you have to miss, cancel
+                or rechedule a medical appointment because of a lack of transportation? 44 Health & Caregiving More than
+                half (54%) of survey respondents reported needing help with activities around the house. Figure 17 shows
+                that the most common types of help needed is with snow removal (35%), yard work (31%), small repairs
+                (21%), and technology support (14%. Small numbers of residents need help with personal care (1%) or
+                daily living tasks (3%). Overall, the trend is that older respondents report needing help at higher
+                rates (see Appendix A ). Respondents were asked who would assist them around the house when they need
+                help (see Appendix A ). More than two-thirds (65%) of respondents reported that a family member would
+                help and 58% reported that they would pay someone to help. Smaller shares would have a friend (23%), or
+                neighbor (18%) help them and 6% (n=72) report not knowing who would help them around the house when they
+                needed it (see Appendix A ). Physical ability to engage in one’s environment is key component to aging
+                well in the community. With age can come different and new health needs and preferences. Having access
+                to opportunities to engage in health promoting activity and seek medical and mental health care is
+                crucial to keeping residents living active, meaningful, and independent lives. Nationally, most of the
+                care and support received by older adults due to health difficulties or disability is provided
+                informally by family members or friends. Informal caregivers throughout the country contribute millions
+                of hours of care without financial compensation. 45 Being able to access the community to access basic
+                amenities or social activities is a crucial factor shaping healthy aging. For 86 survey respondents, 33
+                of which are in their 80s, this is limited by an impairment of some kind (see Appendix A ). Another
+                challenge for families and older adults is substance misuse. According to survey respondents, 28% have
+                been individually affected by substance misuse ( Figure 18 ). These rates are highest among those in
+                their 50s (38%) and 60s (33%). This substantial proportion signals the need for additional attention to
+                be paid to the challenges that face older residents and their families. 35%31% 21% 14% 4% 3% 1%
+                0%5%10%15%20%25%30%35%40% Snow removalYard work (mowing lawn, raking leaves)Small repair projects (e.g.,
+                fixing a small appliance, replacing locks)Technology SupportOther Daily activities (e.g., preparing
+                meals or keeping track of bills)Personal CareFigure 17 . Do you require help with activities around the
+                house? 46 Forty percent of survey respondents stated that they currently or have in the past two years
+                provided care or assistance to a person who was disabled or frail (see Appendix A). As shown in Figure
+                19 , the rate of caregiving is highest among those age 50-59 (52% reporting having provided care) and
+                those in their 60s (44% reporting having provided care). Notably, 34% of respondents over age 80 have
+                reported recent caregiving experience. 52% 44% 32% 34% 0%10%20%30%40%50%60% 50-59 60-69 70-79 80+Figure
+                19. Do you now or have you in the past 2 years provided care or assistance to a person who is disabled
+                or frail ( e.g., a spouse, parent, relative, or friend)28% 72%Figure 18 . I have been, or have friends
+                or family members who have been, affected by substance misuse. YesNo 47 Many of those who have provided
+                care or assistance to someone within the past two years stated that it was very or somewhat challenging
+                to provide this care and meet other family and/or work responsibilities. This was especially true for
+                those age 50-59, where 77% of those providing care reported this was very or somewhat challenging and
+                among those in their 60s as 75% report this was very or somewhat challenging for them (see Figure 20 ).
+                Many in this age group are likely still working and therefore may be struggling to meet the demands of
+                both caregiving and work. Even for the other age groups, more than half of those who provide care find
+                it very or somewhat challenging. Services (e.g., transportation to adult day programs) and programming
+                (e.g., support groups) might be needed to support caregivers. Caregivers were asked to indicate which
+                conditions were experienced by their care recipient; the most frequently marked condition was mobility
+                impairment (such as difficulty walking or climbing stairs) (56%; see Figure 21 ), while 34% of the
+                people the survey respondents cared for were living with Alzheimer’s or dementia. Many respondents
+                checked multiple responses to this question, indicating that their care recipient had more than one
+                disability. At the community level, it is estimated that 13% of residents age 65 or older have been
+                diagnosed with Alzheimer’s disease or dementia ( Massachusetts Healthy Aging Collaborative Community
+                Profiles ). 44%31%31%16% 33%44%35%32% 16%17%18%32% 7%8%16%20% 0% 20% 40% 60% 80% 100%Age 50-59Age
+                60-69Age 70-79Age 80+Figure 20. Among caregivers, how challenging was it for you to provide care and
+                meet your other responsibilities with family and/or work? Very challenging Somewhat challenging Neither
+                challenging nor easy Somewhat or very easy 48 Given the Town of Norwell’s pursuit of becoming a more
+                Dementia Friendly community, survey respondents were asked to rate their level of agreement with the
+                following statement, “Norwell has adequate resources to support residents living with dementia and their
+                families.” Figure 22 shows that 60% of respondents disagree or strongly disagree with this statement.
+                This finding both supports the Towns current pursuits but also indicates that there is more to be done
+                when it comes to supporting persons with dementia and those who love them. 6%19%20%29%30%34%56% 0% 10%
+                20% 30% 40% 50% 60%Intellectual or developmental disabilityPsychological condition (e.g., anxiety,
+                depression)Sensory/hearing/vision challengesChronic disease (e.g., cancer, diabetes, asthma)Recovering
+                from surgery or injuryAlzheimer's disease or dementia, Parkinson's diseaseMobility issues/frailtyFigure
+                21 . Did this person have any of the following conditions? 40% 60%Figure 22. "Norwell has adequate resources to 
+support residents living with Dementia  and their 
+families?" Strongly Agree/Agree Strongly Disagree/Disagree 49 Employment and Retirement Many people across the country
+                continue to work beyond the traditional retirement age of 65, and this is evident in Norwell. Figure 23
+                shows 73% of respondents in their 50s and 37% of those in their 60s are working fulltime. These results
+                suggest that a large share of survey respondents may have time to pursue personal interests and
+                activities. Interestingly, 14% of those in their 70s and 18% of those in their 80s report “looking for
+                work” suggesting an opportunity to engage older residents in connecting with appropriately flexible job
+                opportunities. 73% 8% 3% 2% 7% 5%37% 15% 9% 5%35% 6% 6%14%14% 6%67% 3% 1% 6%18% 1%74% 4%
+                0%10%20%30%40%50%60%70%80% Working full- timeWorking part- timeLooking for workNot fully retired
+                yetRetired OtherFigure 23. Which of the following best describes your employment status? Age 50-59 Age
+                60-69 Age 70-79 Age 80+Remaining in the workforce due to financial necessity or personal preference is a
+                decision that shapes later life for most older people. For those still working, their experiences can
+                mean less hours, different schedules, and an interest in maintaining professional relationships. For
+                those who have chosen retirement, maintaining active lifestyles and contributing to the world around
+                them can be important factors when considering how to spend their time. Regardless of employment status,
+                the ability to pay for necessary expenses and maintain quality of life can be challenging due to age-
+                related shifts in health, ability, costs, and streams of income. 50 For those who responded they are
+                still working, more than half of those in their 60s and 40% of those in their 70s report plans to retire
+                within the next 3-5 years. (see Figure 24 ). Thus, the Norwell Senior Center could experience an
+                increase in attendance, which has implications for the capacity of senior center. Interestingly, many
+                older adults who are still working do not know when they expect to retire. For example, 53% of those in
+                their 70s who are still working report not knowing when they will retire or predict not being able to
+                ever fully retire. Implementing evening and weekend programming might be one way to engage older workers
+                with the Norwell Senior Center. Additionally, developing new programs that would particularly attract
+                older workers would be useful. For example, convening a job fair for part-time or volunteer positions or
+                hosting seminars on retirement planning—both financial and social. 8%54% 40%38% 32% 16% 0% 0%37% 2% 2%
+                0%13%19%30%38% 10% 7%23% 0% 0%10%20%30%40%50%60% Age 50-59 Age 60-69 Age 70-79 Age 80Figure 24 .
+                Anticipated retirement timing, among those currrently working In the next 5 years In 6-10 years In more
+                than 10 years Not sure I do not anticipate ever fully retiring 51 Social Activities and Relationships
+                The majority of survey respondents speak with someone or use email or social media on at least a weekly
+                basis to connect with family, friends, or neighbors (see Figure 25 ). Although 64% of the respondents
+                get together in person with someone at least weekly, more than one- third only get together monthly or
+                less frequently. Individuals who have infrequent contact with friends or relatives represent important
+                groups to target for efforts aimed at reducing isolation and, more generally, improving emotional
+                wellbeing. 84% 12% 4%87% 7% 15%64% 28% 8% 0%10%20%30%40%50%60%70%80%90%100% Daily/weekly Monthly
+                Yearly/neverFigure 25. How often do you talk on the phone, send email/use social media, or get together
+                with family, friends or neighbors? Phone or Video Conference Email or social media In-personSocial
+                activities and relationships shape well -being for individuals of all ages. Indeed, the absence of
+                social relationships may have as substantial a negative impact on health behaviors such as smoking or
+                overeating. Many older adults are at high risk for social isolation, especially if their health and
+                social networks break down. These risks are exacerbated if accessible services and transportation are
+                not readily available to them as a means for maintaining contact with the world outside their homes.
+                Providing opportunities for social engagement and participation in community events—through volunteer
+                programs, learning opportunities and exercise programs, as well as social activities—can help community
+                members maintain social support, remain active, prolong independence, and improve quality of life. 52 As
+                shown in Figure 26 , survey respondents reported that when they spend time socializing ---it is most
+                commonly done at restaurants or cafes, at a friend’s home, or in parks or outdoor spaces. Overall, small
+                portions of survey respondents reported experiencing exclusion or discrimination in Norwell (see
+                Appendix A ). For example, 12% of those in their 50s report feeling excluded because of their income and
+                5% of those in their 70s report having been excluded because of their age. Overall, 8% of respondents
+                selected an “other” reason and wrote in their experiences. Mostly commonly reported reasons for feeling
+                excluded or discriminated against included political views, appearance, and overall sense of being
+                excluded in Norwell for not being a lifetime resident or having children in the schools—in other words,
+                respondents used words like “cliques” and “not very welcoming”. While only reported by a small number of
+                respondents, it is a serious matter to consider. Respondents were asked if they knew someone living
+                within a 1-hour travel distance on whom they could rely for help if needed (see Appendix A ). Only 8%
+                reported not having someone like this in their life, with slightly higher rates among those in their 50s
+                (10%) (see Appendix A ). For those without social support providers in close proximity, the Norwell COA
+                can be a crucial resource. 0%10%20%30%40%50%60%70%80%90%100%Figure 26. Outside of your home, where do
+                you socialize with others? Age 50-59 Age 60-69 Age 70-79 Age 80+ 53 Norwell Senior Center A majority
+                (75%) of survey respondents report that the Norwell Senior Center plays a role in their lives or the
+                lives of their loved ones, neighbors, or friends—making it clear that the Norwell Senior Center is a
+                revered community asset for many (see Appendix A ). Survey results suggest that participation in the
+                Norwell Senior Center is considerably more common among older residents. As shown in Figure 27 , just 8%
+                of those age 50-59 and report ever using programs or services offered by the Norwell COA, while 62% of
+                the respondents age 80 and older indicated they have participated in the Norwell Senior Center. This
+                age-graded pattern of participation is not unusual in senior centers and may reflect the increasing
+                value of the Norwell Senior Center to older residents. 8%30%45%62% 0%10%20%30%40%50%60%70% Age 50-59 Age
+                60-69 Age 70-79 Age 80+Figure 27 . Participation at the Norwell COA, by age categoryLocal senior centers
+                play a part in helping older adults age in place and in community. Residents may obtain transportation,
+                health screening, or social services through their local COA. Older adults may seek opportunities for
+                engagement and socialization through volunteer programs, learning opportunities and exercise programs,
+                as well as social activities. There are approximately sixty volunteers supporting the Senior Center in a
+                variety of roles including meal delivery, assembling the newsletter, and supporting trips and programs.
+                These involvements can help community members maintain social support, remain active, prolong
+                independence, and improve quality of life. Some research suggests that participating in a Senior Center
+                may reduce one’s 54 Of those who do use the Norwell COA, 63% only visit the Center a few times a year,
+                while 19% of COA users participate at least weekly ( Figure 28 ). This range of participation levels
+                highlights the broad continuum of affiliation with the Norwell COA, with many residents participating
+                just periodically, while others include visits to the Norwell COA as part of their regular weekly
+                schedule. Note that participation on a weekly or more frequent basis was reported by 0% of respondents
+                who are age 50-59 and 16% among those age 60-69 while 28% of those age 80 and older participate weekly,
+                suggesting that older participants attend more frequently during the course of a month or a year
+                (Appendix A ). Survey respondents were asked why they do not use the NCOA. For those in their 50s and
+                60s, the top two reasons for not participating were that they are still working and that they report not
+                being old enough to participate (see Appendix A ). Similar trends are observed among those who do NOT
+                currently use the NCOA (see Figure 29 ). For those who do currently use the NCOA, still working and not
+                having time were the top reasons for not attending more frequently. 19% 18% 63%Figure 28. How frequently
+                do you participate at the Norwell COA? Weekly Monthly A few times/year 55 For those 19% who wrote in a
+                response, the most common responses centered around not having time and still working. In addition, the
+                perception of “not needing” to visit the Senior Center or “not being old enough…yet” was extracted from
+                these write-in responses, suggesting that communicating the purpose of the Senior Center and defining
+                its target audience is a possible future step that could draw in a wider range of residents. See Table 4
+                with sample comments regarding why survey respondents don’t use the COA. It is not uncommon for
+                residents to visit other, often neighboring, COAs to participate in a particular program, attend with
+                friends, or simply for a change of scenery. Overall, 14% of survey respondents reported having visited
+                another COA to participate in their programs. Among those in their 70s, 21% have visited other COAs and
+                for those in their 80s, 19% have done so. 42% 28% 10%18% 3%18%22% 21% 7%11% 8%6%16% 15%
+                0%5%10%15%20%25%30%35%40%45%50% I am still workingI am not old enoughI participate in programs
+                elsewhereI am unaware of activities or programs availableHours of operation are inconvenientI do not
+                have timeOtherFigure 29. What is the reason you do not participate at the Norwell COA? Non-User User 56
+                Table 4. Sample responses to question “What is the reason that you do not currently use programs or
+                services offered by the Norwell Senior Center” Too busy with family or other responsibilities Currently
+                still active in volunteer and family travel but as those activities diminish I'll more likely
+                participate Commitments to aging parents occupies us Husband has dementia, dependent on me for
+                everything If I had a “need” If I had less independence/ mobility Programs seem to be for much older
+                people or more physically restricted If didn't have other alternatives (YMCA, church, etc.) for being
+                socially and physically active I will participate when I get older When the time comes I will utilize
+                the programs and services Maybe when I am retired and older I will use their services. But so glad to
+                have them in town I see myself using COA in the future 57 There are a few ways that respondents were
+                asked to identify their preferences for programs and services. First, respondents were asked to rate the
+                importance of existing programs and services offered by the Norwell Senior Center. Figure 30 shows the
+                percentage of respondents who identifed services as being very important or important to themselves or
+                someone in their family. The top-rated service for respondents age 50-79 was professional services like
+                health insurance counseling or notary services, which was rated important by 39-49% of respondents
+                across those age groups. Among those in their 80s, the most important service provided is nutrition
+                programs like lunches, grab ‘n’ go meals, and home delivered meals rated important by 41% of respondents
+                in that age group. Among respondents in their 50s, the second most important service provided by the
+                Norwell COA is transportation and health and wellness clinics (rated important or very important by 41%
+                and 41%, respectively). For those in their 60s, nutrition programs and assistance with state and local
+                programs were rated important or very important by 44% and 41% respectively. For those in their 70s,
+                transportation and assistance with local and state programs were rated important or very important by
+                34% and 33% respectively. For those in their 80s, transportation and health and wellness clinics were
+                rated important or very important by 34% and 33% respectively. 0%10%20%30%40%50%60% Assistance with
+                local or state programs (e.g., fuel assistance, SNAP)Transportation Support Groups (e.g.,
+                low-vision)Health and wellness clinics (e.g., blood pressure, hearing clinic)Nutrition programs (e.g.,
+                lunches, grab'n'go, home- delivered meals)Professional services (e.g., health insurance counseling,
+                notary)Figure 30 . Current services offered by Norwell COA (% reporting important or very important), by
+                age category Age 50-59 Age 60-69 Age 70-79 Age 80+ 58 When it comes to programs, fitness programs are
+                valued by those in their 50s and 60s (see Figure 31 ). Educational programming was rated important or
+                very important by the 36% of respondents in their 70s and trips and outings were rated important or very
+                important by 35% of those in their 80s or older. 0%10%20%30%40%50%60% Social or recreational activities
+                (e.g., arts, crafts, games)Fitness activities (e.g., yoga, tai chi, strength classes)Educational
+                opportunities (e.g., computer classes, current event discussion groups)Trips/Outings Volunteer
+                opportunitiesVirtual/Hybrid programmingFigure 31 . Current programs offered by Norwell COA (% rated very
+                important or imporant), by age category Age 50-59 Age 60-69 Age 70-79 Age 80+ 59 The second way
+                respondents were asked about their preferences for programs and services was by asking them to select
+                the factors that would increase likelihood of participating at the Norwell Senior Center ( Figure 32 ).
+                For those who do not participate at the Norwell Senior Center (“non-users”), the most commonly reported
+                factor that would increase their likelihood of participating was “If I had more knowledge about the
+                programs and services offered” (39%). For those who have participated at the Norwell COA, the most
+                commonly reported factor that would increase their likelihood of participating was “If programs and
+                services were better suited to my interests”. Given that a sizeable share of respondents (24% of
+                respondents who do NOT currently participate at the Norwell COA; and 20% of those who do participate at
+                the Norwell COA) selected “other” and wrote in a factor that would increase their likelihood of
+                participating, those responses were reviewed. Upon reviewing responses, the most common theme related to
+                “having a need” for participation. For example, one respondent wrote “ If I could not do my current
+                daily activities (I would be more likely to attend)” and a different respondent wrote they would be more
+                likely to participate “If I lived alone and needed social opportunities the COA would be a valuable
+                resource”. Understanding reasons for lack of participation provides direction and opportunities for
+                change. Overcoming the obstacle of unfamiliarity, increasing outreach, adapting programming to meet the
+                broad interests of the older adult population, and exploring strategies to update the image and space of
+                the Senior Center may be areas to consider as future Norwell COA goals. 60 30% 24%23%22% 12% 6%4% 3%22%
+                20%35% 26% 14% 12% 9%8% 0%5%10%15%20%25%30%35%40% If I had more knowledge about the programs and
+                services that are availableOther If programs and services were better suited to my interestsIf there
+                were more people like myself at COA eventsIf programs were offered in the evening or on weekendsIf the
+                cost of programs was reduced or eliminatedIf it were easier to access the COA building (e.g., more
+                parking, updated building)If transportation options to the COA were more convenientFigure 32 . I would
+                be more likely to use the Norwell Senior Center programs and services if..." Non User User 61 Another
+                way that the survey assesses the preferences for future programming was by asking, “Thinking about your
+                own future needs and interests, which of the following areas would you prioritize in expanding the
+                programs available through the Norwell Senior Center”. Figure 33 illustrates how responses vary between
+                those who currently participate at the Norwell Senior Center compared to those who have not yet visited
+                the center. Among users, the highest priority for expanding programming was given to indoor fitness
+                classes (47%), educational programming (44%), and performances, day trips, and physical health and
+                wellness programs (40%). Figure 34 shows which type of services respondents would prioritize in
+                expanding. Comparatively, among those who do not participate at the Norwell Senior Center, priority was
+                given to indoor exercise programming (45%), educational programs (40%), and outdoor fitness
+                opportunities (37%). Interestingly, 34% of non users reported an interest in lunch programs, compared to
+                just 20% among users—suggesting that the addition of lunch programming could draw in new participants.
+                These results indicate an overall preference for active programming that promotes physical health,
+                intellectual stimulation, and active engagement in the world around them—and obviously facilities that
+                would allow for such programs to be delivered comfortably and safely. 62 39%49% 41%39%42% 39%
+                0%10%20%30%40%50%60%Figure 33 . Thinking about your own future interests, which of the following areas
+                would you prioritize in expanding the programsavailable through the Norwell COA? Non User User 63 38%47%
+                38%42% 21%27% 9%43%48% 40%49% 22%20% 7% 0%10%20%30%40%50%60% Health and wellness programs (e.g.,
+                podiatry, blood pressure clinics)In-home support services (e.g., home repairs, friendly
+                visiting)Professional services (e.g., tax preparation, legal services)Information and referral about
+                local resources and care providersFamily support (e.g., caregiving support, bereavement groups,
+                seminars)Adult day health programmingOtherFigure 34. Thinking about your own future needs, which of the
+                following areas would you prioritize in expanding services offered by the Norwell COA? Nonuser User 64
+                Survey respondents were asked the following question, “The Town of Norwell is considering a new
+                multigenerational community center. What type of multigenerational community center would you support?”
+                Regardless of age, there was substantial support for a center that was fully integrated for residents of
+                all ages to participate in programming and access services, with 55% of all respondents responding
+                favorably (see Figure 35 ). There is desire for continued availability of hybrid programs (see Figure 36
+                ). For younger respondents, 45% of those in their 50s and 50% of those in their 60s prefer to
+                participate remotely or in a hybrid format. Given the number of respondents who report still being in
+                the workforce and busy with other commitments, this finding is expected given the flexibility of
+                participating from a remote location and at varied times of day. 24%40%46%56% 71%56%49%39% 5%4%5%5% 0%
+                20% 40% 60% 80% 100%Age 50-59Age 60-69Age 70-79Age 80+Figure 35 . What type of multigenerational
+                community center would you support? Multigenerational community center that has dedicated space and
+                programming for residents 60 and older Multigenerational community center where space and programming is
+                fully integrated for residents of all ages Other 65 Communication and accessing information regarding
+                activities and programs emerged as a theme from the focus groups. There was one question included on the
+                survey related to preferred method of getting information. Preference for email, website, or social
+                media communication varied by age (see Figure 37 ). Among respondents age 60 or older, the Senior Center
+                newsletter is the most consistently preferred source of information. That share increases with each age
+                category, with 79% in their 60s, 89% in their 70s, and 93% of those age 80 and older choosing the
+                newsletter. Among respondents age 50-59, 64% prefer to find information about activities and services on
+                the Town website. Given that current Norwell Senior Center participants are somewhat older; thus we
+                conclude that continuing to make information about the Senior Center available through print media
+                remains important. Considering ways to amplify the distribution of the Senior Center Newsletter in
+                conjunction with expanding the existing digital presence will aid in effectively reaching both older and
+                younger residents. 55%50%60%74%3%5%6%7% 42% 45%34%19% 0%10%20%30%40%50%60%70%80%90%100% Age 50-59 Age
+                60-69 Age 70-79 Age 80+Figure 36. How do you prefer to participate in programs? In-person Remote Hybrid
+                66 56% 8%64% 5%44% 7%79% 5%53% 5%28% 6%89% 11%40% 5%23% 3%93% 11%25% 7%11%5%
+                0%10%20%30%40%50%60%70%80%90%100% Norwell Senior Center NewsletterCable TV (e.g., Norwell Spotlight)Town
+                of Norwell WebsiteRadio (WATD) Facebook or other social media sites or Town of Norwell
+                websiteOtherFigure 37 . Where would you prefer to find information about the activities and services
+                offered by the Norwell Senior Center? Age 50-59 Age 60-69 Age 70-79 Age 80+ 67 While most community
+                survey respondents do have access to the Internet from their home via computer (97%), it is important to
+                note that 10% of respondents age 80+ choose not to have internet access at this time (see Appendix A ).
+                This is important information both for outreach mechanisms but also to highlight the need for public
+                access to Internet services for those who do not have connectivity in their homes. At the conclusion of
+                the survey, respondents were invited to write in any additional thoughts or comments about the Town of
+                Norwell and more than 300 participants took the time to provide additional feedback. A sample of
+                additional comments are presented on Table 5. The majority of the comments were praising the Norwell
+                Senior Center. It is evident from the comments that while some of those who complimented the Senior
+                Center take advantage of the programs and services, others do not at this time, but are comforted to
+                know that the Senior Center is available for their future needs. In addition, the second most commonly
+                reported topic was, again, related to the rising costs of living and property taxes in Norwell that make
+                it nearly impossible for residents to age well in Norwell without significant financial means. This
+                theme emerged as a top concern in every type of data collected for this project. As well, the third most
+                commonly reported theme was related to ideas for additional programs and services that would be of
+                interest. Some respondents provided specific ideas, such as using the COA as a location for things like
+                flu shots, obtaining a transfer station sticker etc. to incentivize residents to actively go to the
+                NCOA; and increase their likelihood of returning for a program or service. Coordinating with other
+                departments and local organizations for music or performances, evening lectures, handy-person services,
+                more gardening and exercise activities, and intergenerational opportunities were among the other
+                suggestions. 68 Table 5. Additional thoughts or comments about the Town of Norwell or about current or
+                future needs of older residents in Norwell COA is valued by current and future users COA was very
+                helpful when first looking at Medicare. Notary service is helpful. Generally, a great resource, even if
+                not one I've used a lot. Kudos to the staff for their efforts! Doing great work. I am confident that
+                when the time comes, you will be a g reat resource for myself and my wife Although I don't use the NCOA
+                I think it is a very worthy association and I think they do a good job meeting senior needs Recognition
+                that for the COA to increase its community impact, space is needed The current COA does a great job with
+                what they have to work with but the facility is inadequate. The physical space does not encourage active
+                participation or desire to even participate among town residents Norwell's COA is not keeping up with
+                the needs of it's agin g residents compared to neighboring towns and needs significant upgrades. Right
+                now, it is the people who work at the COA that makes it exceptional.. . A better facility would be good
+                Property taxes causing people to consider aging elsewhere I hope I can stay in Norwell. I raised my 4
+                boys here taxes and cost of living will make it a challenge, but I enjoy living here it is HOME. I truly
+                believe living in Norwell is wonderful but will become cost prohibitive to many seniors unless steps are
+                taken to provide assistance and lower taxes. Suggestions for programing that would align with resident
+                interests Many people think of the COA as an organization for the very elderly or needy. The COA
+                building certainly doesn't help. If you have programs that draw young seniors in, you will get more
+                town/center support. Offer space for socializing, talks on topics: mobility, exercises, gardening,
+                men's/women's book club, diet advice (like healthy and cheap), energy conservation, real estate (reverse
+                mortgages ), estate planning, tax preparation, computers / smartphones, rehabbing home for safety, local
+                - state - federal help programs, education. Conclusion The population of Norwell is comprised of nearly
+                one-quarter older adults; and, if they can afford to stay , growth in the number of older Norwell
+                residents is expected within the next few years. This central, overarching observation—that the older
+                population of Norwell is already large and will continue to expand—makes clear the importance of
+                considering how well features of the Town, the services, and amenities available, and virtually every
+                aspect of the community align with the age demographic moving forward. 69 Appendix A: Community Survey
+                Results Note: Appendix tables are based on 1,081 responses to the Town of Norwell Survey of residents
+                age 50 and over, conducted in Fall 2022. 12% of respondents completed the survey online and the rest
+                were returned by mail. See text for additional details. Section I: Community and Neighborhood Q1. How
+                long have you lived in the Town of Norwell? All Ages Age 50-59 Age 60- 69 Age 70- 79 Age 80+ Fewer than
+                5 years 8% 11% 9% 8% 5% 5-9 years 7% 10% 8% 6% 4% 10-19 years 14% 30% 14% 5% 7% 20-29 years 20% 34% 27%
+                10% 7% 30 years or longer 51% 15% 42% 71% 77% Total 100% 100% 100% 100% 100% Q2. How important is it to
+                you to remain living in Norwell as you get older? All Ages Age 50- 59 Age 60- 69 Age 70-79 Age 80+ Very
+                Important 52% 27% 48% 61% 76% Somewhat Important 31% 41% 32% 30% 18% Slightly Important 11% 19% 13% 7%
+                3% Not at All Important 6% 13% 7% 2% 3% Total 100% 100% 100% 100% 100% 70 Section II: Housing and Living
+                Situation Q5. With whom do you live? (Check all that apply) All Ages Age 50-59 Age 60-69 Age 70-79 Age
+                80+ I live alone 15% 7% 10% 14% 35% I live with a spouse or partner 76% 82% 83% 78% 51% I live with my
+                adult children (age 18 or older) 22% 41% 21% 14% 14% My children (under age 18) 8% 33% 3% 1% -- My
+                grandchildren 4% -- 1% 8% 5% My parents 2% 5% 1% 1% -- Another relative 2% 4% 3% 1% -- *Figures do not
+                sum to 100% Q6. How many people do you live with, including yourself? All Ages Age 50-59 Age 60-69 Age
+                70-79 Age 80+ 1 15% 7% 10% 14% 35% 2 55% 24% 66% 70% 52% 3 12% 17% 16% 8% 8% 4 10% 33% 4% 2% 2% 5 6% 15%
+                4% 3% 2% 6 2% 3% -- 3% 1% 7 1% 1% 1% -- -- 8 -- -- -- 1% -- Q7. How many adults age 60+ live in your
+                household? All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ 0 18% 79% 1% -- 1% 1 25% 17% 24% 22% 42% 2 57%
+                3% 75% 79% 57% 3 1% 1% 1% -- 1% 4 -- -- -- -- -- Q8. How many children (under age 18) live in your
+                household? All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ 0 88% 64% 96% 92% 96% 1 6% 16% 3% 3% 3% 2 5%
+                15% 1% 4% 1% 3 2% 5% -- 1% -- 71 Q9. Does your current residence have a bedroom and full bath on the
+                entry level? All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Yes 54% 38% 50% 61% 70% No 46% 62% 50% 39%
+                30% Total 100% 100% 100% 100% 100% Q11. Do you rent or own your current home? All Ages Age 50-59 Age
+                60-69 Age 70-79 Age 80+ My home is owned by me or someone with whom I live, with no mortgage. 50% 25%
+                46% 60% 72% My home is owned by me or someone with whom I live, with a mortgage. 45% 70% 48% 36% 22% My
+                home is rented by me or someone with whom I live. 3% 5% 4% 4% 4% My home is rented, with a subsidy, by
+                me or someone with whom I live. 2% -- 2% -- 2% Total 100% 100% 100% 100% 100% 72 Q10. Does your current
+                residence need home modifications (e.g., grab bars in showers or railings on stairs) or repairs ( e.g.,
+                new roof, electrical work etc. ) to improve your ability to live in it safely for the next five years?
+                All Ages Age 50-59 Age 60- 69 Age 70-79 Age 80+ Yes, and I can afford to make these repairs 30% 24% 26%
+                38% 29% Yes, but I cannot afford to make these repairs 11% 10% 10% 12% 13% Yes, but I am not responsible
+                for making these modifications or repairs. 2% 2% 3% 2% 4% No, my current residence does not need repairs
+                57% 64% 61% 48% 54% Total 100% 100% 100% 100% 100% Q12. In the next 5 years, if you needed to move from
+                your current home, what kind of housing would you prefer in Norwell? ( Check all that apply ) All Ages
+                Age 50-59 Age 60- 69 Age 70-79 Age 80+ Smaller single-family home 40% 60% 48% 30% 17% Apartment building
+                9% 8% 6% 10% 11% Condominium, or townhome 37% 41% 40% 39% 19% Assisted Living community 25% 10% 17% 33%
+                41% Co-housing (pooling resources with friends/family) 7% 5% 11% 5% 10% Other 10% 6% 10% 13% 11%
+                *Figures do not sum to 100% 73 Q13. Do you require help with activities around the house (e,g., doing
+                routine chores like cleaning or yard work? (Check all that apply) All Ages Age 50-59 Age 60- 69 Age 70-
+                79 Age 80+ Daily activities (e.g., preparing meals or keeping track of bills) 3% -- 2% 3% 10% Yard work
+                (mowing lawn, raking leaves) 31% 15% 24% 38% 53% Snow removal 35% 16% 29% 41% 62% Small repair projects
+                (e.g., fixing a small appliance, replacing locks) 21% 13% 12% 25% 43% Technology support (e.g., cable
+                settings or connecting to Wi-Fi) 14% 3% 10% 17% 32% Personal care (e.g., getting dressed) 1% -- 1% 2% 3%
+                No, I do not require any help 54% 75% 64% 47% 22% *Figures do not sum to 100% Q14. If you ever needed
+                help around your home, who would assist you? (Check all that apply) All Ages Age 50-59 Age 60-69 Age
+                70-79 Age 80+ Family members 65% 65% 60% 68% 71% Friends 23% 34% 22% 22% 11% A neighbor 18% 22% 14% 21%
+                16% I would pay someone 58% 64% 60% 56% 52% I don’t know 7% 5% 8% 7% 7% Someone else (please specify):
+                2% 1% 3% 2% 3% *Figures do not sum to 100% Q15. Do you have an impairment that limits your ability to
+                participate in the community? All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Yes 8% 3% 7% 8% 20% No 92%
+                97% 93% 92% 80% Total 100% 100% 100% 100% 100% 74 Q16. I have been, or I have friends or family members
+                who have been, affected by substance misuse (e.g., misuse of alcohol or prescription drugs)? All Ages
+                Age 50-59 Age 60-69 Age 70-79 Age 80+ Yes 28% 38% 33% 22% 15% No 72% 62% 67% 78% 85% Total 100% 100%
+                100% 100% 100% Section IV: Social Activities & Relationships Q17. In the past month, how often did you
+                talk on the phone, send email or use social media, or get together to visit with family, friends, or
+                neighbors? (Check only one per item) Talk on the phone, FaceTime, or Zoom or FaceTime with family,
+                friends, or neighbors All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Every day 49% 51% 48% 51% 45% One
+                or more times a week 35% 35% 37% 30% 41% More than once a month 9% 9% 9% 11% 7% About once a month 3% 4%
+                2% 3% 2% A few times a year (e.g., holidays) 2% 1% 3% 2% 4% Never 2% -- 1% 3% 1% Total 100% 100% 100%
+                100% 100% Send email or use social media with family, friends, or neighbors All Ages Age 50-59 Age 60-69
+                Age 70-79 Age 80+ Every day 66% 81% 67% 64% 47% One or more times a week 21% 13% 24% 21% 25% More than
+                once a month 5% 3% 4% 5% 9% About once a month 2% 1% 1% 3% 4% A few times a year (e.g., holidays) 2% 1%
+                2% 2% 2% Never 4% 1% 2% 5% 13% Total 100% 100% 100% 100% 100% 75 Get together in person with family,
+                friends, or neighbors All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Every day 19% 26% 17% 16% 21% One
+                or more times a week 45% 42% 43% 48% 47% More than once a month 22% 21% 25% 22% 17% About once a month
+                6% 7% 8% 5% 5% A few times a year (e.g., holidays) 7% 4% 6% 8% 9% Never 1% -- 1% 1% 1% Total 100% 100%
+                100% 100% 100% Q18. Do you know someone living within a 1-hour distance on whom you can rely for help
+                when you need it? All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Yes 92% 90% 91% 94% 95% No 8% 10% 9% 6%
+                5% Total 100% 100% 100% 100% 100% Q19. Outside of your home, where do you socialize with others? (Check
+                all that apply) All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Norwell COA 12% -- 6% 15% 34% Library 15%
+                11% 13% 16% 23% Restaurant or café 67% 78% 70% 64% 50% Church or faith- based organization 24% 22% 22%
+                23% 35% Volunteer or civic activities 20% 29% 18% 17% 19% Museum or cultural center 10% 13% 10% 10% 6%
+                Gym or fitness class 26% 32% 23% 27% 18% Friend's home 60% 76% 60% 56% 46% Parks or outdoor space 50%
+                62% 60% 46% 22% Other 17% 13% 18% 19% 18% *Figures do not sum to 100% 76 Q20. In the past five years,
+                have you ever felt excluded in Norwell because of any of the following? All Ages Age 50-59 Age 60-69 Age
+                70-79 Age 80+ Skin color, race, or ethnicity 1% 3% 1% -- -- Sexual orientation -- 1% -- -- -- Age 3% 1%
+                3% 5% 2% Gender -- -- -- -- 1% Religious or cultural background 1% 2% 1% 1% -- Income 6% 12% 5% 4% 2%
+                Disability 1% 1% 1% 1% 1% Other 4% 8% 3% 4% 3% *Figures do not sum to 100% Section V: Caregiving Q21.
+                Please indicate your level of agreement with this statement: Norwell has adequate resources to support
+                residents living with dementia and their families. All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+
+                Strongly Agree 3% 6% 2% 2% 4% Agree 36% 37% 34% 32% 47% Disagree 49% 45% 54% 50% 40% Strongly Disagree
+                12% 12% 10% 16% 9% Total: 100% 100% 100% 100% 100% Q22. Do you now or have you in the past 2 years
+                provided care or assistance to a person who is disabled, frail, or struggling with a physical or mental
+                health condition (e.g., a spouse, parent, relative, or friend )? All Ages Age 50-59 Age 60-69 Age 70-79
+                Age 80+ Yes 41% 52% 44% 32% 34% No 59% 48% 56% 68% 66% Total 100% 100% 100% 100% 100% 77 Q23. How
+                challenging is/was it for you to care for this person(s) and meet your other responsibilities with
+                family and/or work? All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Very Challenging 33% 44% 31% 31% 16%
+                Somewhat Challenging 37% 33% 44% 35% 32% Neither Challenging Nor Easy 19% 17% 16% 18% 32% Somewhat Easy
+                7% 4% 5% 12% 13% Very Easy 4% 2% 4% 4% 7% Total 100% 100% 100% 100% 100% *This table only includes
+                respondents who reported providing care to someone now or in the last 12 months. Q24. If yes: Did this
+                person have any of the following conditions? All Ages Mobility issues/frailty 56% Alzheimer’s disease or
+                dementia 34% Chronic disease 29% Sensory/hearing/vision challenges 20% Psychological condition 19%
+                Intellectual or developmental disability 6% *Figures do not sum to 100% Section VI: Transportation Q25.
+                Which of the following strategies do you use to modify your driving to make it easier or safer? All Ages
+                Age 50-59 Age 60-69 Age 70-79 Age 80+ Not Applicable -- I do not drive 4% 1% 3% 3% 15% I limit my
+                driving (e.g., I avoid driving at night, during bad weather, in unfamiliar areas ) 26% 11% 16% 30% 55% I
+                drive with no limitations 70% 88% 81% 67% 30% Total 100% 100% 100% 100% 100% 78 Q26. Within the past 12
+                months, did you have to miss, cancel, or reschedule a medical appointment because of lack of
+                transportation? All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Yes 4% 2% 4% 3% 6% No 96% 98% 96% 97% 94%
+                Total 100% 100% 100% 100% 100% Section VII: Programs & Services at the Norwell COA Q27. Do you see the
+                Norwell Senior Center as playing a role in the lives of yourself, loved ones, or neighbors? All Ages Age
+                50-59 Age 60-69 Age 70-79 Age 80+ Yes 75% 65% 74% 78% 87% No 25% 35% 26% 22% 13% Total 100% 100% 100%
+                100% 100% Q28. The following items refer to programs and services that are offered through the Norwell
+                Senior Center. Please rate the importance of each program/service to you or a member of your family:
+                Assistance with local or state programs (e.g., fuel assistance, SNAP) All Ages Age 50-59 Age 60-69 Age
+                70- 79 Age 80+ Very Important (1) 31% 35% 33% 27% 29% (2) 6% 5% 8% 6% 4% Moderately Important (3) 15%
+                14% 12% 18% 14% (4) 5% 6% 6% 4% 4% Not at all important (5) 30% 27% 28% 34% 30% I don’t know 13% 13% 13%
+                11% 19% Total 100% 100% 100% 100% 100% Transportation All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+
+                Very Important (1) 31% 36% 27% 30% 31% (2) 6% 5% 10% 4% 3% Moderately Important (3) 14% 16% 12% 13% 17%
+                (4) 6% 4% 8% 7% 5% Not at all important (5) 32% 29% 31% 37% 30% I don’t know 11% 10% 12% 9% 14% Total
+                100% 100% 100% 100% 100% 79 Support Groups (e.g., low-vision) All Ages Age 50-59 Age 60-69 Age 70-79 Age
+                80+ Very Important (1) 19% 24% 17% 17% 22% (2) 7% 9% 7% 8% 3% Moderately Important (3) 19% 15% 21% 21%
+                13% (4) 8% 9% 9% 9% 6% Not at all important (5) 33% 30% 31% 35% 36% I don’t know 14% 13% 15% 10% 20%
+                Total 100% 100% 100% 100% 100% Health and Wellness Clinics (e.g., blood pressure, hearing clinic) All
+                Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Very Important (1) 25% 28% 24% 25% 25% (2) 10% 13% 12% 6% 10%
+                Moderately Important (3) 25% 21% 25% 29% 21% (4) 6% 4% 8% 6% 3% Not at all important (5) 24% 24% 21% 25%
+                27% I don’t know 10% 10% 10% 9% 14% Total 100% 100% 100% 100% 100% Nutrition programs (e.g., lunches,
+                grab 'n' go, home-delivered meals) All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Very Important (1) 24%
+                28% 22% 21% 30% (2) 10% 9% 12% 9% 11% Moderately Important (3) 20% 16% 20% 22% 22% (4) 7% 6% 7% 9% 5%
+                Not at all important (5) 28% 30% 28% 31% 21% I don’t know 11% 11% 11% 8% 11% Total 100% 100% 100% 100%
+                100% 80 Professional services (e.g., health insurance counseling, notary) All Ages Age 50-59 Age 60-69
+                Age 70-79 Age 80+ Very Important (1) 32% 32% 35% 31% 29% (2) 10% 10% 14% 8% 4% Moderately Important (3)
+                23% 20% 19% 24% 29% (4) 6% 6% 7% 6% 5% Not at all important (5) 20% 22% 17% 23% 19% I don’t know 9% 10%
+                8% 8% 14% Total 100% 100% 100% 100% 100% Social or recreational activities (e.g., arts, crafts, games)
+                All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Very Important (1) 26% 35% 23% 20% 26% (2) 11% 12% 14% 9%
+                7% Moderately Important (3) 24% 17% 24% 31% 24% (4) 9% 7% 11% 8% 8% Not at all important (5) 21% 20% 20%
+                24% 23% I don’t know 9% 9% 8% 8% 12% Total 100% 100% 100% 100% 100% Fitness activities (e.g., yoga, tai
+                chi, strength classes) All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Very Important (1) 27% 37% 26% 21%
+                27% (2) 13% 12% 15% 13% 13% Moderately Important (3) 25% 19% 25% 30% 25% (4) 6% 4% 7% 7% 6% Not at all
+                important (5) 20% 19% 18% 21% 20% I don’t know 9% 9% 9% 8% 9% Total 100% 100% 100% 100% 100% Educational
+                opportunities (e.g., computer classes, current event discussion groups, lectures) All Ages Age 50-59 Age
+                60-69 Age 70-79 Age 80+ Very Important (1) 26% 30% 25% 23% 26% (2) 13% 13% 16% 13% 9% Moderately
+                Important (3) 26% 24% 25% 29% 25% 81 (4) 7% 6% 8% 7% 6% Not at all important (5) 19% 18% 18% 20% 20% I
+                don’t know 9% 9% 8% 8% 14% Total 100% 100% 100% 100% 100% Trips and outings All Ages Age 50-59 Age 60-69
+                Age 70-79 Age 80+ Very Important (1) 22% 26% 20% 17% 24% (2) 12% 13% 12% 11% 12% Moderately Important
+                (3) 25% 22% 25% 29% 24% (4) 9% 8% 10% 10% 4% Not at all important (5) 23% 21% 25% 25% 25% I don’t know
+                9% 10% 8% 8% 11% Total 100% 100% 100% 100% 100% Volunteer Opportunities All Ages Age 50-59 Age 60-69 Age
+                70-79 Age 80+ Very Important (1) 21% 30% 18% 18% 18% (2) 12% 14% 16% 9% 7% Moderately Important (3) 26%
+                26% 27% 28% 18% (4) 7% 3% 8% 11% 5% Not at all important (5) 23% 17% 21% 24% 34% I don’t know 11% 10%
+                11% 10% 18% Total 100% 100% 100% 100% 100% Virtual/Hybrid Programming All Ages Age 50-59 Age 60-69 Age
+                70-79 Age 80+ Very Important (1) 14% 22% 11% 10% 15% (2) 8% 7% 11% 8% 5% Moderately Important (3) 24%
+                24% 25% 25% 17% (4) 8% 7% 8% 10% 4% Not at all important (5) 28% 24% 26% 31% 33% I don’t know 18% 16%
+                19% 16% 26% Total 100% 100% 100% 100% 100% 82 Q29. Over the last 12 months, how frequently have you used
+                services or attended programs offered by the Norwell COA, either in-person or remote? All Ages Age 50-59
+                Age 60-69 Age 70-79 Age 80+ Two or more times a week 2% -- 1% 3% 7% About once a week 4% -- 4% 4% 11% A
+                few times a month 4% -- 2% 4% 11% About once a month 3% -- 2% 5% 5% A few times a year (e.g., special
+                events only) 22% 8% 21% 30% 28% Never 65% 92% 70% 54% 38% Total 100% 100% 100% 100% 100% Q30. How do you
+                prefer to participate in programs? All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ In-person 58% 55% 49%
+                60% 74% Remotely 5% 3% 6% 6% 7% Hybrid 37% 42% 45% 34% 19% Total 100% 100% 100% 100% 100% 83 Q31. What
+                is the reason that you do not currently use programs or services offered by the Norwell COA? (Check all
+                that apply) All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ I am still working 34% 67% 47% 15% 4% I
+                participate in programs elsewhere 11% 5% 8% 19% 9% I am unaware of activities or programs available 15%
+                21% 18% 10% 8% I am not old enough 20% 57% 17% 6% -- Hours of operation are inconvenient 4% 4% 2% 6% 3%
+                I do not have time 17% 16% 21% 17% 14% N/A, I currently use programs or services offered by the Norwell
+                COA 13% -- 10% 18% 29% Other 19% 10% 15% 26% 27% *Figures do not sum to 100%. Q32. Have you ever
+                traveled to senior centers in other towns to participate in their programs? All Ages Age 50-59 Age 60-69
+                Age 70-79 Age 80+ Yes 14% 6% 10% 21% 19% No 86% 94% 90% 79% 81% Total 100% 100% 100% 100% 100% 84 Q33.
+                Please check all factors that would increase the likelihood of your using the Norwell Senior Center
+                programs and services more often… All ages Age 50-59 Age 60-69 Age 70-79 Age 80+ If transportation
+                options to the Senior Center were more convenient 5% 3% 2% 6% 9% If I had more knowledge about programs
+                and services that are available 27% 39% 29% 21% 16% If the cost of programs was reduced or eliminated 8%
+                5% 7% 10% 9% If programs and services were better suited to my interests 27% 16% 26% 37% 25% If programs
+                were offered in the evening or on weekends 13% 20% 16% 9% 5% If it were easier to access the COA
+                building (e.g., more parking, updated building) 6% 3% 4% 9% 8% *Figures do not sum to 100% 85 Q34.
+                Thinking about your own future needs, which of the following areas would you prioritize in expanding the
+                services offered through the Norwell COA? (Check all that apply) All ages Age 50-59 Age 60-69 Age 70-79
+                Age 80+ Transportation services to medical appointments, grocery shopping, errands 43% 47% 40% 43% 41%
+                Health and wellness programs (e.g., podiatry, blood pressure clinics) 40% 49% 42% 36% 30% In-home
+                support services (e.g., home repairs, friendly visiting) 47% 56% 43% 48% 41% Professional services
+                (e.g., tax preparation, legal services) 38% 45% 43% 36% 24% Information and referral about local
+                resources and care providers 44% 49% 48% 44% 34% Family support (e.g., caregiving support, bereavement
+                groups, seminars) 21% 34% 21% 18% 11% Adult day health programming 18% 23% 21% 14% 13% Other 8% 8% 7% 9%
+                9% *Figures do not sum to 100%. 86 Q35. Thinking about your own future interests, which of the following
+                areas would you prioritize in expanding the programs offered through the Norwell COA? (Check all that
+                apply). All ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Lunch or other nutrition programs 22% 25% 20% 19%
+                27% Grab ‘n’ Go Meals 27% 25% 23% 27% 38% Technology skills classes (e.g., smartphone applications) 33%
+                32% 30% 36% 35% Personal Growth & Wellness (e.g., meditation, financial planning) 32% 42% 43% 24% 10%
+                Performances and visual arts (e.g., concerts, lectures) 38% 44% 44% 34% 27% Social activities (e.g.,
+                games or parties) 29% 46% 31% 21% 15% In-home programs (e.g., friendly visiting or help with minor
+                chores/errands) 23% 28% 23% 22% 19% Space for informal socializing 17% 23% 17% 15% 8% Day trips 36% 41%
+                35% 37% 29% Arts and crafts classes (e.g., photography, acting, music) 27% 33% 33% 24% 14% Indoor
+                exercise (e.g., yoga, aerobics) 38% 51% 40% 37% 21% Outdoor exercise (e.g., hiking/walking, kayaking)
+                45% 61% 60% 38% 14% Lifelong learning programs (e.g., history, writing, languages, cultural courses) 34%
+                36% 39% 35% 21% Special Interest (e.g., LGBTQ+, singles, or grandparents raising grandchildren) 3% 8% 3%
+                2% 1% Intergenerational activities 12% 19% 12% 10% 3% 87 Caregiver programs (e.g., respite, support
+                groups) 16% 26% 15% 14% 11% Evening or weekend activities 21% 32% 20% 17% 11% Overnight trips 12% 16%
+                12% 11% 7% Other 5% 7% 3% 7% 3% *Figures do not sum to 100%. Q36. The Town of Norwell is considering a
+                new multigenerational community center. What type of multigenerational community center would you
+                support? All Ages Age 50- 59 Age 60-69 Age 70-79 Age 80+ Multigenerational community center that has
+                dedicated space and programming for residents 60 and older 41% 24% 40% 46% 56% Multigenerational
+                community center where space and programming is fully integrated for residents of all ages 54% 71% 55%
+                49% 39% Other 5% 5% 5% 5% 5% Total: 100% 100% 100% 100% 100% Q37. Where do you prefer to find
+                information about the activities and services offered in the Town of Norwell? ( Check all that apply )
+                All Ages Age 50-59 Age 60- 69 Age 70- 79 Age 80+ Norwell Senior Center Newsletter 79% 56% 79% 89% 93%
+                Cable TV (e.g., Norwell Spotlight) 8% 8% 5% 11% 11% Town of Norwell Website 47% 64% 53% 40% 25% Radio
+                (WATD) 5% 5% 5% 5% 7% Facebook or other social media sites or 27% 44% 28% 23% 11% Other 5% 7% 6% 3% 5%
+                *Figures do not sum to 100%. 88 Section VIII: Demographic information Q38. Please select your gender
+                identity? All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Male 40% 65% 59% 43% 39% Female 60% 35% 41% 57%
+                41% Other -- -- -- -- -- Total 100% 100% 100% 100% 100% Q39. What is your age range? Age Percentage
+                Responded 50-59 23% 60-69 29% 70-79 30% 80-89 14% 90+ 2% No response 2% Total 100% Q40. Are you able to
+                access the internet from your home? All Ages Age 50- 59 Age 60- 69 Age 70- 79 Age 80+ Yes 97% 99% 99%
+                98% 88% No, I cannot afford internet 1% 1% 1% 1% 2% No, I choose not to have internet 2% -- -- 1% 10%
+                Total 100% 100% 100% 100% 100% 89 Q41. What is your total household income (from all sources)? All Ages
+                Age 50- 59 Age 60- 69 Age 70- 79 Age 80+ Less than $25,000 5% 2% 6% 4% 10% $25,000 - $49,999 8% 1% 6% 8%
+                22% $50,000 -$74,999 11% 2% 6% 17% 23% $75,000 - $99,999 10% 3% 9% 17% 11% $100,000 -$149,999 17% 20%
+                17% 16% 11% $150,000 - $199,999 9% 12% 12% 7% 1% $200,000 or more 18% 40% 19% 8% 2% Prefer not to answer
+                22% 20% 25% 23% 20% Total 100% 100% 100% 100% 100% Q42. What is your employment status? All Ages Age 50-
+                59 Age 60- 69 Age 70- 79 Age 80+ Working full-time 30% 73% 37% 6% 1% Working part-time 12% 8% 15% 14% 6%
+                Retired 45% 7% 35% 67% 74% Not fully retired 4% 2% 5% 6% 1% Looking for work 11% 3% 9% 14% 18% Other 5%
+                5% 6% 3% 4% *Figures do not sum to 100% Q43. When do you plan to fully retire? All Ages Age 50- 59 Age
+                60- 69 Age 70- 79 Age 80+ N/A, I am already fully retired 46% 4% 35% 71% 91% Within the next 3 years 9%
+                2% 19% 8% 3% In 3 to 5 years 7% 6% 17% 3% --% In 6 to 10 years 10% 29% 8% -- --% In more than 10 years
+                9% 32% 1% 1% -- Not sure 12% 17% 15% 9% 3% I do not anticipate ever fully retiring 7% 10% 5% 8% 3% Total
+                100% 100% 100% 100% 100% 90 Q44. Please indicate your level of agreement or disagreement with the
+                following statement: “ I have adequate resources to meet my financial needs, including home maintenance,
+                personal healthcare, and other expenses .” All Ages Age 50-59 Age 60-69 Age 70-79 Age 80+ Strongly Agree
+                35% 43% 36% 33% 28% Agree 54% 49% 54% 57% 57% Disagree 8% 6% 8% 7% 11% Strongly Disagree 3% 2% 2% 3% 4%
+                Total 100% 100% 100% 100% 100% </div>
+        </div>
+
+        <script>
+            // Mock Data
+            const DB = [
+                {
+                    id: 147,
+                    filename: "Medfield_agenda.pdf",
+                    city: "Medfield",
+                    county: "Norfolk",
+                    date: "2026-01-06",
+                    source_url: "https://www.town.medfield.net/AgendaCenter",
+                    path: "Medfield_agenda.pdf",
+                    classification: "recent",
+                    snippet: "...ugh Zoom Tuesday , January 6, 2026 at 6:00 pm Revised Agenda (Subject to Change) Call to Order Disclosure of video recording We want to take a moment of appreciation for our Troops serving around the <span class=\"highlight\">globe</span> in defense of our country Appointments 1. Marion Bonoldi, Town Clerk to request a. a vote to Opt Out Vote By Mail for the municipal election on March 30, 2026 and a vote to appoint election workers f..."
+                },
+                {
+                    id: 157,
+                    filename: "Norwell_aging_in_norwell_report.pdf",
+                    city: "Norwell",
+                    county: "Plymouth",
+                    date: "2023-05-11",
+                    source_url: "https://cms2.revize.com/revize/norwell/calendar.php",
+                    path: "archive/Norwell_aging_in_norwell_report.pdf",
+                    classification: "archive",
+                    snippet: ".../14/it-takes-a-village-of-seniors-in-\nswampscott/?fbclid=IwAR1l809JuBG5G4XJD7yDLCIMN23xHUX-R5VogVwspfdVHqKlgXPL4-ZkVxQ  \n10 https://www.saintlukesscituate.com/community-dinner   \n11 https://www.boston<span class=\"highlight\">globe</span>.com/2022/09/17/metro/happy-chat-benches-encourage-strangers-sit-stay-while/   \n12 https://adoptgrandparent.org/   \n13 https://conversationsnewyork.com/   \n\n \n11 Introduction \nOver the coming years, t..."
+                }
+            ];
+
+            function performSearch() {
+                const query = document.getElementById('query').value.toLowerCase();
+                const resultsDiv = document.getElementById('results');
+
+                if (!query) return;
+                resultsDiv.innerHTML = '<div style="text-align:center; color:#666;">Searching...</div>';
+
+                setTimeout(() => {
+                    if (query.includes('globe')) {
+                        // Render Results
+                        let html = `<div style="margin-bottom: 15px; color: #666;">Found ${DB.length} results</div>`;
+                        html += DB.map(r => `
+                        <div class="result-item">
+                            <div class="result-header">
+                                <span class="result-city">${r.city} | ${r.county} County</span>
+                                <span class="result-date">${r.date}</span>
+                            </div>
+                            <div class="result-title">
+                                <a onclick="showView(${r.id})">${r.filename}</a>
+                                <span class="badge badge-${r.classification}">${r.classification}</span>
+                            </div>
+                            <div class="result-meta">
+                                Source: <a href="${r.source_url}" target="_blank">${r.source_url}</a> | Path: ${r.path}
+                            </div>
+                            <div class="snippet">${r.snippet}</div>
+                        </div>
+                    `).join('');
+                        resultsDiv.innerHTML = html;
+                    } else {
+                        resultsDiv.innerHTML = '<div style="text-align:center; padding: 20px;">No results found. (Hint: Try searching for "globe")</div>';
+                    }
+                }, 300);
+            }
+
+            function showView(id) {
+                document.getElementById('searchContainer').style.display = 'none';
+                document.getElementById('view-' + id).style.display = 'block';
+            }
+
+            function showSearch() {
+                document.querySelectorAll('.view-page').forEach(el => el.style.display = 'none');
+                document.getElementById('searchContainer').style.display = 'block';
+            }
+
+            // Modal Logic
+            const modal = document.getElementById('helpModal');
+            const btn = document.getElementById('helpBtn');
+            const span = document.getElementsByClassName("close")[0];
+
+            if (btn) btn.onclick = function () { modal.style.display = "block"; }
+            if (span) span.onclick = function () { modal.style.display = "none"; }
+            window.onclick = function (event) {
+                if (event.target == modal) { modal.style.display = "none"; }
+            }
+        </script>
+</body>
+
+</html>
