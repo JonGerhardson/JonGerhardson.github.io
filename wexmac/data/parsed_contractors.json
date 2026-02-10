@@ -1,0 +1,772 @@
+[
+  {
+    "name": "4 Marine Service LLC",
+    "location": "Guayanilla, Puerto Rico",
+    "award_number": "N0002325D0001",
+    "award_number_dashes": "N00023-25-D-0001",
+    "uei": "SLQSQ8NXQ5R8"
+  },
+  {
+    "name": "Acquisition Logistics LLC",
+    "location": "Clint, Texas",
+    "award_number": "N0002325D0004",
+    "award_number_dashes": "N00023-25-D-0004",
+    "uei": "Y5U3BSK2G389"
+  },
+  {
+    "name": "African Contract Solutions Inc.",
+    "location": "Irving, Texas",
+    "award_number": "N0002325D0005",
+    "award_number_dashes": "N00023-25-D-0005",
+    "uei": "GZ3LZN5LYKU5"
+  },
+  {
+    "name": "Ahntech Inc.",
+    "location": "Los Altos, California",
+    "award_number": "N0002325D0007",
+    "award_number_dashes": "N00023-25-D-0007",
+    "uei": "ZNEQDU96DD97"
+  },
+  {
+    "name": "Amentum Services Inc.",
+    "location": "Chantilly, Virginia",
+    "award_number": "N0002325D0009",
+    "award_number_dashes": "N00023-25-D-0009",
+    "uei": "QEMLRQA7PLG4"
+  },
+  {
+    "name": "Amstability LLC",
+    "location": "Alexandria, Virginia",
+    "award_number": "N0002325D0011",
+    "award_number_dashes": "N00023-25-D-0011",
+    "uei": "FZ12QM9T5EF7"
+  },
+  {
+    "name": "Anglicotech LLC",
+    "location": "Arlington, Virginia",
+    "award_number": "N0002325D0012",
+    "award_number_dashes": "N00023-25-D-0012",
+    "uei": "GTTNN68QZAB9"
+  },
+  {
+    "name": "Atlantic Diving Supply Inc.",
+    "location": "Virginia Beach, Virginia",
+    "award_number": "N0002325D0013",
+    "award_number_dashes": "N00023-25-D-0013",
+    "uei": "GJMSFBCNMSK3"
+  },
+  {
+    "name": "Centerra Group LLC",
+    "location": "Herndon, Virginia",
+    "award_number": "N0002325D0016",
+    "award_number_dashes": "N00023-25-D-0016",
+    "uei": "H4H3J7SJCT76"
+  },
+  {
+    "name": "Culmen International LLC",
+    "location": "Alexandria, Virginia",
+    "award_number": "N0002325D0019",
+    "award_number_dashes": "N00023-25-D-0019",
+    "uei": "P8T9JZVLSXA3"
+  },
+  {
+    "name": "Da Defense Logistics HQ",
+    "location": "El Paso, Texas",
+    "award_number": "N0002325D0020",
+    "award_number_dashes": "N00023-25-D-0020",
+    "uei": "XJKJUMVHU6P8"
+  },
+  {
+    "name": "Delta Vector USA LLC",
+    "location": "Texas City, Texas",
+    "award_number": "N0002325D0023",
+    "award_number_dashes": "N00023-25-D-0023",
+    "uei": "F1R6Y57SB2W3"
+  },
+  {
+    "name": "Deployed Resources LLC",
+    "location": "Rome, New York",
+    "award_number": "N0002325D0025",
+    "award_number_dashes": "N00023-25-D-0025",
+    "uei": "GFTGQRJ8F959"
+  },
+  {
+    "name": "Elizarov Consulting Group LLC",
+    "location": "Germantown, Maryland",
+    "award_number": "N0002325D0031",
+    "award_number_dashes": "N00023-25-D-0031",
+    "uei": "XCNKVHMVEK91"
+  },
+  {
+    "name": "GardaWorld Federal Services LLC",
+    "location": "Arlington, Virginia",
+    "award_number": "N0002325D0032",
+    "award_number_dashes": "N00023-25-D-0032",
+    "uei": "FJLMN2N34M93"
+  },
+  {
+    "name": "Gemini Tech Services",
+    "location": "Willow Park, Texas",
+    "award_number": "N0002325D0034",
+    "award_number_dashes": "N00023-25-D-0034",
+    "uei": "SYYYBAUWMQG3"
+  },
+  {
+    "name": "Greenlight Group LLC",
+    "location": "Destin, Florida",
+    "award_number": "N0002325D0036",
+    "award_number_dashes": "N00023-25-D-0036",
+    "uei": "QWM2D2ACD8F9"
+  },
+  {
+    "name": "Hall Brian\\* d/b/a Brian Hall Properties",
+    "location": "Solana Beach, California",
+    "award_number": "N0002325D0038",
+    "award_number_dashes": "N00023-25-D-0038",
+    "uei": "C7MAWRJDAC16"
+  },
+  {
+    "name": "Hong Ye Rental & Construction Ltd.",
+    "location": "Saipan, North Mariana Islands",
+    "award_number": "N0002325D0040",
+    "award_number_dashes": "N00023-25-D-0040",
+    "uei": "JJSBMBN7BX89"
+  },
+  {
+    "name": "CBRE Government & Defense Services",
+    "location": "McLean, Virginia",
+    "award_number": "N0002325D0044",
+    "award_number_dashes": "N00023-25-D-0044",
+    "uei": "FYA3AHW4CX78"
+  },
+  {
+    "name": "KBR Services LLC",
+    "location": "Houston, Texas",
+    "award_number": "N0002325D0046",
+    "award_number_dashes": "N00023-25-D-0046",
+    "uei": "HYBLSJAMM2F4"
+  },
+  {
+    "name": "KUOG Corp.",
+    "location": "Huntsville, Alabama",
+    "award_number": "N0002325D0047",
+    "award_number_dashes": "N00023-25-D-0047",
+    "uei": "QAM2BWZNXJ45"
+  },
+  {
+    "name": "KVG LLC",
+    "location": "Gettysburg, Pennsylvania",
+    "award_number": "N0002325D0048",
+    "award_number_dashes": "N00023-25-D-0048",
+    "uei": "HERXJEEWZFL7"
+  },
+  {
+    "name": "Lee Eng & Construction Inc.",
+    "location": "Houston, Texas",
+    "award_number": "N0002325D0049",
+    "award_number_dashes": "N00023-25-D-0049",
+    "uei": "NNBCJMD8Y5H5"
+  },
+  {
+    "name": "Logistics Worldwide 365 LLC",
+    "location": "Dallas, Georgia",
+    "award_number": "N0002325D0051",
+    "award_number_dashes": "N00023-25-D-0051",
+    "uei": "K8WGTYYQKFJ5"
+  },
+  {
+    "name": "Loyal Source Government Services LLC",
+    "location": "Orlando, Florida",
+    "award_number": "N0002325D0052",
+    "award_number_dashes": "N00023-25-D-0052",
+    "uei": "Y54FQAPG4TN5"
+  },
+  {
+    "name": "Lukos LLC",
+    "location": "Tampa, Florida",
+    "award_number": "N0002325D0053",
+    "award_number_dashes": "N00023-25-D-0053",
+    "uei": "HB6GKZYMMW89"
+  },
+  {
+    "name": "Maginot Support Services",
+    "location": "Flower Mound, Texas",
+    "award_number": "N0002325D0054",
+    "award_number_dashes": "N00023-25-D-0054",
+    "uei": "V1Y6AUM6LVN5"
+  },
+  {
+    "name": "Marianas Integration LLC",
+    "location": "Saipan, North Mariana Islands",
+    "award_number": "N0002325D0055",
+    "award_number_dashes": "N00023-25-D-0055",
+    "uei": "RMK9SGM28UQ5"
+  },
+  {
+    "name": "MLSUSA Corp.",
+    "location": "East Longmeadow, Massachusetts",
+    "award_number": "N0002325D0058",
+    "award_number_dashes": "N00023-25-D-0058",
+    "uei": "CP9JVKX79AU8"
+  },
+  {
+    "name": "Noble Supply & Logistics LLC",
+    "location": "Boston, Massachusetts",
+    "award_number": "N0002325D0064",
+    "award_number_dashes": "N00023-25-D-0064",
+    "uei": "YLE5AAYNVPK6"
+  },
+  {
+    "name": "Obera LLC",
+    "location": "Herndon, Virginia",
+    "award_number": "N0002325D0065",
+    "award_number_dashes": "N00023-25-D-0065",
+    "uei": "G3KDCDK8JJU8"
+  },
+  {
+    "name": "Pacific Defense Contracting LLC",
+    "location": "Bangor, Maine",
+    "award_number": "N0002325D0068",
+    "award_number_dashes": "N00023-25-D-0068",
+    "uei": "RKTUJBV558Y7"
+  },
+  {
+    "name": "Palladium International LLC",
+    "location": "Washington, D.C.",
+    "award_number": "N0002325D0069",
+    "award_number_dashes": "N00023-25-D-0069",
+    "uei": "DFVMS8LMNX65"
+  },
+  {
+    "name": "Red Orange North America Inc.",
+    "location": "Fort Washington, Pennsylvania",
+    "award_number": "N0002325D0073",
+    "award_number_dashes": "N00023-25-D-0073",
+    "uei": "S8NPX3Q8MQH3"
+  },
+  {
+    "name": "Relyant Global LLC",
+    "location": "Maryville, Tennessee",
+    "award_number": "N0002325D0074",
+    "award_number_dashes": "N00023-25-D-0074",
+    "uei": "MCLTZ223AJG3"
+  },
+  {
+    "name": "Response AI Solutions LLC",
+    "location": "Great Falls, Virginia",
+    "award_number": "N0002325D0075",
+    "award_number_dashes": "N00023-25-D-0075",
+    "uei": "ZE2JVFS8ML75"
+  },
+  {
+    "name": "RMGS-Berger, a JV LLC",
+    "location": "Virginia Beach, Virginia",
+    "award_number": "N0002325D0077",
+    "award_number_dashes": "N00023-25-D-0077",
+    "uei": "L3D6VFJQ1BM8"
+  },
+  {
+    "name": "TechTrans International Inc.",
+    "location": "Houston, Texas",
+    "award_number": "N0002325D0081",
+    "award_number_dashes": "N00023-25-D-0081",
+    "uei": "NLEVNRPHWNG9"
+  },
+  {
+    "name": "Terrestris LLC",
+    "location": "Dumfries, Virginia",
+    "award_number": "N0002325D0082",
+    "award_number_dashes": "N00023-25-D-0082",
+    "uei": "RM6LFF8N8KN3"
+  },
+  {
+    "name": "Trailer Bridge Inc.",
+    "location": "Jacksonville, Florida",
+    "award_number": "N0002325D0084",
+    "award_number_dashes": "N00023-25-D-0084",
+    "uei": "EKM4MEHWJ5E9"
+  },
+  {
+    "name": "US21 Inc.",
+    "location": "Fairfax, Virginia",
+    "award_number": "N0002325D0085",
+    "award_number_dashes": "N00023-25-D-0085",
+    "uei": "DA9MR1TS7AZ9"
+  },
+  {
+    "name": "Vectrus Systems LLC (V2X)",
+    "location": "Colorado Springs, Colorado",
+    "award_number": "N0002325D0086",
+    "award_number_dashes": "N00023-25-D-0086",
+    "uei": "RRFJZGASZJ41"
+  },
+  {
+    "name": "Waypoint LLC",
+    "location": "Lead, South Dakota",
+    "award_number": "N0002325D0087",
+    "award_number_dashes": "N00023-25-D-0087",
+    "uei": "TLLKE4QZG9N4"
+  },
+  {
+    "name": "Weston Trolley Co. LLC",
+    "location": "Dearborn, Missouri",
+    "award_number": "N0002325D0088",
+    "award_number_dashes": "N00023-25-D-0088",
+    "uei": "GBGQZNNE18L9"
+  },
+  {
+    "name": "Active Deployment Systems",
+    "location": "San Marcos, Texas",
+    "award_number": "N0002325D0091",
+    "award_number_dashes": "N00023-25-D-0091",
+    "uei": "XXJXSMP4H4J1"
+  },
+  {
+    "name": "Acuity International LLC",
+    "location": "Reston, Virginia",
+    "award_number": "N0002325D0092",
+    "award_number_dashes": "N00023-25-D-0092",
+    "uei": "L41JMCZK3GW6"
+  },
+  {
+    "name": "Apex Site Services",
+    "location": "Waxahachie, Texas",
+    "award_number": "N0002325D0093",
+    "award_number_dashes": "N00023-25-D-0093",
+    "uei": ""
+  },
+  {
+    "name": "Aspen Medical USA",
+    "location": "Washington, D.C.",
+    "award_number": "N0002325D0094",
+    "award_number_dashes": "N00023-25-D-0094",
+    "uei": "UF3FMLEAWT13"
+  },
+  {
+    "name": "Aspetto Inc.",
+    "location": "Fredericksburg, Virginia",
+    "award_number": "N0002325D0095",
+    "award_number_dashes": "N00023-25-D-0095",
+    "uei": "Y7QYC9NNFMW8"
+  },
+  {
+    "name": "Asset Protection & Security Services L.P.",
+    "location": "Corpus Christi, Texas",
+    "award_number": "N0002325D0096",
+    "award_number_dashes": "N00023-25-D-0096",
+    "uei": "HMJ4CBSCDNY4"
+  },
+  {
+    "name": "ATCO Frontec USA",
+    "location": "Houston, Texas",
+    "award_number": "N0002325D0097",
+    "award_number_dashes": "N00023-25-D-0097",
+    "uei": "X2BEJB7V1WH5"
+  },
+  {
+    "name": "Beachview Logistics US Inc.",
+    "location": "Brunswick, Georgia",
+    "award_number": "N0002325D0098",
+    "award_number_dashes": "N00023-25-D-0098",
+    "uei": "UAACKKSPS863"
+  },
+  {
+    "name": "Big Jet LLC",
+    "location": "Pittsburgh, Pennsylvania",
+    "award_number": "N0002325D0099",
+    "award_number_dashes": "N00023-25-D-0099",
+    "uei": "HAEFB5M9YVL3"
+  },
+  {
+    "name": "Bluewater Management Group",
+    "location": "Chesapeake, Virginia",
+    "award_number": "N0002325D0100",
+    "award_number_dashes": "N00023-25-D-0100",
+    "uei": "MA5VZ767KJ67"
+  },
+  {
+    "name": "CFK Services",
+    "location": "Milton, Florida",
+    "award_number": "N0002325D0101",
+    "award_number_dashes": "N00023-25-D-0101",
+    "uei": "TRWXNUV7C9R7"
+  },
+  {
+    "name": "Cherokee Nation Government Solutions LLC",
+    "location": "Tulsa, Oklahoma",
+    "award_number": "N0002325D0102",
+    "award_number_dashes": "N00023-25-D-0102",
+    "uei": "GTS9NLFKGEG8"
+  },
+  {
+    "name": "Continuity Global Solutions",
+    "location": "Port Saint Joe, Florida",
+    "award_number": "N0002325D0103",
+    "award_number_dashes": "N00023-25-D-0103",
+    "uei": "FAQYB9J9EA36"
+  },
+  {
+    "name": "CoreCivic Inc.",
+    "location": "Brentwood, Tennessee",
+    "award_number": "N0002325D0104",
+    "award_number_dashes": "N00023-25-D-0104",
+    "uei": "HJGMJN1JKL46"
+  },
+  {
+    "name": "Cotton Commercial USA Inc.",
+    "location": "Katy, Texas",
+    "award_number": "N0002325D0105",
+    "award_number_dashes": "N00023-25-D-0105",
+    "uei": "VPRKW5GS6K17"
+  },
+  {
+    "name": "Crisis Response Co. LLC",
+    "location": "Southlake, Texas",
+    "award_number": "N0002325D0106",
+    "award_number_dashes": "N00023-25-D-0106",
+    "uei": "D532S19GWHD7"
+  },
+  {
+    "name": "Critical Contingency Solutions LLC",
+    "location": "Wimberley, Texas",
+    "award_number": "N0002325D0107",
+    "award_number_dashes": "N00023-25-D-0107",
+    "uei": "K4ZTKRPUGYN3"
+  },
+  {
+    "name": "Disaster Management Group LLC",
+    "location": "Jupiter, Florida",
+    "award_number": "N0002325D0108",
+    "award_number_dashes": "N00023-25-D-0108",
+    "uei": "MLLGWJ8ZZ2S3"
+  },
+  {
+    "name": "DKW Communications Inc.",
+    "location": "Washington, D.C.",
+    "award_number": "N0002325D0109",
+    "award_number_dashes": "N00023-25-D-0109",
+    "uei": "DKDMARTHRKD9"
+  },
+  {
+    "name": "Dynamik Inc.",
+    "location": "San Diego, California",
+    "award_number": "N0002325D0110",
+    "award_number_dashes": "N00023-25-D-0110",
+    "uei": "HYDNJRF3MG73"
+  },
+  {
+    "name": "Ecology Mir Group LLC",
+    "location": "Fairfax, Virginia",
+    "award_number": "N0002325D0111",
+    "award_number_dashes": "N00023-25-D-0111",
+    "uei": "KH5HQMQVN6A5"
+  },
+  {
+    "name": "EDS Holdco LLC",
+    "location": "Lexington, Kentucky",
+    "award_number": "N0002325D0112",
+    "award_number_dashes": "N00023-25-D-0112",
+    "uei": "HAK5PNC3GZW5"
+  },
+  {
+    "name": "EEC-Lukos JV LLC",
+    "location": "Haines City, Florida",
+    "award_number": "N0002325D0113",
+    "award_number_dashes": "N00023-25-D-0113",
+    "uei": "G54RGH5TBFZ3"
+  },
+  {
+    "name": "EFS Ebrex Inc.",
+    "location": "Vienna, Virginia",
+    "award_number": "N0002325D0114",
+    "award_number_dashes": "N00023-25-D-0114",
+    "uei": "KBT8D14KNCN5"
+  },
+  {
+    "name": "EGA Associates LLC",
+    "location": "Jeannette, Pennsylvania",
+    "award_number": "N0002325D0115",
+    "award_number_dashes": "N00023-25-D-0115",
+    "uei": "S341YV4KQPX5"
+  },
+  {
+    "name": "Environmental Chemical Corp.",
+    "location": "Burlingame, California",
+    "award_number": "N0002325D0116",
+    "award_number_dashes": "N00023-25-D-0116",
+    "uei": "LFH4SUCVA379"
+  },
+  {
+    "name": "Environmental Earth-Wise Inc.",
+    "location": "Baytown, Texas",
+    "award_number": "N0002325D0117",
+    "award_number_dashes": "N00023-25-D-0117",
+    "uei": "EE2LXYL9WV76"
+  },
+  {
+    "name": "GenStrong LLC",
+    "location": "Wilmington, North Carolina",
+    "award_number": "N0002325D0118",
+    "award_number_dashes": "N00023-25-D-0118",
+    "uei": "NMM3H8H3AWF4"
+  },
+  {
+    "name": "Gothams LLC",
+    "location": "Austin, Texas",
+    "award_number": "N0002325D0119",
+    "award_number_dashes": "N00023-25-D-0119",
+    "uei": "HVR7BYAMSL27"
+  },
+  {
+    "name": "Hikina 2 Komohana Consulting Inc.",
+    "location": "Boulder, Colorado",
+    "award_number": "N0002325D0120",
+    "award_number_dashes": "N00023-25-D-0120",
+    "uei": "FUVDL9N9K9D7"
+  },
+  {
+    "name": "Industrial Tent Systems LLC",
+    "location": "Houston, Texas",
+    "award_number": "N0002325D0121",
+    "award_number_dashes": "N00023-25-D-0121",
+    "uei": "N7GNTMBL69K5"
+  },
+  {
+    "name": "InnoVis JV LLC",
+    "location": "Washington, D.C.",
+    "award_number": "N0002325D0122",
+    "award_number_dashes": "N00023-25-D-0122",
+    "uei": "JT7NNWGPLFB9"
+  },
+  {
+    "name": "Kastel Enterprises MK LLC",
+    "location": "Mobile, Alabama",
+    "award_number": "N0002325D0123",
+    "award_number_dashes": "N00023-25-D-0123",
+    "uei": "SVC5U6D9JNQ5"
+  },
+  {
+    "name": "KTC Solutions LLC",
+    "location": "Houston, Texas",
+    "award_number": "N0002325D0125",
+    "award_number_dashes": "N00023-25-D-0125",
+    "uei": "EUFUPAKM2472"
+  },
+  {
+    "name": "LEMOINE Disaster Recovery LLC",
+    "location": "Lafayette, Louisiana",
+    "award_number": "N0002325D0126",
+    "award_number_dashes": "N00023-25-D-0126",
+    "uei": "C182PM2K1463"
+  },
+  {
+    "name": "MCS Government Services LLC",
+    "location": "Lewisville, Texas",
+    "award_number": "N0002325D0127",
+    "award_number_dashes": "N00023-25-D-0127",
+    "uei": "D22ZYQ2KG9C3"
+  },
+  {
+    "name": "Monmouth Solutions Inc.",
+    "location": "Lowell, Massachusetts",
+    "award_number": "N0002325D0128",
+    "award_number_dashes": "N00023-25-D-0128",
+    "uei": "E474YENAVPB7"
+  },
+  {
+    "name": "Octagon Industries Inc.",
+    "location": "San Antonio, Texas",
+    "award_number": "N0002325D0129",
+    "award_number_dashes": "N00023-25-D-0129",
+    "uei": "NDU2SVT1RD21"
+  },
+  {
+    "name": "Parker Tide LLC",
+    "location": "Washington, D.C.",
+    "award_number": "N0002325D0130",
+    "award_number_dashes": "N00023-25-D-0130",
+    "uei": "M6QXLD9AVAL8"
+  },
+  {
+    "name": "Parsons Government Services Inc.",
+    "location": "Centreville, Virginia",
+    "award_number": "N0002325D0131",
+    "award_number_dashes": "N00023-25-D-0131",
+    "uei": "NMBCAG1JBKL7"
+  },
+  {
+    "name": "Pegasus Support Services LLC",
+    "location": "Woodstock, Georgia",
+    "award_number": "N0002325D0132",
+    "award_number_dashes": "N00023-25-D-0132",
+    "uei": "S9PQZM9ZTKT7"
+  },
+  {
+    "name": "Rapid Deployment Inc.",
+    "location": "Mobile, Alabama",
+    "award_number": "N0002325D0133",
+    "award_number_dashes": "N00023-25-D-0133",
+    "uei": "K1B6MGA23WL3"
+  },
+  {
+    "name": "Recana Solutions LLC",
+    "location": "Houston, Texas",
+    "award_number": "N0002325D0134",
+    "award_number_dashes": "N00023-25-D-0134",
+    "uei": "HT74GJ837NF8"
+  },
+  {
+    "name": "Responsive Deployment LLC",
+    "location": "McKinney, Texas",
+    "award_number": "N0002325D0135",
+    "award_number_dashes": "N00023-25-D-0135",
+    "uei": "C1G6S1HJFEQ4"
+  },
+  {
+    "name": "Rockwell American Services Ltd.",
+    "location": "Terrebonne, Oregon",
+    "award_number": "N0002325D0136",
+    "award_number_dashes": "N00023-25-D-0136",
+    "uei": "H6NCLMPBP565"
+  },
+  {
+    "name": "Safety & Security International",
+    "location": "Greensboro, North Carolina",
+    "award_number": "N0002325D0137",
+    "award_number_dashes": "N00023-25-D-0137",
+    "uei": "EEMGLBKJMXW4"
+  },
+  {
+    "name": "SAKOM Services WI LLC",
+    "location": "Shawano, Wisconsin",
+    "award_number": "N0002325D0138",
+    "award_number_dashes": "N00023-25-D-0138",
+    "uei": "HTALHLYNERZ9"
+  },
+  {
+    "name": "SK2 LLC",
+    "location": "San Juan, Puerto Rico",
+    "award_number": "N0002325D0139",
+    "award_number_dashes": "N00023-25-D-0139",
+    "uei": "H4WHPLHWHYQ4"
+  },
+  {
+    "name": "SLSCO Ltd.",
+    "location": "Galveston, Texas",
+    "award_number": "N0002325D0140",
+    "award_number_dashes": "N00023-25-D-0140",
+    "uei": "F1PMZXNJ7NM5"
+  },
+  {
+    "name": "SOC LLC",
+    "location": "Chantilly, Virginia",
+    "award_number": "N0002325D0141",
+    "award_number_dashes": "N00023-25-D-0141",
+    "uei": "RC5DWNC4CP73"
+  },
+  {
+    "name": "SOS International LLC",
+    "location": "Reston, Virginia",
+    "award_number": "N0002325D0142",
+    "award_number_dashes": "N00023-25-D-0142",
+    "uei": "L3VCKMD7J585"
+  },
+  {
+    "name": "Target Logistics Management LLC",
+    "location": "The Woodlands, Texas",
+    "award_number": "N0002325D0143",
+    "award_number_dashes": "N00023-25-D-0143",
+    "uei": "LLMHPD1Q3X51"
+  },
+  {
+    "name": "Taylors International Services Inc.",
+    "location": "Lafayette, Louisiana",
+    "award_number": "N0002325D0144",
+    "award_number_dashes": "N00023-25-D-0144",
+    "uei": "QW45QCC96H55"
+  },
+  {
+    "name": "Team Housing Solutions",
+    "location": "New Braunfels, Texas",
+    "award_number": "N0002325D0145",
+    "award_number_dashes": "N00023-25-D-0145",
+    "uei": "GDK9ANY21DY6"
+  },
+  {
+    "name": "Trigent Solutions Inc.",
+    "location": "Chantilly, Virginia",
+    "award_number": "N0002325D0146",
+    "award_number_dashes": "N00023-25-D-0146",
+    "uei": "VN5DYE5D4EG6"
+  },
+  {
+    "name": "Universal Protection Service LP",
+    "location": "Conshohocken, Pennsylvania",
+    "award_number": "N0002325D0147",
+    "award_number_dashes": "N00023-25-D-0147",
+    "uei": "MFA2CSSMMA35"
+  },
+  {
+    "name": "USA Up Star LLC",
+    "location": "Greenwood, Indiana",
+    "award_number": "N0002325D0148",
+    "award_number_dashes": "N00023-25-D-0148",
+    "uei": "EQDFVSJ3HGE7"
+  },
+  {
+    "name": "Vision Quest Solutions, Inc.",
+    "location": "Hot Springs, South Dakota",
+    "award_number": "N0002325D0149",
+    "award_number_dashes": "N00023-25-D-0149",
+    "uei": "MNA3EF2HHKE5"
+  },
+  {
+    "name": "701C LLC",
+    "location": "Sterling, Virginia",
+    "award_number": "N0002325D0150",
+    "award_number_dashes": "N00023-25-D-0150",
+    "uei": "U874MG5UNQU3"
+  },
+  {
+    "name": "Anovaeon LLC",
+    "location": "San Antonio, Texas",
+    "award_number": "N0002325D0151",
+    "award_number_dashes": "N00023-25-D-0151",
+    "uei": "CMYXAB8GTYB3"
+  },
+  {
+    "name": "Guardian 6 Solutions LLC",
+    "location": "Cedar Hill, Texas",
+    "award_number": "N0002325D0152",
+    "award_number_dashes": "N00023-25-D-0152",
+    "uei": "TTLUYN248DA1"
+  },
+  {
+    "name": "KDP Global Enterprises LLC",
+    "location": "Hollywood, Florida",
+    "award_number": "N0002325D0153",
+    "award_number_dashes": "N00023-25-D-0153",
+    "uei": "YWDGHU9DGM68"
+  },
+  {
+    "name": "ResponseForce1 LLC",
+    "location": "Fort Walton Beach, Florida",
+    "award_number": "N0002325D0154",
+    "award_number_dashes": "N00023-25-D-0154",
+    "uei": "M4V6WJSTCEV6"
+  },
+  {
+    "name": "Worldwide Employee Housing Solutions",
+    "location": "Seguin, Texas",
+    "award_number": "N0002325D0156",
+    "award_number_dashes": "N00023-25-D-0156",
+    "uei": "X24MR5NJF7X6"
+  },
+  {
+    "name": "SGK Global Services, LLC",
+    "location": "Stafford, Texas",
+    "award_number": "N0002325D0155",
+    "award_number_dashes": "N00023-25-D-0155",
+    "uei": "HVUSQM32DB65"
+  }
+]
