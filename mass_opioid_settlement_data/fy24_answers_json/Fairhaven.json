@@ -1,0 +1,190 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Fairhaven",
+    "response_id": "71",
+    "contact": {
+        "primary_name": "Anne Carreiro",
+        "primary_email": "acarreiro @fairhaven-ma.gov",
+        "primary_phone": "5089794023 ext 8120",
+        "secondary_name": "",
+        "secondary_email": "",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Fairhaven",
+        "total_received_all_years": 263696.29,
+        "carryover_from_previous": 72780.15,
+        "fy2024_disbursement": 190916.14,
+        "total_available_fy24": 263696.29,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 263696.29
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "na_did_not_engage"
+            ],
+            "people_in_recovery": [
+                "na_did_not_engage"
+            ],
+            "families_impacted": [
+                "na_did_not_engage"
+            ],
+            "subject_matter_experts": [
+                "na_did_not_engage"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "At this time, the town has not used any of the opioid funds for expenditures.",
+            "barriers_people_in_recovery": "At this time, the town has not used any of the opioid funds for expenditures.",
+            "barriers_families": "At this time, the town has not used any of the opioid funds for expenditures.",
+            "barriers_experts": "At this time, the town has not used any of the opioid funds for expenditures."
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "na_did_not_assess"
+            ],
+            "health_outcomes_race": [
+                "na_did_not_assess"
+            ],
+            "health_outcomes_wealth": [
+                "na_did_not_assess"
+            ],
+            "stigma_impact": [
+                "na_did_not_assess"
+            ],
+            "provider_diversity": [
+                "na_did_not_assess"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "na_did_not_assess"
+            ],
+            "fatal_overdoses": [
+                "na_did_not_assess"
+            ],
+            "emt_response": [
+                "na_did_not_assess"
+            ],
+            "admin_data_sources": "At this time, the town has not used the opioid funds.",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage (mostly empty in this example)",
+            "programs": [
+                {
+                    "name": "Public Safety Opioid Task Force",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Policy/Practice 1",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "veterans",
+            "youth_young_adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Fairhaven.pdf"
+}

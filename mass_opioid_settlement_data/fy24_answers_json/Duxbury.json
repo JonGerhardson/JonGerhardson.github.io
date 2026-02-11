@@ -1,0 +1,171 @@
+{
+    "municipality": "Duxbury",
+    "response_id": "61",
+    "contact": {
+        "primary_name": "Mary MacKinnon",
+        "primary_email": "mmackinnon @duxbury-ma.gov",
+        "primary_phone": "7813077009",
+        "secondary_name": "Karen Clancy",
+        "secondary_email": "DuxburyAccounting @duxbury-ma.gov",
+        "secondary_phone": "7819341100"
+    },
+    "funding": {
+        "municipality_name": "Duxbury",
+        "total_received_all_years": 356893.54,
+        "carryover_from_previous": 165462.5,
+        "fy2024_disbursement": 191431.54,
+        "total_available_fy24": 356894.04,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 2299.58,
+        "total_unexpended": 354593.96
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "subject_matter_experts_other": "Prior to FY24, the Town formed a working committee. Their initial efforts included engaging with all of the groups listed above. From that work, they developed a Job Description of a position that they would like to hire. We are still working through the details of this. So, in FY24 there were no add'l forums/surveys.",
+            "barriers_people_who_use_drugs": "This is a question that would need to be answered by someone engaged in those activities; not the person preparing the Expenditure report.",
+            "barriers_people_in_recovery": "This is a question that would need to be answered by someone engaged in those activities; not the person preparing the Expenditure report.",
+            "barriers_families": "This is a question that would need to be answered by someone engaged in those activities; not the person preparing the Expenditure report.",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "This is a question that would need to be answered by someone engaged in those activities; not the person preparing the Expenditure report."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "other"
+            ],
+            "fatal_overdoses": [
+                "other"
+            ],
+            "emt_response": [
+                "other"
+            ],
+            "past_30_day_opioid_use": [
+                "other"
+            ],
+            "patients_in_treatment": [],
+            "people_in_recovery": [],
+            "people_who_use_drugs": [],
+            "treatment_providers": [],
+            "recovery_centers": [
+                "other"
+            ],
+            "mental_health_conditions": [],
+            "admin_data_sources": "n/a",
+            "other_methods": "Our activities have been driven by feedback from our Police and Fire depts.",
+            "barriers": "Our activities have been driven by feedback from our Police and Fire depts."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Lack of bandwidth. There is no Town employee available (i.e., project manager) to initiate these efforts."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Lack of bandwidth. There is no Town employee available (i.e., project manager) to initiate these efforts."
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 2299.58,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Lack of bandwidth. There is no Town employee available (i.e., project manager) to initiate these efforts."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Lack of bandwidth. There is no Town employee available (i.e., project manager) to initiate these efforts."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Lack of bandwidth. There is no Town employee available (i.e., project manager) to initiate these efforts."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "It is difficult to get plans initiated because our existing staff does not have the bandwidth to add to existing job duties. We are doing our best to try and implement some of the ideas developed by the committee.",
+        "unmet_needs": "Not at this time.",
+        "orrf_recommendations": "It would be helpful if the state would employ regional project managers to work with communities to initiate programs. And, it would be helpful if the state created a Substance Abuse hotline program that people could use when they need help similar to the 211, 311, 511 etc programs."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Duxbury.pdf"
+}

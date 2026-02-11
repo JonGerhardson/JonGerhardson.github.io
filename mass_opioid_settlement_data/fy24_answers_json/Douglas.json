@@ -1,0 +1,150 @@
+{
+    "municipality": "Douglas",
+    "response_id": "58",
+    "contact": {
+        "primary_name": "Matthew Wojcik",
+        "primary_email": "mwojcik@douglas-ma.gov",
+        "primary_phone": "5084764000",
+        "secondary_name": "Cheryl Vaidya",
+        "secondary_email": "cvaidya@douglas-ma.gov",
+        "secondary_phone": "5084764000"
+    },
+    "funding": {
+        "municipality_name": "Douglas",
+        "total_received_all_years": 158245.37,
+        "carryover_from_previous": 73365.4,
+        "fy2024_disbursement": 84879.97,
+        "total_available_fy24": 158245.37,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 158245.37
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "We will engage with providers with facilities in our community.",
+            "barriers_people_in_recovery": "Identifying members of this cohort.",
+            "barriers_families": "We are working with school department personnel to better understand impact on children and to discuss potential solutions / engagement.",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "Our community is not very diverse. We are still gathering data on the size and characteristics of opioid impact on this town."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "First responder reports, waste water analysis for substances and metabolites.",
+            "other_methods": "We have a mental health professional involved with many first responder calls.",
+            "barriers": "Need time to gather enough data to identify trends."
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We have now accrued enough funds to begin some programming. At the date of this report, we have FY 2025 expenditures.",
+        "unmet_needs": "N/A",
+        "orrf_recommendations": "N/A"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Douglas.pdf"
+}

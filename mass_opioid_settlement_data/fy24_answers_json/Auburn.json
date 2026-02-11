@@ -1,0 +1,219 @@
+{
+    "municipality": "Auburn",
+    "response_id": "13",
+    "contact": {
+        "primary_name": "Dori A. Vecchio",
+        "primary_email": "DVecchio @town.auburn.ma.us",
+        "primary_phone": "508-832-7700 ext 1227",
+        "secondary_name": "Ed Kazanovicz",
+        "secondary_email": "EKazanovicz @town.auburn.ma.us",
+        "secondary_phone": "508-832-7720 ext 1222"
+    },
+    "funding": {
+        "municipality_name": "Auburn",
+        "total_received_all_years": 289623.41,
+        "carryover_from_previous": 134274.62,
+        "fy2024_disbursement": 155348.79,
+        "total_available_fy24": 289623.41,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": null,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 289623.41
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "other"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "other"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "We have contracted with Auburn Youth and family services to provide therapy to people who use drugs and their families. AYFS provides family and individual therapy, community outreach and education and case management",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey"
+            ],
+            "health_outcomes_race": [
+                "survey"
+            ],
+            "health_outcomes_wealth": [
+                "survey"
+            ],
+            "stigma_impact": [
+                "survey"
+            ],
+            "provider_diversity": [
+                "survey"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "survey",
+                "interviews"
+            ],
+            "fatal_overdoses": [
+                "survey",
+                "interviews"
+            ],
+            "emt_response": [
+                "survey",
+                "interviews"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "This was done by a partnership with CMRPC who worked with six towns to determine the areas of most need through an opioid abatement assessment survey.",
+            "barriers": "This was done by a partnership with CMRPC who worked with six towns to determine the areas of most need through an opioid abatement assessment survey."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                "family counseling",
+                "individual cousneling",
+                "prevention",
+                "outreach",
+                "education"
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Prevention strategies",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Education and prevention",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Recovery and treatment support",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "supportin pregnant or parenting women and families",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Harm reduction",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Economically under-resourced",
+            "Immigrant",
+            "LGBTQ+",
+            "Pregnant and/or parenting populations",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Our expenditures started in July of 2024 and will continue/",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Auburn.pdf"
+}

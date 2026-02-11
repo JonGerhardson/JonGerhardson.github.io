@@ -1,0 +1,249 @@
+{
+    "municipality": "Gloucester",
+    "response_id": "79",
+    "contact": {
+        "primary_name": "Conor MacCorkle",
+        "primary_email": "cmaccorkle @gloucester-ma.gov",
+        "primary_phone": "9783255140",
+        "secondary_name": "Nicolette Parisi",
+        "secondary_email": "nparisi @gloucester-ma.gov",
+        "secondary_phone": "9783255140"
+    },
+    "funding": {
+        "municipality_name": "Gloucester",
+        "total_received_all_years": 402425.11,
+        "carryover_from_previous": 186571.52,
+        "fy2024_disbursement": 215853.59,
+        "total_available_fy24": 402425.11,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 3000,
+        "total_unexpended": 399425.11
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "interviews",
+                "focus_groups",
+                "other"
+            ],
+            "people_in_recovery": [
+                "interviews",
+                "focus_groups",
+                "other"
+            ],
+            "families_impacted": [
+                "interviews",
+                "focus_groups",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "interviews",
+                "focus_groups",
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "State, Federal, and Local data set analysis. Community organization discussion and surveys. Although surveys is not checked, the work done in fiscal year 2024 directly led to the creation of a survey deployed to those with lived and living experience with SUDs.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Federal: CDC National Vital Statistics System 2020 Behavioral Risk Factor Surveillance System 2021 GRASP 2020 CMS Geographic Variation Public Use File 2020 NPPES via County Health Rankings 2023 EPA Smart Location Database 2021 IRS Exempt Organizations Business Master File 2020 Center for Neighborhood Technology 2020 HHS HRSA - Area Health Resource File 2021 Empower 2024 US Census Bureau American Community Survey 2017-21 & 2018-22 State: ~MA Department of Public Health 2017, 2017-2021 ~MA Bureau of Climate and Environmental Health, 2017-2021 ~MA State Police 2021 ~MA Bureau of Substance Addiction Dashboard 2023 ~MA Registry of Vital Records & Statistics 2022 ~Secretary of the Commonwealth of MA and Federal Elections Commission 2020 ~MA Department of Elementary & Secondary Education 2021 ~MA Audubon 2012-2019 Local: ~Lahey Needs Assessment 2022 ~Action Inc Community Assessment Report & Strategic Plan 2024-2026 ~Gloucester Youth Risk Survey 2022",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "~MA Bureau of Substance Addiction Dashboard 2023 ~Behavioral Risk Factor Surveillance System 2021 ~GRASP 2020 ~Lahey Needs Assessment 2022 ~Action Inc Community Assessment Report & Strategic Plan 2024-2026 ~Gloucester Youth Risk Behavior Survey 2022",
+            "other_methods": "Through our conversations with community leaders. 28 leaders across 24 organizations that serve the residents of the City of Gloucester were brought together to participate in one of five facilitated dialogues hosted by the Gloucester Health Department.",
+            "barriers": "Data recency: We built and deployed in 2025 a direct survey to the SUDs community. Planning for this happened in fiscal year 2024. Fragmented Solutioning Across Community Organizations: Limited our ability to gather comprehensive data that creates one picture of need."
+        },
+        "existing_programs": {
+            "programs": [
+                "Gloucester Public Schools",
+                "Core Peer Recovery and Resource Center",
+                "Community Impact Unit Recovery Coaching",
+                "ONESTOP Harm Reduction",
+                "Addison Gilbert Hospital Behavioral Health/Discover Program"
+            ]
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Stigma Reduction",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "hired_consultant",
+                        "care_mass"
+                    ]
+                },
+                {
+                    "name": "Barriers to accessing care",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "hired_consultant",
+                        "care_mass"
+                    ]
+                },
+                {
+                    "name": "Alternatives for Chronic Pain Management",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "hired_consultant",
+                        "care_mass"
+                    ]
+                },
+                {
+                    "name": "Sober community and housing to support effective recovery",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "hired_consultant",
+                        "care_mass"
+                    ]
+                },
+                {
+                    "name": "SUD Navigation Support",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "hired_consultant",
+                        "care_mass"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.; We engaged in shared planning with other municipalities.; We contracted a consultant to support this process.; We consulted with Care Mass.",
+        "consultant_activities": "Developed and conducted individual interviews; Developed and conducted focus groups or a meeting with an affinity group; Developed and conducted listening sessions or community forums; Compiled data and drafted data analysis report; Developed criteria for prioritizing needs and gaps based on findings; Facilitated planning sessions to prioritize needs and gaps; Other activities (please specify):: This work was done with other funding sources outside of Opioid Fund.",
+        "care_mass_activities": "Developed criteria for prioritizing needs and gaps based on findings",
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 1500,
+            "how_spent": [
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Provide community support services, including social and legal services, to assist in deinstitutionalizing persons with OUD",
+                "Other (please specify):: Although this is the only actual expenditure, there continues to be significant planning for future activities"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 1500,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event",
+                "Other (please specify):: Although this is the only actual expenditure, there continues to be significant planning for future activities"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This was a peripheral finding on our need assessments, so we built it into our survey."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This was a peripheral finding on our need assessments, so we built it into our survey."
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "FY24 was primarily focused on understanding State guidance, aligning with our administration, and meeting in person with community organizations to build trust in the Gloucester Health Department's ability to effectively govern the process, properly assess needs, and develop a robust, impactful plan to support our community. (The plans, frameworks, and timeline for this initiative can be found at the start of the attached PDF.) Leveraging an already funded community needs assessment, we incorporated discussions and analysis of the opioid epidemic and its impact on our community to kickstart the needs assessment process. Although we did not use any existing opioid funds for this effort and the resulting data analysis, we utilized 25 local, state, and federal databases to compare Gloucester with State averages. Additionally, we held working sessions with 28 representatives from 24 local organizations involved in behavioral health, substance use disorder (SUD) services, and general health services. The findings from this assessment (detailed in your PDF) were used to create a community survey, which was disseminated in three different languages for deployment in July of FY25. We did not include this survey or its results in this data brief because it was deployed and analyzed in FY25. We benefited from CARE and ORRF briefing sessions and believe that a \"keep it simple\" approach to funding and support is very effective. As we head into 2025, we feel confident in our understanding of what needs to be done to build a strong plan for deployment, but we still have work to do to address the following challenges: The investment needed to drive behavioral, cultural, and social determinants of health (SDoH) change in this city to collectively improve prevention, harm reduction, treatment, and recovery is substantial. How can we best collaborate to ensure that these limited funds can lead to significant change? How can we encourage organizations to think holistically about these issues and embrace true collaboration when they are constrained by existing grant program expectations and the realities of their individual cost structures, which create hyper-focus on the requirements of their funder resulting in fragmentation and duplication of services? How can we maintain a commitment to community collaboration and achieve alignment on spending with organizations that may not receive settlement dollars due to fund limitations and community priorities but are crucial for a strong continuum of care and support to effectively address the Cities issues? Our community organizations support regional catchments. How can we collaborate with other communities to develop a regional understanding of needs and help our organizations build programs that will enhance the impact of these funds? How can we establish simple, non-threatening measurement techniques that provide unbiased assessments of program effectiveness and foster a comfort with \"failing fast\" so we can ensure these funds are utilized as effectively as possible?",
+        "unmet_needs": "As highlighted in our needs assessment included in the attached PDF, Gloucester lags behind state norms in several critical social determinants of health. These include access to care, poverty rates, transportation availability, mental health issues, and housing gaps\u2014all of which are closely linked to substance use and abuse. Notably, Gloucester experiences a staggering 72% higher rate of substance use disorder (SUD) hospitalizations than the state average, compounded by a 50% longer travel time to access BSAS services. Additionally, Gloucester has 22% more severely cost-burdened households and a 21% higher unemployment rate compared to the Massachusetts state average. The situation is further exacerbated by 24% fewer affordable housing units and an 18% higher rate of occupied units with at least one substandard condition relative to the state average. When asked about the most pressing need, an alarming 54% of community organization leaders identified housing assistance and emergency shelter as their biggest unsupported need. This gap directly undermines successful recovery support and adversely affects children of those with SUD. The funding allocated to Gloucester is insufficient to drive the transformative change needed in our region, forcing us to focus on tactical, less impactful efforts. A similar issue exists with the lack of substance use and mental health providers. During community dialogues, 39% of leaders emphasized that the most important services their organizations provide are related to mental health and substance use, while another 43% reported that these services represent a significant unmet need for their constituents. Although Addison Gilbert (BILH) is aware of the gaps in our region and is attempting to stretch their current resources to support local treatment and recovery day programs, they cannot invest meaningfully due to margin constraints. They are candid about the risks associated with sustaining even the day programs and their accompanying costs. Ideally, opioid funding could support BILH in providing this critical tier of care to Gloucester and Cape Ann, but with one fully-funded detox bed exceeding $1 million per year and a minimum of four beds required for operational viability, our $100k+ annual budget will have little impact in this crucial area. Finally, 93% of community leaders underscore the need for a care continuum navigation system and referral network, with 75% emphasizing the importance of improving communication and collaboration around available services to enhance the continuum of care across state abatement categories. With a budget of $100k+, we can fund approximately one full-time equivalent (FTE) position with a minimal operational budget, but that represents our entire budget. One FTE will not begin to meet the demand in our region for this service alone and will limit our ability to fund change programmatically.",
+        "orrf_recommendations": "The Statewide Opioid Recovery and Remediation dollars are substantial, yet the actual funding allocated to our municipality is insufficient to address the deep-rooted issues surrounding opioid use disorder (OUD). To create meaningful change, we require multi-million dollar, multi-year investments in our region that will: Change the Culture of Use: We need to implement a comprehensive program and communication strategy aimed at fostering a cultural shift to combat the multi-generational rates of OUD, reduce the stigma associated with seeking help, and build a thriving substance-free community for those who desire it. Fund a Continuum of Care: We need to develop an accessible and local continuum of care for all phases of treatment and recovery using our regional hospitals and connected to transition services such as housing, food, income, and ongoing support services to drive lasting recovery. This care ecosystem must be equipped to handle the volume and personal attention required for successful recovery. Enable our Community Organizations to Improve SDoH: We must incentivize collaboration among community organizations to reduce redundancies, improve scale, and build a cohesive \"fabric of care\" for Cape Ann by reducing reliance on survival grant funding cycles. Build Centralized and Scalable Case Management: We must provide the level of case management necessary to support a generation in recovering from the opioid epidemic's impact. Additionally we need to create an environment for case managers that provides professional support, stability and living wage. Our region is ready to think big and implement effective solutions to assist those affected by the opioid crisis. We have a hospital with available space and a commitment to provide treatment and recovery services if adequately funded. We have outstanding community organizations like Action, Inc., Pathways for Children, Open Door, CORE peer recovery, and others which possess the professional expertise to develop scalable operations. There is strong trust and collaboration among smaller community organizations that recognize the need for coordinated service delivery. Our municipal leadership and local health departments are prepared to work together, pool resources, and facilitate these efforts. Most importantly, our community members are actively seeking support for themselves, their parents, and their children. What we lack is a substantial investment that allows us the time and funding needed to organize, implement, and operationalize these solutions properly. Making larger investments and perhaps leveraging the expertise from CARE, and ORRF to provide Board-of-Directors level oversight can ensure delivery on planned impact and improve our ability to drive the transformative change our community desperately needs. The City of Gloucester welcomes the chance to discuss this in more detail to help assess viability."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Gloucester.pdf"
+}

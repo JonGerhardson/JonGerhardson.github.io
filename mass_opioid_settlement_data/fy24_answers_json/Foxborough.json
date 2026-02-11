@@ -1,0 +1,246 @@
+{
+    "municipality": "Foxborough",
+    "response_id": "75",
+    "contact": {
+        "primary_name": "Matthew Brennan",
+        "primary_email": "mbrennan @foxboroughma.gov",
+        "primary_phone": "5085431207",
+        "secondary_name": "Paige Duncan",
+        "secondary_email": "pduncan @foxboroughma.gov",
+        "secondary_phone": "5085431200"
+    },
+    "funding": {
+        "municipality_name": "Foxborough",
+        "total_received_all_years": 246839.83,
+        "carryover_from_previous": 114439.39,
+        "fy2024_disbursement": 132400.44,
+        "total_available_fy24": 246839.83,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 2000.0,
+        "total_unexpended": 244839.83
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "forum",
+                "survey"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "survey",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "survey",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "survey",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "The Town of Foxborough used data from our existing social services referral program to help guide the decision on how to use funds.",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data",
+                "survey",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "survey",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Fire Department EMT data, BSAS data and survey results were presented to the community in an open meeting during the opioid fund discussions. Based on these results the Town's decisions were made.",
+            "other_methods": "Numbers for individuals that use the Interface referral program and numbers provided by DPH and BSAS, and community survey.",
+            "barriers": "We would have liked to have more participation with the Town's Opioid Abatement Program Survey."
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "State Helpline",
+                    "methods": [
+                        "admin_data",
+                        "survey",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Community Narcan Purchasing Program",
+                    "methods": [
+                        "admin_data",
+                        "survey",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Prevention Education",
+                    "methods": [
+                        "survey",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Harm Reduction",
+                    "methods": [
+                        "survey",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Connections to Care",
+                    "methods": [
+                        "admin_data",
+                        "survey",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Connections to Care",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Narcan/Harm Reduction",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Prevention Education",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We consulted with Care Mass.",
+        "consultant_activities": null,
+        "care_mass_activities": "Developed and conducted a community survey; Developed and conducted listening sessions or community forums; Compiled data and drafted data analysis report; Facilitated planning sessions to prioritize needs and gaps",
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Cost."
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 800,
+            "how_spent": [
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Other (please specify):: Support local peer recovery centers and help support individuals participating at the center with basic needs supports."
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Funds have not been allocated yet due to no decision being made on the use of the funds."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Funds have not been allocated yet due to no decision being made on the use of the funds."
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Full implementation",
+            "expended": 1200,
+            "how_spent": [
+                "Other (please specify):: Administrative costs associated with getting local people's input and taking the survey for the Town."
+            ],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "Public Safety has requested a full-time social worker be hired with the funds. However, based on the other needs of the Town, only a part-time social worker could be hired.",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Foxborough.pdf"
+}

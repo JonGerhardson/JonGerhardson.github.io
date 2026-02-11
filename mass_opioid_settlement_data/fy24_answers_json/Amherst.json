@@ -1,0 +1,208 @@
+{
+    "municipality": "Amherst",
+    "response_id": "7",
+    "contact": {
+        "primary_name": "Kiko Malin",
+        "primary_email": "malink @amherstma.gov",
+        "primary_phone": "4132593241",
+        "secondary_name": "Holly Drake",
+        "secondary_email": "drakeh @amherstma.gov",
+        "secondary_phone": "413 259 3026"
+    },
+    "funding": {
+        "municipality_name": "Amherst",
+        "total_received_all_years": 350588.46,
+        "carryover_from_previous": 162539.11,
+        "fy2024_disbursement": 188049.35,
+        "total_available_fy24": 350588.46,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 350588.46
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "other"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "groups_meetings",
+                "other"
+            ],
+            "families_impacted": [
+                "survey"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "We have talked informally with guests and staff at our local shelter about the needs of people who use drugs. and what kind of programming they would like to see supported by the opioid settlement funds.",
+            "people_in_recovery_other": "Many of the guests at Craig's Doors - our local shelter - are people in recovery and their needs have been taken into account through these informal conversations as well.",
+            "subject_matter_experts_other": "Have responded to inquiries from subject matter experts who have contacted the Health Department to express their professional opinions about what strategies would best address the opioid crisis in our community and how the opioid funds should be spent",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "We partnered with Hampshire HOPE to conduct a survey in the region which yielded some helpful data about community priorities for spending of the opioid funds. However, the vast majority of the respondents from our town were white. In Amherst, there are significant communities of color but they are not as visible as other populations and are not as engaged in Town activities. Data from Tapestry - a local organization that provides harm reduction services in the region, including Amherst, show that they are reaching people of color and that these numbers have increased of late (number of syringes exchanged more than doubled since 2019 and Tapestry is seeing significantly more folks from the Latino and Black communities in the last year) . In FY 25 we plan to collaborate more closely with Tapestry to assess and address the needs of our diverse communities so that we may work to to decrease disadvantage and disproportionate access to services"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Mass DPH data on opioid-related overdose deaths EMS Opioid related incidents dashboard DART (Drug Addiction Recovery Team) data -local resource",
+            "other_methods": "We did not assess these issues",
+            "barriers": "We lack easily accessible sources of local data regarding mental health conditions, number of patients in treatment etc. Hope to collaborate with other municipalities in our SSA to assess these date collaboratively in the region."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Syringe Services",
+                    "methods": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Peer Recovery Support",
+                    "methods": [
+                        "groups_meetings"
+                    ]
+                }
+            ],
+            "other_methods": "Through discussions with Tapestry Health, Amherst Public Health has learned about the extent of harm reduction and syringe access services currently being provided in Amherst. These services have increased, especially in the last year, but the need is growing and we are working to find ways to expand services to more people in the Amherst community. Public Health has also met with a peer recovery group at UMass to assess needs and find ways to work together to provide more recovery and harm reduction resources, services and information to UMass students"
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Provide housing vouchers",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Naloxboxes/outdoor Narcan cabinets",
+                    "sources": [
+                        "copied_municipality"
+                    ]
+                },
+                {
+                    "name": "Distribute harm reduction supplies to shelters",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Enhance existing DART program",
+                    "sources": [
+                        "copied_municipality"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Unsheltered or housing-insecure"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "There are few if any OUD treatment resources in Amherst. We plan to work with our local opioid task force - Hampshire HOPE - this fiscal year to assess, expand and promote regional treatment resources in the area."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have made connections to Recovery groups at UMass Amherst and plan to work this FY to increase access to peer recovery services for others in the broader Amherst community. The main barrier has been lack of time on the part of Health Department staff to and assess resources in the community, build relationships and move to action planning"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Amherst has a DART (Drug Addiction Recovery Team) program housed within its Police Department. Because the DART lead was out on medical leave for some of FY24 and because the Health Director is new in her role, collaboration to strengthen and expand the town's post- overdose response program has been slowed somewhat. In terms of connections to care that could be made in the school setting, we began to lay the groundwork for school/public health department collaborations with the new school administration that just came in this summer, after a challenging few years in the Amherst Public Schools"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No funds were actually expended in FY24 but two contracts were executed in FY24 with the Amherst shelter - Craig's Doors - to support training for shelter staff on the use of narcan and CPR to assist in the event of an overdose, and for the purchase of harm reduction supplies for the shelter. Funds were used from these contracts to support these activities but not until after June 30, 2024."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This has not so far been identified as a need in Amherst. We plan to have further conversations with the community to understand the prevalence of those impacted by the criminal justice system and to assess and address their needs."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This work currently falls outside of the scope of the Health Department since it does not work directly with pregnant individuals or new families. We are part of a Shared Service Collaborative that has planned some interventions for pregnant women and new families in the region and we hope we can integrate a focus on perinatal substance use into that programming."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Collaboration with the schools was complicated in FY 24 due to internal challenges that the school administration was facing. We hope that under the new administration, we can begin exploring ways to plan and implement activities to prevent substance misuse among young people."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Thank you for the opportunity to complete this report. Due to new public health leadership this FY and the small size of our health department, it has taken some time to begin the process of spending these funds. We are pleased that we now have some needs assessment data and that we have executed a few contracts in FY 24 with a partner organization serving a marginalized population at disproportionate risk for opioid overdose. We look forward to reporting on the results of our partner's efforts, as well as other activities we are currently planning, when it comes time to submit the FY25 report.",
+        "unmet_needs": "",
+        "orrf_recommendations": "Housing and transportation are key spending areas to support people who use drugs and/or who are at increased risk for overdose."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Amherst.pdf"
+}

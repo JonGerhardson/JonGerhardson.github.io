@@ -1,0 +1,230 @@
+{
+    "municipality": "Eastham",
+    "response_id": "64",
+    "contact": {
+        "primary_name": "Rich Bienvenue",
+        "primary_email": "rbienvenue @eastham-ma.gov",
+        "primary_phone": "7748013206",
+        "secondary_name": "Teena Tilton",
+        "secondary_email": "ttilton @eastham-ma.gov",
+        "secondary_phone": "7748013208"
+    },
+    "funding": {
+        "municipality_name": "Eastham",
+        "total_received_all_years": 75052.08,
+        "carryover_from_previous": 34795.5,
+        "fy2024_disbursement": 40256.58,
+        "total_available_fy24": 75052.08,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 7966.48,
+        "total_unexpended": 67085.6
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Classes and support sessions, and harm reduction services.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": "",
+            "families_impacted_other": "Classes and support sessions, and harm reduction services. Also, provided funding for discretionary needs."
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "survey",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "survey",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "interviews"
+            ],
+            "emt_response": [
+                "interviews"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Assessed through interviews and meetings regarding past 30-day opioid use, patients in treatment, people in recovery, people who use drugs, number of treatment providers, and mental health conditions.",
+            "barriers": "The low number of providers is a barrier which is overcome by hiring our own providers (RN and clinicians) to provide these resources."
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "Syringe Services",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Recovery Support",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Harm Reduction Services",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Out-Patient Recovery Services",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Harm Reduction",
+                    "sources": [
+                        "community_needs",
+                        "hired_consultant"
+                    ]
+                },
+                {
+                    "name": "Prevention",
+                    "sources": [
+                        "community_needs",
+                        "hired_consultant"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We engaged in shared planning with other municipalities. We contracted a consultant to support this process.",
+        "consultant_activities": [
+            "Developed and conducted individual interviews",
+            "Developed and conducted focus groups or a meeting with an affinity group",
+            "Developed and conducted listening sessions or community forums",
+            "Facilitated planning sessions to prioritize needs and gaps",
+            "Facilitated planning sessions to set goals and select strategies to address needs and gaps",
+            "Developed an implementation plan",
+            "Developed an evaluation plan to track outputs and monitor performance"
+        ],
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 7966.48,
+            "how_spent": [
+                "Provide comprehensive wrap-around services to individuals with OUD, including job placement, job training, or childcare",
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Provide transportation to treatment or recovery services for persons with OUD",
+                "Increase the number and capacity of high-quality recovery programs to help people in recovery",
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Limited resources and capacity to service this area."
+        },
+        "pregnant_parenting": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Additional funding would allow for more programming.",
+        "unmet_needs": "Yes, access to a drop-in recovery center in the Outer Cape area.",
+        "orrf_recommendations": "No"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Eastham.pdf"
+}

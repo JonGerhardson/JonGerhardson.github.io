@@ -1,0 +1,201 @@
+{
+    "municipality": "Danvers",
+    "response_id": "54",
+    "contact": {
+        "primary_name": "Frank Giacalone",
+        "primary_email": "fgiacalone @danversma.gov",
+        "primary_phone": "9787770001",
+        "secondary_name": "Judith Ryan",
+        "secondary_email": "jryan @danversma.gov",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Danvers",
+        "total_received_all_years": 385063.68,
+        "carryover_from_previous": 178522.45,
+        "fy2024_disbursement": 206541.23,
+        "total_available_fy24": 385063.68,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 10950,
+        "total_unexpended": 374113.68
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Active participant with Danvers Cares",
+            "people_in_recovery_other": "Active participant with Danvers Cares",
+            "families_impacted_other": "Active participant with Danvers Cares",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": "Will plan on holding lectures with experts on drug prevention."
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "Difficulty in obtaining wealth information"
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day_opioid_use": [],
+            "patients_in_treatment": [],
+            "people_in_recovery": [],
+            "people_who_use_drugs": [
+                "admin_data"
+            ],
+            "num_treatment_providers": [
+                "admin_data"
+            ],
+            "num_recovery_centers": [
+                "admin_data"
+            ],
+            "mental_health_conditions": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "https://www.mass.gov/lists/current-overdose-data",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "Recovery Centers of America",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Danvers Cares",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Mental Health assistance",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Not yet started"
+        },
+        "pregnant_parenting": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 10950,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Danvers.pdf"
+}

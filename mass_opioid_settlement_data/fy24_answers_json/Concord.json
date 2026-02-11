@@ -1,0 +1,192 @@
+{
+    "municipality": "Concord",
+    "response_id": "53",
+    "contact": {
+        "primary_name": "Melanie Tudhope Dineen",
+        "primary_email": "mdineen @concordma.gov",
+        "primary_phone": "9783183274",
+        "secondary_name": "Chris Carmody",
+        "secondary_email": "ccarmody @concordma.gov",
+        "secondary_phone": "978-318-3009"
+    },
+    "funding": {
+        "municipality_name": "Concord",
+        "total_received_all_years": 166867.73,
+        "carryover_from_previous": 77362.88,
+        "fy2024_disbursement": 89504.85,
+        "total_available_fy24": 166867.73,
+        "pooled": true,
+        "pooling_details": {
+            "ima_ssa_name": "Great Meadows Public Health Collaborative",
+            "interested_in_pooling": null,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": false,
+            "fiscal_agent_name": "Sudbury",
+            "pooled_all_funding": false
+        },
+        "total_expended_fy24": 3610.9,
+        "total_unexpended": 163256.83
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "not_engaged"
+            ],
+            "people_in_recovery": [
+                "groups_meetings"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "There is a significant stigma to understand in Concord. We are working to identify and connect with individuals who use drugs. A representative from MOAR is on our behavioral health collaborative and this is working to help make appropriate messaging.",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": "",
+            "families_impacted_other": "Concord provided a Narcan training and Narcan distribution that was open town employees in FY 24 and messaged that we were available to any outside group for more training. We have provided Narcan cabinets for free Narcan at both library branches. We have worked this year to complete a public health needs assessment. this assessment hopefully was completed by individuals, families who use, are in recovery and impacted. We will use the data to set up focus/groups listening sessions"
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "survey"
+            ],
+            "health_outcomes_race": [
+                "survey"
+            ],
+            "health_outcomes_wealth": [
+                "survey"
+            ],
+            "stigma_impact": [
+                "not_assessed"
+            ],
+            "provider_diversity": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "We have discovered that folks are fairly reluctant to share information on barriers. We have worked with the community social workers to form a behavioral health collaborative."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "past_30_day_opioid_use": [
+                "not_assessed"
+            ],
+            "patients_in_treatment": [
+                "not_assessed"
+            ],
+            "people_in_recovery": [
+                "not_assessed"
+            ],
+            "people_who_use_drugs": [
+                "not_assessed"
+            ],
+            "treatment_providers": [
+                "groups_meetings"
+            ],
+            "recovery_centers": [
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Staffing was insufficient to address. This will be aided by our FY 25 plan of a regional prevention coordinator"
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 3610.9,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This work requires a specific training. This would be addressed the regional prevention coordinator"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Clinician through Eliot that works with Police does an outstanding job- they must work over three towns and there just is not enough capacity for once person to connect with everyone. The Eliot position could be for Concord only."
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The Concord Health Division endeavored to complete a public health needs assessment, with questions that could be used to inform direction on use of the opioid settlement monies. It is difficult to identify the specific need, even though we know it is present.",
+        "unmet_needs": "There is a need for a recovery coach that has been identified. We had to prioritize a prevention coordinator with the hope that further work and/or grant opportunities would help fund a recovery coach.",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Concord.pdf"
+}

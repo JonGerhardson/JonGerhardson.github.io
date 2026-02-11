@@ -1,0 +1,168 @@
+{
+    "municipality": "Greenfield",
+    "response_id": "82",
+    "contact": {
+        "primary_name": "Anna Oltman",
+        "primary_email": "anna.oltman @greenfield-ma.gov",
+        "primary_phone": "4137721548",
+        "secondary_name": "Stella Chan",
+        "secondary_email": "stella.chan @greenfield-ma.gov",
+        "secondary_phone": "4137721504"
+    },
+    "funding": {
+        "municipality_name": "Greenfield",
+        "total_received_all_years": 431372.84,
+        "carryover_from_previous": 199992.2,
+        "fy2024_disbursement": 231380.64,
+        "total_available_fy24": 431372.84,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 431372.84
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "survey"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "survey",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "survey",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "survey",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "Greenfield is currently in its planning and outreach phase of this process. We are working to set up a permanent Opioid Settlement Committee that will more closely examine these behavioral health needs in the community."
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Greenfield.pdf"
+}

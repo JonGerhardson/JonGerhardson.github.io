@@ -1,0 +1,229 @@
+{
+    "municipality": "Chelmsford",
+    "response_id": "40",
+    "contact": {
+        "primary_name": "John Sousa",
+        "primary_email": "jsousa @chelmsfordma.gov",
+        "primary_phone": "9782443390",
+        "secondary_name": "Darlene Lussier",
+        "secondary_email": "dlussier @chelmsfordma.gov",
+        "secondary_phone": "9782505215"
+    },
+    "funding": {
+        "municipality_name": "Chelmsford",
+        "total_received_all_years": 301635.77,
+        "carryover_from_previous": 87098.6,
+        "fy2024_disbursement": 161792.0,
+        "total_available_fy24": 248890.6,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 53482.92,
+        "total_unexpended": 195407.68
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "interviews"
+            ],
+            "families_impacted": [
+                "interviews"
+            ],
+            "subject_matter_experts": [
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "In addition to our prevention and harm reduction efforts, our Public Health Community Social Worker conducts outreach to individuals and/or families directly affected by substance use disorder. Referrals for outreach are derived from law enforcement encounters such as overdose and related medical emergencies, as well as community members seeking support and/or sobriety.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "admin_data"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "Youth Rish Behavior Survey, Opioid Overdose reports, and the Greater Lowell Health Alliance Assessment",
+            "other_methods": "",
+            "barriers": "We were unable to focus efforts on the areas listed above due to the lack of time, resources, and funding opportunities. Our focus will be directly focused on addressing these needs in the next fiscal year with the assistance of abatement funding."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Youth Rish Behavior Survey, Opioid Overdose reports, and the Greater Lowell Health Alliance Assessment",
+            "other_methods": "",
+            "barriers": "The three areas that we were not able to touch upon was due to the lack of time and staff resources. Research outsource opportunities."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Substance Use Prevention",
+                    "sources": [
+                        "admin_data",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Mental Health Resources",
+                    "sources": [
+                        "admin_data",
+                        "interviews"
+                    ]
+                },
+                {
+                    "name": "Prevention & Harm Reduction",
+                    "sources": [
+                        "admin_data",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Support Groups",
+                    "sources": [
+                        "admin_data",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Education",
+                    "sources": [
+                        "admin_data",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Narcan Training",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Support Group",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Outreach",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0.0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 4175.0,
+            "how_spent": [
+                "Other (please specify):: Depression & Anxiety Support Group, Sober Karaoke, and Meditation Classes"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 47716.01,
+            "how_spent": [
+                "Other (please specify):: Contract with Care Solace, connecting residents and employers to mental health resources"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 1506.35,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders...",
+                "Provide training and education regarding naloxone...",
+                "Promote efforts to train health care providers...",
+                "Provide outreach and services for people who use drugs...",
+                "Other (please specify): Minding Your Mind Program, Learning Collaborative, and Overdose Emergency Kit Cabinet"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0.0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0.0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0.0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 85.56,
+            "how_spent": [
+                "Other (please specify):: Substance use disorder summit, attendance of 3 employees"
+            ],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0.0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Chelmsford.pdf"
+}

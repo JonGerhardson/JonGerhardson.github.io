@@ -1,0 +1,172 @@
+{
+    "municipality": "Dartmouth",
+    "response_id": "55",
+    "contact": {
+        "primary_name": "Chris Vitale",
+        "primary_email": "cvitale @town.dartmouth.ma.us",
+        "primary_phone": "5089101813",
+        "secondary_name": "",
+        "secondary_email": "",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Dartmouth",
+        "total_received_all_years": 525123.01,
+        "carryover_from_previous": 243456.47,
+        "fy2024_disbursement": 281666.54,
+        "total_available_fy24": 525123.01,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 899.52,
+        "total_unexpended": 524223.49
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "not_engage"
+            ],
+            "people_in_recovery": [
+                "not_engage"
+            ],
+            "families_impacted": [
+                "not_engage"
+            ],
+            "subject_matter_experts": [
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "The Town of Dartmouth intends to support programming in this area following the establishment of a local administrative structure for the expenditure of funds.",
+            "barriers_people_in_recovery": "The Town of Dartmouth intends to support programming in this area following the establishment of a local administrative structure for the expenditure of funds.",
+            "barriers_families": "The Town of Dartmouth intends to support programming in this area following the establishment of a local administrative structure for the expenditure of funds.",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "not_assess"
+            ],
+            "health_outcomes_wealth": [
+                "not_assess"
+            ],
+            "stigma_impact": [
+                "not_assess"
+            ],
+            "provider_diversity": [
+                "not_assess"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "The Town of Dartmouth intends to support programming in this area following the establishment of a local administrative structure for the expenditure of funds."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "not_assess"
+            ],
+            "fatal_overdoses": [
+                "not_assess"
+            ],
+            "emt_response": [
+                "not_assess"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage (mostly empty in this example)",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of Dartmouth intends to begin planning efforts in this area following the establishment of a local administrative structure for the expenditure of funds."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of Dartmouth intends to begin planning efforts in this area following the establishment of a local administrative structure for the expenditure of funds."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of Dartmouth intends to begin planning efforts in this area following the establishment of a local administrative structure for the expenditure of funds."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of Dartmouth intends to begin planning efforts in this area following the establishment of a local administrative structure for the expenditure of funds."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of Dartmouth intends to begin planning efforts in this area following the establishment of a local administrative structure for the expenditure of funds."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of Dartmouth intends to begin planning efforts in this area following the establishment of a local administrative structure for the expenditure of funds."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 899.52,
+            "how_spent": [],
+            "barriers": "The Town of Dartmouth intends to begin planning efforts in this area following the establishment of a local administrative structure for the expenditure of funds."
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The Town anticipates expending funding for administrative purposes in FY25, and program/services in FY26.",
+        "unmet_needs": "N/A",
+        "orrf_recommendations": "N/A"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Dartmouth.pdf"
+}

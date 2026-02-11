@@ -1,0 +1,142 @@
+{
+    "municipality": "East Bridgewater",
+    "response_id": "62",
+    "contact": {
+        "primary_name": "Charlie Seelig",
+        "primary_email": "cseelig @eastbridgewaterma.gov",
+        "primary_phone": "508-378-1601",
+        "secondary_name": "Rebecca Johnson",
+        "secondary_email": "rjohnson @eastbridgewaterma.gov",
+        "secondary_phone": "508-378-1601"
+    },
+    "funding": {
+        "municipality_name": "East Bridgewater",
+        "total_received_all_years": 220129.87,
+        "carryover_from_previous": 102056.16,
+        "fy2024_disbursement": 118073.71,
+        "total_available_fy24": 220129.87,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 220129.87
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "None. No money was expended in FY2024 so no engagement activities were conducted.",
+            "barriers_people_in_recovery": "None. No money was expended in FY2024 so no engagement activities were conducted.",
+            "barriers_families": "None. No money was expended in FY2024 so no engagement activities were conducted.",
+            "barriers_experts": "None. No money was expended in FY2024 so no engagement activities were conducted."
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "None. No money was expended in FY2024 so no challenges or barriers were encountered."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "None. No money was expended in FY2024 so no challenges or barriers were encountered."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "None. No money was expended in FY2024 so no challenges or barriers were encountered."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "None. No money was expended in FY2024 so no challenges or barriers were encountered."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "None. No money was expended in FY2024 so no challenges or barriers were encountered."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "None. No money was expended in FY2024 so no challenges or barriers were encountered."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "None. No money was expended in FY2024 so no challenges or barriers were encountered."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Looking for best practices for smaller communities to engage in this work.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/East_Bridgewater.pdf"
+}

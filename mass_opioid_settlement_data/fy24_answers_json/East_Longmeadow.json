@@ -1,0 +1,142 @@
+{
+    "municipality": "East Longmeadow",
+    "response_id": "63",
+    "contact": {
+        "primary_name": "Kimberly Collins",
+        "primary_email": "kimberly.collins@eastlongmeadowma.gov",
+        "primary_phone": "413-525-5600",
+        "secondary_name": null,
+        "secondary_email": null,
+        "secondary_phone": null
+    },
+    "funding": {
+        "municipality_name": "East Longmeadow",
+        "total_received_all_years": 259010.94,
+        "carryover_from_previous": 120082.13,
+        "fy2024_disbursement": 138928.81,
+        "total_available_fy24": 259010.94,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 259010.94
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "NA",
+            "barriers_people_in_recovery": "NA",
+            "barriers_families": "NA",
+            "barriers_experts": "NA"
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "NA",
+            "other_methods": "NA",
+            "barriers": "NA"
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "It's been challenging to coordinate relevant departments and stakeholders together to develop a plan to identify intervention strategies to support with these funds. We are interested in developing a team and a plan in the next year."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "It's been challenging to coordinate relevant departments and stakeholders together to develop a plan to identify intervention strategies to support with these funds. We are interested in developing a team and a plan in the next year."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "It's been challenging to coordinate relevant departments and stakeholders together to develop a plan to identify intervention strategies to support with these funds. We are interested in developing a team and a plan in the next year."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "It's been challenging to coordinate relevant departments and stakeholders together to develop a plan to identify intervention strategies to support with these funds. We are interested in developing a team and a plan in the next year."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "It's been challenging to coordinate relevant departments and stakeholders together to develop a plan to identify intervention strategies to support with these funds. We are interested in developing a team and a plan in the next year."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "It's been challenging to coordinate relevant departments and stakeholders together to develop a plan to identify intervention strategies to support with these funds. We are interested in developing a team and a plan in the next year."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "It's been challenging to coordinate relevant departments and stakeholders together to develop a plan to identify intervention strategies to support with these funds. We are interested in developing a team and a plan in the next year."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We have been slow to start, but are getting a team coordinated about developing a plan for expending these funds",
+        "unmet_needs": "No",
+        "orrf_recommendations": "No, not yet"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/East_Longmeadow.pdf"
+}

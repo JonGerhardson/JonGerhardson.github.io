@@ -1,0 +1,230 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Egremont",
+    "response_id": "68",
+    "contact": {
+        "primary_name": "Mary Brazie",
+        "primary_email": "tegremont @egremont-ma.gov",
+        "primary_phone": "4135280182",
+        "secondary_name": "Paul Lisi",
+        "secondary_email": "accountant @egremont-ma.gov",
+        "secondary_phone": "413-528-0182"
+    },
+    "funding": {
+        "municipality_name": "Egremont",
+        "total_received_all_years": 5736.82,
+        "carryover_from_previous": 2244.06,
+        "fy2024_disbursement": 2596.27,
+        "total_available_fy24": 4840.33,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 4840.33,
+        "total_unexpended": 0
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Through Resource Recovery Center in Great Barrington Massachusetts, they assessed the need by holding group sessions and reporting to the town via Railroad Street Youth Project of which Egremont's Police Chief is a member.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "other"
+            ],
+            "health_outcomes_race": [
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "other"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Through interactions with Resource Recovery and Railroad Street Youth Project."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "other"
+            ],
+            "fatal_overdoses": [
+                "other"
+            ],
+            "emt_response": [
+                "other"
+            ],
+            "admin_data_sources": "Data sources obtained from Resource Recovery Center and Railroad Street Youth Project.",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage (mostly empty in this example)",
+            "programs": [
+                {
+                    "name": "Resource Recovery South Berkshire",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Railroad Street Youth Project",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Resource Recovery Center",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Railroad Street Youth Project",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches",
+                "Support evidence-based withdrawal management services for people with OUD and co-occurring mental health conditions",
+                "Improve or implement trauma-informed treatment services"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 4840.33,
+            "how_spent": [
+                "Provide comprehensive wrap-around services to individuals with OUD, including job placement, job training, or childcare",
+                "Provide access to housing for people with OUD, including supportive housing, recovery housing, housing, rent, move-in deposits, and utilities assistance programs, training for housing providers, or recovery housing programs that integrate FDA-approved medication with other support services",
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Provide community support services, including social and legal services, to assist in deinstitutionalizing persons with OUD",
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family",
+                "Support programs for recovery in schools and/or standalone recovery high schools",
+                "Support bereaved families and frontline care providers"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event",
+                "Support school-based services related to OUD, such as school-based contacts that parents can engage with to seek immediate treatment services for their child; and support prevention, intervention, treatment, and recovery programs focused on young people. This should include alternatives to suspension or interaction with school resource officers such as restorative justice approaches",
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "\"Naloxone Plus\" strategies to ensure that individuals who receive naloxone to reverse an overdose are linked to treatment programs or other appropriate services",
+                "Approve and fund syringe service programs and other programs to reduce harms associated with drug use, including supplies, staffing, space, peer support services, referrals to treatment, fentanyl checking, syringe collection and disposal, connection to care, and the full range of harm reduction and treatment services provided by these programs",
+                "Support mobile units that offer or provide referrals to harm reduction services, treatment, recovery supports, primary and behavioral health care, recovery support, or other appropriate services with OUD"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Programs, that connect individuals involved in the criminal justice system and upon release from jail or prison to OUD harm reduction services, treatment, recovery support, healthcare, prevention, legal support, or other supports, or that provide these"
+            ],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Resource Recovery Center has not reported on any of these actions."
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The Town of Egremont pays its funds to Railroad Street Youth Project who administers Resource Recovery Center in Great Barrington MA. All implementation, administration, data sourcing, etc is done by them. They make an annual report to the Town.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Egremont.pdf"
+}

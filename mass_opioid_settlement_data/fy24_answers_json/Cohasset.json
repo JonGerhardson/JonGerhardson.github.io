@@ -1,0 +1,233 @@
+{
+    "municipality": "Cohasset",
+    "response_id": "52",
+    "contact": {
+        "primary_name": "Pamela Fahey",
+        "primary_email": "pfahey @cohassetma.gov",
+        "primary_phone": "781-424-3058",
+        "secondary_name": "Nicole Balaschi",
+        "secondary_email": "nbalaschi @cohassetma.gov",
+        "secondary_phone": "781-783-5293"
+    },
+    "funding": {
+        "municipality_name": "Cohasset",
+        "total_received_all_years": 136468.26,
+        "carryover_from_previous": 63269.14,
+        "fy2024_disbursement": 73199.12,
+        "total_available_fy24": 136468.26,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 10915.74,
+        "total_unexpended": 125552.52
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "families_impacted_other": "correspondence via emails",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings",
+                "other"
+            ],
+            "health_outcomes_race": [
+                "not_assessed"
+            ],
+            "health_outcomes_wealth": [
+                "not_assessed"
+            ],
+            "stigma_impact": [
+                "interviews"
+            ],
+            "provider_diversity": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "environmental scans",
+            "barriers": "a community health needs assessment is underway to identify and address gaps"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "interface referral service Norfolk county outreach data collection",
+            "other_methods": "environmental scans",
+            "barriers": "a barrier is data sharing across sectors undergoing community health needs assessment to overcome barriers"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Program/Service 1",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "peer recovery coach",
+                    "sources": [
+                        "community_needs",
+                        "care_mass"
+                    ]
+                },
+                {
+                    "name": "parent advocate",
+                    "sources": [
+                        "community_needs",
+                        "care_mass"
+                    ]
+                },
+                {
+                    "name": "sober living scholarships",
+                    "sources": [
+                        "community_needs",
+                        "care_mass"
+                    ]
+                },
+                {
+                    "name": "family therapy scholarships",
+                    "sources": [
+                        "community_needs",
+                        "care_mass"
+                    ]
+                },
+                {
+                    "name": "prevention kits",
+                    "sources": [
+                        "community_needs",
+                        "care_mass"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We consulted with Care Mass.",
+        "consultant_activities": null,
+        "care_mass_activities": [
+            "Facilitated planning sessions to prioritize needs and gaps",
+            "Facilitated planning sessions to set goals and select strategies to address needs and gaps",
+            "Developed an implementation plan"
+        ],
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "spending funds in other categories"
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 10323.75,
+            "how_spent": [
+                "Provide access to housing for people with OUD, including supportive housing, recovery housing...",
+                "Provide peer support specialists that support people in accessing OUD treatment...",
+                "Provide community support services, including social and legal services...",
+                "Support bereaved families and frontline care providers"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 137.5,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams..."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 454.49,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses...",
+                "Approve and fund syringe service programs...",
+                "Other (please specify): prevention kits located throughout town"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "focused on other categories; currently not identified as a specific area of need"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "focused on other categories; currently not identified as a specific area of need"
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We were slow to get off the ground, but now we feel confident in the services that we are offering",
+        "unmet_needs": "No",
+        "orrf_recommendations": "We have been providing prevention kits in public restrooms and lobbies that include narcan. We can barely keep up with the demand. Obviously this was a bigger need than we anticipated."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Cohasset.pdf"
+}

@@ -1,0 +1,149 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Athol",
+    "response_id": "11",
+    "contact": {
+        "primary_name": "Amy Craven",
+        "primary_email": "acraven @townofathol.org",
+        "primary_phone": "978-721-8452",
+        "secondary_name": "Shaun Suhoski",
+        "secondary_email": "ssuhoski @townofathol.org",
+        "secondary_phone": "978-721-8526"
+    },
+    "funding": {
+        "municipality_name": "Athol",
+        "total_received_all_years": 34292.91,
+        "carryover_from_previous": 15898.81,
+        "fy2024_disbursement": 18394.1,
+        "total_available_fy24": 34292.91,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 34292.91
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "No engagement. Still in Planning stage of how to expend funds.",
+            "barriers_people_in_recovery": "No engagement. Still in Planning stage of how to expend funds.",
+            "barriers_families": "No engagement. Still in Planning stage of how to expend funds.",
+            "barriers_experts": "No engagement. Still in Planning stage of how to expend funds."
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "Still in Planning stage of assessing needs and how to expend funds.",
+            "other_methods": "Still in Planning stage of assessing needs and how to expend funds.",
+            "barriers": "Still in Planning stage of assessing needs and how to expend funds."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage (mostly empty in this example)",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "During FY25, Athol Board of Health and Selectboard will discuss strategies and programs for fund expenditures."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "During FY25, Athol Board of Health and Selectboard will discuss strategies and programs for fund expenditures."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "During FY25, Athol Board of Health and Selectboard will discuss strategies and programs for fund expenditures."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "During FY25, Athol Board of Health and Selectboard will discuss strategies and programs for fund expenditures."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "During FY25, Athol Board of Health and Selectboard will discuss strategies and programs for fund expenditures."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "During FY25, Athol Board of Health and Selectboard will discuss strategies and programs for fund expenditures."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "During FY25, Athol Board of Health and Selectboard will discuss strategies and programs for fund expenditures."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Athol.pdf"
+}

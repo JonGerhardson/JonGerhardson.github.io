@@ -1,0 +1,247 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "municipality": "Braintree",
+    "response_id": "30",
+    "contact": {
+        "primary_name": "Stormy Leung",
+        "primary_email": "sleung @braintreema.gov",
+        "primary_phone": "8574990565",
+        "secondary_name": "Marybeth McGrath",
+        "secondary_email": "mmcgrath @braintreema.gov",
+        "secondary_phone": "7817948095"
+    },
+    "funding": {
+        "municipality_name": "Braintree",
+        "total_received_all_years": 425107.59,
+        "carryover_from_previous": 196677.46,
+        "fy2024_disbursement": 228020.06,
+        "total_available_fy24": 424697.52,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 996.32,
+        "total_unexpended": 423701.2
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "did_not_engage"
+            ],
+            "people_in_recovery": [
+                "interviews",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "interviews",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "Throughout the year, the Partnership has made multiple efforts to engage individuals who were currently using substances, particularly those who were using opiates, but was unsuccessfully in getting any interviews. To address this gap, we will be partnering with Manet Community Health Center to engage with individuals they certainly serve through their harm reduction programs. All interviews and meetings with the people who use drugs will be kept confidential and anonymous. This will be reiterated to help the individual feel more comfortable sharing. We are also in the process of trying to implement a Community Health Navigator program in Braintree. This navigator will connect individuals who are struggling with addiction to drugs and/or alcohl and who are at risk for an overdose. We will be partnering with Manet to pilot this program in Braintree with plans to expand this program to Quincy and Weymouth with their cooperation.",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "interviews"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "The Braintree Opioid Task Force is still in the assessment process to determine which populations in the community are most at need. We will continue to partner with community organizations like Manet to better understand the demographics of the individuals most at need and affected by opioid use disorder."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "interviews"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "interviews"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day_use": [
+                "survey"
+            ],
+            "patients_in_treatment": [
+                "did_not_assess"
+            ],
+            "people_in_recovery": [
+                "interviews"
+            ],
+            "people_who_use_drugs": [
+                "interviews"
+            ],
+            "treatment_providers": [
+                "other"
+            ],
+            "recovery_centers": [
+                "other"
+            ],
+            "mental_health_conditions": [
+                "admin_data",
+                "interviews"
+            ],
+            "admin_data_sources": "Braintree Police and Fire Department Data and BRIDGE Clinic of South Shore Health.",
+            "other_methods": "Braintree Polic Department has a mental health clinician who co-responds with first responders. They keep numbers and data on cases related to mental health, substance use, and other behavioraal health calls. The Braintree Community Partnership also surveys the public middle schools and high school school. In this survey, questions about lifetime use and 30-day use of substances and mental health related questions.",
+            "barriers": "The biggest barrier we encountered in assessing the potentials and needs was not having access to individual who are actively using substances or pregnant individuals who are at risk of an overdose or are currently using substances. We will continue to partner with Manet and the South Shore Health Bridge Clinic to see how to engage this population since they already provided services in the South Shore area for individuals who are currently struggling with substance use disorder."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Community Health Navigator",
+                    "sources": [
+                        "admin_data",
+                        "interviews",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Naloxone availabilityin AED kits or SamBoxes",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Services for grief support and for children of loss",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "MOUs with local law enforcement for Post Overdose Outreach",
+                    "sources": [
+                        "community_needs",
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Economically under-resourced",
+            "Individuals who have been incarcerated and/or under community supervision",
+            "LGBTQ+",
+            "Pregnant and/or parenting populations",
+            "Transgender or gender expansive",
+            "Unsheltered or housing-insecure",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 98,
+            "how_spent": [
+                "Support bereaved families and frontline care providers",
+                "Other (please specify):: Collect data on how Opioid Settlement Funds can be used to better individuals and families impacted by opioid use disorder."
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 120,
+            "how_spent": [
+                "Other (please specify):: Created Behavioral Health Resources to connect residents with local and state resources. The Partnership is currently in the process of hiring a Community Health Naviagator to connect individuals in need with the care and resources that'll help them onto the road of recovery and gain agency in their lives."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Opioid Task Force is still in the assessment phase and collecting data and input from stakeholders. Harm Reduction has not been an area of focus at the moment. There are plans to address this category in the near future by making Harm Reduction Kits which would include two Naloxone doses, fentanyl test strips, single dose sharp container, resource cards, a mask barrier, and a pouch that all the materials will go in."
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This has not been a topic or category that the Braintree Opioid Task Force have discussed about."
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 778.32,
+            "how_spent": [
+                "Program staffing",
+                "Other (please specify):: 58.32"
+            ],
+            "job_title": "Notetaker",
+            "fte": "0.1"
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The assessment process has taken some time to ensure that the Opioid Settlement Funds are effectively and impactfully used to serve individuals who are currently struggling with substance use disorder and individuals who have been impacted by the opioid epidemic. Recommendations are currently being proposed to the Mayor and next steps would be planning and implementation.",
+        "unmet_needs": "All of the needs identified through our community assessment should be appropriate and applicable expenses under the Opioid Abatement Fund guidelines.",
+        "orrf_recommendations": "We have plans to pilot a Community Health Navigator Program, similar to the City of Chelsea's, with the Opioid Settlement Funds. Our goal is expand this program our surrounding municipalities (Quincy and Weymouth) because a lot of the cases and individuals transit through these 3 cities/towns. At the state level, it would be great to provide some professional and capacity training to support professional development in this area as well as other sustainability resources to promote this continume of care and prevention for individuals in need of resources and services."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Braintree.pdf"
+}

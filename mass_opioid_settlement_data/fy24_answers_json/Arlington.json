@@ -1,0 +1,262 @@
+{
+    "municipality": "Arlington",
+    "response_id": "9",
+    "contact": {
+        "primary_name": "Karen Koretsky",
+        "primary_email": "kkoretsky @town.arlington.ma.us",
+        "primary_phone": "7813163170",
+        "secondary_name": "Colleen Leger",
+        "secondary_email": "cleger @town.arlington.ma.us",
+        "secondary_phone": "7813163170"
+    },
+    "funding": {
+        "municipality_name": "Arlington",
+        "total_received_all_years": 319528.22,
+        "carryover_from_previous": 148139.02,
+        "fy2024_disbursement": 171389.2,
+        "total_available_fy24": 319528.22,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 55888.73,
+        "total_unexpended": 263639.49
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "other"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "focus_groups",
+                "other"
+            ],
+            "families_impacted": [
+                "survey",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "interviews",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "With the assistance of a recovery coach and the police clinician we had weekly contact with people in active use. We provided Narcan and test strips, offer ed resources such as meeting options and treatment programs.",
+            "people_in_recovery_other": "We engaged with people in recovery via community conversations, and via our recovery coach and clinician.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "interviews"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "interviews"
+            ],
+            "health_outcomes_wealth": [
+                "survey"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Arlington Police Department, Health Resources in Action, community survey.",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "survey"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day_opioid_use": [
+                "interviews"
+            ],
+            "patients_in_treatment": [
+                "interviews"
+            ],
+            "people_in_recovery": [
+                "interviews"
+            ],
+            "people_who_use_drugs": [
+                "interviews"
+            ],
+            "treatment_providers_count": [
+                "survey"
+            ],
+            "recovery_centers_count": [
+                "survey"
+            ],
+            "mental_health_conditions": [
+                "survey"
+            ],
+            "admin_data_sources": "Arlington Police Department, Health Resources in Action",
+            "other_methods": "Community Liaisons, Community Mental Health Center Director, Board of Health data",
+            "barriers": "Language Barriers:(we have hired bilingual clinicians) and implemented the services of an interpreter service."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Narcan Distribution",
+                    "sources": [
+                        "admin_data",
+                        "survey",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Test Strip Distribution",
+                    "sources": [
+                        "admin_data",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Peer Recovery",
+                    "sources": [
+                        "admin_data",
+                        "interviews"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Recovery Community Center",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Narcan Training for high School Students",
+                    "sources": [
+                        "literature_review"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Economically under-resourced",
+            "Non-native English speakers",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches",
+                "Other (please specify):: 25783"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 20810,
+            "how_spent": [
+                "Increase the number and capacity of high-quality recovery programs to help people in recovery"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 32181.95,
+            "how_spent": [
+                "Support school-based services related to OUD, such as school-based contacts that parents can engage with to seek immediate treatment services for their child; and support prevention, intervention, treatment, and recovery programs focused on young people. This should include alternatives to suspension or interaction with school resource officers such as restorative justice approaches"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 742.24,
+            "how_spent": [
+                "\"Naloxone Plus\" strategies to ensure that individuals who receive naloxone to reverse an overdose are linked to treatment programs or other appropriate services"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Access to Justice Involved persons"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Access to support pregnant or parenting women and their families."
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 154.54,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Full implementation",
+            "expended": 2000,
+            "how_spent": [
+                "Program staffing"
+            ],
+            "job_title": "Prevention Services Manager",
+            "fte": "0.9"
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We are so grateful for the outreach and prevention opportunities this funding has provided. We have been able to pay for recovery housing, recovery services, narcan distribution, provide community forums and other presentations. Thank you.",
+        "unmet_needs": "We have identified the needs for a Peer Recovery Community to lead outreach and prevention efforts. We also have a long range goal of creating a recovery community center.",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Arlington.pdf"
+}

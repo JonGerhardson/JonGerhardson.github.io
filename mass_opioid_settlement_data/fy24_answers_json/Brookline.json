@@ -1,0 +1,235 @@
+{
+    "municipality": "Brookline",
+    "response_id": "35",
+    "contact": {
+        "primary_name": "Sigalle Reiss",
+        "primary_email": "sreiss @brooklinema.gov",
+        "primary_phone": "617-730-2302",
+        "secondary_name": "John Kleschinsky",
+        "secondary_email": "jkleschinsky @brooklinema.gov",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Brookline",
+        "total_received_all_years": 786363.18,
+        "carryover_from_previous": 364572.11,
+        "fy2024_disbursement": 421791.07,
+        "total_available_fy24": 786363.18,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 786363.18
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "groups_meetings"
+            ],
+            "families_impacted": [
+                "survey"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "survey",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "survey",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "survey",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "BSAS data dashboard, CHES survey data",
+            "other_methods": "local Community Health Assessment/Community Health Improvement Plan, Human Services Gap analysis reports",
+            "barriers": "Lack of available data by race to identify racial inequities. The assessment process utilized available regional data."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "BSAS Funded MassCall3 participant",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Brookline CAN Program (Harm Reduction Kit Distribution)",
+                    "sources": [
+                        "admin_data"
+                    ]
+                },
+                {
+                    "name": "School based diversion program",
+                    "sources": [
+                        "admin_data",
+                        "survey"
+                    ]
+                },
+                {
+                    "name": "Crisis Intervention Team",
+                    "sources": []
+                },
+                {
+                    "name": "Outreach after Overdose/Crisis Incident Management System (Norfolk County)",
+                    "sources": []
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Community Coalition (Strategic Prevention Framework)",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Human Services Connection to Care/ close loop referral program",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We contracted a consultant to support this process.",
+        "consultant_activities": "Developed and conducted a community survey; Developed and conducted individual interviews; Developed and conducted focus groups or a meeting with an affinity group; Compiled data and drafted data analysis report; Developed criteria for prioritizing needs and gaps based on findings; Facilitated planning sessions to prioritize needs and gaps; Facilitated planning sessions to set goals and select strategies to address needs and gaps",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Aging adults",
+            "Asian, Pacific Islander, or Southeast Asian",
+            "Black or African American",
+            "Economically under-resourced",
+            "Latino/a/x/e or Hispanic",
+            "LGBTQ+",
+            "Non-native English speakers",
+            "Veterans",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This focus area was not prioritized in our assessment and planning process."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This focus area was not prioritized in our assessment and planning process."
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Brookline.pdf"
+}

@@ -1,0 +1,219 @@
+{
+    "municipality": "CHICOPEE",
+    "response_id": "43",
+    "contact": {
+        "primary_name": "MARIE LAFLAMME",
+        "primary_email": "MLAFLAMME @CHICOPEEMA.GOV",
+        "primary_phone": "4135941560",
+        "secondary_name": "Bobbi Jo Slack-Reyes",
+        "secondary_email": "bslackreyes @chicopeema.gov",
+        "secondary_phone": "4135941560"
+    },
+    "funding": {
+        "municipality_name": "CHICOPEE",
+        "total_received_all_years": 840916.1,
+        "carryover_from_previous": 389863.83,
+        "fy2024_disbursement": 451052.27,
+        "total_available_fy24": 840916.1,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 840916.1
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "survey",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Police Department Fire Department School Department",
+            "other_methods": "Formed a team of various professionals to discuss the most immediate need to address at this time.",
+            "barriers": "The census of the professionals was that there are several existing programs that are helping but could use additional support."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "BHA",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "TAPESTRY",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "MERCY HOSPITAL",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "BAYSTATE HOSPITAL",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "SCHOOL DEPT",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "SCHOOL",
+                    "sources": [
+                        "community_needs",
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Treatment plans already in place with outside organizations. Challenges were addressed under the current program. No additional challenges identified."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Treatment programs in place and no challenges identified."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are planning our programs to address prevention which was identified as the main concern in our community."
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have a program with resources provided. Also police wellness checks are performed."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have programs in place to address this issue and cannot supplant services. We would like to increase funding to existing programs but no permitted under this agreement."
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Chicopee.pdf"
+}

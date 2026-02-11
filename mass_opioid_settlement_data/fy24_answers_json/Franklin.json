@@ -1,0 +1,162 @@
+{
+    "municipality": "Franklin",
+    "response_id": "77",
+    "contact": {
+        "primary_name": "Amy Frigulietti",
+        "primary_email": "afrigulietti @franklinma.gov",
+        "primary_phone": "508-553-4886",
+        "secondary_name": "Jamie Hellen",
+        "secondary_email": "jhellen @franklinma.gov",
+        "secondary_phone": "508-553-4887"
+    },
+    "funding": {
+        "municipality_name": "Franklin",
+        "total_received_all_years": 429827.65,
+        "carryover_from_previous": 131770.33,
+        "fy2024_disbursement": 230551.82,
+        "total_available_fy24": 362322.15,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 35000.0,
+        "total_unexpended": 327322.15
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "The allocated funding was used to fund the William James Interface Referral Service Program for individuals and families in Franklin seeking outpatient mental health referral services. Individuals seeking treatment may fall under this category. We have not yet begun our engagement and input process but expect to do so in the fall of 2024.",
+            "people_in_recovery_other": "The allocated funding was used to fund the William James Interface Referral Service Program for individuals and families in Franklin seeking outpatient mental health referral services. Individuals seeking treatment may fall under this category. We have not yet begun our engagement and input process but expect to do so in the fall of 2024.",
+            "families_impacted_other": "The allocated funding was used to fund the William James Interface Referral Service Program for individuals and families in Franklin seeking outpatient mental health referral services. Individuals seeking treatment may fall under this category. We have not yet begun our engagement and input process but expect to do so in the fall of 2024.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "We are not at this point in the planning process yet. As we pull together our community stakeholders and begin determining how to best utilize this funding, we will assess the community's needs and gaps. We expect to start our planning process in the fall of 2024."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "mental_health_conditions": [
+                "other"
+            ],
+            "admin_data_sources": "We will be accessing Administrative data through our health department, public safety departments, the Franklin Crisis Action Team, and external partners to access community needs as we plan uses for this funding.",
+            "other_methods": "The funding allocation for FY24 was based on reports from the William James Interface program and school/community needs.",
+            "barriers": "N/A"
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 35000.0,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event",
+                "Support school-based services related to OUD, such as school-based contacts that parents can engage with to seek immediate treatment services for their child; and support prevention, intervention, treatment, and recovery programs focused on young people. This should include alternatives to suspension or interaction with school resource officers such as restorative justice approaches",
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We are in the early stages of planning for these funds and seek to have a robust plan in place at the beginning on 2025. Our planning process will take place in the fall of 2024 with internal and external partners.",
+        "unmet_needs": "TBD",
+        "orrf_recommendations": "TBD"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Franklin.pdf"
+}

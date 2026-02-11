@@ -1,0 +1,271 @@
+{
+    "municipality": "Fitchburg",
+    "response_id": "74",
+    "contact": {
+        "primary_name": "Susan Christensen",
+        "primary_email": "SChristensen@fitchburgma.gov",
+        "primary_phone": "9788291854",
+        "secondary_name": "Stephen Curry",
+        "secondary_email": "SCurry@fitchburgma.gov",
+        "secondary_phone": "9788291871"
+    },
+    "funding": {
+        "municipality_name": "Fitchburg",
+        "total_received_all_years": 659387.28,
+        "carryover_from_previous": 305703.81,
+        "fy2024_disbursement": 353683.47,
+        "total_available_fy24": 659387.28,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 659387.28
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "interviews"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "interviews"
+            ],
+            "families_impacted": [
+                "survey",
+                "interviews"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "interviews",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "survey",
+                "interviews"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "MA DPH BSAS Addiction Service Dashboard to identify opioid-related overdose deaths trend by race",
+            "other_methods": "The survey conducted addressed several of these issues. Some examples of survey questions with the responses include: Do you think access to treatment and other services is available equally to all? - Yes 39%; No 61% a \"Do you believe that race, wealth or stigma play a part in access to services - Yes 67%; No 33% Written answers stressed \"Inadequate insurance and no ID pay a role\""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "interviews"
+            ],
+            "emt_response": [
+                "admin_data",
+                "interviews",
+                "other"
+            ],
+            "past_30_day_opioid_use": [
+                "other"
+            ],
+            "patients_in_treatment": [
+                "admin_data",
+                "interviews",
+                "other"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "interviews",
+                "other"
+            ],
+            "people_who_use_drugs": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "other"
+            ],
+            "treatment_providers_count": [
+                "admin_data",
+                "other"
+            ],
+            "recovery_centers_count": [
+                "other"
+            ],
+            "mental_health_conditions": [
+                "admin_data",
+                "interviews",
+                "other"
+            ],
+            "admin_data_sources": "Administrative data sources MA Bureau Substance Addiction Services dashboard",
+            "other_methods": "Fitchburg Outreach & Prevention keeps detailed data on services provided and this allowed for identification of mental health, SUD or co-occurring disorders. We assist family members with obtaining section 35's when appropriate. The local community health center provides medical and behavioral health services, we have a DMH clubhouse model, and several agencies who are partners in the Fitchburg Interagency Team Collaborative HUB, allowing for sharing of information regarding the identification of these issues in the community.",
+            "barriers": "One barrier is identifying people in recovery. Once they go to detox, it's sometimes difficult to tract who remains in recovery. Tracking the number of people participating in local recovery center will assist in this effort. Plans are in place to engage a part-time case manager which would provide more data."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Transport grant",
+                    "sources": [
+                        "groups_meetings",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Peer Recovery Centers",
+                    "sources": [
+                        "survey",
+                        "groups_meetings",
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "CNPP - narcan distribution & education",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Winter Warming Center",
+                    "sources": [
+                        "community_needs",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Fentanyl test strip distribution",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other_municipality"
+                    ]
+                },
+                {
+                    "name": "enhanced resource",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We contracted a consultant to support this process.",
+        "consultant_activities": [
+            "Developed and conducted a community survey",
+            "Compiled data and drafted data analysis report"
+        ],
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The City of Fitchburg underwent a change of administration in January 2024. Coupled with the legislative issues surrounding abatement funding, we have in October of 2024 started a planning process which will result in, among other proposals, the appointment of an Opioid Settlement Funds Advisory Committee, a Public Listening Session to augment the initial survey and proposed mini-grant program with funding being awarded for innovative projects that meet the identified needs of the community.",
+        "unmet_needs": "n/a",
+        "orrf_recommendations": "The lack of housing and shelter for individuals suffering from OUD has consistently been at the forefront of concerns raised in this community. Without these basic needs being met, it is difficult for individuals to stay on a path of recovery."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Fitchburg.pdf"
+}

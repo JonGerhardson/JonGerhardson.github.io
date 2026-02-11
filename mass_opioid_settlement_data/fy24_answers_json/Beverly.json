@@ -1,0 +1,237 @@
+{
+    "municipality": "Beverly",
+    "response_id": "24",
+    "contact": {
+        "primary_name": "Bryant Ayles",
+        "primary_email": "Bayles @beverlyma.gov",
+        "primary_phone": "9786052315",
+        "secondary_name": "Amit Chhayani",
+        "secondary_email": "achhayani @beverlyma.gov",
+        "secondary_phone": "9786052313"
+    },
+    "funding": {
+        "municipality_name": "Beverly",
+        "total_received_all_years": 387753.28,
+        "carryover_from_previous": 107019.86,
+        "fy2024_disbursement": 280733.42,
+        "total_available_fy24": 387753.28,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 639.96,
+        "total_unexpended": 387113.32
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "interviews"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Resources include: Beverly Hospital's 2022 CHNA U.S. 2020 Census City of Beverly Racial Equity Audit Report Office of Environmental Justice & Equity EJ populations 2022 map Beverly Public Schools YRBS MDPH Population Health Information Tool",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [],
+            "admin_data_sources": "City of Beverly Police Dept annual count of overdose reponses. Social Services Navigator created dashboard map of treatment centers and providers based on meetings with providers and representatives. 2022 National Survey on Drug Use and Health (NSDUH) Releases Beverly Hospital 2022 CHNA National Center for Drug Abuse Statistics",
+            "other_methods": "With the opioid settlement funds, the City was able to hire a licensed social worker who can assist any individuals of any demographic. Social worker will set up one-on-one meetings with clients and complete anintake form with them as well. Social worker has discussions with client regarding culturally appropriate resources and the different types of resources they may need (e.g., OUD treatment, food assistance, housing assistance, mental health referrals, etc.)",
+            "barriers": "The only entity that posesses EMT response time is the Beverly Police Dept. This data is not shared publicly. The Health Dept can access this information by speaking with the Police Dept and requesting monthly or annual data. In regards to past 30-day Opioid Use, we are unaware of whether this data is collected City-wide. The Police Dept's Community Impact Unit does do follow-up overdose response, but program is voluntary. Can ask Police Dept for data they have collected. Regarding patients in treatment, we are unaware of data sources which collect this information."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "North Shore Health Project: ONEstop Program - Harm Reduction Services",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Narcan Box Program (upcoming)",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Narcan Box Program (upcoming)",
+                    "sources": [
+                        "community_needs",
+                        "other_municipality",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Provide translation services or documents in other languages besides English",
+                    "sources": [
+                        "community_needs",
+                        "consultant"
+                    ]
+                },
+                {
+                    "name": "Hired a full-time Social Services Navigator (social worker)",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Recovery support groups (upcoming)",
+                    "sources": [
+                        "literature_review"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Aging adults",
+            "Black or African American",
+            "Disabled",
+            "Economically under-resourced",
+            "Immigrant",
+            "Latino/a/x/e or Hispanic",
+            "LGBTQ+",
+            "Non-native English speakers",
+            "Pregnant and/or parenting populations",
+            "Transgender or gender expansive",
+            "Unsheltered or housing-insecure",
+            "Veterans",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 639.96,
+            "how_spent": [
+                "Provide training and education regarding naloxone and other drugs that treat overdoses"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Beverly.pdf"
+}

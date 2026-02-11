@@ -1,0 +1,211 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Abington",
+    "response_id": "1",
+    "contact": {
+        "primary_name": "Andrew Nocon",
+        "primary_email": "anocon @abingtonma.gov",
+        "primary_phone": "7819822110",
+        "secondary_name": "Scott Lambiase",
+        "secondary_email": "slambiase @abingtonma.gov",
+        "secondary_phone": "7819822100"
+    },
+    "funding": {
+        "municipality_name": "Abington",
+        "total_received_all_years": 228985.63,
+        "carryover_from_previous": 106161.85,
+        "fy2024_disbursement": 122823.78,
+        "total_available_fy24": 228985.63,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 62026.35,
+        "total_unexpended": 166959.28
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "other"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Presented to sober homes and spoke to residents and listened to their concerns and what they would like for services and barriers to recovery they face.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings",
+                "other"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings",
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings",
+                "other"
+            ],
+            "stigma_impact": [
+                "groups_meetings",
+                "other"
+            ],
+            "provider_diversity": [
+                "groups_meetings",
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "These needs were discussed at meetings as well as through the application process to distribute grant funds to subrecipients."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "groups_meetings",
+                "other"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "groups_meetings",
+                "other"
+            ],
+            "emt_response": [
+                "interviews",
+                "groups_meetings",
+                "other"
+            ],
+            "admin_data_sources": "Plymouth County Outreach provided their administrative data for overdoses/overdose follow ups/fatal overdoses when attending meetings and when requested.",
+            "other_methods": "Interviews were conducted by public health nurse to identify concerns over mental health conditions that needed to be addressed.",
+            "barriers": "Residents willingness to be open and discuss sensitive matter without a clear plan for follow up, just information gathering can be daunting to residents and seen as \"a waste of time\" whereas they would rather see results and actionable items."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage (mostly empty in this example)",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Alli Connect - mental health app for first responders experiencing chronic and prolonged work related stressors exacerbated by a marked increase in opioid overdoses",
+                    "sources": [
+                        "community_needs",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "SAMBox Initiative - SAMBoxes with naloxone placed around the community for easy access to life saving Naloxone in places where overdoses have been recorded to occur most frequently.",
+                    "sources": [
+                        "literature_review",
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Through subrecipient application, no need immediate was identified at this time. Will reassess Fall of 2024."
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 47000,
+            "how_spent": [
+                "Provide access to housing for people with OUD, including supportive housing, recovery housing, housing, rent, move-in deposits, and utilities assistance programs, training for housing providers, or recovery housing programs that integrate FDA-approved medication with other support services",
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family",
+                "Support programs for recovery in schools and/or standalone recovery high schools"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 10190,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 4836.35,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Other (please specify): SAMBOXes installed around community"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Through subrecipient application, no need immediate was identified at this time. Will reassess Fall of 2024."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Through subrecipient application, no need immediate was identified at this time. Will reassess Fall of 2024."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Through subrecipient application, no need immediate was identified at this time. Will reassess Fall of 2024."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Abington.pdf"
+}

@@ -1,0 +1,187 @@
+{
+    "municipality": "Framingham",
+    "response_id": "76",
+    "contact": {
+        "primary_name": "Meghan Todd",
+        "primary_email": "mtodd @framinghamma.gov",
+        "primary_phone": "5085325650",
+        "secondary_name": "Jennifer Pratt",
+        "secondary_email": "jap @framinghamma.gov",
+        "secondary_phone": "5085325437"
+    },
+    "funding": {
+        "municipality_name": "Framingham",
+        "total_received_all_years": 658307.24,
+        "carryover_from_previous": 305203.08,
+        "fy2024_disbursement": 353104.16,
+        "total_available_fy24": 658307.24,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 15000,
+        "total_unexpended": 643307.24
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "interviews",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "interviews"
+            ],
+            "health_outcomes_race": [
+                "survey"
+            ],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "survey",
+                "interviews"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [],
+            "admin_data_sources": "CIMS",
+            "other_methods": "The research Framingham has conducted was done as part of the City's initial needs assessment, which was inclusive of a survey, interviews, focus groups, and more.",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                "Anchored in Recovery",
+                "Program RISE, JRI",
+                "MetroWest Cares Connection"
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We contracted a consultant to support this process.",
+        "consultant_activities": [
+            "Developed and conducted a community survey",
+            "Developed and conducted individual interviews",
+            "Developed and conducted focus groups or a meeting with an affinity group",
+            "Compiled data and drafted data analysis report",
+            "Facilitated planning sessions to prioritize needs and gaps"
+        ],
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 15000,
+            "how_spent": [
+                "Contracting consultants to support coalition building, community needs assessment, planning and implementation, and evaluation and reporting"
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "The City of Framingham is moving forward efficiently and will be spending additional funds in the coming year. The City is in the process of hiring a an Opioid Prevention and Outreach Specialist, a position that will be funded with settlement funds. The City is currently interviewing final candidates and hopes to make an offer in the next month or so. Additionally, The City has awarded three grants to local community based organizations that work in opioid harm reduction and outreach. These organizations will soon be submitting invoices to the City to received granted settlement funds.",
+        "unmet_needs": "The City of Framingham is reviewing its needs assessment conducted by MAPC to determine next steps, but at this time we are hopeful about the City's ability to meet community needs with the application of settlement funds. That being said, we are interested in pooling funds to make a bigger impact with a regional focus.",
+        "orrf_recommendations": "We see a great need for needle exchange and clean syringe programs based in communities such as Framingham. The one in our area is currently being threatened with closure by the owner of the building leased to JRI Program Rise. Program Rise provides incredible harm reduction work for the Framingham community, and this is unfortunately not work the City itself would be able to replace. We also see a great need for safe injection sites, which community members here do not have access to."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Framingham.pdf"
+}

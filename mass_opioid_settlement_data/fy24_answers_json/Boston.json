@@ -1,0 +1,260 @@
+{
+    "municipality": "Boston",
+    "response_id": "26",
+    "contact": {
+        "primary_name": "Colin Musto",
+        "primary_email": "colin.musto @boston.gov",
+        "primary_phone": "6176354860",
+        "secondary_name": "Michael Imbaro",
+        "secondary_email": "michael.imbaro @boston.gov",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Boston",
+        "total_received_all_years": 9819377.19,
+        "carryover_from_previous": 4676789.61,
+        "fy2024_disbursement": 5142587.58,
+        "total_available_fy24": 9819377.19,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 9819377.19
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "survey",
+                "other"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "other"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Long-form 'Request for Information' where BPHC invited participants to write up to 2.5 pages of content. We received responses from 11 agencies, which included 3 major healthcare providers.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "other"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "survey",
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data",
+                "survey",
+                "other"
+            ],
+            "stigma_impact": [
+                "survey",
+                "other"
+            ],
+            "provider_diversity": [
+                "survey",
+                "other"
+            ],
+            "admin_data_sources": "Health of Boston Substance Use and Disorders Report, Youth Risk Behavior Survey, UMass Medical School research, Duke-Margolis Center Opioid Abatement Needs and Investment Tool.",
+            "other_methods": "N/A"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "survey",
+                "other"
+            ],
+            "fatal_overdoses": [
+                "survey",
+                "other"
+            ],
+            "emt_response": [
+                "admin_data",
+                "survey",
+                "other"
+            ],
+            "admin_data_sources": "Health of Boston Substance Use and Disorders Report, Boston Long-Term Public Health Strategic Outlook, Duke-Margolis Center Opioid Abatement Needs and Investment Tool.",
+            "other_methods": "Long-form written response. Eight listening sessions spanning Boston neighborhoods and specific sessions reserved for people in recovery, families, and people with opioid use disorder.",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Community Naloxone Program",
+                    "sources": [
+                        "survey",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Direct Care Reimbursement by MassHealth",
+                    "sources": [
+                        "survey",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Peer Recovery Support Centers",
+                    "sources": [
+                        "survey",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Community-based Naloxone Distribution",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Low-barrier Work Opportunity",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Harm Reduction EMTs",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Harm Reduction Vending Machine",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Aging adults",
+            "Arab or Muslim",
+            "Asian, Pacific Islander, or Southeast Asian",
+            "Black or African American",
+            "Disabled",
+            "Economically under-resourced",
+            "Immigrant",
+            "Indigenous or Native American",
+            "Individuals who have been incarcerated and/or under community supervision",
+            "Latino/a/x/e or Hispanic",
+            "LGBTQ+",
+            "Non-native English speakers",
+            "Pregnant and/or parenting populations",
+            "Transgender or gender expansive",
+            "Unsheltered or housing-insecure",
+            "Veterans",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "During FY24 BPHC contributed in-kind resources, funding staff to conduct the community engagement process (listening sessions, surveys, longform RFI, and research), two RFP processes, including organizing community review committees, and doing budgeting and strategic planning. The coverage for staff time and associated fringe costs amounts to approximately $80K. The City of Boston and Boston Public Health Commission has launched multiple projects and contracts as of the beginning of FY25, using settlements funds. A $1M grant program is funding five organizations $200K each to distribute naloxone, expand overdose prevention education, and link people to care. The organizations are Bridge Over Troubled Waters, Community Caring Clinic, Harvard Street Neighborhood Health Center, Metro Boston Alive, and Torchlight Recovery. Boston is in the process of awarding $375K to Boston BullPen, supporting an emergency fund providing financial support to families after the death of a family member to opioid overdose. $745K in settlements funding provides harm reduction EMTs in City shelters to prevent overnight overdoses. Boston is also funding Newmarket Business Improvement District to run a low-threshold work program called Back2Work in the Mass/Cass area, providing employment services and picking up littered syringes. Boston is funding Boston Health Care for the Homelessness $368K to operate a medical clinic which also prescribes medications for opioid use disorder. Finally, Boston is funding a Community Affairs Specialist approximately $87K, including salary and fringe, to assist in implementing settlements-related projects and also expand community engagement and community overdose prevention.",
+        "unmet_needs": "Street medicine teams, including the ability to prescribe medicine for opioid use disorder psychiatric medication. Comprehensive mental health support. Expanding low-barrier housing and shelter programs, as well as halfway houses and sober homes and mobile methadone.",
+        "orrf_recommendations": "Street medicine teams, including the ability to prescribe medications for opioid use disorder and also psychiatric medications, because many people experience co-occurring mental health disorders. Expand low-threshold housing and shelter programs, as well as halfway houses and sober homes. Expand mobile methadone programming and also drug checking. Provide grant funding for re-entry programming and family supports. Offer funding for harm reduction drop-in spaces."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Boston.pdf"
+}

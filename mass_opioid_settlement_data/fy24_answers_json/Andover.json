@@ -1,0 +1,171 @@
+{
+    "municipality": "Andover",
+    "response_id": "8",
+    "contact": {
+        "primary_name": "Patrick Lawlor",
+        "primary_email": "patrick.lawlor @andoverma.us",
+        "primary_phone": "9784762900",
+        "secondary_name": null,
+        "secondary_email": null,
+        "secondary_phone": null
+    },
+    "funding": {
+        "municipality_name": "Andover",
+        "total_received_all_years": 573584.94,
+        "carryover_from_previous": 158309.38,
+        "fy2024_disbursement": 415275.56,
+        "total_available_fy24": 573584.94,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 573584.94
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "not_engaged"
+            ],
+            "people_in_recovery": [
+                "not_engaged"
+            ],
+            "families_impacted": [
+                "forum",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "Finding the right pathways to populations we don't serve on a daily basis (ages 20-55) has been difficult, but we have established a working group to move that work forward.",
+            "barriers_people_in_recovery": "Finding the right pathways to populations we don't serve on a daily basis (ages 20-55) has been difficult, but we have established a working group to move that work forward.",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "We conducted a Community Health Improvement Program (CHIP) that has provided a baseline level of data to move this work forward.",
+            "other_methods": "A number of surveys and focus groups were conducted through the CHIP process and we also have an Opioid Working Group made up of clinicians and community support professionals.",
+            "barriers": "Reaching populations we do not serve in the school district or the senior center has historically been a challenge, especially in the arena of mental health service and support, we will continue to move this work forward."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have established a working group and now intend to move major program work forward."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have established a working group and now intend to move major program work forward."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have established a working group and now intend to move major program work forward."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have established a working group and now intend to move major program work forward."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have established a working group and now intend to move major program work forward."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have established a working group and now intend to move major program work forward."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have established a working group and now intend to move major program work forward."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Andover.pdf"
+}

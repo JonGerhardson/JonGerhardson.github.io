@@ -1,0 +1,204 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Ayer",
+    "response_id": "15",
+    "contact": {
+        "primary_name": "Kerry Cooper",
+        "primary_email": "kcooper @ayer.ma.us",
+        "primary_phone": "9787728220",
+        "secondary_name": "Barbara Tierney",
+        "secondary_email": "btierney @ayer.ma.us",
+        "secondary_phone": "9787728220"
+    },
+    "funding": {
+        "municipality_name": "Ayer",
+        "total_received_all_years": 17092.19,
+        "carryover_from_previous": 7924.25,
+        "fy2024_disbursement": 9167.94,
+        "total_available_fy24": 17092.19,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 17092.19
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Policy/Practice 1",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 2",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 3",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 4",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 5",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Ayer.pdf"
+}

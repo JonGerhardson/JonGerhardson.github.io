@@ -1,0 +1,267 @@
+{
+    "municipality": "Dracut",
+    "response_id": "60",
+    "contact": {
+        "primary_name": "Katherine Pomeroy",
+        "primary_email": "kpomeroy @dracutma.gov",
+        "primary_phone": "978-459-4651",
+        "secondary_name": "David Ouellette",
+        "secondary_email": "douellette @dracutma.gov",
+        "secondary_phone": "978-815-3478"
+    },
+    "funding": {
+        "municipality_name": "Dracut",
+        "total_received_all_years": 195126.3,
+        "carryover_from_previous": 90464.06,
+        "fy2024_disbursement": 104662.24,
+        "total_available_fy24": 195126.3,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 237.55,
+        "total_unexpended": 194888.75
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "focus_groups",
+                "other"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "focus_groups",
+                "other"
+            ],
+            "families_impacted": [
+                "forum",
+                "focus_groups",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "focus_groups",
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Business cards, magnets, other easily handed out references with QR code to Connections website, which covers services including emergency medical help, housing assistance, long-term medical assistance, detox centers, youth services, pre- and post-natal services, pre- and post-partum depression, and domestic violence services. The Connections website has phone numbers that reach out immediately to a contact person.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Connections website is accessible to all age groups and demographics. The Town and coalition reaches out to high-risk individuals such as seniors; the Town provides health fairs and interviews seniors and students. The Town also has a coalition that addresses health and wellness in the public school system.",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "The Town receives quarterly reports from Trinity ambulance; this report breaks down data regarding overdoses by day of the week, time of day, town/location, and age.",
+            "other_methods": "The Town is a member of a coalition that uses a psychiatric Frontline and Credible Minds to reach out to users and refer them to services and treatment. The Town also follows up with children whose parents or guardians have overdosed.",
+            "barriers": "The Town uses the Connections website to break down the social stigma surrounding mental health and seeking assistance for mental health issues. The Town also provides psychosocial services."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Coalition",
+                    "sources": [
+                        "admin_data",
+                        "survey",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Connections website",
+                    "sources": [
+                        "admin_data"
+                    ]
+                },
+                {
+                    "name": "Dracut Police Department",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Annual Vigil",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Connections",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Banners & posters",
+                    "sources": [
+                        "literature_review"
+                    ]
+                },
+                {
+                    "name": "Brochures at senior center",
+                    "sources": [
+                        "literature_review"
+                    ]
+                },
+                {
+                    "name": "In-person literature at Town Hall",
+                    "sources": [
+                        "literature_review"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Aging adults",
+            "Disabled",
+            "Economically under-resourced",
+            "Immigrant",
+            "Individuals who have been incarcerated and/or under community supervision",
+            "Pregnant and/or parenting populations",
+            "Unsheltered or housing-insecure",
+            "Veterans",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 237.55,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": "More robust mental health services and education, educational training for staff."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Dracut.pdf"
+}

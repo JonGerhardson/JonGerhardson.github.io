@@ -1,0 +1,181 @@
+{
+    "municipality": "Carver",
+    "response_id": "189",
+    "contact": {
+        "primary_name": "Karen Preval",
+        "primary_email": "karen.preval @carverma.gov",
+        "primary_phone": "508-866-3434",
+        "secondary_name": "Glenn Cannon",
+        "secondary_email": "gcannon @carverma.gov",
+        "secondary_phone": "508-866-3337"
+    },
+    "funding": {
+        "municipality_name": "Carver",
+        "total_received_all_years": 176010.66,
+        "carryover_from_previous": 48578.93,
+        "fy2024_disbursement": 127431.73,
+        "total_available_fy24": 176010.66,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 176010.66
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "The Town received funding in FY24 and we are in the process of working with the Police Department and Board of Health to determine future engagement activities.",
+            "barriers_people_in_recovery": "The Town received funding in FY24 and we are in the process of working with the Police Department and Board of Health to determine future engagement activities.",
+            "barriers_families": "The Town received funding in FY24 and we are in the process of working with the Police Department and Board of Health to determine future engagement activities.",
+            "barriers_experts": "The Town received funding in FY24 and we are in the process of working with the Police Department and Board of Health to determine future engagement activities."
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "The Town of Carver is a member of Plymouth County outreach and the program tracks and responds to people suffering from substance use disorders.",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Policy/Practice 1",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 2",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 3",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 4",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 5",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Nothing was spent in FY24"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Nothing was spent in FY24"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Nothing was spent in FY24"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Nothing was spent in FY24"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Nothing was spent in FY24"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Nothing was spent in FY24"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Nothing was spent in FY24"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The Town is interested in meeting with your staff to discuss the eligible use of these funds.",
+        "unmet_needs": "n/a",
+        "orrf_recommendations": "Not at this time."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Carver.pdf"
+}

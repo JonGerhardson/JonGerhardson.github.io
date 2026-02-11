@@ -1,0 +1,142 @@
+{
+    "municipality": "Deerfield",
+    "response_id": "242",
+    "contact": {
+        "primary_name": "Christopher Dunne",
+        "primary_email": "planner @town.deerfield.ma.us",
+        "primary_phone": "4136651400 ex. 117",
+        "secondary_name": "Greg Snedeker",
+        "secondary_email": "ata @town.deerfield.ma.us",
+        "secondary_phone": "4136651400 ex. 104"
+    },
+    "funding": {
+        "municipality_name": "Deerfield",
+        "total_received_all_years": 83233.69,
+        "carryover_from_previous": 38588.64,
+        "fy2024_disbursement": 44645.05,
+        "total_available_fy24": 83233.69,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 83233.69
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "N/A. Engagement/planning not begun",
+            "barriers_people_in_recovery": "N/A. Engagement/planning not begun",
+            "barriers_families": "N/A. Engagement/planning not begun",
+            "barriers_experts": "N/A. Engagement/planning not begun"
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "N/A. Engagement/planning not begun"
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "N/A. Engagement/planning not begun",
+            "other_methods": "N/A. Engagement/planning not begun",
+            "barriers": "N/A. Engagement/planning not begun"
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A. Engagement/planning not begun"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A. Engagement/planning not begun"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A. Engagement/planning not begun"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A. Engagement/planning not begun"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A. Engagement/planning not begun"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A. Engagement/planning not begun"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A. Engagement/planning not begun"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Deerfield.pdf"
+}

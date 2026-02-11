@@ -1,0 +1,245 @@
+{
+    "municipality": "Fall River",
+    "response_id": "72",
+    "contact": {
+        "primary_name": "Brianna Raposo",
+        "primary_email": "braposo @fallriverma.gov",
+        "primary_phone": "5083242410",
+        "secondary_name": "Tess Curran",
+        "secondary_email": "tcurran @fallriverma.gov",
+        "secondary_phone": "5083242410"
+    },
+    "funding": {
+        "municipality_name": "Fall River",
+        "total_received_all_years": 2008204.79,
+        "carryover_from_previous": 881039.86,
+        "fy2024_disbursement": 1077164.93,
+        "total_available_fy24": 1958204.79,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 149999,
+        "total_unexpended": 1808205.79
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "not_assessed"
+            ],
+            "health_outcomes_wealth": [
+                "not_assessed"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Dispatch calls data through EMS/Fire/Police calls. Medical Examiner's reports. State-level data from SAMHSA and HUD.",
+            "other_methods": "We collected information on survey respondent's relationship with opioids to determine if they were current users, people with OUD, in recovery, etc. We also allowed them to provide additional information on their history with opioids if they wanted to share additional information on mental health conditions, SUD, or other behavioral health experiences.",
+            "barriers": "We do not have access to private data held by local SUD treatment centers and programs. As part of our grant contracts with local entities, we included a data sharing agreement to increase transparency and access to this important data."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Opioid Treatment Services",
+                    "sources": [
+                        "survey",
+                        "interviews",
+                        "groups_meetings",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Homeless Services",
+                    "sources": [
+                        "survey",
+                        "interviews",
+                        "groups_meetings",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Youth Intervention",
+                    "sources": [
+                        "survey",
+                        "interviews",
+                        "groups_meetings",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Prevention Programs",
+                    "sources": [
+                        "survey",
+                        "interviews",
+                        "groups_meetings",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Acute Treatment Services",
+                    "sources": [
+                        "survey",
+                        "interviews",
+                        "groups_meetings",
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [],
+            "other_methods": "#NAME?"
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We contracted a consultant to support this process.",
+        "consultant_activities": "Developed an implementation plan; Developed an evaluation plan to track outputs and monitor performance; Developed a Request for Proposals and evaluation rubric",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Economically under-resourced",
+            "Individuals who have been incarcerated and/or under community supervision",
+            "Pregnant and/or parenting populations",
+            "Unsheltered or housing-insecure",
+            "Veterans",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 100000,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event",
+                "Other (please specify):: Providing sober housing beds and comprehensive support for those living in recently closed homeless encampments"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Full implementation",
+            "expended": 49999,
+            "how_spent": [
+                "Contracting consultants to support coalition building, community needs assessment, planning and implementation, and evaluation and reporting"
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "Throughout FY2024, we worked on planning and early implementation of our RFP-based grant-giving program. This is the main effort we are working towards to ensure the distribution of funds to local entities to fill gaps and provide innovative programming. We collected public feedback via stakeholder interviews, public survey, and open meetings. We formed a Committee of local leaders and those with lived experience to provide funding recommendations. We are in the final process of contracting and delivering the first round of grant funding. This activity will be shown in our FY2025 expenditure reporting. The City is committed to transparency and provides updates via our webpage on our opioid settlement funds here: https://fallriverma.gov/departments/health_and_human_services/fall_river_opioid_settlement_funds.php",
+        "unmet_needs": "We were unable to fully support every RFP we received a proposal of and some programs we will have to partially fund due to the high amounts requested and our lack of free cash on hand from the funds. Although we are set to receive more funds annually, some programs require a higher amount at the start to get it running.",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Fall_River.pdf"
+}

@@ -1,0 +1,205 @@
+{
+    "municipality": "Erving",
+    "response_id": "69",
+    "contact": {
+        "primary_name": "Bryan Smith",
+        "primary_email": "administrator @erving-ma.gov",
+        "primary_phone": "4134222800 ext.1102",
+        "secondary_name": null,
+        "secondary_email": null,
+        "secondary_phone": null
+    },
+    "funding": {
+        "municipality_name": "Erving",
+        "total_received_all_years": 48999.07,
+        "carryover_from_previous": 22716.85,
+        "fy2024_disbursement": 26282.22,
+        "total_available_fy24": 48999.07,
+        "pooled": true,
+        "pooling_details": {
+            "ima_ssa_name": "Cooperative Public Health District",
+            "interested_in_pooling": null,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": false,
+            "fiscal_agent_name": "FRCOG",
+            "pooled_all_funding": false
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 48999.07
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "interviews"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey"
+            ],
+            "subject_matter_experts": [
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "interviews"
+            ],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "In a rural area our population is small, and our BIPOC population is very small (under 10% of adults), so getting reliable data from state sources is nearly impossible (they will not report small numbers). Similarly no one that reports on OUD treatment does so with info on wealth statusas one of the options. (I have answered this question relative to our work on assessing need for recovery supports, not on general health status for the region, where we have far more data)"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "DPH Data dashboards, public records requests",
+            "other_methods": "Community Health Needs Assessments, local needs assessments",
+            "barriers": "The 15 towns that Erving is reporting for, members of the Cooperative Public Health District, are getting so little funding (on average under $34K/year) that we do not have enough to make a difference on co-occurring disorders."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Recover Project Peer Recovery Support Centers",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Moms Do Care Program",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "CHD Recovery Coaches",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Community Naloxone Program",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Learn to Cope family support program",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The 15 rural towns reporting in Erving's portal do not receive enough funding to provide treatment services."
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The 15 rural towns reporting in Erving's portal do not receive enough funding to provide services to those involved in the justice system"
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Please note this report is being submitted on behalf of the 15 towns in the Cooperative Public Health Service Health District, located at the Franklin Regional Council of Governments. The dollar figures reporting in the Erving report are just Erving's but the work to plan has all been regional, and expenses will begin in Fall 2024. The towns are: Ashfield, Bernardston, Buckland, Charlemont, Colrain, Conway, Erving, Gill, Hawley, Heath, Leyden, Northfield, Monroe, Rowe, and Shelburne",
+        "unmet_needs": "Yes, many needs. Our towns are getting very small amounts of money due to their status as members of regional school districts. There is a strong interest in funding primary prevention including Second Step in many elementary schools, and PreVenture and Restorative Practices work in middle and hig schools, but we do not get enough funding to do that.",
+        "orrf_recommendations": "Prevention work in schools, especially Restorative Practices Please support more recovery capital in rural areas. Please provide additional funding, points for towns in regional school district since they lost so much in the national formula Please do not disqualify agencies from applying due to their large budget -- in rural regions there are few host agencies, and so many functions end up being under one roof (e.g. The Consortium, Tapestry health Services), but the little recovery support projects they do do not benefit from the other funding and are hurt by the arbitrary RIZE budget size cutoff."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Erving.pdf"
+}
