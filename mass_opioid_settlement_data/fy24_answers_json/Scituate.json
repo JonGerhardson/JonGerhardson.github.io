@@ -1,0 +1,177 @@
+{
+    "municipality": "Scituate",
+    "response_id": "171",
+    "contact": {
+        "primary_name": "James M. Boudreau",
+        "primary_email": "jboudreau@scituatema.gov",
+        "primary_phone": "7815458741",
+        "secondary_name": "Nancy Holt",
+        "secondary_email": "nholt@scituatema.gov",
+        "secondary_phone": "7815458811"
+    },
+    "funding": {
+        "municipality_name": "Scituate",
+        "total_received_all_years": 375637.58,
+        "carryover_from_previous": 174152.34,
+        "fy2024_disbursement": 201485.24,
+        "total_available_fy24": 375637.58,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 375637.58
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Scituate has an existing FACTS substance abuse program which has been funded for 10 years by federal grants with a coordinator focused on education, outreach, referral and interagency assistance.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "other"
+            ],
+            "health_outcomes_race": [
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "other"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Scituate has an existing FACTS substance abuse program which has been funded for 10 years by federal grants with a coordinator focused on education, outreach, referral and interagency assistance regardless of geographical location, economic level, race, or age."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "other"
+            ],
+            "fatal_overdoses": [
+                "other"
+            ],
+            "emt_response": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Scituate has an existing FACTS substance abuse program which has been funded for 10 years by federal grants with a coordinator focused on education, outreach, referral and interagency assistance regardless of geographical, economic, race, or age. Scituate also has a full-time Social Services Manager that works with the Police Department, Council on Aging and Veterans Departments.",
+            "barriers": "Delivery of services are an ongoing examination between in-house professionals versus contracted service providers."
+        },
+        "existing_programs": {
+            "programs": [
+                "Scituate has an existing substance abuse program which has been in place for 10 years."
+            ]
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Community Health assessment",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Not yet addressed; more information may be garnered by a future community needs assessment."
+        },
+        "pregnant_parenting": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Scituate funded it FACTS substance abuse program for FY25 with $104,106 of the funds received to date. It has committed to supporting this critical program which is no longer supported by grants through the Opioid Settlement Funds.",
+        "unmet_needs": "Not to date.",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Scituate.pdf"
+}

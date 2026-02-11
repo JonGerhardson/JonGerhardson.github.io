@@ -1,0 +1,163 @@
+{
+    "municipality": "Topsfield",
+    "response_id": "187",
+    "contact": {
+        "primary_name": "Kevin Harutunian",
+        "primary_email": "kharutunian @topsfield-ma.gov",
+        "primary_phone": "9788871504",
+        "secondary_name": "Debra Morong",
+        "secondary_email": "dmorong @topsfield-ma.gov",
+        "secondary_phone": "9788871504"
+    },
+    "funding": {
+        "municipality_name": "Topsfield",
+        "total_received_all_years": 65019.37,
+        "carryover_from_previous": 31542.6,
+        "fy2024_disbursement": 33476.77,
+        "total_available_fy24": 65019.37,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 65019.37
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "groups_meetings"
+            ],
+            "families_impacted": [
+                "groups_meetings"
+            ],
+            "subject_matter_experts": [
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "When assessing potential gaps or needs for a commitment, common barriers include: limited data accessibility, lack of stakeholder engagement, differing perspectives within the group, resistance to change, unclear communication, and time constraints; to address these, you can implement strategies like conducting comprehensive data collection, facilitating open dialogue with diverse stakeholders, clearly outlining the need for change, providing training on the commitment, and establishing a transparent communication plan with regular updates."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "interviews"
+            ],
+            "fatal_overdoses": [
+                "interviews"
+            ],
+            "emt_response": [
+                "interviews"
+            ],
+            "admin_data_sources": "Interviewed Chiefs for EMT Responses",
+            "other_methods": "Chiefs have met with local providers and attended a group meeting to share the information.",
+            "barriers": "Privacy issues; lack of a centralized database."
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Difficulty obtaining information; privacy issues"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Difficulty obtaining information; privacy issues"
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Topsfield.pdf"
+}

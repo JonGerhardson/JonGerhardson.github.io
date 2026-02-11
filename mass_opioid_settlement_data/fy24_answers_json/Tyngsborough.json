@@ -1,0 +1,163 @@
+{
+    "municipality": "Tyngsborough",
+    "response_id": "209",
+    "contact": {
+        "primary_name": "Colin Loiselle",
+        "primary_email": "cloiselle @tyngsboroughma.gov",
+        "primary_phone": "978-743-5338",
+        "secondary_name": "Katharine Foster",
+        "secondary_email": "kfoster @tyngsboroughma.gov",
+        "secondary_phone": "978-743-5339"
+    },
+    "funding": {
+        "municipality_name": "Tyngsborough",
+        "total_received_all_years": 1110863.52,
+        "carryover_from_previous": 51398.32,
+        "fy2024_disbursement": 59465.2,
+        "total_available_fy24": 110863.52,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 993.88,
+        "total_unexpended": 109869.64
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "families_impacted_other": "Hosting events and having conversations with families who either lost a family member/friend or who are actively impacted.",
+            "barriers_people_who_use_drugs": "Identifying ways to connect with this population. We are looking to conduct a community needs assessment that will help guide us.",
+            "barriers_people_in_recovery": "Identifying ways to connect with this population. We are looking to conduct a community needs assessment that will help guide us.",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "We will be completing a community needs assessment that we hope will help guide us in addressing these disparities."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "The number of calls logged for mental health or substance use disorder related instances.",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Currently looking to pursue a community needs assessment."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Currently looking to pursue a community needs assessment."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Currently looking to pursue a community needs assessment."
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 993.88,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Currently looking to pursue a community needs assessment."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Currently looking to pursue a community needs assessment."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Currently looking to pursue a community needs assessment."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We are looking to actively engage the community in a needs assessment, ideally looking to partner with Care Mass.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Tyngsborough.pdf"
+}

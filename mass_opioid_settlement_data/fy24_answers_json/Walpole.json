@@ -1,0 +1,221 @@
+{
+    "municipality": "Walpole",
+    "response_id": "213",
+    "contact": {
+        "primary_name": "Melissa Ranieri",
+        "primary_email": "mranieri @walpole-ma.gov",
+        "primary_phone": "508-660-7320",
+        "secondary_name": "Jodi Cuneo",
+        "secondary_email": "jcuneo @walpole-ma.gov",
+        "secondary_phone": "508-660-7318"
+    },
+    "funding": {
+        "municipality_name": "Walpole",
+        "total_received_all_years": 304641.79,
+        "carryover_from_previous": 141237.41,
+        "fy2024_disbursement": 163404.38,
+        "total_available_fy24": 304641.79,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 304641.79
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day_use": [
+                "admin_data"
+            ],
+            "patients_in_treatment": [
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "groups_meetings"
+            ],
+            "people_who_use_drugs": [
+                "groups_meetings"
+            ],
+            "treatment_providers": [
+                "groups_meetings"
+            ],
+            "recovery_centers": [
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Police Data Reports",
+            "other_methods": "Police Data Reports INTERFACE mental health resource",
+            "barriers": "A lack of funding to support mental health resources. A lack of resources for mental health. Opioid funds can be used to support the cost of William James INTERFACE referral resource."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "INTERFACE",
+                    "sources": [
+                        "admin_data",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Walpole Prevention Coalition",
+                    "sources": [
+                        "admin_data",
+                        "survey",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Recovery Coach",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "hired_consultant"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Other (please specify): Strengthen resources by hiring a consultant to focus on prevention work."
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Lack of resources"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Lack of resources"
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Walpole.pdf"
+}

@@ -1,0 +1,207 @@
+{
+    "municipality": "Wareham",
+    "response_id": "215",
+    "contact": {
+        "primary_name": "Derek Sulli",
+        "primary_email": "dsullivan@wareham.ma.us",
+        "primary_phone": "508-291-3100",
+        "secondary_name": "Patty Neal",
+        "secondary_email": "pneal@wareham.ma.us",
+        "secondary_phone": "508-291-3100"
+    },
+    "funding": {
+        "municipality_name": "Wareham",
+        "total_received_all_years": 342910.43,
+        "carryover_from_previous": 158979.44,
+        "fy2024_disbursement": 183930.99,
+        "total_available_fy24": 342910.43,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 342910.43
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "people_in_recovery_other": "",
+            "families_impacted_other": "",
+            "subject_matter_experts_other": "Met with Gosnold who is moving its headquarters to Wareham. Starting a prevention and interaction program. This will focus specifically on Wareham residents who have been impacted by opioids including people in recovery, addicts and families impacted by the crisis.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "not_assessed"
+            ],
+            "fatal_overdoses": [
+                "not_assessed"
+            ],
+            "emt_response": [
+                "not_assessed"
+            ],
+            "past_30_day_opioid_use": [
+                "not_assessed"
+            ],
+            "patients_in_treatment": [
+                "not_assessed"
+            ],
+            "people_in_recovery": [
+                "not_assessed"
+            ],
+            "people_who_use_drugs": [
+                "not_assessed"
+            ],
+            "num_treatment_providers": [
+                "not_assessed"
+            ],
+            "num_recovery_centers": [
+                "not_assessed"
+            ],
+            "mental_health_conditions": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "These processes will be done in partnership with Gosnold.",
+            "other_methods": "These processes will be done in partnership with Gosnold.",
+            "barriers": "These processes will be done in partnership with Gosnold."
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "Program/Service 1",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ],
+            "admin_data_sources": "These processes will be done in partnership with Gosnold.",
+            "other_methods": ""
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Policy/Practice 1",
+                    "sources": [
+                        "hired_consultant"
+                    ]
+                }
+            ],
+            "other_methods": "These processes will be done in partnership with Gosnold."
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The Town of Wareham is working with Gosnold behavioral health https://gosnold.org first by working with them to move their headquarters to the town which will include over 90 beds including day services. We believe this is a tremendous opportunity to partner with a nationally recognized organization to help with addiction education, intervention and other ways to reduce the impacts of the opioid crisis within our community. We have felt that this partnership is the best way to serve the needs of our community and utilize these much needed funds in the most efficient manner to maximize the positive impact to our community. We understand to push to pool funding but feel that often times communities like ours get left behind in the pooling strategies. That is why we are so excited to have this opportunity to serve impacted community members and help educate the next generation.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Wareham.pdf"
+}

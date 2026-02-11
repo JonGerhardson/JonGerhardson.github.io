@@ -1,0 +1,260 @@
+{
+    "municipality": "Taunton",
+    "response_id": "184",
+    "contact": {
+        "primary_name": "Christine DeMoranville",
+        "primary_email": "cdemoranville @taunton-ma.gov",
+        "primary_phone": "5088211057",
+        "secondary_name": "Donna Andrews",
+        "secondary_email": "dandrews @taunton-ma.gov",
+        "secondary_phone": "5088211057"
+    },
+    "funding": {
+        "municipality_name": "Taunton",
+        "total_received_all_years": 1254819.02,
+        "carryover_from_previous": 581756.66,
+        "fy2024_disbursement": 673062.36,
+        "total_available_fy24": 1254819.02,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 34504.11,
+        "total_unexpended": 1220314.91
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "interviews"
+            ],
+            "families_impacted": [
+                "forum",
+                "interviews"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "interviews"
+            ],
+            "provider_diversity": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "past_30_day_use": [
+                "groups_meetings"
+            ],
+            "patients_in_treatment": [
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "people_who_use_drugs": [
+                "groups_meetings"
+            ],
+            "treatment_providers": [
+                "groups_meetings"
+            ],
+            "recovery_centers": [
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Met with several local organizations to determine these issues in the community of Taunton.",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Adult & Teen Challenge SNE",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "T.R.U.E Diversity Inc",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Taunton Housing Authority",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Taunton Diversity Network",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Cory's Cause, Inc",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Christ-centered Recovery Program",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Began work in this area in FY25"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Began work in this area in FY25"
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 5000,
+            "how_spent": [
+                "Support school-based services related to OUD, such as school-based contacts that parents can engage with to seek immediate treatment services for their child; and support prevention, intervention, treatment, and recovery programs focused on young people. This should include alternatives to suspension or interaction with school resource officers such as restorative justice approaches",
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents.",
+                "Other (please specify):: True Diversity Inc Programs including an 8 week summer camp program"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 3161.35,
+            "how_spent": [
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Approve and fund syringe service programs and other programs to reduce harms associated with drug use, including supplies, staffing, space, peer support services, referrals to treatment, fentanyl checking, syringe collection and disposal, connection to care, and the full range of harm reduction and treatment services provided by these programs",
+                "Other (please specify): Training and supplies from Taunton Board of Health"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Early implementation",
+            "expended": 10000,
+            "how_spent": [
+                "Programs, that connect individuals involved in the criminal justice system and upon release from jail or prison to OUD harm reduction services, treatment, recovery support, healthcare, prevention, legal support, or other supports, or that provide these",
+                "Other (please specify):: Taunton Diversity Inc provides support to disadvantaged individuals exiting incarceration or other institutional systems"
+            ],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Need to figure out to get involved in this work in Taunton"
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 16342.76,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use",
+                "Other (please specify): Opioid Task Force Training; True Diversity Inc.; Taunton Housing Authority Programs"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "No",
+        "orrf_recommendations": "No"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Taunton.pdf"
+}

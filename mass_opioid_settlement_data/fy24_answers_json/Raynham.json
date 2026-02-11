@@ -1,0 +1,199 @@
+{
+    "municipality": "Raynham",
+    "response_id": "162",
+    "contact": {
+        "primary_name": "Christopher Laviolette",
+        "primary_email": "claviolette @town.raynham.ma.us",
+        "primary_phone": "5088286271",
+        "secondary_name": "Paula Rossi-Clapp",
+        "secondary_email": "prossiclapp @town.raynham.ma.us",
+        "secondary_phone": "5088242766"
+    },
+    "funding": {
+        "municipality_name": "Raynham",
+        "total_received_all_years": 70555.66,
+        "carryover_from_previous": 32710.87,
+        "fy2024_disbursement": 37844.79,
+        "total_available_fy24": 70555.66,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 70555.66
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [
+                "survey",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "families_impacted_other": "Monthly televised Health Director's report to the Board of Selectmen and public discussion regarding opioid working group",
+            "barriers_people_who_use_drugs": "Barriers included unwillingness on users part to engage with law enforcement and distrust of surveys maintaining anonymity. Steps taken were to create a free emergency Naloxone kits to be distributed to adult residents in town.",
+            "barriers_people_in_recovery": "Not applicable with goals pertaining to harm reduction and education.",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "survey",
+                "groups_meetings"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "More education is needed to increase public awareness of the opioid crisis."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "people_who_use_drugs": [
+                "admin_data"
+            ],
+            "treatment_providers": [
+                "groups_meetings"
+            ],
+            "recovery_centers": [
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Fire and police call data",
+            "other_methods": "Homeless population identified through police outreach.",
+            "barriers": "Steps to combat barriers will be police distribution of emergency Naloxone kits to the homeless population through their outreach program"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Care coordinations",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ],
+            "other_methods": "Town of Raynham will be contracting with Care Solace. Care Solace coordinates care for opioid users allowing police department additional resources for assistance in both drug use and mental health issues",
+            "admin_data_sources": "People who use or families and friend unaware of where to go for assistance."
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "referral assistance",
+                    "sources": [
+                        "hired_consultant"
+                    ]
+                },
+                {
+                    "name": "naloxone kits",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We consulted with Care Mass.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Working group only formed in January 2024. Remaining time in FY 24 was used to assess needs and how best to use funding to address those needs."
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "no data to support need"
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Raynham.pdf"
+}

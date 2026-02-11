@@ -1,0 +1,283 @@
+{
+    "municipality": "Randolph",
+    "response_id": "161",
+    "contact": {
+        "primary_name": "Brian Howard",
+        "primary_email": "bhoward @randolph-ma.gov",
+        "primary_phone": "781-961-0911",
+        "secondary_name": "Gerard F. Cody",
+        "secondary_email": "gcody @randolph-ma.gov",
+        "secondary_phone": "781-961-0924"
+    },
+    "funding": {
+        "municipality_name": "Randolph",
+        "total_received_all_years": 335518.58,
+        "carryover_from_previous": 155552.45,
+        "fy2024_disbursement": 179966.13,
+        "total_available_fy24": 335518.58,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 50000.0,
+        "total_unexpended": 285518.58
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "https://www.mass.gov/ https://www.usa.gov/agencies/substance-abuse-and-mental-health-services-administration",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "https://ma.gov/ https://www.hhs.gov/ https://www.usa.gov/agencies/substance-abuse-and-mental-health-services-administration",
+            "other_methods": "It is the opinion of the OPC that by combining a wellness initiative (ie. blood pressure and blood sugar screenings etc.) with opioid awareness and education provides a comprehensive health approach where we can identify and address a range of health concerns within the community. Wellness initiatives foster a sense of community through collaboration between healthcare providers, local organizations, and residents, thereby enhancing trust and participation in health programs. These initiatives can connect individuals with additional resources including substance abuse treatment, nutrition guidance and chronic disease identification and management. By addressing chronic health issues while providing education about opioid safety, the initiative may reduce the occurrence of medical emergencies related to high blood pressure, uncontrolled diabetes or opioid overdoses and promote long-term wellness and safety in the community. Providing Narcan alongside health screenings offers a direct harm reduction strategy equipping community members with the tools needed to respond to opioid overdoses effectively.",
+            "barriers": "Randolph Opioid Prevention Committee, (OPC) meets regularly and gathers valuable data about the community . Currently gathering data via community survey, focus groups, interviews, formation of an Opioid Prevention Committee, (OPC) to formulate future action plan regarding gaps and barriers to services, resources, etc."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Health Imperatives",
+                    "sources": [
+                        "admin_data"
+                    ]
+                },
+                {
+                    "name": "Norfolk County DA",
+                    "sources": [
+                        "admin_data"
+                    ]
+                },
+                {
+                    "name": "Randolph Intergenerational Center",
+                    "sources": [
+                        "admin_data"
+                    ]
+                },
+                {
+                    "name": "South Shore Peer Recovery",
+                    "sources": [
+                        "admin_data"
+                    ]
+                },
+                {
+                    "name": "Randolph Police Cadet Academy",
+                    "sources": [
+                        "admin_data"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Community wide Narcan education and distributionNarcan education and distribution",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "consultant"
+                    ]
+                },
+                {
+                    "name": "OPC formation",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "consultant"
+                    ]
+                },
+                {
+                    "name": "Attend Community wellnesss events",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "consultant"
+                    ]
+                },
+                {
+                    "name": "Community needs survey development",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We contracted a consultant to support this process.",
+        "consultant_activities": [
+            "Developed and conducted a community survey",
+            "Developed and conducted individual interviews",
+            "Developed and conducted focus groups or a meeting with an affinity group",
+            "Developed and conducted listening sessions or community forums",
+            "Facilitated planning sessions to prioritize needs and gaps",
+            "Facilitated planning sessions to set goals and select strategies to address needs and gaps",
+            "Developed an implementation plan"
+        ],
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "At this time, the Randolph Opioid Prevention Committee, (ROPC) has not gathered information or data to support this initiative. Should the need be identified, a plan would be formulated to respond. We are still gathering data through a pubic survey and the data gathered from this survey will become valuable for our future plans."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "At this time, the Randolph Opioid Prevention Committee, (ROPC) has not gathered information or data to support this initiative. Should the need be identified, a plan would be formulated to respond. We are still gathering data through a pubic survey and the data gathered from this survey will become valuable for our future plans."
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 4500,
+            "how_spent": [
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents.",
+                "Other (please specify):: resource development"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 21000,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "\"Naloxone Plus\" strategies to ensure that individuals who receive naloxone to reverse an overdose are linked to treatment programs or other appropriate services",
+                "Provide outreach and services for people who use drugs and are not yet in treatment, including services that build relationships with and support for people with OUD"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "At this time, the Randolph Opioid Prevention Committee, (ROPC) has not gathered information or data to support this initiative. Should the need be identified, a plan would be formulated to respond. We are still gathering data through a pubic survey and the data gathered from this survey will become valuable for our future plans."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "At this time, the Randolph Opioid Prevention Committee, (ROPC) has not gathered information or data to support this initiative. Should the need be identified, a plan would be formulated to respond. We are still gathering data through a pubic survey and the data gathered from this survey will become valuable for our future plans."
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 9000,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Initiated, enhanced, or sustained local youth health assessment efforts using validated survey tools"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 2275,
+            "how_spent": [
+                "Other (please specify):: grant administration"
+            ],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 13225,
+            "how_spent": [
+                "Contracting consultants to support coalition building, community needs assessment, planning and implementation, and evaluation and reporting",
+                "Other (please describe): program planning and development, professional development through webinars, seminars, research, meetings"
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "The Town of Randolph is grateful for the opportunity to be provide with this valuable program with a focus on preventing opioid abuse and helping those who have lived experience. Randolph public health is also exploring ways for our partner municipalities in Norfolk County 5 East, (Braintree, Holbrook, Quincy, Randolph and potentially Weymouth) to collaborate and coordinate our Opioid Prevention efforts..",
+        "unmet_needs": "During an Opioid Prevention Committee, (OPC) meeting, there was lively discussion about a handheld device called TRUNARC. TRUNARC is used to analyze narcotics. It would be used as an educational tool to prevent exposure to opioids and potential addiction. PUBLIC safety officials were also interested in obtaining this device, however, it is understood that it is not an approved use of the funding to support public safety. Care Mass noted that data does not support the benefit of a municipality owning the TRUNARC product. Should this TRUNARC become an approved product to purchase, Randolph is interested in discussing this possibility in the future.",
+        "orrf_recommendations": "It is recommended that each municipality or group participant form an Opioid Prevention Committee, (OPC). Our experience has shown that group decisions are the best decisions because they have been proven to be well thought out and discussed by a wide variety of community voices. The local OPC can decide if it is a good fit for their community to provide education and promote the distribution of naloxone to local businesses, bars, restaurants, clubs, multi-unit housing developments, non profits, religious institutions and other places where the pubic may gather. Finally, funding should be provided to support the MDPH Office of Local & Regional Health's Public Health Excellence program. In this program, local public health officials meet monthly to collaborate of mandated work and emerging health issues, such as opioid abuse. The infrastructure is already in place with around 30 lead municipalities in Massachusetts that represent an overwhelming majority of the cities and towns."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Randolph.pdf"
+}

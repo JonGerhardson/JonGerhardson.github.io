@@ -1,0 +1,242 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Revere",
+    "response_id": "47",
+    "contact": {
+        "primary_name": "Lauren Buck",
+        "primary_email": "lbuck @revere.org",
+        "primary_phone": "7814858486",
+        "secondary_name": "Assunta Newton",
+        "secondary_email": "anewton @revere.org",
+        "secondary_phone": "7812868131"
+    },
+    "funding": {
+        "municipality_name": "Revere",
+        "total_received_all_years": 548879.22,
+        "carryover_from_previous": 254470.28,
+        "fy2024_disbursement": 294408.94,
+        "total_available_fy24": 548879.22,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 97228.6,
+        "total_unexpended": 451650.62
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "survey",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "Previous Community Health Needs Assessments",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Previous Community Health Needs Assessments, Mass.gov",
+            "other_methods": "Street Outreach, Syringe Service Program data",
+            "barriers": "Hard to find consistent data sources at a local level"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Syringe Service Program",
+                    "sources": [
+                        "admin_data",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Recovery Center",
+                    "sources": [
+                        "admin_data",
+                        "other"
+                    ]
+                }
+            ],
+            "admin_data_sources": "Board of Health Records",
+            "other_methods": "Networking with existing stakeholders and community partners in these spaces."
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Free Access Narcan Boxes",
+                    "sources": [
+                        "literature_review",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Mobile Street Outreach",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Narcan Training for Staff at Local Businesses",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Harm Reduction Vending Machine",
+                    "sources": [
+                        "literature_review",
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our programing has focused more on Harm Reduction and connection to resources. In the future, to address this category we will need to develop stronger ties to Treatment Centers and Healthcare Providers."
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 39975,
+            "how_spent": [
+                "Provide access to housing for people with OUD, including supportive housing, recovery housing, housing, rent, move-in deposits, and utilities assistance programs, training for housing providers, or recovery housing programs that integrate FDA-approved medication with other support services",
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Provide community support services, including social and legal services, to assist in deinstitutionalizing persons with OUD",
+                "Provide transportation to treatment or recovery services for persons with OUD",
+                "Support bereaved families and frontline care providers"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 48454,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 8799.6,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Active outreach strategies such as the Drug Abuse Response Team model or the Post Overdose Support Team model"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Fairly specific category that we often don't encounter. Will need to become more tied into the Healthcare Institutions to make progress in this category."
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": "More money put toward housing assistance and low threshold housing stock."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Revere.pdf"
+}

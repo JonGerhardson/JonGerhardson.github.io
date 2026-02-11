@@ -1,0 +1,176 @@
+{
+    "municipality": "North Reading",
+    "response_id": "142",
+    "contact": {
+        "primary_name": "Amy Luckiewicz",
+        "primary_email": "aluckiewicz @northreaingma.gov",
+        "primary_phone": "7815880257",
+        "secondary_name": "Michael Gilleberto",
+        "secondary_email": "mgilleberto @northreadingma.gov",
+        "secondary_phone": "9783575202"
+    },
+    "funding": {
+        "municipality_name": "North Reading",
+        "total_received_all_years": 158725.9,
+        "carryover_from_previous": 73588.17,
+        "fy2024_disbursement": 85137.7,
+        "total_available_fy24": 158725.87,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 1102.8,
+        "total_unexpended": 157623.1
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "not_engage"
+            ],
+            "people_in_recovery": [
+                "not_engage"
+            ],
+            "families_impacted": [
+                "not_engage"
+            ],
+            "subject_matter_experts": [
+                "forum"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "We are developing a contact list for this population.",
+            "barriers_people_in_recovery": "We are developing a survey for this population with the help of technical assistance in FY25.",
+            "barriers_families": "We are developing a contact list for this population.",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "not_assess"
+            ],
+            "health_outcomes_race": [
+                "not_assess"
+            ],
+            "health_outcomes_wealth": [
+                "not_assess"
+            ],
+            "stigma_impact": [
+                "not_assess"
+            ],
+            "provider_diversity": [
+                "not_assess"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "This is an FY25 agenda item."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "not_assess"
+            ],
+            "fatal_overdoses": [
+                "not_assess"
+            ],
+            "emt_response": [
+                "not_assess"
+            ],
+            "admin_data_sources": "This is data being evaluated in FY25",
+            "other_methods": "We have a full-time substance use/mental health clinician that will assist in FY25 to collect this data.",
+            "barriers": "We are challenged with identifying a diverse source of these data."
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Peer Recovery",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We contracted a consultant to support this process.",
+        "consultant_activities": "Facilitated planning sessions to prioritize needs and gaps; Facilitated planning sessions to set goals and select strategies to address needs and gaps",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We already have a full-time clinician that assists with connecting those in need to treatment."
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 1102.8,
+            "how_spent": [
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We already have a full-time clinician that assists with connecting those in need to treatment."
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our police department is in charge of this area."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have not identified anyone in need of this support."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This work is being funded by a federal grant."
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We would appreciate some sample assessment tools.",
+        "unmet_needs": "Not yet identified",
+        "orrf_recommendations": "Long-term recovery"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/North_Reading.pdf"
+}

@@ -1,0 +1,151 @@
+{
+    "municipality": "North Attleborough",
+    "response_id": "197",
+    "contact": {
+        "primary_name": "Christopher Sweet",
+        "primary_email": "csweet @nattleboro.com",
+        "primary_phone": "508-699-0114",
+        "secondary_name": "Michael Borg",
+        "secondary_email": "mborg @nattleboro.com",
+        "secondary_phone": "508-699-0100"
+    },
+    "funding": {
+        "municipality_name": "North Attleborough",
+        "total_received_all_years": 607534.29,
+        "carryover_from_previous": 281663.82,
+        "fy2024_disbursement": 325870.47,
+        "total_available_fy24": 607534.29,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 11500.0,
+        "total_unexpended": 596034.29
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "Did not engage this population",
+            "barriers_people_in_recovery": "Did not engage this population",
+            "barriers_families": "Did not engage this population",
+            "barriers_experts": "Did not engage this population"
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "Did not assess this need"
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "Did not assess this need",
+            "other_methods": "Did not assess this need",
+            "barriers": "Did not assess this need"
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Interface",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ],
+            "other_description": "Contracted with Interface - a mental health referral telephone line"
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0.0,
+            "how_spent": [],
+            "barriers": "No work in this area"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0.0,
+            "how_spent": [],
+            "barriers": "No work in this area"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 11500.0,
+            "how_spent": [],
+            "barriers": "No work in this area"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0.0,
+            "how_spent": [],
+            "barriers": "No work in this area"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0.0,
+            "how_spent": [],
+            "barriers": "No work in this area"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0.0,
+            "how_spent": [],
+            "barriers": "No work in this area"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0.0,
+            "how_spent": [],
+            "barriers": "No work in this area"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0.0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0.0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Nothing at this time",
+        "unmet_needs": "Nothing at this time",
+        "orrf_recommendations": "Nothing at this time"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/North_Attleborough.pdf"
+}

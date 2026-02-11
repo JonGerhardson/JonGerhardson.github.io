@@ -1,0 +1,221 @@
+{
+    "municipality": "Southampton",
+    "response_id": "204",
+    "contact": {
+        "primary_name": "Scott Szczebak",
+        "primary_email": "sszczebak @townofsouthampton.org",
+        "primary_phone": "4135290106",
+        "secondary_name": "Bradley Okscin",
+        "secondary_email": "bokscin @townofsouthampton.org",
+        "secondary_phone": "4135291000"
+    },
+    "funding": {
+        "municipality_name": "Southampton",
+        "total_received_all_years": 73807.02,
+        "carryover_from_previous": 34218.27,
+        "fy2024_disbursement": 39588.75,
+        "total_available_fy24": 73807.02,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 73807.02
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Still in planning stage",
+            "people_in_recovery_other": "Still in planning stage",
+            "families_impacted_other": "Still in planning stage",
+            "subject_matter_experts_other": "Still in planning stage",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "other"
+            ],
+            "health_outcomes_race": [
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "other"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Still in planning stage"
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "other"
+            ],
+            "fatal_overdoses": [
+                "other"
+            ],
+            "emt_response": [
+                "other"
+            ],
+            "past_30_day_opioid_use": [
+                "other"
+            ],
+            "patients_in_treatment": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "num_treatment_providers": [
+                "other"
+            ],
+            "num_recovery_centers": [
+                "other"
+            ],
+            "mental_health_conditions": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Policy/Practice 1",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 2",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 3",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 4",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 5",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Southampton.pdf"
+}

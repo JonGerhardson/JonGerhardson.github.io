@@ -1,0 +1,158 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "municipality": "Norwell",
+    "response_id": "199",
+    "contact": {
+        "primary_name": "Christine McCarthy",
+        "primary_email": "cmccarthy @townofnorwell.net",
+        "primary_phone": "781-659-8010",
+        "secondary_name": "Darleen Sullivan",
+        "secondary_email": "dsullivan @townofnorwell.net",
+        "secondary_phone": "781-659-8000"
+    },
+    "funding": {
+        "municipality_name": "Norwell",
+        "total_received_all_years": 262648.67,
+        "carryover_from_previous": 121768.65,
+        "fy2024_disbursement": 140880.02,
+        "total_available_fy24": 262648.67,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 262648.67
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": [
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "The town does not have an existing internal working group addressing addiction issues/solutions/new programs. We do work closely with an external outreach, non-profit organization to offer support, resources, and outreach to addicts, most especially after an overdose. Without any local infrastructure, we are starting from scratch with this program. We are looking at partnering with an existing group with a program already in place engaging the at- risk populations.",
+            "barriers_people_in_recovery": "Have not yet directly engaged people in recovery.",
+            "barriers_families": "Have not yet directly engaged with families impacted.",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "Have not yet assessed potential gaps or needs in the community."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "Did not use administrative data sources",
+            "other_methods": "Have not yet identified these needs. Plymouth County Outreach is more familiar with this, and we are looking to partner with them.",
+            "barriers": "Have not yet assessed mental health gaps or needs in the community."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Plymouth County Outreach",
+                    "sources": [
+                        "interviews"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We consulted with Care Mass.",
+        "consultant_activities": "Other activities (please specify)::",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Difficulty in starting the process."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Have not identified people to support yet."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Need to identify connections to care first. Preliminary meetings and discussions, but no expenditures associated."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No plan for harm reduction yet."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have involved Police and Fire as well as outreach in terms of discussing needs and any challenges they encounter doing their work. We have not engaged Justice personnel."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Have not identified how to engage in this group yet."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Still need to identify how to provide this education"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "It is both a challenge and a blessing that our community has not experienced problems \"loud enough\" to cause the community or it's leaders in the past to stop and say, we have a problem that we need to address. For example; \"we need a treatment facility\" or \"we need a needle program\" or \"we need a shelter\" or \"we need a methadone clinic\". With that said, do I believe we could have people silently suffering with addiction in our community, it would be naive to say no. I do believe we need a resource and a communication plan to engage the community and let them know there are places to reach out to for help. We just need to figure out what that resource will be...",
+        "unmet_needs": "Not Yet.",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Norwell.pdf"
+}

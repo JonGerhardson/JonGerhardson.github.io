@@ -1,0 +1,204 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Northampton",
+    "response_id": "143",
+    "contact": {
+        "primary_name": "Merridith O'Leary",
+        "primary_email": "moleary @northamptonma.gov",
+        "primary_phone": "413-578-1214",
+        "secondary_name": "Taylor McAndrew",
+        "secondary_email": "tmcandrew @northamptonma.gov",
+        "secondary_phone": "4135871322"
+    },
+    "funding": {
+        "municipality_name": "Northampton",
+        "total_received_all_years": 515563.37,
+        "carryover_from_previous": 239024.44,
+        "fy2024_disbursement": 276538.93,
+        "total_available_fy24": 515563.37,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 31084.78,
+        "total_unexpended": 484478.59
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "other"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "other"
+            ],
+            "families_impacted": [
+                "survey",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "survey"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Northampton is in the process of planning more targeted focus groups and interviews to increase engagement with people who are actively using drugs. While we were able to complete the county-wide survey via Hampshire HOPE, and received substantial feedback from city residents, we are planning an on-going feedback loop for those most directly affected. This will be done in partnership with local provider organizations (i.e. Tapestry Health and HRH413) who have established and trusting relationships with these community members.",
+            "people_in_recovery_other": "Northampton is in the process of planning more targeted focus groups and interviews to continue engagement with people in recovery. While we were able to complete the county-wide survey via Hampshire HOPE, and received substantial feedback from city residents, we are planning an on-going feedback loop for those most directly affected. This will be done in partnership with local provider organizations (i.e. Northampton Recovery Center) who have established and trusting relationships with these community members.",
+            "families_impacted_other": "Northampton is in the process of planning more targeted focus groups and interviews to continue engagement with families impacted. While we were able to complete the county-wide survey via Hampshire HOPE, and received substantial feedback from city residents, we are planning an on-going feedback loop for those most directly affected. This will be done in partnership with local provider organizations (i.e. Learn to Cope and local coalitions) who have established and trusting relationships with these community members.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "admin_data",
+                "survey",
+                "groups_meetings"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "All data collected in the Hampshire County Opioid Settlement survey was applied and used to inform decision making and planning. The survey used language directly from the MA AGO to ensure health equity input would be captured. Open-response type questions were especially valuable in hearing about complex experiences and challenges along the care continuum. In addition to the abatement survey, the City has released a Community Health Needs Assessment (CHNA), in which the planning process used data from local hospital data/reports and the state's CHES (Community Health Equity Survey). Responses to the City's CHNA will add to our understanding of differences in health outcome related to socio-economic status, in addition to stigma and cultural competency of providers.",
+            "other_methods": "Questions in the survey did not ask specifically about diversity among service providers, but we plan to still collect this information. In \"Phase 2\" of community feedback (which will include direct engagement of those directly impacted via focus groups and interviews) we will dig deeper into these questions. Those who are actively using drugs, currently receiving MOUD, or those in recovery can speak from their direct experience in our region."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "In looking at data related to OUD/SUD, overdose rates, behavioral health, and identifying where disparities may exist, Northampton has been able to leverage both local-level data and data disseminated from MA DPH. Through the work of the Drug Addiction Recovery Team (DART) and partnership with local public safety and the critical incident management system, the City's Department of Health and Human Services serves as the data hub for OUD trends and local overdose rates. Collecting this data, DHHS is able to assess for gaps in our support services, look for local 'hotspots' and in turn adapt programming to increase outreach or narcan distribution. Additional data sources include 911/MATRIS data, local hospital data (with whom the City has a data-sharing agreement), and youth health surveying.",
+            "other_methods": "Partnership and collaboration with regional public health initiatives is key for landscape analysis. The daily work of the Division of Community Care provides the city and partners a real time glimpse into the mental health conditions and challenges that exist in the city, which informs the work that we can do. Similarly, partnerships with Tapestry (local harm reduction provider), shelter services, MANNA Community Kitchen, and MOUD/Behavioral Health providers meet monthly to share-out local trends, ways to collaborate, and identify gaps that need to be addressed in time-sensitive manners. Last, the survey has served as a preliminary step in hearing directly from community members. This will be built upon by further interview and focus group participation.",
+            "barriers": "Through the initiatives of the Department of Health and Human Services (i.e. Division of Community Care and DART, the Drug Addiction Recovery Team), the City has been able to demonstrate its ability to both collect SUD related-data, and also use that data to inform community interventions. One barrier that still exists, however, is the stigma related to OUD and SUD. For instance, people may still hold fears in self-identifying as someone who uses drugs, has used drugs, or is in recovery. The same goes for family and loved ones. Working with partners who already hold relationships rooted in trust will help to overcome this. Additionally, the data related to number of providers, treatment space, and access to recovery is a constantly changing statistic. Primarily, the region has seen a sharp decrease in detox and treatment providers over the last 1-2 years."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Partnership with Tapestry, local syringe service program",
+                    "sources": [
+                        "groups_meetings",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Partnership with Northampton Recovery Center",
+                    "sources": [
+                        "groups_meetings",
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We engaged in shared planning with other municipalities. We consulted with Care Mass.",
+        "consultant_activities": null,
+        "care_mass_activities": "Developed and conducted a community survey",
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 5500,
+            "how_spent": [
+                "Other (please specify): The City partnered with Tapestry Health to support outreach initiatives and data collection for Hampshire Opioid Settlement Survey. One of the primary objectives was to increase response/feedback from community members most directly affected (i.e. people who use drugs)"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 25584.78,
+            "how_spent": [
+                "Contracting consultants to support coalition building, community needs assessment, planning and implementation, and evaluation and reporting",
+                "Other (please describe): The City of Northampton has strategically chosen to utilize the established structure and partnership of Hampshire HOPE, the county-wide multi-sector coalition focused on the impacts of opioid-use. The Hampshire HOPE Coordinator supported survey planning and development, convening an ad-hoc regional abatement workgroup, landscape analysis, data collection, and dissemination of survey results for county-partners. This also included coordinated efforts with partner agencies who work directly with those most-impacted (local recovery centers, harm reduction/SSP agency, family/peer supports)."
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "No, not at this time.",
+        "orrf_recommendations": "No, not currently at this time but the city and our partners look forward to leveraging the community feedback forums (survey results, interviewing and focus groups) to help pass along any recommendations that may result."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Northampton.pdf"
+}

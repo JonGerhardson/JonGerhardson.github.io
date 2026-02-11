@@ -1,0 +1,143 @@
+{
+    "municipality": "Upton",
+    "response_id": "210",
+    "contact": {
+        "primary_name": "Kenny P Costa",
+        "primary_email": "kcosta@uptonma.gov",
+        "primary_phone": "5085291013",
+        "secondary_name": "Joseph Laydon",
+        "secondary_email": "jlaydon@uptonma.gov",
+        "secondary_phone": "5085296901"
+    },
+    "funding": {
+        "municipality_name": "Upton",
+        "total_received_all_years": 20125.78,
+        "carryover_from_previous": 9330.67,
+        "fy2024_disbursement": 10795.11,
+        "total_available_fy24": 20125.78,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 20125.78
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "The Town has not started work to engage people using drugs. We will develop a plan to address in 2025.",
+            "barriers_people_in_recovery": "The Town has not started work to engage people in recovery. We will develop a plan to address in 2025.",
+            "barriers_families": "The Town has not started work to engage families impacted by drugs. We will develop a plan to address in 2025.",
+            "barriers_experts": "The Town has not started work on this topic. We will develop a plan to address in 2025."
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "The Town has not started work in this area. We will develop a plan to address in 2025."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "The Town has not started work in this area. We will develop a plan to address in 2025.",
+            "other_methods": "The Town has not started work in this area. We will develop a plan to address in 2025.",
+            "barriers": "The Town has not started work in this area. We will develop a plan to address in 2025."
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town has not started work in this area. We will develop a plan to address in 2025."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town has not started work in this area. We will develop a plan to address in 2025."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town has not started work in this area. We will develop a plan to address in 2025."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town has not started work in this area. We will develop a plan to address in 2025."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town has not started work in this area. We will develop a plan to address in 2025."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town has not started work in this area. We will develop a plan to address in 2025."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town has not started work in this area. We will develop a plan to address in 2025."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Upton.pdf"
+}

@@ -1,0 +1,230 @@
+{
+    "municipality": "Northborough",
+    "response_id": "144",
+    "contact": {
+        "primary_name": "Isabella Caruso",
+        "primary_email": "icaruso @town.northborough.ma.us",
+        "primary_phone": "5085041812",
+        "secondary_name": "Lisa Troast",
+        "secondary_email": "ltroast @town.northborough.ma.us",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Northborough",
+        "total_received_all_years": 231059.19,
+        "carryover_from_previous": 107123.2,
+        "fy2024_disbursement": 123935.99,
+        "total_available_fy24": 231059.19,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 231059.19
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "survey",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "interviews",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "interviews"
+            ],
+            "health_outcomes_race": [
+                "admin_data"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews"
+            ],
+            "provider_diversity": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "We used data from the Metro West Adolescents Health Survey, Metro West Community Assessment, state-level data on overdose incidents and deaths, as well as CDC datasets.",
+            "other_methods": "",
+            "barriers": "We need to continue to gather information from those with lived and living experiences over the next couple of years - as the crisis evolves. In this process, we will focus on relationship building to ensure a shared commitment to improving the lives affected by the opioid crisis."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data",
+                "other"
+            ],
+            "admin_data_sources": "State-level data that is publicly available. - MA Community Health Equity Initiative Survey - DPH: Bureau for Substance Use Addiction Services -- Admission, enrollments - Metro West Adolescents Health Survey - Metro West Community Health Assessment - Local CIMS Data",
+            "other_methods": "We evaluated our towns resources to identify the number of treatment providers and recovery centers. This also allowed us to start to connect with resources in our towns.",
+            "barriers": "Surveys often have low sample sizes or small frequencies for a variable. As a result the data is not able to be teased out due to confidentiality concerns. This makes understanding the small differences between groups and other variables more difficult to identify. We plan to use some qualitative data and larger state datasets to learn more about our community."
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "Care Mass",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Community Naloxone Program",
+                    "sources": [
+                        "groups_meetings",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "MassCall 3",
+                    "sources": [
+                        "groups_meetings",
+                        "other"
+                    ]
+                }
+            ],
+            "other_methods": "Local Board of Health meetings and webinars. Northborough is part of Hudson's Mass Call 3 grant."
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Free Narcan Trainings",
+                    "sources": [
+                        "community_needs",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Syringe Disposal",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Substance Use Coalition",
+                    "sources": [
+                        "community_needs",
+                        "hired_consultant",
+                        "other_municipality"
+                    ]
+                }
+            ],
+            "other_methods": "Northborough and Southborough have an active substance use prevention coalition, Encompass, currently funded by the Drug-Free Communities Grant through the CDC. Through this grant, we were able to hire a full-time Substance Use Prevention Specialist... We also have the Be Well Northborough initiative..."
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities. We contracted a consultant to support this process.",
+        "consultant_activities": [
+            "survey",
+            "interviews",
+            "focus_groups",
+            "data_analysis",
+            "other"
+        ],
+        "consultant_activities_other": "Hosted public meeting to present information.",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Currently, through our community coalition, we focus on prevention and harm reduction. We hope to connect with treatment centers to learn more about the barriers and challenges they face."
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Northborough police department shares a clinician with Southborough to support those who are in need. We will evaluate the success of this partnership and program."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We would appreciate specific guidance on how best practices to learn from this population. The Health and Human Services Department is starting to run maternal and health programming so we can include education in our workshops as a starting point."
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Costs associated with planning and implementing opioid abatement activities to ensure the expenditure of allocated Opioid Abatement Funds is effective and meets the terms of the State Subdivision Agreement."
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "We used Public Health Excellence funds for our regional data collection, report, and strategic plan because we wanted to use regional funds.",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Northborough.pdf"
+}

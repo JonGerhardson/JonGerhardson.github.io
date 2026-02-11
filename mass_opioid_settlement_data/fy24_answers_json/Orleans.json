@@ -1,0 +1,195 @@
+{
+    "municipality": "Orleans",
+    "response_id": "149",
+    "contact": {
+        "primary_name": "Alexandra E. Fitch",
+        "primary_email": "afitch @town.orleans.ma.us",
+        "primary_phone": "7747227662",
+        "secondary_name": "Kelly Messier",
+        "secondary_email": "kmessier @town.orleans.ma.us",
+        "secondary_phone": "5082403700"
+    },
+    "funding": {
+        "municipality_name": "Orleans",
+        "total_received_all_years": 89180.47,
+        "carryover_from_previous": 41345.67,
+        "fy2024_disbursement": 47834.8,
+        "total_available_fy24": 89180.47,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 89180.47
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25",
+            "people_in_recovery_other": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25",
+            "families_impacted_other": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25",
+            "experts_other": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "other"
+            ],
+            "health_outcomes_race": [
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "other"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "other"
+            ],
+            "fatal_overdoses": [
+                "other"
+            ],
+            "emt_response": [
+                "other"
+            ],
+            "past_30_day_opioid_use": [
+                "other"
+            ],
+            "patients_in_treatment": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "treatment_providers": [
+                "other"
+            ],
+            "recovery_centers": [
+                "other"
+            ],
+            "mental_health_conditions": [
+                "other"
+            ],
+            "admin_data_sources": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25",
+            "other_methods": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25",
+            "barriers": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Board of Health voted to use available Abatement funds as grants to distribute to local organizations. First grant payments went out early in FY25"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "We were able to distribute funds through a grant program to local organizations in early FY25. We look forward to reporting on the success of the current fiscal year",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Orleans.pdf"
+}

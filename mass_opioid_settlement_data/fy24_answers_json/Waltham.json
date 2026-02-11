@@ -1,0 +1,174 @@
+{
+    "municipality": "Waltham",
+    "response_id": "214",
+    "contact": {
+        "primary_name": "paul g centofanti",
+        "primary_email": "pcentofanti @city.waltham.ma.us",
+        "primary_phone": "7813143222",
+        "secondary_name": "laura doane",
+        "secondary_email": "ldoane @city.waltham.ma.us",
+        "secondary_phone": "7813143227"
+    },
+    "funding": {
+        "municipality_name": "Waltham",
+        "total_received_all_years": 507649.4,
+        "carryover_from_previous": 235355.4,
+        "fy2024_disbursement": 272294,
+        "total_available_fy24": 507649.4,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 507649.4
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "interviews"
+            ],
+            "people_in_recovery": [
+                "interviews"
+            ],
+            "families_impacted": [
+                "interviews"
+            ],
+            "subject_matter_experts": [
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "interviews"
+            ],
+            "health_outcomes_race": [
+                "interviews"
+            ],
+            "health_outcomes_wealth": [
+                "interviews"
+            ],
+            "stigma_impact": [
+                "interviews"
+            ],
+            "provider_diversity": [
+                "interviews"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "interviews"
+            ],
+            "fatal_overdoses": [
+                "interviews"
+            ],
+            "emt_response": [
+                "interviews"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Policy/Practice 1",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The group the City is working with has no physical facility and is not yet incorporated."
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The group the City is working with has no physical facility and is not yet incorporated."
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are dealing with a recovery solutions group. The Police Department has 3 FT Social Workers, increase of 2. Also mental health provider - Edinburgh."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "None identified in the group with whom we are dealing. However, the new WHS Valor Program addresses unwed mothers and overage & under credited individuals."
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Waltham.pdf"
+}

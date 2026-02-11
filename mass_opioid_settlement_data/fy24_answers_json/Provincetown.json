@@ -1,0 +1,266 @@
+{
+    "municipality": "Provincetown",
+    "response_id": "159",
+    "contact": {
+        "primary_name": "Nick Robertson",
+        "primary_email": "nrobertson @provincetown-ma.gov",
+        "primary_phone": "5084877010",
+        "secondary_name": "Lezli Rowell",
+        "secondary_email": "lrowell @provincetown-ma.gov",
+        "secondary_phone": "5084877000"
+    },
+    "funding": {
+        "municipality_name": "Provincetown",
+        "total_received_all_years": 85361.98,
+        "carryover_from_previous": 39575.35,
+        "fy2024_disbursement": 45786.63,
+        "total_available_fy24": 85361.98,
+        "pooled": true,
+        "pooling_details": {
+            "ima_ssa_name": "OC Wellness Collaborative",
+            "interested_in_pooling": null,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": false,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": true
+        },
+        "total_expended_fy24": 10575.43,
+        "total_unexpended": 74786.55
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "focus_groups",
+                "other"
+            ],
+            "people_in_recovery": [
+                "focus_groups",
+                "other"
+            ],
+            "families_impacted": [
+                "focus_groups",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "focus_groups",
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Working with partner agencies who have direct connection/services with life experience and substance abuse disorders.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "survey"
+            ],
+            "health_outcomes_race": [
+                "survey"
+            ],
+            "health_outcomes_wealth": [
+                "survey"
+            ],
+            "stigma_impact": [
+                "survey"
+            ],
+            "provider_diversity": [
+                "survey"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "survey"
+            ],
+            "fatal_overdoses": [
+                "survey"
+            ],
+            "emt_response": [
+                "survey"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "Program/Service 1",
+                    "sources": [
+                        "survey"
+                    ]
+                },
+                {
+                    "name": "Program/Service 2",
+                    "sources": [
+                        "survey"
+                    ]
+                },
+                {
+                    "name": "Program/Service 3",
+                    "sources": [
+                        "survey"
+                    ]
+                },
+                {
+                    "name": "Program/Service 4",
+                    "sources": [
+                        "survey"
+                    ]
+                },
+                {
+                    "name": "Program/Service 5",
+                    "sources": [
+                        "survey"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Policy/Practice 1",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 2",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 3",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 4",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Policy/Practice 5",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We engaged in shared planning with other municipalities. We contracted a consultant to support this process.",
+        "consultant_activities": "Developed criteria for prioritizing needs and gaps based on findings; Facilitated planning sessions to prioritize needs and gaps; Facilitated planning sessions to set goals and select strategies to address needs and gaps; Developed an implementation plan; Developed an evaluation plan to track outputs and monitor performance",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Aging adults",
+            "Economically under-resourced",
+            "Individuals who have been incarcerated and/or under community supervision",
+            "LGBTQ+",
+            "Pregnant and/or parenting populations",
+            "Unsheltered or housing-insecure",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Full implementation",
+            "expended": 2525.21,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 2521.21,
+            "how_spent": [
+                "Provide comprehensive wrap-around services to individuals with OUD, including job placement, job training, or childcare",
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Provide transportation to treatment or recovery services for persons with OUD",
+                "Increase the number and capacity of high-quality recovery programs to help people in recovery",
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 758.98,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 2525.21,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "\"Naloxone Plus\" strategies to ensure that individuals who receive naloxone to reverse an overdose are linked to treatment programs or other appropriate services",
+                "Approve and fund syringe service programs and other programs to reduce harms associated with drug use, including supplies, staffing, space, peer support services, referrals to treatment, fentanyl checking, syringe collection and disposal, connection to care, and the full range of harm reduction and treatment services provided by these programs",
+                "Support mobile units that offer or provide referrals to harm reduction services, treatment, recovery supports, primary and behavioral health care, recovery support, or other appropriate services with OUD",
+                "Active outreach strategies such as the Drug Abuse Response Team model or the Post Overdose Support Team model",
+                "Provide outreach and services for people who use drugs and are not yet in treatment, including services that build relationships with and support for people with OUD"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Currently no resource contacts in that field. Remote location means the town is not near any large incarceration facilities."
+        },
+        "pregnant_parenting": {
+            "progress": "Full implementation",
+            "expended": 758.97,
+            "how_spent": [
+                "Initiated or expanded FIRST Steps Together or similar evidence-based home visiting program for parents in recovery",
+                "Supported, expanded, and improved connections with the Moms Do Care recovery support program"
+            ],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 1485.87,
+            "how_spent": [
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Provincetown.pdf"
+}

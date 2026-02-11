@@ -1,0 +1,147 @@
+{
+    "municipality": "Plainville",
+    "response_id": "156",
+    "contact": {
+        "primary_name": "Julie Hebert",
+        "primary_email": "jhebert @plainville.ma.us",
+        "primary_phone": "5085768480",
+        "secondary_name": "Pam Groh",
+        "secondary_email": "pgroh @plainville.ma.us",
+        "secondary_phone": "5085768481"
+    },
+    "funding": {
+        "municipality_name": "Plainville",
+        "total_received_all_years": 70387.1,
+        "carryover_from_previous": 32632.73,
+        "fy2024_disbursement": 37754.37,
+        "total_available_fy24": 70387.1,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 70387.1
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options.",
+            "barriers_people_in_recovery": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options.",
+            "barriers_families": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options.",
+            "barriers_experts": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options."
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have not yet spent money from the settlement and have not yet had the resources to begin engaging the community for options."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We just haven't had the resources yet to start our initiatives related to spending this settlement money.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Plainville.pdf"
+}

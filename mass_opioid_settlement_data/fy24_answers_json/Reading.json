@@ -1,0 +1,237 @@
+{
+    "municipality": "Reading",
+    "response_id": "163",
+    "contact": {
+        "primary_name": "Erica Maillet",
+        "primary_email": "emcnamara @readingma.gov",
+        "primary_phone": "7819426793",
+        "secondary_name": "Matt Kraunelis",
+        "secondary_email": "mkraunelis @readingma.gov",
+        "secondary_phone": "781-942-9043"
+    },
+    "funding": {
+        "municipality_name": "Reading",
+        "total_received_all_years": 234994.55,
+        "carryover_from_previous": 87157.0,
+        "fy2024_disbursement": 126046.85,
+        "total_available_fy24": 213203.85,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 23000.0,
+        "total_unexpended": 190203.85
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "groups_meetings"
+            ],
+            "families_impacted": [
+                "groups_meetings"
+            ],
+            "subject_matter_experts": [
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "The needs assessment and tracking of data for opioid related challenges in managed by the Reading Coalition for Prevention & Support at the Reading Police Department. Coalition staff track the following---public safety calls for service, referrals to our Crisis Intervention Team, Youth Risk Behavior Survey, CIMS Middlesex County (overdoses, behavioral health encounters), death certificates, mental health referrals by type of presenting concern and demographics, percentage of available behavioral providers by key factors including race, social determinants of health, local and regional needs assessment. We engage in regional meetings monthly with the Bridge Recovery Center to learn more about access to services and gaps identified. We meet bi-monthly with 6 surrounding towns to track changes in the environment with regard to access, health outcomes, and stigma. CIMS is a software product developed by Kelley Research Associates for police to document all overdose incidents within county jurisdictions and facilitate the transition of those experiencing behavioral health incidents and drug overdoses to treatment. Reading staff is responsible for data entry and follow-up for relevant cases. Staff entered 155 adult cases involving Reading that were related to behavioral health.",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "The needs assessment and tracking of data for opioid related challenges in managed by the Reading Coalition for Prevention & Support at the Reading Police Department. Coalition staff track the following---public safety calls for service, referrals to our Crisis Intervention Team, Youth Risk Behavior Survey, CIMS Middlesex County (overdoses, behavioral health encounters), death certificates, mental health referrals by type of presenting concern and demographics, percentage of available behavioral providers by key factors including race, social determinants of health, local and regional needs assessment. We engage in regional meetings monthly with the Bridge Recovery Center to learn more about access to services and gaps identified. We meet bi-monthly with 6 surrounding towns to track changes in the environment with regard to access, health outcomes, and stigma. CIMS is a software product developed by Kelley Research Associates for police to document all overdose incidents within county jurisdictions and facilitate the transition of those experiencing behavioral health incidents and drug overdoses to treatment. Reading staff is responsible for data entry and follow-up for relevant cases. Staff entered 155 adult cases involving Reading that were related to behavioral health.",
+            "other_methods": "SBIRT data for school screening of 8th and 10th graders in Reading, local Youth Risk Behavior Survey of middle and high school students, review of state and federal data through DAWN, state opioid data, and number of people that accessed state treatment. We also talked with people in recovery and families impacted by loss as our annual recovery and remembrance event and integrated those insights into our display.",
+            "barriers": "Through coalition analysis, meetings and talking with our community, we identified a gap in the number of service providers that reflect the needs of these identified youth and young adults. Additionally, the lack of availability of afternoon/evening appts has also been a barrier. To adapt, we have provided school-based services, partnered with additional mental health providers, and increased awareness of services that match needs. We also hosted a provider's breakfast for 30 clinicians, school nurses and mental health providers to increase networking and school/community connections. We expanded our Pocket Talk Program to include town and school staff. Translators can help staff to engage with the public that may speak a language other than English. Coalition staff already equipped Reading Police with pocket talk translators in a pilot program in 2022-2023. In 2023-2024, we disseminated 30 additional Pocket Talk translators to school and town staff. The translator features 80 languages and are intended for verbal encounters. We continue to support the addition of staff that reflect the needs of our community and the translators are a tool and not meant as a replacement for increased diversity of staff that serve our community. We increased capacity through staff training supported by the opioid funds. Our Public Safety Clinician participated in the Co-Response Conference and then conducted roll call trainings for officers and dispatchers. We used opioid funds for a portion of the Interface Referral Services contract for Reading. This service allows residents and students that attend school in Reading to call Interface for a confidential intake to be matched with 2-3 licensed mental health providers that meet their needs. The contract enabled 101 residents and Boston students (that attend school in Reading) to access licensed outpatient mental health service and treatment providers. We added two new credentialed Teen Mental Health First Aid instructors (1 high school staff member and 1 police staff member). We conducted Youth Mental Health First Aid and Mental Health First Aid (National Council on Mental Wellbeing) training for adults; SBIRT screening improvements for 8th and 10th grade, Teen Mental Health First Aid training for 11th grade students at the high school; and engaged high school youth in alternatives to suspension programs and restorative justice. We purchased additional materials to reach underserved students that do not attend typical education classes at the high school. We implemented Teen Intervene (Hazelden) for students enrolled in the therapeutic support program to improve their substance misuse education and support."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Bridge Recovery Center",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "MassCall3B Mystic Valley Public Health Coalition",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "MA Behavioral Health",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Enhance training capacity to reach adults that serve teens and adults",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Improve application of restorative practices",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Expand Crisis Intervention Response of police",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Deepen substance misuse education for students with therapeutic needs",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Improve Chemical Health Education & Coaching program",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 9000.0,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event",
+                "Support school-based services related to OUD, such as school-based contacts that parents can engage with to seek immediate treatment services for their child; and support prevention, intervention, treatment, and recovery programs focused on young people. This should include alternatives to suspension or interaction with school resource officers such as restorative justice approaches",
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 1000.0,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Promote efforts to train health care providers, students, peer recovery coaches, recovery outreach specialists, or other professionals that provide care to persons who use opioids or persons with OUD in crisis training and harm reduction strategies",
+                "Provide outreach and services for people who use drugs and are not yet in treatment, including services that build relationships with and support for people with OUD"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 13000.0,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Costs associated with planning and implementing opioid abatement activities to ensure the expenditure of allocated Opioid Abatement Funds is effective and meets the terms of the State Subdivision Agreement."
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Reading.pdf"
+}

@@ -1,0 +1,178 @@
+{
+    "municipality": "Sheffield",
+    "response_id": "174",
+    "contact": {
+        "primary_name": "Rhonda LaBombard",
+        "primary_email": "rlabombard @sheffieldma.gov",
+        "primary_phone": "4132297000",
+        "secondary_name": "Jill Hughes",
+        "secondary_email": "jhughes @sheffieldma.gov",
+        "secondary_phone": "4132297000"
+    },
+    "funding": {
+        "municipality_name": "Sheffield",
+        "total_received_all_years": 6350.11,
+        "carryover_from_previous": 2944.02,
+        "fy2024_disbursement": 3406.09,
+        "total_available_fy24": 6350.11,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 6350.11,
+        "total_unexpended": 0.0
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "not_engaged"
+            ],
+            "people_in_recovery": [
+                "not_engaged"
+            ],
+            "families_impacted": [
+                "not_engaged"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "subject_matter_experts_other": "Talked with local recovery center.",
+            "barriers_people_who_use_drugs": "N/A",
+            "barriers_people_in_recovery": "N/A",
+            "barriers_families": "N/A",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "other"
+            ],
+            "health_outcomes_race": [
+                "not_assessed"
+            ],
+            "health_outcomes_wealth": [
+                "not_assessed"
+            ],
+            "stigma_impact": [
+                "not_assessed"
+            ],
+            "provider_diversity": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Talked with local recovery center.",
+            "barriers": "N/A"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "not_assessed"
+            ],
+            "fatal_overdoses": [
+                "not_assessed"
+            ],
+            "emt_response": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "Talked with local recovery center.",
+            "other_methods": "N/A",
+            "barriers": "N/A"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [],
+            "admin_data_sources": "100% of funds was given to local recovery center to expand or offer their programs to residents in Sheffield.",
+            "other_methods": "N/A"
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [],
+            "other_methods": "100% of funds was given to local recovery center to expand or offer their programs to residents in Sheffield."
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 6350.11,
+            "how_spent": [
+                "Other (please specify):: 100% of funds was given to local recovery center to expand or offer their programs to residents in Sheffield."
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "100% of all funds received were donated to local recovery center.",
+        "unmet_needs": "100% of all funds received were donated to local recovery center.",
+        "orrf_recommendations": "None."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Sheffield.pdf"
+}

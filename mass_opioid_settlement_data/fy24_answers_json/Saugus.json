@@ -1,0 +1,145 @@
+{
+    "municipality": "Saugus",
+    "response_id": "201",
+    "contact": {
+        "primary_name": "Jeannie Meredith",
+        "primary_email": "jmeredith @saugus-ma.gov",
+        "primary_phone": "7812314118",
+        "secondary_name": "Scott Crabtree",
+        "secondary_email": "scrabtree @saugus-ma.gov",
+        "secondary_phone": "7812314118"
+    },
+    "funding": {
+        "municipality_name": "Saugus",
+        "total_received_all_years": 317675.01,
+        "carryover_from_previous": 147279.85,
+        "fy2024_disbursement": 170395.16,
+        "total_available_fy24": 317675.01,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 317675.01
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "have not done this yet",
+            "barriers_people_in_recovery": "have not done this yet",
+            "barriers_families": "N/A",
+            "barriers_experts": "n/a"
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "A grass roots coalition has recently formed in Saugus , and I have joined. We are hoping to send out a survey and conduct a needs assessment this month"
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "n/a",
+            "other_methods": "We will working on identifying mental heath after our assessment",
+            "barriers": "n/a"
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We consulted with Care Mass.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "0"
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "0"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "0"
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Costs associated with planning and implementing opioid abatement activities to ensure the expenditure of allocated Opioid Abatement Funds is effective and meets the terms of the State Subdivision Agreement."
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "no",
+        "orrf_recommendations": "not yet"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Saugus.pdf"
+}

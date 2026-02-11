@@ -1,0 +1,170 @@
+{
+    "municipality": "Oak Bluffs",
+    "response_id": "147",
+    "contact": {
+        "primary_name": "Deborah Potter",
+        "primary_email": "dpotter @oakbluffsma.gov",
+        "primary_phone": "5086933554",
+        "secondary_name": "Wendy Brough",
+        "secondary_email": "wbrough @oakbluffsma.gov",
+        "secondary_phone": "5086933554"
+    },
+    "funding": {
+        "municipality_name": "Oak Bluffs",
+        "total_received_all_years": 62110.5,
+        "carryover_from_previous": 0,
+        "fy2024_disbursement": 44968.01,
+        "total_available_fy24": 44968.01,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 44968.01,
+        "total_unexpended": 0
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "Funds are limited so we look to have information provided through other groups that perform this work such as SUD Coalition (Substance Use Disorder) and Martha's Vineyard Community Services",
+            "barriers_people_in_recovery": "Funds are limited so we look to have information provided through other groups that perform this work such as SUD Coalition (Substance Use Disorder) and Martha's Vineyard Community Services",
+            "barriers_families": "Funds are limited so we look to have information provided through other groups that perform this work such as SUD Coalition (Substance Use Disorder) and Martha's Vineyard Community Services",
+            "barriers_experts": "Funds are limited so we look to have information provided through other groups that perform this work such as SUD Coalition (Substance Use Disorder) and Martha's Vineyard Community Services"
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "Health Care access on island is limited regardless of race, wealth, and stigma. Addressing issue will be more of a regional approach"
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day": [],
+            "patients_in_treatment": [],
+            "people_in_recovery": [],
+            "people_who_use_drugs": [],
+            "treatment_providers": [],
+            "recovery_centers": [],
+            "mental_health_conditions": [],
+            "admin_data_sources": "Information from Police and/or EMS, if available, used for report.",
+            "other_methods": "N/A",
+            "barriers": "Looking at regional pooling options"
+        },
+        "existing_programs": {
+            "programs": [],
+            "admin_data_sources": "Looking at regional pooling options",
+            "other_methods": "Looking at regional pooling options"
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Policy/Practice 1",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ],
+            "other_methods": "Looking at potential regional pooling options"
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Other (please specify):: Pooled funds with other towns to support island wide SUD Coalition"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 44968.01,
+            "how_spent": [
+                "Other (please specify):: As member of Dukes County, we pool funds to provide and support Martha's Vineyard Community Services regional human service programs. 21,813 was for the CORE program which supports mental health, substance use disorder counseling and care coordination for people 55 and older. 12,737.01 to support Homeless prevention as the small number of homeless in our community are usually also in need of SUD services."
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Looking at regional island wide options"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Looking at regional island wide options"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Looking at regional island wide options"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Looking at regional island wide options but this population is extremely small on island"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Looking at regional island wide options"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Oak_Bluffs.pdf"
+}

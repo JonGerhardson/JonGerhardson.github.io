@@ -1,0 +1,172 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "municipality": "West Boylston",
+    "response_id": "220",
+    "contact": {
+        "primary_name": "Jennifer Warren-Dyment",
+        "primary_email": "townadmin @westboylston-ma.gov",
+        "primary_phone": "7742614088",
+        "secondary_name": "Leslie Guertin",
+        "secondary_email": "lguertin @westboylston-ma.gov",
+        "secondary_phone": "774-261-4061"
+    },
+    "funding": {
+        "municipality_name": "West Boylston",
+        "total_received_all_years": 116617.47,
+        "carryover_from_previous": 54065.95,
+        "fy2024_disbursement": 62551.52,
+        "total_available_fy24": 116617.47,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 116617.47
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "na_not_engaged"
+            ],
+            "people_in_recovery": [
+                "na_not_engaged"
+            ],
+            "families_impacted": [
+                "na_not_engaged"
+            ],
+            "subject_matter_experts": [
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds. Therefore, we have not engaged these populations at this time.",
+            "barriers_people_in_recovery": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds. Therefore, we have not engaged these populations at this time.",
+            "barriers_families": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds. Therefore, we have not engaged these populations at this time.",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "na_did_not_assess"
+            ],
+            "health_outcomes_race": [
+                "na_did_not_assess"
+            ],
+            "health_outcomes_wealth": [
+                "na_did_not_assess"
+            ],
+            "stigma_impact": [
+                "na_did_not_assess"
+            ],
+            "provider_diversity": [
+                "na_did_not_assess"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "na_did_not_assess"
+            ],
+            "fatal_overdoses": [
+                "na_did_not_assess"
+            ],
+            "emt_response": [
+                "na_did_not_assess"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds. Therefore, we have not identified these needs at this time.",
+            "barriers": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds. Therefore, we have not addressed these barriers at this time."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage (mostly empty in this example)",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The Town of West Boylston is a member Town of the Worcester Regional Public Health Alliance. The Alliance is currently in the planning stages of how to expend these funds."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/West_Boylston.pdf"
+}

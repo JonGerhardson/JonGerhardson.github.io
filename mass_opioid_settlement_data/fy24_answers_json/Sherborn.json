@@ -1,0 +1,205 @@
+{
+    "municipality": "Sherborn",
+    "response_id": "175",
+    "contact": {
+        "primary_name": "Deb Siefring",
+        "primary_email": "deb.siefring @sherbornma.org",
+        "primary_phone": "5086517859",
+        "secondary_name": "Daryl Beardsley",
+        "secondary_email": "daryl.beardsley @sherbornma.org",
+        "secondary_phone": "50856517852"
+    },
+    "funding": {
+        "municipality_name": "Sherborn",
+        "total_received_all_years": 34463.5,
+        "carryover_from_previous": 15977.9,
+        "fy2024_disbursement": 18485.6,
+        "total_available_fy24": 34463.5,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": true,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 34463.5
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "n/a"
+            ],
+            "people_in_recovery": [
+                "n/a"
+            ],
+            "families_impacted": [
+                "n/a"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "We have not yet begun the process of engaging with the affected population.",
+            "barriers_people_in_recovery": "To be determined.",
+            "barriers_families": "To be determined.",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "n/a"
+            ],
+            "health_outcomes_race": [
+                "n/a"
+            ],
+            "health_outcomes_wealth": [
+                "n/a"
+            ],
+            "stigma_impact": [
+                "n/a"
+            ],
+            "provider_diversity": [
+                "n/a"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "We have not yet begun this process."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "interviews"
+            ],
+            "fatal_overdoses": [
+                "interviews"
+            ],
+            "emt_response": [
+                "interviews"
+            ],
+            "admin_data_sources": "NA",
+            "other_methods": "We are planning on doing a community needs assessment.",
+            "barriers": "To be determined.",
+            "past_30_day_opioid_use": [
+                "n/a"
+            ],
+            "patients_in_treatment": [
+                "n/a"
+            ],
+            "people_in_recovery": [
+                "n/a"
+            ],
+            "people_who_use_drugs": [
+                "n/a"
+            ],
+            "number_of_treatment_providers": [
+                "n/a"
+            ],
+            "number_of_recovery_centers": [
+                "other"
+            ],
+            "mental_health_conditions": [
+                "n/a"
+            ]
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "To Be Determined trough shared services",
+                    "sources": [
+                        "n/a"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "To Be Formulated",
+                    "sources": []
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Getting started in the shared services."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Getting started in the shared services"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Getting started in the shared services"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Getting started in the shared services"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Getting started in the shared services"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Getting started in the shared services"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Getting started in the shared services"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We are just getting started with the program. Planning on meeting with other communities in the shared services to create a program for addressing this initiative.",
+        "unmet_needs": "Not applicable at this time.",
+        "orrf_recommendations": "Not applicable at this time."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Sherborn.pdf"
+}

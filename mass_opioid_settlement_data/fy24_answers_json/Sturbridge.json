@@ -1,0 +1,205 @@
+{
+    "municipality": "Sturbridge",
+    "response_id": "180",
+    "contact": {
+        "primary_name": "Robin Grimm",
+        "primary_email": "rgrimm@sturbridge.gov",
+        "primary_phone": "4019960173",
+        "secondary_name": "Barbara Barry",
+        "secondary_email": "bbarry@sturbridge.gov",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Sturbridge",
+        "total_received_all_years": 112628.62,
+        "carryover_from_previous": 54639.1,
+        "fy2024_disbursement": 57989.52,
+        "total_available_fy24": 112628.62,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 4755.68,
+        "total_unexpended": 107872.94
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [
+                "groups_meetings"
+            ],
+            "subject_matter_experts": [
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "people_in_recovery_other": "Produced pamphlets and web site with resources for recovery.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "We don't have those statistics."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "police and fire statistics",
+            "other_methods": "through our first responders, social services and representatives from recovery centers",
+            "barriers": "Lack of available information because we have no long term facilities within town to track numbers from."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "informational guides",
+                    "methods": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "school event outreach",
+                    "methods": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Presentations from addicts/recovery, etc.",
+                    "methods": [
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "updated website with resources",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 2603.68,
+            "how_spent": [
+                "Support school-based services related to OUD, such as school-based contacts that parents can engage with to seek immediate treatment services for their child; and support prevention, intervention, treatment, and recovery programs focused on young people. This should include alternatives to suspension or interaction with school resource officers such as restorative justice approaches",
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Not a huge issue for the community. Choosing to focus on other areas"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Time constraints. Not hearing it as a major issue in the community."
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 2152,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Other (please specify): Speaker programs"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We continue to utilize and target our funds towards prevention/education and recovery resources as these seem most appropriate for our community.",
+        "unmet_needs": "No",
+        "orrf_recommendations": "Education and prevention seem to span the needs of most ALL communities. Some of the areas you identify are not as relevant in smaller rural communities."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Sturbridge.pdf"
+}

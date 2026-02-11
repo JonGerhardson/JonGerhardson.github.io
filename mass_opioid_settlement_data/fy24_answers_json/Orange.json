@@ -1,0 +1,152 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Orange",
+    "response_id": "148",
+    "contact": {
+        "primary_name": "Matthew Fortier",
+        "primary_email": "townadministrator @townoforange.org",
+        "primary_phone": "9784136507",
+        "secondary_name": "Ashley Gough",
+        "secondary_email": "agough @townoforange.org",
+        "secondary_phone": "9785441107"
+    },
+    "funding": {
+        "municipality_name": "Orange",
+        "total_received_all_years": 131303.87,
+        "carryover_from_previous": 60874.83,
+        "fy2024_disbursement": 70429.04,
+        "total_available_fy24": 131303.87,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 131303.87
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "we haven't allocated or spent funds yet and have not yet engaged with this, but we are making plans for FY2025 spending and programs in efforts to achieve goals herein",
+            "barriers_people_in_recovery": "we haven't allocated or spent funds yet and have not yet engaged with this, but we are making plans for FY2025 spending and programs in efforts to achieve goals herein",
+            "barriers_families": "we haven't allocated or spent funds yet and have not yet engaged with this, but we are making plans for FY2025 spending and programs in efforts to achieve goals herein",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "we haven't allocated or spent funds yet and have not yet engaged with this, but we are making plans for FY2025 spending and programs in efforts to achieve goals herein"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "we haven't allocated or spent funds yet and have not yet engaged with this, but we are making plans for FY2025 spending and programs in efforts to achieve goals herein",
+            "other_methods": "we haven't allocated or spent funds yet and have not yet engaged with this, but we are making plans for FY2025 spending and programs in efforts to achieve goals herein",
+            "barriers": "we haven't allocated or spent funds yet and have not yet engaged with this, but we are making plans for FY2025 spending and programs in efforts to achieve goals herein"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We consulted with Care Mass.",
+        "consultant_activities": null,
+        "care_mass_activities": "Developed and conducted a community survey; Compiled data and drafted data analysis report",
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Orange.pdf"
+}

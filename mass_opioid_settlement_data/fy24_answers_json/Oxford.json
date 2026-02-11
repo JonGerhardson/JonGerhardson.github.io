@@ -1,0 +1,204 @@
+{
+    "municipality": "Oxford",
+    "response_id": "150",
+    "contact": {
+        "primary_name": "Rike Sterrett",
+        "primary_email": "rsterrett @oxfordma.us",
+        "primary_phone": "508-987-6045",
+        "secondary_name": "Katie McKenna",
+        "secondary_email": "kmckenna @oxfordma.us",
+        "secondary_phone": "508-987-6045"
+    },
+    "funding": {
+        "municipality_name": "Oxford",
+        "total_received_all_years": 222817.64,
+        "carryover_from_previous": 103302.27,
+        "fy2024_disbursement": 119515.37,
+        "total_available_fy24": 222817.64,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0.0,
+        "total_unexpended": 222817.64
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "interviews"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "interviews"
+            ],
+            "families_impacted": [
+                "survey",
+                "interviews"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "interviews"
+            ],
+            "health_outcomes_race": [
+                "survey",
+                "interviews"
+            ],
+            "health_outcomes_wealth": [
+                "survey",
+                "interviews"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews"
+            ],
+            "provider_diversity": [
+                "survey",
+                "interviews"
+            ],
+            "admin_data_sources": "Advocates for Human Potential, Inc. were hired to conduct an assessment of the region (Auburn, Brimfield, Dudley, Oxford, Southbridge, Webster) and they created a report of their findings based off of surveys, interviews, and some focus groups. Their data sources are included in the report.",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Advocates for Human Potential, Inc. created a report for the region and collected this data.",
+            "other_methods": "Advocates for Human Potential, Inc. created a report for the region and collected this data.",
+            "barriers": "Survey responses from AHP was somewhat low but that could also have been the timeframe the survey was available."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Fentanyl strips",
+                    "sources": [
+                        "survey",
+                        "interviews"
+                    ]
+                },
+                {
+                    "name": "Narcan availability",
+                    "sources": [
+                        "survey",
+                        "interviews"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities. We contracted a consultant to support this process.",
+        "consultant_activities": [
+            "Developed and conducted a community survey",
+            "Developed and conducted individual interviews",
+            "Developed and conducted focus groups or a meeting with an affinity group",
+            "Compiled data and drafted data analysis report",
+            "Developed criteria for prioritizing needs and gaps based on findings"
+        ],
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "It does not appear to a priority in this region at this time so focus will start elsewhere."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "It does not appear to a priority in this region at this time so focus will start elsewhere."
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Oxford.pdf"
+}

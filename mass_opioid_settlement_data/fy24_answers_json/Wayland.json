@@ -1,0 +1,202 @@
+{
+    "municipality": "Wayland",
+    "response_id": "217",
+    "contact": {
+        "primary_name": "Michael McCall",
+        "primary_email": "mmccall @wayland.ma.us",
+        "primary_phone": "508-358-3620",
+        "secondary_name": "Kelsi Power-Spirlet",
+        "secondary_email": "kpowerspirlet @wayland.ma.us",
+        "secondary_phone": "508-358-7755"
+    },
+    "funding": {
+        "municipality_name": "Wayland",
+        "total_received_all_years": 204807.15,
+        "carryover_from_previous": 94952.29,
+        "fy2024_disbursement": 109854.86,
+        "total_available_fy24": 204807.15,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 204807.15
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "forum"
+            ],
+            "people_in_recovery": [
+                "forum"
+            ],
+            "families_impacted": [
+                "forum"
+            ],
+            "subject_matter_experts": [
+                "forum"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "other"
+            ],
+            "health_outcomes_race": [
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "other"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "We have created a task force, which includes diverse members, and we have held forums. Our plan is to hire a clinician to improve access to all community members, especially the historically disadvantaged."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "past_30_day_opioid_use": [
+                "groups_meetings"
+            ],
+            "patients_in_treatment": [
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "groups_meetings"
+            ],
+            "people_who_use_drugs": [
+                "groups_meetings"
+            ],
+            "treatment_providers": [
+                "groups_meetings"
+            ],
+            "recovery_centers": [
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Our task force includes representatives from Police, Fire, Veterans, and Health Departments, as well as our community nurse and a citizen representative impacted by substance and we have regular discussions about the impact within our community",
+            "barriers": "We are looking to hire a community clinician to work side-by-side with public safety to assist with calls and act as a resource to those impacted/affected by mental health conditions, substance use disorders, and other behavioral health needs."
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "Jail Diversion",
+                    "methods": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Regional Substance Abuse Coordinator",
+                    "methods": [
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Veterans"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We started spending funds in FY2025 to promote awareness. We've been waiting on a DPW to assist with cost of hiring a co-response clinician to respond the community need.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Wayland.pdf"
+}

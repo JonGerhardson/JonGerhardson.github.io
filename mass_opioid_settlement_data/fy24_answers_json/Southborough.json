@@ -1,0 +1,221 @@
+{
+    "municipality": "Southborough",
+    "response_id": "177",
+    "contact": {
+        "primary_name": "Taylor West",
+        "primary_email": "twest @southboroughma.com",
+        "primary_phone": "7742453405",
+        "secondary_name": "Chelsea Malinowski",
+        "secondary_email": "cmalinowski @southboroughma.com",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Southborough",
+        "total_received_all_years": 207315.35,
+        "carryover_from_previous": 96115.13,
+        "fy2024_disbursement": 111200.22,
+        "total_available_fy24": 207315.35,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 207315.35
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "survey",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "not_assessed"
+            ],
+            "emt_response": [
+                "not_assessed"
+            ],
+            "past_30_day_opioid_use": [
+                "not_assessed"
+            ],
+            "patients_in_treatment": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "people_who_use_drugs": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "number_of_treatment_providers": [
+                "interviews"
+            ],
+            "number_of_recovery_centers": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "using data already collected by the state (metrowest adolescent health survey, etc)",
+            "barriers": "child care when going to recovery/meetings, stable housing, transportation, lack of education in schools"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We engaged in shared planning with other municipalities. We contracted a consultant to support this process.",
+        "consultant_activities": [
+            "Developed and conducted individual interviews",
+            "Developed and conducted focus groups or a meeting with an affinity group",
+            "Developed and conducted listening sessions or community forums",
+            "Compiled data and drafted data analysis report",
+            "Developed criteria for prioritizing needs and gaps based on findings",
+            "Facilitated planning sessions to prioritize needs and gaps"
+        ],
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "staffing, time identifying these peoples in town"
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Southborough.pdf"
+}

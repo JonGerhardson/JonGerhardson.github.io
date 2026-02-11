@@ -1,0 +1,228 @@
+{
+    "municipality": "Rockport",
+    "response_id": "165",
+    "contact": {
+        "primary_name": "Mitchell Vieira",
+        "primary_email": "ta@rockportma.gov",
+        "primary_phone": "9785466786",
+        "secondary_name": "Robert Craig",
+        "secondary_email": "rcraig@rockportma.gov",
+        "secondary_phone": "9788793562"
+    },
+    "funding": {
+        "municipality_name": "Rockport",
+        "total_received_all_years": 113356.61,
+        "carryover_from_previous": 52554.16,
+        "fy2024_disbursement": 60802.45,
+        "total_available_fy24": 113356.61,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 4109.93,
+        "total_unexpended": 109246.68
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "na_did_not_engage"
+            ],
+            "people_in_recovery": [
+                "forum"
+            ],
+            "families_impacted": [
+                "forum"
+            ],
+            "subject_matter_experts": [
+                "forum"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "The largest barrier to engage with these people is identifying them in the first place. The Board of Health does not currently have any direct communication with these people or their representatives.",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "na_did_not_assess"
+            ],
+            "stigma_impact": [
+                "na_did_not_assess"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "First responder databases were used.",
+            "other_methods": "",
+            "barriers": "The Board of Health lacks the primary source data to bridge the identified gaps."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Regional databases and local emergency response databases and local hospitals CHNA.",
+            "other_methods": "Through groups and meetings with recovery centers",
+            "barriers": "Similar to previous, the BOH lacks first person data sources."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Peer Recovery Center (CORE)",
+                    "methods": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Northshore Health Project",
+                    "methods": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Rockport Public Schools Services",
+                    "methods": [
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Council on Aging",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Congregate Living Settings",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Business Community",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Regional Chamber of Commerce",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We contracted a consultant to support this process.",
+        "consultant_activities": [
+            "Developed and conducted listening sessions or community forums",
+            "Developed criteria for prioritizing needs and gaps based on findings",
+            "Facilitated planning sessions to prioritize needs and gaps",
+            "Facilitated planning sessions to set goals and select strategies to address needs and gaps",
+            "Developed an implementation plan"
+        ],
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Focus has been on other areas, particularly harm reduction"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Focus has been on other areas, particularly harm reduction"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Focus has been on other areas, particularly harm reduction"
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 4109.93,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Promote efforts to train health care providers, students, peer recovery coaches, recovery outreach specialists, or other professionals that provide care to persons who use opioids or persons with OUD in crisis training and harm reduction strategies"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Focus has been on other areas, particularly harm reduction"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Focus has been on other areas, particularly harm reduction"
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Rockport.pdf"
+}

@@ -1,0 +1,143 @@
+{
+    "municipality": "Petersham",
+    "response_id": "154",
+    "contact": {
+        "primary_name": "Sherry Berube",
+        "primary_email": "petershambosoffice @gmail.com",
+        "primary_phone": "9787243353",
+        "secondary_name": "Susan Dougherty",
+        "secondary_email": "sldough @gmail.com",
+        "secondary_phone": "9787243353"
+    },
+    "funding": {
+        "municipality_name": "Petersham",
+        "total_received_all_years": 10566.95,
+        "carryover_from_previous": 2393.26,
+        "fy2024_disbursement": 8173.69,
+        "total_available_fy24": 10566.95,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 10566.95
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "Our Police Department is reviewing steps to be taken to. We are a very small community with a population of only 1,234 so we don't encounter this on as large a scale as bigger towns and cities.",
+            "barriers_people_in_recovery": "No barriers encountered - we do have a recovery facility here in our community (privately run) to address one aspect",
+            "barriers_families": "This is part of the recommendations that our Police Department is working on.",
+            "barriers_experts": "This is part of the recommendations that our Police Department is working on."
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "Have not yet assessed."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "N/A",
+            "other_methods": "N/A",
+            "barriers": "N/A"
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "In planning stages"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "In planning stages"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "In planning stages"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "In planning stages"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "In planning stages"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "In planning stages"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "In planning stages"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "None",
+        "unmet_needs": "No",
+        "orrf_recommendations": "No"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Petersham.pdf"
+}

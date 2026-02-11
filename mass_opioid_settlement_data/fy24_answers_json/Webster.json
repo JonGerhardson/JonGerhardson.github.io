@@ -1,0 +1,191 @@
+{
+    "municipality": "Webster",
+    "response_id": "218",
+    "contact": {
+        "primary_name": "Camille Griffin",
+        "primary_email": "cgriffin @webster-ma.gov",
+        "primary_phone": "5087133983",
+        "secondary_name": "Richard LaFond",
+        "secondary_email": "rlafond @webster-ma.gov",
+        "secondary_phone": "508245-1479"
+    },
+    "funding": {
+        "municipality_name": "Webster",
+        "total_received_all_years": 229468.59,
+        "carryover_from_previous": 106385.77,
+        "fy2024_disbursement": 123082.82,
+        "total_available_fy24": 229468.59,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 229468.59
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "survey",
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "groups_meetings"
+            ],
+            "families_impacted": [
+                "survey",
+                "groups_meetings"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "survey",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "survey",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "survey",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data",
+                "survey",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Current overdose data. (n.d.) Mass.gov. Retrieved July 12, 2024, from https://www.mass.gov/lists/current-overdose-data#updated-data-%E2%80%93-as-of-june-2024-Retrieved July 12, 2024, from https://www.mass.gov/lists/current-overdose-data#updated-data-%E2%80%93-as-of-june-2024- Massachusetts Department of Public Health. (2024, June). Number of opioid-related overdose deaths, all intents by county, MA residents: 2013-2023. https://www.mass.gov/doc/opioid-related-overdose-deaths-by-county-june-2024-0/download",
+            "other_methods": "",
+            "barriers": "Limited engagement from community when soliciting feedback. Webster's Health Department, through OLRH Public Health Excellence Grant, hired Advocates for Human Potential, Inc (AHP) to conduct a regional Needs Assessment and strategic plan."
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Commyunity Naloxone Program",
+                    "sources": [
+                        "community_needs",
+                        "consultant",
+                        "other_municipality"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities. We contracted a consultant to support this process.",
+        "consultant_activities": "Developed and conducted a community survey, Developed and conducted focus groups or a meeting with an affinity group, Developed and conducted listening sessions or community forums, Compiled data and drafted data analysis report, Developed criteria for prioritizing needs and gaps based on findings",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Individuals who have been incarcerated and/or under community supervision",
+            "Pregnant and/or parenting populations",
+            "Unsheltered or housing-insecure",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Webster.pdf"
+}

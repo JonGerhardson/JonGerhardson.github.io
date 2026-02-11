@@ -1,0 +1,241 @@
+{
+    "municipality": "Rochester",
+    "response_id": "164",
+    "contact": {
+        "primary_name": "Suzanne Szyndlar",
+        "primary_email": "sszyndlar@townofrochester.com",
+        "primary_phone": "508-763-3871",
+        "secondary_name": "Connie Dolan",
+        "secondary_email": "cdolan@townofrochester.com",
+        "secondary_phone": "508-763-5421"
+    },
+    "funding": {
+        "municipality_name": "Rochester",
+        "total_received_all_years": 62638.23,
+        "carryover_from_previous": 29040.21,
+        "fy2024_disbursement": 33598.02,
+        "total_available_fy24": 62638.23,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 6084.56,
+        "total_unexpended": 56553.67
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups",
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "CPR/Narcan Administration Trainings. Anonymous needle take back program.",
+            "people_in_recovery_other": "We are partnering with our new Police Chief to create a substance use task force. The Chief was very involved in the task force in his previous municipality.",
+            "families_impacted_other": "One on one support. Provided resource information.",
+            "subject_matter_experts_other": "Attended various trainings, meetings, webinars on various aspects of prevention, harm reduction, treatment, and recovery.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "In our rural community, barriers include; stigma, transportation, income, providers, resources and education for people with substance use disorder and their families."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "groups_meetings",
+                "other"
+            ],
+            "fatal_overdoses": [
+                "groups_meetings",
+                "other"
+            ],
+            "emt_response": [],
+            "admin_data_sources": "Pre and post surveys were utilized to evaluate increase in knowledge for CPR/Narcan Administration trainings.",
+            "other_methods": "One on one encounters. Grief Support Groups. Interviews with first responders. Official complaints to the Health Department.",
+            "barriers": "The most impactful barrier has been recruiting subject matter experts to form a task force. We now have representatives from both Fire and Police as well as a new Principal at our technical high school who are eager to be involved. With an official task force in place, collaboration will move us forward in developing programs and strategies."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Syringe Service Program",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Community Narcan Program",
+                    "sources": [
+                        "admin_data",
+                        "survey",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ],
+            "admin_data_sources": "Community Narcan monthly online reporting.",
+            "other_methods": "Our newly formed task force will review existing responses and plan to expand on after overdose response to client and family."
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Creating Task Force",
+                    "sources": [
+                        "community_needs",
+                        "copied_municipality",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Educational speaker for high school students",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "copied_municipality",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Develop an after overdose response strategy",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "copied_municipality",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Stamp out Stigma",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We contracted a consultant to support this process. We consulted with Care Mass.",
+        "consultant_activities": "Assisted with planning programs",
+        "care_mass_activities": "Developed criteria for prioritizing needs and gaps based on findings",
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are a rural community. Lack of services and transportation is a barrier. We will be working with our local technical high school in the future. We have a speaker (Chris Herren) planned for Januaury 2025."
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 6084.56,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders...",
+                "Provide training and education regarding naloxone...",
+                "Approve and fund syringe service programs...",
+                "Promote efforts to train health care providers..."
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Lack of buy in from pervious first responder leadership."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We do not have hospitals in our town. This subject would be covered by post partem care."
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Thank you for the support. These funds allow us to develop new programs.",
+        "unmet_needs": "We are in the assessment/planning phase. TBD.",
+        "orrf_recommendations": "We will be able to respond to this question next year."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Rochester.pdf"
+}

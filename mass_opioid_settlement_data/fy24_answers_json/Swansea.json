@@ -1,0 +1,172 @@
+{
+    "municipality": "Swansea",
+    "response_id": "183",
+    "contact": {
+        "primary_name": "Tracy Jo Anderson",
+        "primary_email": "tanderson@swanseama.gov",
+        "primary_phone": "5086782981",
+        "secondary_name": "Mallory Aronstein",
+        "secondary_email": "maronstein@swanseama.gov",
+        "secondary_phone": "5086782981"
+    },
+    "funding": {
+        "municipality_name": "Swansea",
+        "total_received_all_years": 298272.69,
+        "carryover_from_previous": 138284.59,
+        "fy2024_disbursement": 159988.1,
+        "total_available_fy24": 298272.69,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 298272.69
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "not_engaged"
+            ],
+            "people_in_recovery": [
+                "not_engaged"
+            ],
+            "families_impacted": [
+                "not_engaged"
+            ],
+            "subject_matter_experts": [
+                "not_engaged"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "N/A at this time as we have not used the funds.",
+            "barriers_people_in_recovery": "N/A at this time as we have not used the funds.",
+            "barriers_families": "N/A at this time as we have not used the funds.",
+            "barriers_experts": "N/A at this time as we have not used the funds."
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "not_assessed"
+            ],
+            "health_outcomes_race": [
+                "not_assessed"
+            ],
+            "health_outcomes_wealth": [
+                "not_assessed"
+            ],
+            "stigma_impact": [
+                "not_assessed"
+            ],
+            "provider_diversity": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "N/A at this time as we have not used the funds."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "not_assessed"
+            ],
+            "fatal_overdoses": [
+                "not_assessed"
+            ],
+            "emt_response": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A at this time as we have not used the funds."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A at this time as we have not used the funds."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A at this time as we have not used the funds."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A at this time as we have not used the funds."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A at this time as we have not used the funds."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A at this time as we have not used the funds."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A at this time as we have not used the funds."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Swansea.pdf"
+}

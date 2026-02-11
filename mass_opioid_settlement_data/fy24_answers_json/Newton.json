@@ -1,0 +1,195 @@
+{
+    "municipality": "Newton",
+    "response_id": "137",
+    "contact": {
+        "primary_name": "Perry Rosenfield",
+        "primary_email": "prosenfield @newtonma.gov",
+        "primary_phone": "6177961047",
+        "secondary_name": "Shin Yi Lao",
+        "secondary_email": "slao @newtonma.gov",
+        "secondary_phone": "6177961433"
+    },
+    "funding": {
+        "municipality_name": "Newton",
+        "total_received_all_years": 962224.7,
+        "carryover_from_previous": 446104.67,
+        "fy2024_disbursement": 516120.03,
+        "total_available_fy24": 962224.7,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 105812.64,
+        "total_unexpended": 856412.06
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "na_did_not_engage"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "It is challenging to engage this population because of stigma associated with drug use. We will work on identifying the best way to engage this population and gather their input.",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "other"
+            ],
+            "health_outcomes_race": [
+                "na_did_not_assess"
+            ],
+            "health_outcomes_wealth": [
+                "na_did_not_assess"
+            ],
+            "stigma_impact": [
+                "na_did_not_assess"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "N/A",
+            "other_methods": "The City includes substance use service providers, as well as people with lived experiences, within the Newton Coalition for Community Wellness."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "other"
+            ],
+            "fatal_overdoses": [
+                "other"
+            ],
+            "emt_response": [
+                "other"
+            ],
+            "admin_data_sources": "N/A",
+            "other_methods": "The City receives data from William-James Interface Referral Services, Newton Wellesley Hospital substance use services, EMT services, DPH, Riverside Community Care.",
+            "barriers": "This data is difficult to collect at a local level. We will work on identifying a feasible data collection method."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Newton-Wellesley Hospital Substance Use Services",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Naloxbox installation",
+                    "sources": [
+                        "community_needs",
+                        "care_mass"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 80000,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 492,
+            "how_spent": [
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have not encountered any barriers, we are just in the early exploratory phase for this particular strategy and haven't begun planning or implementation."
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 24220.64,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We haven't encountered any barriers at this time."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We haven't encountered any barriers at this time."
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 1100,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "N/A",
+        "unmet_needs": "N/A",
+        "orrf_recommendations": "N/A"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Newton.pdf"
+}
