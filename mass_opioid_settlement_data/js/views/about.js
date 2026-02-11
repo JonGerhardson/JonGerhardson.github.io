@@ -65,7 +65,7 @@ export default {
                 and FY2025 reporting cycles. Data is current to June 2025 and was accessed in January 2026.</p>
 
                 <h3>Data Dictionary</h3>
-                <p>A detailed data dictionary describing the fields in the FY2025 municipal expenditure dataset
+                <p>The Department of Public Health's detailed code book describing the fields in the FY2025 municipal expenditure dataset
                 is available for download.</p>
                 <p style="margin-top: var(--space-sm);">
                     <a href="data_dictionary.pdf"
