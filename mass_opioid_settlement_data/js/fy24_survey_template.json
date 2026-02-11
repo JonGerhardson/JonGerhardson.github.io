@@ -1,0 +1,236 @@
+{
+    "sections": [
+        {
+            "id": "contact_info",
+            "title": "2. Expenditure Reporting Contact Information",
+            "fields": [
+                {
+                    "key": "contact.primary_name",
+                    "label": "C1. Primary contact name"
+                },
+                {
+                    "key": "contact.primary_email",
+                    "label": "C2. Primary contact email"
+                },
+                {
+                    "key": "contact.primary_phone",
+                    "label": "C3. Primary contact phone"
+                },
+                {
+                    "key": "contact.secondary_name",
+                    "label": "C4. Secondary contact name"
+                },
+                {
+                    "key": "contact.secondary_email",
+                    "label": "C5. Secondary contact email"
+                },
+                {
+                    "key": "contact.secondary_phone",
+                    "label": "C6. Secondary contact phone"
+                }
+            ]
+        },
+        {
+            "id": "municipal_funding",
+            "title": "3 & 4. Municipal Funding Allocations",
+            "fields": [
+                {
+                    "key": "funding.municipality_name",
+                    "label": "M1. Name of the Municipality you are reporting on"
+                },
+                {
+                    "key": "funding.total_received_all_years",
+                    "label": "M2. Total abatement funds received in all years...",
+                    "format": "currency"
+                },
+                {
+                    "key": "funding.carryover_from_previous",
+                    "label": "M2a. Total abatement funds that were carried over from previous years...",
+                    "format": "currency"
+                },
+                {
+                    "key": "funding.fy2024_disbursement",
+                    "label": "M2b. Total abatement funds received by your municipality in FY2024",
+                    "format": "currency"
+                },
+                {
+                    "key": "funding.total_available_fy24",
+                    "label": "M3. Total Funds Available in FY24",
+                    "format": "currency"
+                },
+                {
+                    "key": "funding.pooled",
+                    "label": "M4. Did your municipality pool funding?",
+                    "format": "boolean"
+                },
+                {
+                    "key": "funding.pooling_details.ima_ssa_name",
+                    "label": "M4a. Which inter-municipal agreement (IMA)?"
+                },
+                {
+                    "key": "funding.pooling_details.is_fiscal_agent",
+                    "label": "M4d. Is your municipality the fiscal agent?"
+                },
+                {
+                    "key": "funding.total_unexpended",
+                    "label": "M5. Total abatement funds unexpended in FY24",
+                    "format": "currency"
+                }
+            ]
+        },
+        {
+            "id": "commitments",
+            "title": "Shared Commitments",
+            "subsections": [
+                {
+                    "title": "Commitment One: Engagement",
+                    "fields": [
+                        {
+                            "key": "commitments.engagement_grid",
+                            "label": "G1. Engagement Activities",
+                            "type": "grid"
+                        },
+                        {
+                            "key": "commitments.engagement_descriptions.people_who_use_drugs_other",
+                            "label": "Describe other ways you've engaged with people who use drugs"
+                        }
+                    ]
+                },
+                {
+                    "title": "Commitment Two: Disparities",
+                    "fields": [
+                        {
+                            "key": "commitments.disparities_assessment",
+                            "label": "G2. Disparities Assessment",
+                            "type": "grid"
+                        },
+                        {
+                            "key": "commitments.disparities_assessment.other_methods",
+                            "label": "Did you identify disparities in other ways?"
+                        }
+                    ]
+                },
+                {
+                    "title": "Commitment Three: Behavioral Health",
+                    "fields": [
+                        {
+                            "key": "commitments.behavioral_health_assessment",
+                            "label": "G3. Behavioral Health Assessment",
+                            "type": "grid"
+                        },
+                        {
+                            "key": "commitments.behavioral_health_assessment.other_methods",
+                            "label": "Other ways you identified behavioral health needs"
+                        }
+                    ]
+                },
+                {
+                    "title": "Commitment Four: Existing Programs",
+                    "fields": [
+                        {
+                            "key": "commitments.existing_programs.programs",
+                            "label": "G4. Existing Programs & Services",
+                            "type": "list"
+                        }
+                    ]
+                },
+                {
+                    "title": "Commitment Five: Innovation",
+                    "fields": [
+                        {
+                            "key": "commitments.innovation_practices.practices",
+                            "label": "G5. Emerging or Promising Programs",
+                            "type": "list"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "planning",
+            "title": "10. Assessment and Planning Process",
+            "fields": [
+                {
+                    "key": "planning.process",
+                    "label": "P1. What planning process was used?"
+                },
+                {
+                    "key": "planning.consultant_activities",
+                    "label": "P2a. Activities consultant assisted with"
+                }
+            ]
+        },
+        {
+            "id": "populations",
+            "title": "11. Populations Served",
+            "fields": [
+                {
+                    "key": "populations_served.specific_populations",
+                    "label": "PG1. Focused on specific population?",
+                    "format": "boolean"
+                },
+                {
+                    "key": "populations_served.populations_list",
+                    "label": "PG1a. Identify populations served",
+                    "type": "list"
+                }
+            ]
+        },
+        {
+            "id": "strategies",
+            "title": "12. Strategy Implementation Overview",
+            "groups": [
+                {
+                    "id": "treatment",
+                    "title": "S1.1 Opioid Use Disorder Treatment"
+                },
+                {
+                    "id": "recovery_support",
+                    "title": "S1.2 Support People in Treatment and Recovery"
+                },
+                {
+                    "id": "connections_to_care",
+                    "title": "S1.3 Connections to Care"
+                },
+                {
+                    "id": "harm_reduction",
+                    "title": "S1.4 Harm Reduction"
+                },
+                {
+                    "id": "criminal_justice",
+                    "title": "S1.5 Address Needs of Criminal Justice-Involved"
+                },
+                {
+                    "id": "pregnant_parenting",
+                    "title": "S1.6 Support Pregnant/Parenting Families"
+                },
+                {
+                    "id": "prevention",
+                    "title": "S1.7 Prevention Strategies"
+                },
+                {
+                    "id": "administrative",
+                    "title": "S1.8 Administrative Costs"
+                },
+                {
+                    "id": "other",
+                    "title": "S1.9 Other Costs"
+                }
+            ]
+        },
+        {
+            "id": "comments",
+            "title": "Additional Comments",
+            "fields": [
+                {
+                    "key": "additional_comments.general",
+                    "label": "General Comments"
+                },
+                {
+                    "key": "additional_comments.unmet_needs",
+                    "label": "Unmet Needs"
+                }
+            ]
+        }
+    ]
+}
