@@ -122,7 +122,7 @@ export default {
                 </p>
 
                 <h2 class="mt-xl mb-md">Citing This Dashboard</h2>
-                <p>This dashboard and its compiled dataset are released under a
+                <p>This compiled dataset is released under a
                 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International</a>
                 (CC BY 4.0) license with the
                 <a href="https://commonsclause.com/" target="_blank" rel="noopener">Common Clause</a>
@@ -130,10 +130,9 @@ export default {
                 provided you give appropriate credit. The Common Clause prohibits selling this work or
                 a product derived substantially from it.</p>
 
-                <p>Suggested citation:</p>
-                <blockquote style="background: var(--color-bg-secondary); border-left: 3px solid var(--color-accent); padding: var(--space-md); border-radius: var(--border-radius-sm); font-size: var(--font-size-sm); margin: var(--space-md) 0;">
-                    Gerhardson, Jonathan. "Massachusetts Opioid Settlement Fund Dashboard." Boston Institute for Nonprofit Journalism, 2026. Supported by the Data-Driven Reporting Project at Northwestern University's Medill School of Journalism.
-                </blockquote>
+                <p> Please email jon.gerhardson@proton.me with questions, comments, or issues. </p>
+
+
 
                 <hr style="margin: var(--space-xl) 0; border: none; border-top: 1px solid var(--color-border);">
                 <p style="color: var(--color-text-muted); font-size: var(--font-size-sm);">
