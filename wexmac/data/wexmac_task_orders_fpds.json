@@ -3,7 +3,7 @@
     "description": "WEXMAC TITUS task orders from FPDS ATOM feed",
     "source": "FPDS (Federal Procurement Data System)",
     "query_method": "REF_IDV_PIID for each N00023-25-D-* IDV",
-    "generated_at": "2026-02-10T15:13:14Z",
+    "generated_at": "2026-02-11T06:47:30Z",
     "idv_count": 110,
     "idvs_with_task_orders": 46,
     "total_task_orders": 546,
@@ -3890,7 +3890,7 @@
           "business_size": "SMALL BUSINESS",
           "last_modified": "2026-02-06 06:09:19",
           "fpds_link": "https://www.fpds.gov/ezsearch/search.do?s=FPDS&indexName=awardfull&templateName=1.5.3&q=N6817125F0059+9700+",
-          "first_seen": "2025-08-06"
+          "first_seen": "2026-02-06"
         },
         {
           "piid": "N6817125F2037",
@@ -9621,7 +9621,7 @@
           "business_size": "OTHER THAN SMALL BUSINESS",
           "last_modified": "2026-02-09 19:27:27",
           "fpds_link": "https://www.fpds.gov/ezsearch/search.do?s=FPDS&indexName=awardfull&templateName=1.5.3&q=N0024426FS011+9700+",
-          "first_seen": "2025-10-09"
+          "first_seen": "2026-02-09"
         },
         {
           "piid": "N4033925FD003",
@@ -12030,7 +12030,7 @@
           "business_size": "SMALL BUSINESS",
           "last_modified": "2026-02-08 19:05:02",
           "fpds_link": "https://www.fpds.gov/ezsearch/search.do?s=FPDS&indexName=awardfull&templateName=1.5.3&q=N6264926FM001+9700+",
-          "first_seen": "2025-10-16"
+          "first_seen": "2026-02-08"
         },
         {
           "piid": "N6264926FM003",
@@ -12712,7 +12712,7 @@
           "business_size": "SMALL BUSINESS",
           "last_modified": "2026-02-05 08:00:03",
           "fpds_link": "https://www.fpds.gov/ezsearch/search.do?s=FPDS&indexName=awardfull&templateName=1.5.3&q=N4033925FS126+9700+",
-          "first_seen": "2025-04-07"
+          "first_seen": "2026-02-05"
         },
         {
           "piid": "N4033926FD001",
@@ -13592,7 +13592,7 @@
           "business_size": "SMALL BUSINESS",
           "last_modified": "2026-02-07 19:16:13",
           "fpds_link": "https://www.fpds.gov/ezsearch/search.do?s=FPDS&indexName=awardfull&templateName=1.5.3&q=N6883626FS019+9700+",
-          "first_seen": "2025-10-22"
+          "first_seen": "2026-02-07"
         },
         {
           "piid": "N6883626FS029",
@@ -23327,7 +23327,7 @@
           "business_size": "SMALL BUSINESS",
           "last_modified": "2026-02-09 19:27:28",
           "fpds_link": "https://www.fpds.gov/ezsearch/search.do?s=FPDS&indexName=awardfull&templateName=1.5.3&q=N6883626FS007+9700+",
-          "first_seen": "2025-10-21"
+          "first_seen": "2026-02-09"
         },
         {
           "piid": "N6883626FS008",
@@ -23371,7 +23371,7 @@
           "business_size": "SMALL BUSINESS",
           "last_modified": "2026-02-09 19:27:28",
           "fpds_link": "https://www.fpds.gov/ezsearch/search.do?s=FPDS&indexName=awardfull&templateName=1.5.3&q=N6883626FS008+9700+",
-          "first_seen": "2025-10-21"
+          "first_seen": "2026-02-09"
         },
         {
           "piid": "N6883626FS008",
