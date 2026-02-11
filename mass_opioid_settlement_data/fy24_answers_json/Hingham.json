@@ -1,0 +1,270 @@
+{
+    "municipality": "Hingham",
+    "response_id": "89",
+    "contact": {
+        "primary_name": "Susan Sarni",
+        "primary_email": "sarnis @hingham-ma.gov",
+        "primary_phone": "7817411466",
+        "secondary_name": "Art Robert",
+        "secondary_email": "roberta @hingham-ma.gov",
+        "secondary_phone": "7817411451"
+    },
+    "funding": {
+        "municipality_name": "Hingham",
+        "total_received_all_years": 460539.21,
+        "carryover_from_previous": 213514.26,
+        "fy2024_disbursement": 247024.95,
+        "total_available_fy24": 460539.21,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 9348.19,
+        "total_unexpended": 451191.02
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "interviews"
+            ],
+            "people_in_recovery": [
+                "interviews",
+                "other"
+            ],
+            "families_impacted": [
+                "interviews",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "interviews",
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_in_recovery_other": "Collected interest letters from individuals with lived experience wanting to join the Mental Health Task Force - where recommendations on the use of the Abatement funds are made and given to the Town Manager and Select Board members",
+            "families_impacted_other": "Discussed and readied a grant contract with a non profit organization that will provide families impacted with financial and social support",
+            "subject_matter_experts_other": "Met with other organizations that are providing best practices in these areas and planned for utilization in Hingham",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Hingham Police Records Plymouth County Hub records Department of Public Health South Shore Hospital PAARI Hingham District Court",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "past_30_day_opioid_use": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "patients_in_treatment": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "people_who_use_drugs": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "treatment_providers": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "recovery_centers": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Hingham Fire Department Hingham Police Department Plymouth County Outreach Department of Public Health MA Behavioral Health Access Bureau Of Substance Addiction Services",
+            "other_methods": "Youth Risk Behavior Survey Science of Well-Being Course Jail Diversion Clinician - Hingham Police Department Interviews with school counseling and health services",
+            "barriers": "Limited mental health resources for those on MA health plans Long wait lists Funding gap for those looking for long term treatment No incentive for filling out a survey on Mental Health and Substance use or limited response to survey questions"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Sober Living Scholarships",
+                    "sources": [
+                        "admin_data",
+                        "interviews",
+                        "groups_meetings",
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Financial Support",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Harm Reduction",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Wellness",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Increase Availability",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We consulted with Care Mass.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Aging adults",
+            "Economically under-resourced",
+            "Individuals who have been incarcerated and/or under community supervision",
+            "Non-native English speakers",
+            "Pregnant and/or parenting populations",
+            "Unsheltered or housing-insecure",
+            "Veterans",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 2188.82,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 7159.37,
+            "how_spent": [
+                "Program staffing"
+            ],
+            "job_title": "SUD Program Coordinator",
+            "fte": ".42 FTE"
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Hingham.pdf"
+}

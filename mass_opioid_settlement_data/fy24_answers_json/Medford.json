@@ -1,0 +1,169 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Medford",
+    "response_id": "45",
+    "contact": {
+        "primary_name": "MaryAnn O'Connor",
+        "primary_email": "moconnor@medford-ma.gov.ma",
+        "primary_phone": "7817991686",
+        "secondary_name": "Catherine Dhingra",
+        "secondary_email": "cdhingra@medford-ma.gov",
+        "secondary_phone": "7813932562"
+    },
+    "funding": {
+        "municipality_name": "Medford",
+        "total_received_all_years": 378848.31,
+        "carryover_from_previous": 175640.9,
+        "fy2024_disbursement": 203207.41,
+        "total_available_fy24": 378848.31,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 378848.31
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We contracted a consultant to support this process.",
+        "consultant_activities": "Facilitated planning sessions to prioritize needs and gaps; Facilitated planning sessions to set goals and select strategies to address needs and gaps; Developed an evaluation plan to track outputs and monitor performance",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The City of Medford facilitated comprehensive planning for the Opioid Abatement Funds. This planning process included surveys, focus groups, one-on-one interviews, and planning sessions. The city hired JSI to analyze the evaluation findings from these surveys, focus groups, interviews, and community listening sessions. The planning sessions involved individuals with lived experience, family members, behavioral health and treatment providers, as well as other community stakeholders. The primary focus of the implementation plan is to enhance treatment and recovery support systems, while also allocating funding for primary prevention and behavioral health support.",
+        "unmet_needs": "The majority of our resources from the Opioid Abatement Fund have been allocated toward detox, treatment, recovery, and sober living initiatives. In addition, with these funds, we partnered with Medford Public Schools to develop an intervention program utilizing MGH's iDecide framework. This program enables school counseling staff to facilitate iDecide during after- school hours for students caught using substances or under the influence during the school day. The program commenced in October and has already received several student referrals. While we have successfully implemented intervention and treatment programs, we recognize a significant need to expand our prevention programming. Although we technically did not begin spending these funds until July 2024, all funds are already allocated, and we currently lack the resources to implement a comprehensive primary substance use prevention program.",
+        "orrf_recommendations": "Through a comprehensive community assessment in the city, the majority of participants identified social, emotional, and community supports as the most effective means for achieving and maintaining recovery. Many also viewed rehabilitation programs and clinical care as beneficial. The top six priority areas for Medford residents were: 1) Wrap-around services, 2) Increasing the number and capacity of recovery programs, 3) Access to recovery housing, 4) Peer support specialists, 5) Recovery programs in schools, and 6) Transportation to treatment or recovery services."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Medford.pdf"
+}

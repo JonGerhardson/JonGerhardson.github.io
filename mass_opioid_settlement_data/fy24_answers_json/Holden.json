@@ -1,0 +1,144 @@
+{
+    "municipality": "Holden",
+    "response_id": "91",
+    "contact": {
+        "primary_name": "Christopher Montiverdi",
+        "primary_email": "cmontiverdi @holdenma.gov",
+        "primary_phone": "508-210-5653",
+        "secondary_name": "Lori Rose",
+        "secondary_email": "Lrose @holdenma.gov",
+        "secondary_phone": "508-210-5524"
+    },
+    "funding": {
+        "municipality_name": "Holden",
+        "total_received_all_years": 32784.73,
+        "carryover_from_previous": 15199.6,
+        "fy2024_disbursement": 17585.13,
+        "total_available_fy24": 32784.73,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 32784.73
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "We are still in the planning process with some of our neighboring communities to find ways to engage the community.",
+            "barriers_people_in_recovery": "We are still in the planning process with some of our neighboring communities to find ways to engage the community.",
+            "barriers_families": "We are still in the planning process with some of our neighboring communities to find ways to engage the community.",
+            "barriers_experts": "We are still in the planning process with some of our neighboring communities to find ways to engage the community."
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "We are still in the planning process with some of our neighboring communities to find ways to identify these needs."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "",
+            "other_methods": "We are still in the planning process with some of our neighboring communities to identify these needs and gaps.",
+            "barriers": "We are still in the planning process with some of our neighboring communities to identify these needs and gaps."
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": [],
+            "other_methods": "We are still in the planning process with some of our neighboring communities to identify these policies and practices."
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the planning process with some of our neighboring communities to identify a needs assessment."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the planning process with some of our neighboring communities to identify a needs assessment."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the planning process with some of our neighboring communities to identify a needs assessment."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the planning process with some of our neighboring communities to identify a needs assessment."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the planning process with some of our neighboring communities to identify a needs assessment."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the planning process with some of our neighboring communities to identify a needs assessment."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the planning process with some of our neighboring communities to identify a needs assessment."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "We are still in the early planning stages and working with neighboring communities to address opioid concerns in our area.",
+        "unmet_needs": "Not at this time.",
+        "orrf_recommendations": "No"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Holden.pdf"
+}

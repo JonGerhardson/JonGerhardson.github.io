@@ -1,0 +1,188 @@
+{
+    "municipality": "Millis",
+    "response_id": "128",
+    "contact": {
+        "primary_name": "Sarah Ward",
+        "primary_email": "sward @millisma.gov",
+        "primary_phone": "774-993-8621",
+        "secondary_name": "Mike Guzinski",
+        "secondary_email": "mguzinski @millisma.gov",
+        "secondary_phone": "508-376-7041"
+    },
+    "funding": {
+        "municipality_name": "Millis",
+        "total_received_all_years": 95355.59,
+        "carryover_from_previous": 44208.57,
+        "fy2024_disbursement": 51147.02,
+        "total_available_fy24": 95355.59,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 5700,
+        "total_unexpended": 89655.59
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "We held a community forum, however we did not have participation from this population. We are currently working on a survey to hopefully get more feedback and engage with this population.",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "This is an objective that we are currently still working on. This is something that we also hope to obtain more data on in our community survey."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Our community has been working in collaboration with our town social worker, police, fire, health department and school nurse to identify needs. We have also contracted with Chris' Corner Recovery Center to assist residents.",
+            "barriers": "We are currently working on a community survey to get more information from residents that may not be comfortable in a group meeting/forum."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Community Narcan Program",
+                    "identification_methods": [
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Chris' Corner Recovery Center",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We contracted a consultant to support this process.",
+        "consultant_activities": "Developed and conducted listening sessions or community forums; Facilitated planning sessions to prioritize needs and gaps; Facilitated planning sessions to set goals and select strategies to address needs and gaps; Developed an implementation plan",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 3000,
+            "how_spent": [
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use",
+                "Initiated, enhanced, or sustained local youth health assessment efforts using validated survey tools"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Full implementation",
+            "expended": 500,
+            "how_spent": [
+                "Other (please specify):: Payment for Board of Health Clerk to manage funds and payments."
+            ],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Full implementation",
+            "expended": 2200,
+            "how_spent": [
+                "Other (please describe): Additional hours for the public health nurse to plan for and implement opioid abatement activities."
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Millis.pdf"
+}

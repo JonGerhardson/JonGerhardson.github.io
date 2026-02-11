@@ -1,0 +1,212 @@
+{
+    "municipality": "Haverhill",
+    "response_id": "44",
+    "contact": {
+        "primary_name": "Yenise Rozon",
+        "primary_email": "yrozon @cityofhaverhill.com",
+        "primary_phone": "9784203638",
+        "secondary_name": "Christine Lindberg",
+        "secondary_email": "clindberg @haverhillma.gov",
+        "secondary_phone": "978-420-3613"
+    },
+    "funding": {
+        "municipality_name": "Haverhill",
+        "total_received_all_years": 776632,
+        "carryover_from_previous": 360060.58,
+        "fy2024_disbursement": 416571.44,
+        "total_available_fy24": 776632.02,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 69954.82,
+        "total_unexpended": 706677.2
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "interviews",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "interviews",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "interviews"
+            ],
+            "health_outcomes_wealth": [
+                "interviews"
+            ],
+            "stigma_impact": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Addressed by administrators, HR and licensers"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "other"
+            ],
+            "fatal_overdoses": [
+                "other"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Overdose follow up by the police and agency social worker",
+            "other_methods": "Intake assessments of all referred individuals",
+            "barriers": "Lack of follow through with the population that we serve and no show rate. Lack of engagement due to struggles with sobriety"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                "NFI SOAP",
+                "NFI Outpatient",
+                "NFI Medication and MAT Servies",
+                "One Stop Harm Reduction",
+                "Spectrum Methadone Clinic"
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Motivational Interviewing",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Cognitive Behavorial Therapy",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Harm Reduction",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We contracted a consultant to support this process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Full implementation",
+            "expended": 2693.27,
+            "how_spent": [
+                "Improve or implement trauma-informed treatment services"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 920.64,
+            "how_spent": [
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 1384.8,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 700.97,
+            "how_spent": [
+                "Provide training and education regarding naloxone and other drugs that treat overdoses"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 425,
+            "how_spent": [
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 63830.14,
+            "how_spent": [
+                "Other (please specify):: Program director and a percentage of division director salary, rent, technology"
+            ],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Haverhill.pdf"
+}

@@ -1,0 +1,232 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "municipality": "Lenox",
+    "response_id": "103",
+    "contact": {
+        "primary_name": "Anna Osborn",
+        "primary_email": "aosborn @townoflenox.com",
+        "primary_phone": "413-637-5500 Ext 1110",
+        "secondary_name": "Smitty Pignatelli",
+        "secondary_email": "smitty @townoflenox.com",
+        "secondary_phone": "413-637-5500"
+    },
+    "funding": {
+        "municipality_name": "Lenox",
+        "total_received_all_years": 153502.23,
+        "carryover_from_previous": 71166.4,
+        "fy2024_disbursement": 82335.83,
+        "total_available_fy24": 153502.23,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 39504.83,
+        "total_unexpended": 113997.4
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "interviews",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data"
+            ],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Rural Recovery utilizes resources within BSAS and works with many providers such as Brien Center, Fairview Hospital, Berkshire Health Systems, Volunteers in Medicine and other entities like the Berkshire Regional Planning Commission, Berkshire Overdose Addiction Prevention Collaborative and Tri-Town Health to identify disparities.",
+            "other_methods": "",
+            "barriers": "Gaps were identified in the workforce. The rural Berkshires has a pronounced shortage not only in overall workforce, but also in the workforce with the vulnerable populations we seek to provide services to. We will continue to recruit from within those populations and work to bolster the workforce through providing referrals to agencies that provide equitable opportunities to further education and job placement."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "South County Recovery Center",
+                    "sources": [
+                        "admin_data",
+                        "survey",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Enhanced Rural Recovery",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Immigrant",
+            "Latino/a/x/e or Hispanic",
+            "LGBTQ+",
+            "Transgender or gender expansive"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 4444.25,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 8888.5,
+            "how_spent": [
+                "Provide comprehensive wrap-around services to individuals with OUD, including job placement, job training, or childcare",
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Increase the number and capacity of high-quality recovery programs to help people in recovery",
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family",
+                "Support bereaved families and frontline care providers"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 4444.25,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 4444.25,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Promote efforts to train health care providers, students, peer recovery coaches, recovery outreach specialists, or other professionals that provide care to persons who use opioids or persons with OUD in crisis training and harm reduction strategies",
+                "Active outreach strategies such as the Drug Abuse Response Team model or the Post Overdose Support Team model",
+                "Provide outreach and services for people who use drugs and are not yet in treatment, including services that build relationships with and support for people with OUD"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Early implementation",
+            "expended": 4444.25,
+            "how_spent": [
+                "Programs, that connect individuals involved in the criminal justice system and upon release from jail or prison to OUD harm reduction services, treatment, recovery support, healthcare, prevention, legal support, or other supports, or that provide these",
+                "Co-responder and/or alternative responder models to address OUD-related greater OUD expertise"
+            ],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 4444.25,
+            "how_spent": [
+                "Initiated or expanded FIRST Steps Together or similar evidence-based home visiting program for parents in recovery"
+            ],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 4444.25,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Full implementation",
+            "expended": 3950.83,
+            "how_spent": [
+                "Other (please specify):: fiscal agent"
+            ],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Contracting consultants to support coalition building, community needs assessment, planning and implementation, and evaluation and reporting",
+                "Other (please describe): Continuation of the incorporation and expansion of Rural Recovery Resources Inc"
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Lenox.pdf"
+}

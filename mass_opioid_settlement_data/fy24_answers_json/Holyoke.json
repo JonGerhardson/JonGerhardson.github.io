@@ -1,0 +1,166 @@
+{
+    "municipality": "Holyoke",
+    "response_id": "92",
+    "contact": {
+        "primary_name": "Alicia Zoeller",
+        "primary_email": "zoellera @holyoke.org",
+        "primary_phone": "413-322-5610",
+        "secondary_name": "Ashley Sturges",
+        "secondary_email": "sturgesa @holyoke.org",
+        "secondary_phone": "(413) 322-5610"
+    },
+    "funding": {
+        "municipality_name": "Holyoke",
+        "total_received_all_years": 921766.09,
+        "carryover_from_previous": 427347.34,
+        "fy2024_disbursement": 494418.75,
+        "total_available_fy24": 921766.09,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 921766.09
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "not_engage"
+            ],
+            "people_in_recovery": [
+                "not_engage"
+            ],
+            "families_impacted": [
+                "not_engage"
+            ],
+            "subject_matter_experts": [
+                "not_engage"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "N/A NO ACTIVITIES/EXPENDITURES TO DATE",
+            "barriers_people_in_recovery": "N/A NO ACTIVITIES/EXPENDITURES TO DATE",
+            "barriers_families": "N/A NO ACTIVITIES/EXPENDITURES TO DATE",
+            "barriers_experts": "N/A NO ACTIVITIES/EXPENDITURES TO DATE"
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "not_assess"
+            ],
+            "health_outcomes_race": [
+                "not_assess"
+            ],
+            "health_outcomes_wealth": [
+                "not_assess"
+            ],
+            "stigma_impact": [
+                "not_assess"
+            ],
+            "provider_diversity": [
+                "not_assess"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "not_assess"
+            ],
+            "fatal_overdoses": [
+                "not_assess"
+            ],
+            "emt_response": [
+                "not_assess"
+            ],
+            "admin_data_sources": "N/A NO ACTIVITIES/EXPENDITURES TO DATE",
+            "other_methods": "N/A NO ACTIVITIES/EXPENDITURES TO DATE",
+            "barriers": "N/A NO ACTIVITIES/EXPENDITURES TO DATE"
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A NO ACTIVITIES/EXPENDITURES TO DATE"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A NO ACTIVITIES/EXPENDITURES TO DATE"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A NO ACTIVITIES/EXPENDITURES TO DATE"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A NO ACTIVITIES/EXPENDITURES TO DATE"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A NO ACTIVITIES/EXPENDITURES TO DATE"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A NO ACTIVITIES/EXPENDITURES TO DATE"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A NO ACTIVITIES/EXPENDITURES TO DATE"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Holyoke.pdf"
+}

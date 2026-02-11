@@ -1,0 +1,160 @@
+{
+    "municipality": "Lancaster",
+    "response_id": "98",
+    "contact": {
+        "primary_name": "Kelly Dolan",
+        "primary_email": "kdolan @lancasterma.gov",
+        "primary_phone": "7747331249",
+        "secondary_name": null,
+        "secondary_email": null,
+        "secondary_phone": null
+    },
+    "funding": {
+        "municipality_name": "Lancaster",
+        "total_received_all_years": 9420.63,
+        "carryover_from_previous": 2600.09,
+        "fy2024_disbursement": 6820.54,
+        "total_available_fy24": 9420.63,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": true,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 9420.63
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "N/A",
+            "barriers_people_in_recovery": "N/A",
+            "barriers_families": "N/A",
+            "barriers_experts": "N/A"
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "groups_meetings",
+                "other"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "We host an annual health and wellness fair and many educational/informational sessions at our community center, so we are able to anecdotally obtain this information through conversation"
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "The town social worker goes on calls with first responders and also has an open office where people visit her for help/assistance. Note: Assessment also included # of treatment providers, # of recovery centers, and mental health conditions via 'Other' methods.",
+            "barriers": "n/a"
+        },
+        "existing_programs": {
+            "programs": [
+                "Opiod awareness information session",
+                "grief group",
+                "health and wellness fair",
+                "drug takeback day and info session"
+            ]
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "n/a",
+        "unmet_needs": "n/a",
+        "orrf_recommendations": "n/a"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Lancaster.pdf"
+}

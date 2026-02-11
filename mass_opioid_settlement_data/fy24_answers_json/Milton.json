@@ -1,0 +1,168 @@
+{
+    "municipality": "Milton",
+    "response_id": "129",
+    "contact": {
+        "primary_name": "Nicholas Milano",
+        "primary_email": "nmilano@townofmilton.org.maprod",
+        "primary_phone": "6178984845",
+        "secondary_name": "Caroline A. Kinsella",
+        "secondary_email": "ckinsella@townofmilton.org",
+        "secondary_phone": "6178984886"
+    },
+    "funding": {
+        "municipality_name": "Milton",
+        "total_received_all_years": 335763.88,
+        "carryover_from_previous": 155666.18,
+        "fy2024_disbursement": 180097.7,
+        "total_available_fy24": 335763.88,
+        "pooled": true,
+        "pooling_details": {
+            "ima_ssa_name": "Norfolk County-8 Local Public Health Coalition",
+            "interested_in_pooling": null,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": false,
+            "fiscal_agent_name": "Norwood",
+            "pooled_all_funding": false
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 335763.88
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "not_engaged"
+            ],
+            "people_in_recovery": [
+                "not_engaged"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "families_impacted_other": "Design Team from the Milton Health Department is engaging in active planning of a community workshop in FY 25 and a member of the design team was impacted by a family member who struggled with substance misuse.",
+            "subject_matter_experts_other": "Contacted Care mass to discuss hiring a consult to conduct a community workshop, listening sessions, focus groups and conduct a Milton survey. Pooling money within NC-8 to hire a recovery coach and provide Narcan training.",
+            "barriers_people_who_use_drugs": "The Health Department has engaged with social media to reach out to Milton residents. We have the Milton Coalition as a resource and that reduces barriers.",
+            "barriers_people_in_recovery": "The Health Department reached out to the faith community and recovery centers to advertise for the FY 25 Workshop. Milton has a Community Health Social worker who works with people in recovery to provide resources.",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "not_engaged"
+            ],
+            "health_outcomes_race": [
+                "not_engaged"
+            ],
+            "health_outcomes_wealth": [
+                "not_engaged"
+            ],
+            "stigma_impact": [
+                "not_engaged"
+            ],
+            "provider_diversity": [
+                "not_engaged"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "A community workshop in FY25 will assess gaps and needs."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "not_engaged"
+            ],
+            "fatal_overdoses": [
+                "not_engaged"
+            ],
+            "emt_response": [
+                "not_engaged"
+            ],
+            "admin_data_sources": "Collecting the data in FY 25, FY 26",
+            "other_methods": "Collecting the data in FY 25, FY 26",
+            "barriers": "Collecting the data in FY 25, FY 26"
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We engaged in shared planning with other municipalities. We contracted a consultant to support this process. We consulted with Care Mass.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "community workshop planning in FY25"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Monthly meetings with NC-8 to discuss pooling money to support a recovery coach and narcan training"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "community workshop in FY25"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "NC-8 pooling the monies to have Narcan training, Train the Trainer"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Community workshop FY 25"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Community workshop FY 25"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Community workshop FY 25"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Milton has hired a health consultant to facilitate a workshop in FY 25 with follow up focus groups, stakeholder interviews and planning processes to take place.",
+        "unmet_needs": "Milton has not expended any funds thus far.",
+        "orrf_recommendations": "Assessment in FY 25, and FY 26"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Milton.pdf"
+}

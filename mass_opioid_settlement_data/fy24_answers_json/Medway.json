@@ -1,0 +1,228 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Medway",
+    "response_id": "122",
+    "contact": {
+        "primary_name": "Derek Kwok",
+        "primary_email": "dkwok @townofmedway.org",
+        "primary_phone": "5083214923",
+        "secondary_name": "Michael Boynton",
+        "secondary_email": "mboynton @townofmedway.org",
+        "secondary_phone": "5085333264"
+    },
+    "funding": {
+        "municipality_name": "Medway",
+        "total_received_all_years": 185097.12,
+        "carryover_from_previous": 85814.36,
+        "fy2024_disbursement": 99282.76,
+        "total_available_fy24": 185097.12,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 14389.5,
+        "total_unexpended": 170707.62
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "interviews",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "interviews",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum",
+                "interviews",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "interviews",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "A barrier Medway encountered was locating Medway residents with mental health conditions, substance use disorders, and other behavioral health needs that occur together with opioid use disorder (OUD), who were willing to share their personal experiences. To address those barriers we contacted nearby organizations involved in treating/ preventing opioid and substance abuse. From there we were able to gather input from Medway residents involved in these programs, along with input from residents of nearby communities and the organizations themselves."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Safe Coalition",
+                    "methods": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Massachusetts Clubhouse Coalition",
+                    "methods": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Community Impact Inc.",
+                    "sources": [
+                        "community_needs",
+                        "copied_municipality"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Economically under-resourced",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Full implementation",
+            "expended": 1391.5,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches",
+                "Support evidence-based withdrawal management services for people with OUD and co-occurring mental health conditions",
+                "Improve or implement trauma-informed treatment services",
+                "Other (please specify):: Services provided by Community Impact Inc"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 4998,
+            "how_spent": [
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Other (please specify):: Services provided by Massachusetts Clubhouse Coalition"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 8000,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Many of the services which Medway invested in contribute to numerous strategies listed in the MA State-Subdivision Agreement. It is difficult to put an exact dollar amount on some of these strategies, therefore I answered some of the strategies as \"planning\" and placed the dollar amount in the strategy that most closely fits the services provided by specific organizations.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Medway.pdf"
+}

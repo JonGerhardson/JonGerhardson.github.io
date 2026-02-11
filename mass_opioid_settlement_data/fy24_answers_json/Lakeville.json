@@ -1,0 +1,198 @@
+{
+    "municipality": "Lakeville",
+    "response_id": "193",
+    "contact": {
+        "primary_name": "Erika Correia",
+        "primary_email": "ecorreia @lakevillema.org",
+        "primary_phone": "5089468801",
+        "secondary_name": "",
+        "secondary_email": "",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Lakeville",
+        "total_received_all_years": 19287.47,
+        "carryover_from_previous": 7642.02,
+        "fy2024_disbursement": 10345.45,
+        "total_available_fy24": 17987.47,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 17987.47
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "not_engaged"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "not_engaged"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "The focus of the program was to provide responders with response resources.",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": "As the program expands there will be efforts to engage these people. However, at the time, there is no need."
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "interviews"
+            ],
+            "health_outcomes_race": [
+                "admin_data"
+            ],
+            "health_outcomes_wealth": [
+                "not_assessed"
+            ],
+            "stigma_impact": [
+                "other"
+            ],
+            "provider_diversity": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "Quality improvement, Quality assurance program with our medical direction provider.",
+            "other_methods": "Individual coaching"
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day_opioid_use": [
+                "not_assessed"
+            ],
+            "patients_in_treatment": [
+                "not_assessed"
+            ],
+            "people_in_recovery": [
+                "not_assessed"
+            ],
+            "people_who_use_drugs": [
+                "not_assessed"
+            ],
+            "treatment_providers": [
+                "admin_data"
+            ],
+            "recovery_centers": [
+                "not_assessed"
+            ],
+            "mental_health_conditions": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "Patient care reporting software",
+            "other_methods": "Analysis of data provided by patient care reporting software",
+            "barriers": "Lack of staffing"
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "Leave behind Narcan",
+                    "sources": [
+                        "admin_data"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Make capital expenditures to rehabilitate and expand facilities that offer treatment for OUD, in partnership with treatment providers"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are waiting on approval from our Medical Director for our program."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are waiting on approval from our Medical Director for our program."
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are waiting on approval from our Medical Director for our program."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Not the focus of our program."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Not the focus of our program at this time."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Lakeville.pdf"
+}

@@ -1,0 +1,287 @@
+{
+    "municipality": "Hopedale",
+    "response_id": "93",
+    "contact": {
+        "primary_name": "Mitch F. Ruscitti, MPA",
+        "primary_email": "mruscitti @hopedale-ma.gov",
+        "primary_phone": "(508) 634-2203 ext. 213",
+        "secondary_name": "Amy Leone, MS,MA,LMHC",
+        "secondary_email": "communityimpactinc @gmail.com",
+        "secondary_phone": "508-864-6509"
+    },
+    "funding": {
+        "municipality_name": "Hopedale",
+        "total_received_all_years": 130883.55,
+        "carryover_from_previous": 60679.97,
+        "fy2024_disbursement": 70203.58,
+        "total_available_fy24": 130883.55,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 130883.55
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "families_impacted": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "subject_matter_experts": [
+                "interviews",
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "To identify disparities we compile demographic data from the clients of Chris' Corner Recovery Resource Center, collaboration through our co-reponse clinician at the Hopedale Police and Fire Department.",
+            "other_methods": "To identify mental health conditions, substance use disorders and other behavioral health needs we conduct interviews and group meetings with members of Chris' Corner Recovery Resource Center and through their volunteer committee. With collaboration of the co-reponse clinician at the Hopedale Police and Fire Department she has also done interviews with individuals struggling with identified conditions...",
+            "barriers": "The barriers we encounter when assessing the potential gaps or needs for this commitment is through the overall community input. We are currently in the planning stages and planning to do a community wide campaign of these needs in our community."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Chris' Corner Recovery Recovery Resource Center",
+                    "sources": [
+                        "admin_data",
+                        "survey",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Hopedale Fire Department",
+                    "sources": [
+                        "admin_data",
+                        "interviews"
+                    ]
+                },
+                {
+                    "name": "Hopedale Police Department",
+                    "sources": [
+                        "admin_data",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Hopedale Public Schools",
+                    "sources": [
+                        "admin_data",
+                        "survey",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Chris' Corner Recovery Resource Center",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "SADD Group at the High School",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Overdose Prevention and Narcan Training",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other_municipality"
+                    ]
+                },
+                {
+                    "name": "CARES program",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other_municipality"
+                    ]
+                },
+                {
+                    "name": "Co-Response",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other_municipality"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches",
+                "Improve or implement trauma-informed treatment services"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Provide comprehensive wrap-around services to individuals with OUD, including job placement, job training, or childcare",
+                "Provide access to housing for people with OUD, including supportive housing, recovery housing...",
+                "Rehabilitate properties appropriate for low-threshold and recovery housing...",
+                "Provide peer support specialists that support people in accessing OUD treatment...",
+                "Provide community support services, including social and legal services...",
+                "Support or expand peer-recovery centers...",
+                "Provide employment training or educational services...",
+                "Increase the number and capacity of high-quality recovery programs...",
+                "Engage non-profits, faith-based communities...",
+                "Support bereaved families and frontline care providers"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams...",
+                "Support school-based services related to OUD...",
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents..."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses...",
+                "Provide training and education regarding naloxone...",
+                "\"Naloxone Plus\" strategies...",
+                "Active outreach strategies such as the Drug Abuse Response Team model or the Post Overdose Support Team model",
+                "Provide outreach and services for people who use drugs and are not yet in treatment..."
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The Town Of Hopedale proposes our Opioid Abatement goals in collaboration with Chris' Corner Recovery Resource Center a program of Community Impact... In FY25 we will expand access to recovery services available at Chris' Corner through increased staffing, expanded hours of operation, and development of new programming...",
+        "unmet_needs": "At the current time the majority of all of the program's paid positions are part-time and primarily less than 20 hours per week... This structure is a barrier to meeting community needs, opening evening and weekend hours, and employing long-term, qualified people.",
+        "orrf_recommendations": "N/A"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Hopedale.pdf"
+}

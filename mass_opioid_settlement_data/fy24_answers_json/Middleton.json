@@ -1,0 +1,200 @@
+{
+    "municipality": "Middleton",
+    "response_id": "125",
+    "contact": {
+        "primary_name": "Scott Saulnier",
+        "primary_email": "scott.saulnier @middletonma.gov",
+        "primary_phone": "978-777-1869",
+        "secondary_name": "Traci Mello",
+        "secondary_email": "traci.mello @middletonma.gov",
+        "secondary_phone": "978-777-1869"
+    },
+    "funding": {
+        "municipality_name": "Middleton",
+        "total_received_all_years": 87467.7,
+        "carryover_from_previous": 31692.06,
+        "fy2024_disbursement": 46916.09,
+        "total_available_fy24": 78608.15,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 18261.86,
+        "total_unexpended": 60346.29
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "forum"
+            ],
+            "people_in_recovery": [
+                "forum"
+            ],
+            "families_impacted": [
+                "forum"
+            ],
+            "subject_matter_experts": [
+                "forum"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data"
+            ],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "interviews"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "We used the fire departments data",
+            "other_methods": "Narcan boxes (SAMBOX) were provided to the only hotel in our town and one of the doses saved a life on the premises. The Double Tree Hotel asked that the SAMBOXs be removed from the premises. The Fire Chief and I have written and called corporate to get the Narcan back on site. We have not been able successful in getting the Narcan back at the hotel."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "We initiated a community group- Opioid Abatement Settlement Round Table (OASRT)- and have meetings every other month. Dr. Medlock whose focus is SUD and mental health, is part of our round table. He provides the above information to the group. Our police, fire and health departments are members of PAARI- Police Assisted Addiction and Recovery Initiative- they offer conferences which provides qualified professionals who provide information about MH conditions, SUD etc.",
+            "barriers": "The OASRT committee will look into surveying the people and family members who are affected by SUDs. When we provide outreach after an overdose- we will provide a survey to help learn where the gaps are."
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "SAMBOXS",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Sober home- housing scholarships",
+                    "sources": [
+                        "interviews"
+                    ]
+                },
+                {
+                    "name": "Opioid Overdose Awareness VIgil",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Policy change - CPR and Narcan administration etc for a food license",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family",
+                "Support bereaved families and frontline care providers"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 14011.86,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Approve and fund syringe service programs and other programs to reduce harms associated with drug use, including supplies, staffing, space, peer support services, referrals to treatment, fentanyl checking, syringe collection and disposal, connection to care, and the full range of harm reduction and treatment services provided by these programs"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 4250,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan",
+                "Initiated, enhanced, or sustained local youth health assessment efforts using validated survey tools"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "It would be nice to have a group forum- based on the size of the community- or even show a pie chart that shows what other communities have done or planning to do",
+        "unmet_needs": "We are unable to financially support a part time licensed social work with the funds provided so we will work with another community to contract their LSW per diem.",
+        "orrf_recommendations": "We would like to support local sober homes with housing scholarships. Working with the Wenham House and Canopy of Hope"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Middleton.pdf"
+}

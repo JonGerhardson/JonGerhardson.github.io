@@ -1,0 +1,204 @@
+{
+    "municipality": "Newburyport",
+    "response_id": "136",
+    "contact": {
+        "primary_name": "Ethan Manning",
+        "primary_email": "emanning @newburyportma.gov",
+        "primary_phone": "9784654404",
+        "secondary_name": "Andrea Egmont",
+        "secondary_email": "aegmont @newburyportma.gov",
+        "secondary_phone": "9784654434"
+    },
+    "funding": {
+        "municipality_name": "Newburyport",
+        "total_received_all_years": 277135.52,
+        "carryover_from_previous": 128485.01,
+        "fy2024_disbursement": 148650.51,
+        "total_available_fy24": 277135.52,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 277135.52
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Using data from outreach program",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "survey",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "N/A",
+            "other_methods": "We are aware of a lck of racial diversity among providers but do not have data to back it up at this time. we will continue to work to do so."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "interviews"
+            ],
+            "fatal_overdoses": [
+                "interviews"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Local communities Community Needs Survey, Essex County Outreach reporting",
+            "other_methods": "Interviews with parents, providers, school administrators and community members.",
+            "barriers": "We will continue to bring in more community partners that have access to local data and different populations."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "BEACON Coalition",
+                    "methods": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Community Social Work Liaison",
+                    "sources": [
+                        "community_needs",
+                        "consultant"
+                    ]
+                },
+                {
+                    "name": "Community Resources",
+                    "sources": [
+                        "community_needs",
+                        "consultant"
+                    ]
+                },
+                {
+                    "name": "Reduce stigma Campaign",
+                    "sources": [
+                        "community_needs",
+                        "consultant"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We contracted a consultant to support this process.",
+        "consultant_activities": "Developed and conducted a community survey, Developed and conducted focus groups or a meeting with an affinity group, Compiled data and drafted data analysis report, Identified areas of need",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our focus is on prevention and access to resources for all community members. We work in partnership with recovery and intervention organizations."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our focus is on prevention and access to resources for all community members. We work in partnership with recovery and intervention organizations."
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our focus is on prevention and access to resources for all community members. We work in partnership with recovery and intervention organizations."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our focus is on prevention and access to resources for all community members. We work in partnership with recovery and intervention organizations."
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our focus is on prevention and access to resources for all community members. We work in partnership with recovery and intervention organizations."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Newburyport.pdf"
+}

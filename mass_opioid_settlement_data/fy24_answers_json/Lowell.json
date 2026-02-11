@@ -1,0 +1,226 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Lowell",
+    "response_id": "110",
+    "contact": {
+        "primary_name": "Christopher Dubuc",
+        "primary_email": "cdubuc@lowellma.gov",
+        "primary_phone": "9786741051",
+        "secondary_name": "Conor Baldwin",
+        "secondary_email": "cbaldwin@lowellma.gov",
+        "secondary_phone": "9786741005"
+    },
+    "funding": {
+        "municipality_name": "Lowell",
+        "total_received_all_years": 976875.2,
+        "carryover_from_previous": 452896.91,
+        "fy2024_disbursement": 523978.29,
+        "total_available_fy24": 976875.2,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 976875.2
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey",
+                "other"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "other"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Our Lowell CO-OP Team coordinates with people who use drugs on a daily basis and relays their concerns/recommendations to the Health Department.",
+            "people_in_recovery_other": "Our Lowell CO-OP Team also coordinates with people in recovery on a daily basis and relays their concerns/recommendations to the Health Department.",
+            "families_impacted_other": "",
+            "subject_matter_experts_other": "Our CO-OP Team consists of professionals who are trained in dealing with addiction and substance abuse issues.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "survey"
+            ],
+            "health_outcomes_wealth": [
+                "survey"
+            ],
+            "stigma_impact": [
+                "survey",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "survey",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day_opioid_use": [
+                "other"
+            ],
+            "patients_in_treatment": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "treatment_providers": [
+                "admin_data"
+            ],
+            "recovery_centers": [
+                "admin_data"
+            ],
+            "mental_health_conditions": [
+                "survey",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "The Health Department in Lowell is responsible for death certificates, meaning we have access to death records and causes of death. We have used those records to determine Opioid related deaths. The Police Department in Lowell is responsible for reporting Opioid related deaths and overdoses to the Health Department. They also have the records for EMT responses. The Health Department and CO-OP Team are also responsible for running/maintaining recovery centers, so that information is on hand. These recovery centers, the CO-OP Team, and the Lowell General Hospital constitute our treatment providers.",
+            "other_methods": "Our Lowell CO-OP Team meets with victims of substance abuse disorders on a daily basis. We also have several federal grants that have departments who deal with mental health and first aid training as well as discuss behavioral health issues.",
+            "barriers": "We have found that, although we have resources available, we often don't see many people utilizing them. For example, our CO-OP Team has many repeat clients but has had trouble with recruiting new clients. We have and will continue to increase our advertising of the services we offer and plan to expand those services in the future. We also have plans to advertise to new communities or groups who we have identified as being in need."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "CO-OP (Community Opioid Outreach Program) Team",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Syringe Collection Program",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "First Aid for Opioid Use Victims",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ],
+            "other_methods": "The CO-OP Team and Syringe Collection Programs were both ordered by the City Council, Mayor, and City Manager and have been organized and run by the Health Department for several years. The Opioid Settlement Funds are being used to expand and enhance these programs. Our Police Department plans to use Opioid funds in the short term to supplement their first aid materials for opioid victims. These items include, but are not limited to: bag valve masks for adults and children, AED related items (pads, batteries, etc.) and other first aid supplies."
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Individuals who have been incarcerated and/or under community supervision",
+            "Unsheltered or housing-insecure"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Lowell.pdf"
+}

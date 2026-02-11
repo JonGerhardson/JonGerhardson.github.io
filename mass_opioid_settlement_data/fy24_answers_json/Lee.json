@@ -1,0 +1,187 @@
+{
+    "municipality": "Lee",
+    "response_id": "101",
+    "contact": {
+        "primary_name": "Jennifer Catolane",
+        "primary_email": "Jennifer.Catolane@lee.ma.us",
+        "primary_phone": "4132435510",
+        "secondary_name": "R. Christopher Brittain",
+        "secondary_email": "Christopher.Brittain@lee.ma.us",
+        "secondary_phone": "4134095976"
+    },
+    "funding": {
+        "municipality_name": "Lee",
+        "total_received_all_years": 144876.22,
+        "carryover_from_previous": 67167.21,
+        "fy2024_disbursement": 77709.01,
+        "total_available_fy24": 144876.22,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 67167.21,
+        "total_unexpended": 77709.01
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": [
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "N/A",
+            "barriers_people_in_recovery": "N/A",
+            "barriers_families": "N/A",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data"
+            ],
+            "health_outcomes_race": [
+                "admin_data"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data"
+            ],
+            "stigma_impact": [
+                "admin_data"
+            ],
+            "provider_diversity": [
+                "admin_data"
+            ],
+            "admin_data_sources": "HEALTH DEPARTMENT",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "HEALTH DEPARTMENT RURAL RECOVERY CENTER EMS",
+            "other_methods": "CO-RESPONDER",
+            "barriers": "NONE"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "CO-RESPONDER",
+                    "sources": [
+                        "admin_data"
+                    ]
+                },
+                {
+                    "name": "RURAL RECOVERY CENTER",
+                    "sources": [
+                        "admin_data"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 55967.21,
+            "how_spent": [
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Provide community support services, including social and legal services, to assist in deinstitutionalizing persons with OUD",
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Increase the number and capacity of high-quality recovery programs to help people in recovery",
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 11200,
+            "how_spent": [
+                "Support mobile units that offer or provide referrals to harm reduction services, treatment, recovery supports, primary and behavioral health care, recovery support, or other appropriate services with OUD",
+                "Provide outreach and services for people who use drugs and are not yet in treatment, including services that build relationships with and support for people with OUD"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Lee.pdf"
+}

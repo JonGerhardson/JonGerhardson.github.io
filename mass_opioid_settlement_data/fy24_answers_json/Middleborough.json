@@ -1,0 +1,237 @@
+{
+    "municipality": "Middleborough",
+    "response_id": "124",
+    "contact": {
+        "primary_name": "James McGrail",
+        "primary_email": "jmcgrail @middleboroughma.gov",
+        "primary_phone": "508 947 0928",
+        "secondary_name": "Emily Surette",
+        "secondary_email": "surettee @middleboroughma.gov",
+        "secondary_phone": "508 947 0928"
+    },
+    "funding": {
+        "municipality_name": "Middleborough",
+        "total_received_all_years": 317645.62,
+        "carryover_from_previous": 58118.37,
+        "fy2024_disbursement": 229975.47,
+        "total_available_fy24": 288093.84,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": null,
+            "interested_in_state_fund": null,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 90000.0,
+        "total_unexpended": 198093.84
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "other"
+            ],
+            "people_in_recovery": [
+                "forum"
+            ],
+            "families_impacted": [
+                "forum"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "Conducted follow-ups with those who are facing substance use issues.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "interviews"
+            ],
+            "health_outcomes_race": [
+                "interviews"
+            ],
+            "health_outcomes_wealth": [
+                "interviews"
+            ],
+            "stigma_impact": [
+                "interviews"
+            ],
+            "provider_diversity": [
+                "interviews"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "not_assessed"
+            ],
+            "past_30_day_opioid_use": [
+                "admin_data"
+            ],
+            "people_who_use_drugs": [
+                "interviews"
+            ],
+            "treatment_providers": [
+                "admin_data",
+                "other"
+            ],
+            "recovery_centers": [
+                "admin_data"
+            ],
+            "mental_health_conditions": [
+                "admin_data",
+                "interviews"
+            ],
+            "admin_data_sources": "Administrative data sources are the Middleboro Police Department through calls for service with opioid use. Plymouth County Outreach data set.",
+            "other_methods": "Created position of Director of Mental Health for the Town of Middleborough who works directly with the Middleboro Police Department with their substance and mental health calls for service. The person in this position also advertises and holds office hours along with scheduled appts for community members.",
+            "barriers": "Access to appropriate resources. In order to address this. The Director of Mental Health has coordinated office hours for a recovery coach to be accessible in the community weekly."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Plymouth County Outreach",
+                    "sources": [
+                        "admin_data"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Fake and Fatal Forum",
+                    "sources": [
+                        "community_needs",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Mental Health First Aid Training",
+                    "sources": [
+                        "community_needs",
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 11250.0,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 11250.0,
+            "how_spent": [
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family",
+                "Support programs for recovery in schools and/or standalone recovery high schools"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 11250.0,
+            "how_spent": [
+                "Support school-based services related to OUD, such as school-based contacts that parents can engage with to seek immediate treatment services for their child; and support prevention, intervention, treatment, and recovery programs focused on young people. This should include alternatives to suspension or interaction with school resource officers such as restorative justice approaches",
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 11250.0,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Active outreach strategies such as the Drug Abuse Response Team model or the Post Overdose Support Team model"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Full implementation",
+            "expended": 11250.0,
+            "how_spent": [
+                "Co-responder and/or alternative responder models to address OUD-related greater OUD expertise"
+            ],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Early implementation",
+            "expended": 11250.0,
+            "how_spent": [
+                "Other (please specify):: family outreach programs through Middleborough Public Schools"
+            ],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 11250.0,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 11250.0,
+            "how_spent": [
+                "Program staffing"
+            ],
+            "job_title": "District Outreach Counselor",
+            "fte": "District Outreach Counselor"
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 0.0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Middleborough.pdf"
+}

@@ -1,0 +1,232 @@
+{
+    "municipality": "Hudson",
+    "response_id": "95",
+    "contact": {
+        "primary_name": "Lauren Antonelli",
+        "primary_email": "lantonelli @townofhudson.org",
+        "primary_phone": "978-562-2020",
+        "secondary_name": "",
+        "secondary_email": "",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Hudson",
+        "total_received_all_years": 190226.43,
+        "carryover_from_previous": 88192.4,
+        "fy2024_disbursement": 102034.03,
+        "total_available_fy24": 190226.43,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 1310.71,
+        "total_unexpended": 188915.72
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "interviews",
+                "groups_meetings",
+                "other"
+            ],
+            "families_impacted": [
+                "survey",
+                "interviews",
+                "groups_meetings",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "survey",
+                "interviews",
+                "groups_meetings",
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "people_in_recovery_other": "Planning discussions",
+            "families_impacted_other": "Planning discussions, primarily through the Hudson Youth Substance Awareness & Prevention Coalition",
+            "experts_other": "Planning discussions",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data"
+            ],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "#NAME?",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "-Police data on fatal and non-fatal overdoses -EMT response data from Patriot Ambulance -MetroWest Adolescent Health Survey (youth past 30-day opioid use, mental health, behavioral health) -Environmental scans -Knowledge of existing services - Conversations with providers -Emerson Health's Community Health Needs Assessment (CHNA) data -MA DPH CHNA data",
+            "other_methods": "-Meetings and conversations with the Town of Hudson's Jail Diversion Clinician (mental and behavioral health data) -Meetings and conversations with the Town of Hudson's Community Social Worker -Meetings and conversations with Hudson Public Schools' nurses, clinicians and other school staff -Meetings and conversations with JRI's Program Rise harm reduction program staff",
+            "barriers": "While we were able to collect data from many people in Hudson and those who provide services to the Town of Hudson, there were some barriers to collecting data from a larger cross-section of the town, especially those who speak languages other than English and those who are of a lower socioeconomic status (SES). We will make stronger outreach efforts in the future in order to hear from more members of the community, particularly these groups, in order to best assess and identify gaps. Despite this, from our research, we do know that there are very limited resources/services offered locally in any languages other than English, thus we know that is a major gap. We also know that transportation is a major barrier across the board, thus we can only assume it is even more so of a barrier for people of a lower SES."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "The Addiction Referral Center/Peer Recovery Support Center",
+                    "methods": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Narcan education and distribution",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Substance Use/Health & Wellness in schools",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities. We contracted a consultant to support this process. We consulted with Care Mass.",
+        "consultant_activities": [
+            "Developed and conducted a community survey",
+            "Developed and conducted individual interviews",
+            "Developed and conducted focus groups or a meeting with an affinity group",
+            "Developed and conducted listening sessions or community forums",
+            "Compiled data and drafted data analysis report"
+        ],
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 1310.71,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Active outreach strategies such as the Drug Abuse Response Team model or the Post Overdose Support Team model"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The Town of Hudson has spent $10,000 to hire the Metropolitan Area Planning Council (MAPC) as a consultant to support our data collection and planning process. While this was primarily for informing our opioid funding, we were able to use other related grant funding to cover this cost in order to preserve our opioid funds for actual implementation costs and programming.",
+        "unmet_needs": "No",
+        "orrf_recommendations": "We will have an official report by 11/4/24 that can be shared. The report will include an overview of our assessment/data collection process, as well as the recommendations based on our findings. Common themes were expanding access to recovery support/services, including services in languages other than English, and updating/improving the education that happens within schools regarding substance use, addiction, etc."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Hudson.pdf"
+}

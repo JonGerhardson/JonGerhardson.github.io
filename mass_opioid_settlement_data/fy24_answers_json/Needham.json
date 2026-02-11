@@ -1,0 +1,247 @@
+{
+    "municipality": "Needham",
+    "response_id": "133",
+    "contact": {
+        "primary_name": "Michelle Vaillancourt",
+        "primary_email": "mvaillancourt @needhamma.gov",
+        "primary_phone": "781-455-7500 x225",
+        "secondary_name": "Timothy McDonald",
+        "secondary_email": "tmcdonald @needhamma.gov",
+        "secondary_phone": "781-883-7421"
+    },
+    "funding": {
+        "municipality_name": "Needham",
+        "total_received_all_years": 468678.44,
+        "carryover_from_previous": 217287.76,
+        "fy2024_disbursement": 251390.68,
+        "total_available_fy24": 468678.44,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 75558.92,
+        "total_unexpended": 393119.52
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data"
+            ],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "BSAS Dashboard",
+            "other_methods": "",
+            "barriers": "Engagement Steps- We will be holding more discussion groups based in the lower income quartile"
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "National Vital Statistics MDPH EMS Regional Opioid Dashboard BSAS Dashboard Local Police Data Local EMS Data Needham Parents Survey Metro West Adolescence Survey Needham School Student Discipline Data Report",
+            "other_methods": "See Above",
+            "barriers": "Missing age gap data from 18-60 specific to Needham We are looking to engage more residents."
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "Community Nalaxone",
+                    "sources": [
+                        "survey",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Peer Recovery Support",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Peer Recovery",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Transportation",
+                    "sources": [
+                        "community_needs",
+                        "hired_consultant"
+                    ]
+                },
+                {
+                    "name": "Sam Boxes",
+                    "sources": [
+                        "copied_municipality"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We contracted a consultant to support this process. We consulted with Care Mass.",
+        "consultant_activities": [
+            "Developed and conducted individual interviews",
+            "Developed and conducted focus groups or a meeting with an affinity group",
+            "Developed and conducted listening sessions or community forums",
+            "Compiled data and drafted data analysis report",
+            "Developed criteria for prioritizing needs and gaps based on findings",
+            "Facilitated planning sessions to prioritize needs and gaps",
+            "Facilitated planning sessions to set goals and select strategies to address needs and gaps",
+            "Developed an implementation plan",
+            "Developed an evaluation plan to track outputs and monitor performance"
+        ],
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "other"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Other (please specify):: Planning phase"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Provide transportation to treatment or recovery services for persons with OUD",
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Other (please specify):: Planning phase"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Other (please specify): Planning phase"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Other (please specify):: Planning phase"
+            ],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No one expressed any concerns and we didn't reach that population"
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [
+                "Other (please specify): Planning phase"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 12338.3,
+            "how_spent": [
+                "Program staffing"
+            ],
+            "job_title": "Peer Recovery Coach",
+            "fte": "0.25"
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 63220.62,
+            "how_spent": [
+                "Contracting consultants to support coalition building, community needs assessment, planning and implementation, and evaluation and reporting"
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Needham.pdf"
+}

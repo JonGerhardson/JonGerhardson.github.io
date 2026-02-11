@@ -1,0 +1,172 @@
+{
+    "municipality": "Nantucket",
+    "response_id": "131",
+    "contact": {
+        "primary_name": "Brian E. Turbitt",
+        "primary_email": "bturbitt @nantucket-ma.gov",
+        "primary_phone": "5082287200",
+        "secondary_name": "C. Elizabeth Gibson",
+        "secondary_email": "townmanger @nantucket-ma.gov",
+        "secondary_phone": "5082287255"
+    },
+    "funding": {
+        "municipality_name": "Nantucket",
+        "total_received_all_years": 105134.09,
+        "carryover_from_previous": 48742.06,
+        "fy2024_disbursement": 56392.03,
+        "total_available_fy24": 105134.09,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 105134.09
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "na"
+            ],
+            "people_in_recovery": [
+                "na"
+            ],
+            "families_impacted": [
+                "na"
+            ],
+            "subject_matter_experts": [
+                "na"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "The town is working with its Health and Human Services Department to formulate a plan. We expect the plan to include engagement with this particular population",
+            "barriers_people_in_recovery": "The town is working with its Health and Human Services Department to formulate a plan. We expect the plan to include engagement with this particular population",
+            "barriers_families": "The town is working with its Health and Human Services Department to formulate a plan. We expect the plan to include engagement with this particular population",
+            "barriers_experts": "The town is working with its Health and Human Services Department to formulate a plan. We expect the plan to include engagement with this particular population"
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "na"
+            ],
+            "health_outcomes_race": [
+                "na"
+            ],
+            "health_outcomes_wealth": [
+                "na"
+            ],
+            "stigma_impact": [
+                "na"
+            ],
+            "provider_diversity": [
+                "na"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "The town is working with its Health and Human Services Department to formulate a plan. We expect the plan to a review of the above datapoints"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "na"
+            ],
+            "fatal_overdoses": [
+                "na"
+            ],
+            "emt_response": [
+                "na"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Town is still developing the plan with its Human Services Department"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Town is still developing the plan with its Human Services Department"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Town is still developing the plan with its Human Services Department"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Town is still developing the plan with its Human Services Department"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Town is still developing the plan with its Human Services Department"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Town is still developing the plan with its Human Services Department"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Town is still developing the plan with its Human Services Department"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Nantucket.pdf"
+}

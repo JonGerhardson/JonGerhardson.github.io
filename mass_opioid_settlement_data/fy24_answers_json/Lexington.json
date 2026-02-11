@@ -1,0 +1,166 @@
+{
+    "municipality": "Lexington",
+    "response_id": "106",
+    "contact": {
+        "primary_name": "Joanne Belanger",
+        "primary_email": "jbelanger @lexingtonma.gov",
+        "primary_phone": "781-698-4533",
+        "secondary_name": "Carolyn Kosnoff",
+        "secondary_email": "ckosnoff @lexingtonma.gov",
+        "secondary_phone": "781-698-4622"
+    },
+    "funding": {
+        "municipality_name": "Lexington",
+        "total_received_all_years": 485546.5,
+        "carryover_from_previous": 225108.09,
+        "fy2024_disbursement": 260438.41,
+        "total_available_fy24": 485546.5,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 4282.18,
+        "total_unexpended": 481264.32
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_in_recovery_other": "speakers at a school sponsored event for parents",
+            "subject_matter_experts_other": "predominantly school personnel, who work with students and families, at our START (Substance use, Treatment, Awareness and Recovery) meetings.",
+            "barriers_people_who_use_drugs": "We have not yet sought out people using drugs. I think that might be a difficult population to engage in this community.",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "we have not yet specifically sought out families impacted by opioids or other substances",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "This is something we need to look at even though this is an affluent community. There is an assumption that healthcare is available but associated stigma and a diverse pool of service providers is valuable information."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "reviewed documents related to overdose/ response from EMT/Fire",
+            "other_methods": "",
+            "barriers": "The need to be able to accurately know and understand all the services available in the community and surrounding area."
+        },
+        "existing_programs": {
+            "programs": [],
+            "other_methods": "We are in the process of reviewing our resource list of providers, call centers, and treatment centers in the area as well as compiling a database of current services offered in the community and surrounding area that we can tap into. We do not need to initiate or duplicate services."
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "NaloxBox(SamBox)",
+                    "sources": [
+                        "literature_review",
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "we would like to be able to assist residents but do not have a mechanism right now to be able to identify, or self identify, individuals."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "we would like to be able to assist residents in recovery but do not have a mechanism right now to be able to identify, or self identify, individuals."
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 4282.18,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have not addressed this category to date."
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "There is a lot of funding available and a connection with the Care Mass team for assistance would be great.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Lexington.pdf"
+}

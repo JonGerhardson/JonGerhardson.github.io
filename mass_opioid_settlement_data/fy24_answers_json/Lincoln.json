@@ -1,0 +1,175 @@
+{
+    "municipality": "Lincoln",
+    "response_id": "107",
+    "contact": {
+        "primary_name": "Daniel Pereira",
+        "primary_email": "pereirad @lincolntown.org",
+        "primary_phone": "781-259-2603",
+        "secondary_name": "Tim Higgins",
+        "secondary_email": "higginst @lincolntown.org",
+        "secondary_phone": "781-259-2601"
+    },
+    "funding": {
+        "municipality_name": "Lincoln",
+        "total_received_all_years": 104876.08,
+        "carryover_from_previous": 48622.43,
+        "fy2024_disbursement": 56253.65,
+        "total_available_fy24": 104876.08,
+        "pooled": true,
+        "pooling_details": {
+            "ima_ssa_name": "Great Meadows Public Health Collaborative",
+            "interested_in_pooling": null,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": false,
+            "fiscal_agent_name": "Sudbury",
+            "pooled_all_funding": false
+        },
+        "total_expended_fy24": 2460,
+        "total_unexpended": 102416.08
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "not_engaged"
+            ],
+            "people_in_recovery": [
+                "not_engaged"
+            ],
+            "families_impacted": [
+                "not_engaged"
+            ],
+            "subject_matter_experts": [
+                "not_engaged"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region.",
+            "barriers_people_in_recovery": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region.",
+            "barriers_families": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region.",
+            "barriers_experts": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region."
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "not_assessed"
+            ],
+            "health_outcomes_race": [
+                "not_assessed"
+            ],
+            "health_outcomes_wealth": [
+                "not_assessed"
+            ],
+            "stigma_impact": [
+                "not_assessed"
+            ],
+            "provider_diversity": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "not_assessed"
+            ],
+            "fatal_overdoses": [
+                "other"
+            ],
+            "emt_response": [
+                "other"
+            ],
+            "admin_data_sources": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region.",
+            "other_methods": "We provided funding the Lincoln Sudbury Regional High School to purchase additional AED units to support staff responding to opioid overdoses.",
+            "barriers": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities. We contracted a consultant to support this process.",
+        "consultant_activities": "Other activities (please specify):: Still bringing coordinator on board.",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We are still in the process of bringing our regional coordinator on board, and they will work with Great Meadows Communities to build programs that are responsive to each community, as well as the region."
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 2460,
+            "how_spent": [
+                "Contracting consultants to support coalition building, community needs assessment, planning and implementation, and evaluation and reporting",
+                "Other (please describe): No expenses for consultant yet, but we purchase of AED for treatment at regional high school."
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "Not at this time.",
+        "orrf_recommendations": "Not at this time."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Lincoln.pdf"
+}

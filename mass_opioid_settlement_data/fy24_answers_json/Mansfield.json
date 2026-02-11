@@ -1,0 +1,246 @@
+{
+    "municipality": "Mansfield",
+    "response_id": "116",
+    "contact": {
+        "primary_name": "Matthew Violette",
+        "primary_email": "mviolette @mansfieldma.com",
+        "primary_phone": "5088516403",
+        "secondary_name": "Nick Monticello",
+        "secondary_email": "nmonticello @mansfieldma.com",
+        "secondary_phone": "5088516435"
+    },
+    "funding": {
+        "municipality_name": "Mansfield",
+        "total_received_all_years": 650141.6,
+        "carryover_from_previous": 301417.35,
+        "fy2024_disbursement": 348724.26,
+        "total_available_fy24": 650141.61,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 100000,
+        "total_unexpended": 550141.61
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "interviews",
+                "other"
+            ],
+            "people_in_recovery": [
+                "interviews",
+                "other"
+            ],
+            "families_impacted": [
+                "interviews",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "People who use drugs, people in recovery, and their families are engaged on a regular basis by the Mansfield Police Department's Problem-Oriented Policing Unit (which will be referred to simply as the \"POP Unit\" or \"POP program\" or \"Unit\" for the remainder of this questionnaire). The preferred method of engagement is to always follow up in-person with the members of these specific populations in the location they are the most comfortable in, which is often their home. Third party resources (detox & treatment centers, pathways to therapy, etc.) are always offered to members of said populations during POP Unit interviews.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "other"
+            ],
+            "health_outcomes_race": [
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "other"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "The Mansfield Police Department's POP Unit has not identified any disparities in access to existing services & health outcomes for any of the categories highlighted in this question. This Unit, in its nearly 9 years of existence, is capable of making this statement with surety through its own personal experiences & observations after working closely with our partners in the fields of addiction & mental health."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "interviews"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "interviews"
+            ],
+            "emt_response": [
+                "admin_data",
+                "interviews"
+            ],
+            "past_30_day_use": [
+                "interviews"
+            ],
+            "patients_in_treatment": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "interviews"
+            ],
+            "people_who_use_drugs": [
+                "interviews"
+            ],
+            "treatment_providers": [
+                "other"
+            ],
+            "recovery_centers": [
+                "other"
+            ],
+            "mental_health_conditions": [
+                "interviews",
+                "other"
+            ],
+            "admin_data_sources": "Call logs are searched on a daily basis, not only by the police officers assigned to the Unit, but also by part-time social services resource engagement personnel, the full-time civilian clinician assigned to the MPD. Secondly, Administrative Data Sources (such as CIMS) aid the Unit in identifying a Mansfield resident who (fatally or non-fatally) overdosed on opioids in another Massachusetts community.",
+            "other_methods": "Follow-up interviews are the most crucial fact-finding tool used by the Unit. Regional case conference with the Community Crisis Intervention Team or during a HART meeting.",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "P.O.P",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "P.O.P.",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 10000,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches",
+                "Support evidence-based withdrawal management services for people with OUD and co-occurring mental health conditions",
+                "Improve or implement trauma-informed treatment services",
+                "Other (please specify):: Implementation of co-responder models"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 10000,
+            "how_spent": [
+                "Other (please specify):: It's difficult to check off full category boxes when responding to this question as the MPD POP Unit satisfies some of the pre-written response choices fully, but some only partially, so the \"Other\" box has been ticked off and will be explained below. Although the Unit, in and of itself, is not made up of peer support specialists, it does have a full-time clinician working alongside police officers for a true co-responder approach to policing. The clinician is qualified to offer the types of support described in this pre-written response but is more likely to refer individuals with OUD to one of the many treatment partners associated with the POP Unit, as would the police officers and civilians serving in this Unit."
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 10000,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams, to connect individuals to trauma-informed treatment recovery support, harm reduction services, primary healthcare, or other appropriate services following an opioid overdose or other opioid-related adverse event",
+                "Support school-based services related to OUD, such as school-based contacts that parents can engage with to seek immediate treatment services for their child; and support prevention, intervention, treatment, and recovery programs focused on young people. This should include alternatives to suspension or interaction with school resource officers such as restorative justice approaches",
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 10000,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Promote efforts to train health care providers, students, peer recovery coaches, recovery outreach specialists, or other professionals that provide care to persons who use opioids or persons with OUD in crisis training and harm reduction strategies",
+                "Active outreach strategies such as the Drug Abuse Response Team model or the Post Overdose Support Team model",
+                "Provide outreach and services for people who use drugs and are not yet in treatment, including services that build relationships with and support for people with OUD"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Early implementation",
+            "expended": 10000,
+            "how_spent": [
+                "Co-responder and/or alternative responder models to address OUD-related greater OUD expertise",
+                "Public safety-led diversion strategies such as the Law Enforcement Assisted Diversion model",
+                "Participate in membership organizations such as the Police Assisted Addiction Recovery Initiative for training and networking and utilize law enforcement opportunities such as the Safety and Health Integration in the Enforcement of Laws on Drugs (SHIELD)"
+            ],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Early implementation",
+            "expended": 10000,
+            "how_spent": [
+                "Supported, expanded, or improved connection with pregnant/post-partum and family residential treatment programs, including and in addition to the eight family residential treatment programs currently funded by DPH"
+            ],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 10000,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use",
+                "Other (please specify): Once again, it's too difficult to check off full category boxes when responding to this question as the Mansfield Police Department satisfies some of the pre-written response choices fully, but some only partially, so the \"Other\" box has been ticked off and will be explained below. The MPD currently has two full-time School Resource Officers (\"SRO\") assigned to Mansfield public schools."
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 30000,
+            "how_spent": [
+                "Other (please specify):: Supplementation of staffing hours to afford implementation of the programs."
+            ],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Mansfield.pdf"
+}

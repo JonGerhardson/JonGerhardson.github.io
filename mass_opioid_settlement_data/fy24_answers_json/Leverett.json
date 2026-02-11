@@ -1,0 +1,154 @@
+{
+    "municipality": "Leverett",
+    "response_id": "105",
+    "contact": {
+        "primary_name": "Marjorie McGinnis",
+        "primary_email": "townadministrator @leverett.ma.us",
+        "primary_phone": "4135489699",
+        "secondary_name": "Brian Cook",
+        "secondary_email": "fire @leverett.ma.us",
+        "secondary_phone": "4135489225"
+    },
+    "funding": {
+        "municipality_name": "Leverett",
+        "total_received_all_years": 37705.73,
+        "carryover_from_previous": 17481.05,
+        "fy2024_disbursement": 20224.68,
+        "total_available_fy24": 37705.73,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 37705.73
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "We are still planning how to utilize funds received. Not sure how to identify residents who use drugs to involve them in the process.",
+            "barriers_people_in_recovery": "We are still planning how to utilize funds received. Not sure how to identify residents in recovery to involve them in the process.",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Fier Chief participates in the committee meetings and can represent the EMT response of the department staff.",
+            "other_methods": "Still researching this.",
+            "barriers": "Not sure where such information is available."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our committee is still examining how to expend funds."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our committee is still examining how to expend funds."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our committee is still examining how to expend funds."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our committee is still examining how to expend funds."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our committee is still examining how to expend funds."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our committee is still examining how to expend funds."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Our committee is still examining how to expend funds."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Our committee is still examining how to expend funds.",
+        "unmet_needs": "Our committee is still examining how to expend funds.",
+        "orrf_recommendations": "We have no recommendations."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Leverett.pdf"
+}

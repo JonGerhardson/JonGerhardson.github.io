@@ -1,0 +1,208 @@
+{
+    "municipality": "Holbrook",
+    "response_id": "90",
+    "contact": {
+        "primary_name": "Allyson Pinkhover",
+        "primary_email": "apinkhover @holbrookmassachusetts.us",
+        "primary_phone": "7817673030",
+        "secondary_name": "",
+        "secondary_email": "",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Holbrook",
+        "total_received_all_years": 116595.93,
+        "carryover_from_previous": 54055.98,
+        "fy2024_disbursement": 62539.95,
+        "total_available_fy24": 116595.93,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 116595.93
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "survey",
+                "interviews"
+            ],
+            "people_in_recovery": [
+                "survey"
+            ],
+            "families_impacted": [
+                "survey",
+                "interviews"
+            ],
+            "subject_matter_experts": [
+                "survey"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "interviews"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "survey"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data",
+                "survey"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews"
+            ],
+            "provider_diversity": [],
+            "admin_data_sources": "DPH Public Health Information Tool, DPH Overdose Data Reports, other publicly available DPH data sources",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data",
+                "other"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "other"
+            ],
+            "emt_response": [
+                "other"
+            ],
+            "admin_data_sources": "Geospatial mapping of EMS/Police response to overdose calls from Emergency Communications call data. DPH Overdose and PHIT reports. BSAS treatment reports used to estimate people in treatment.",
+            "other_methods": "We completed community asset mapping early on in our assessment of needs.",
+            "barriers": "It is difficult to find local level prevalence data for our community related to mental health, SUD, and behavioral health, as most data is suppressed due to our small community size. We will continue to examine qualitative methods that may better suit our smaller community."
+        },
+        "existing_programs": {
+            "programs": [
+                {
+                    "name": "Community Naloxone Program",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "BSAS Prevention Curriculum",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "DPH Clearinghouse",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "Expanding public access to naloxone",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Evidence-based primary prevention for school-aged children",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Our Opioid Settlement Advisory Committee also spent time resolving issues from state changes on types of fiscal accounts allowable for funds. At our Spring Town Meeting we were able to revoke our Special Stabilization Fund and implement a Special Revenue Fund for our opioid settlement funds. This will allow use to more rapidly access funding, as we will not need to seek approval for expenditures from Town Meeting each time we wish to use funds. Any existing and future funds were voted into the Special Revenue Fund at Town Meeting in Spring 2024.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Holbrook.pdf"
+}

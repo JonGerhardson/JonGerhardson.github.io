@@ -1,0 +1,217 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Mashpee",
+    "response_id": "196",
+    "contact": {
+        "primary_name": "Gail Wilson",
+        "primary_email": "gwilson @mashpeema.gov",
+        "primary_phone": "508-539-1411",
+        "secondary_name": null,
+        "secondary_email": null,
+        "secondary_phone": null
+    },
+    "funding": {
+        "municipality_name": "Mashpee",
+        "total_received_all_years": 329916.24,
+        "carryover_from_previous": 152955.1,
+        "fy2024_disbursement": 176961.14,
+        "total_available_fy24": 329916.24,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 112500,
+        "total_unexpended": 217416.24
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "past_30_day_opioid_use": [
+                "groups_meetings"
+            ],
+            "patients_in_treatment": [
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "groups_meetings"
+            ],
+            "people_who_use_drugs": [
+                "groups_meetings"
+            ],
+            "treatment_providers_count": [
+                "groups_meetings"
+            ],
+            "recovery_centers_count": [
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Full implementation",
+            "expended": 22500,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 20000,
+            "how_spent": [
+                "Provide access to housing for people with OUD, including supportive housing, recovery housing, housing, rent, move-in deposits, and utilities assistance programs, training for housing providers, or recovery housing programs that integrate FDA-approved medication with other support services",
+                "Support bereaved families and frontline care providers"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 15000,
+            "how_spent": [
+                "Support school-based services related to OUD, such as school-based contacts that parents can engage with to seek immediate treatment services for their child; and support prevention, intervention, treatment, and recovery programs focused on young people. This should include alternatives to suspension or interaction with school resource officers such as restorative justice approaches"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 20000,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "\"Naloxone Plus\" strategies to ensure that individuals who receive naloxone to reverse an overdose are linked to treatment programs or other appropriate services",
+                "Approve and fund syringe service programs and other programs to reduce harms associated with drug use, including supplies, staffing, space, peer support services, referrals to treatment, fentanyl checking, syringe collection and disposal, connection to care, and the full range of harm reduction and treatment services provided by these programs",
+                "Support mobile units that offer or provide referrals to harm reduction services, treatment, recovery supports, primary and behavioral health care, recovery support, or other appropriate services with OUD",
+                "Promote efforts to train health care providers, students, peer recovery coaches, recovery outreach specialists, or other professionals that provide care to persons who use opioids or persons with OUD in crisis training and harm reduction strategies",
+                "Provide outreach and services for people who use drugs and are not yet in treatment, including services that build relationships with and support for people with OUD"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Full implementation",
+            "expended": 15000,
+            "how_spent": [
+                "Programs, that connect individuals involved in the criminal justice system and upon release from jail or prison to OUD harm reduction services, treatment, recovery support, healthcare, prevention, legal support, or other supports, or that provide these"
+            ],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Continuing to promote the programs that are available"
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 20000,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Mashpee.pdf"
+}

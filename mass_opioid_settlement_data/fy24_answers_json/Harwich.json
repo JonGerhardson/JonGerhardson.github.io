@@ -1,0 +1,202 @@
+{
+    "municipality": "Harwich",
+    "response_id": "88",
+    "contact": {
+        "primary_name": "Carrie Schoener",
+        "primary_email": "carrie.schoener @harwich-ma.gov",
+        "primary_phone": "508-430-7509",
+        "secondary_name": "Finance Director",
+        "secondary_email": "accounting @harwich-ma.gov",
+        "secondary_phone": "508-430-7502"
+    },
+    "funding": {
+        "municipality_name": "Harwich",
+        "total_received_all_years": 231308.97,
+        "carryover_from_previous": 38125.0,
+        "fy2024_disbursement": 167467.71,
+        "total_available_fy24": 205592.72,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 21875.0,
+        "total_unexpended": 183717.72
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "survey"
+            ],
+            "people_in_recovery": [
+                "survey"
+            ],
+            "families_impacted": [
+                "survey"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "interviews",
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey"
+            ],
+            "health_outcomes_race": [
+                "survey"
+            ],
+            "health_outcomes_wealth": [
+                "survey"
+            ],
+            "stigma_impact": [
+                "survey"
+            ],
+            "provider_diversity": [
+                "survey"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "not_assessed"
+            ],
+            "admin_data_sources": "We hired an outside agency to complete a public health needs assessment with opioid use and mental health as a focus",
+            "other_methods": "We hired an outside agency to complete a public health needs assessment with opioid use and mental health as a focus",
+            "barriers": "We are going to be completing a community action plan. This process should help us identify barriers."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Outer Cape Recovery Coach",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Behavioral Health Innovators",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Duffy",
+                    "sources": [
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Economically under-resourced",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "There are limited treatment services in my area. We have been focused on prevention and harm reduction."
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 21875,
+            "how_spent": [
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Other (please specify):: recovery coach"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No Connections have been made to know where to begin."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No Connections have been made to know where to begin."
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Our community is working on discovering the best ways to use this funding that checks all the boxes and aids our community by reducing stigma and increasing awareness to resources.",
+        "unmet_needs": "Direct Treatment services. The funds do not cover the expense to create access to treatment locally.",
+        "orrf_recommendations": "Reducing Stigma in the community which will aid in residents struggling coming forward and seeking help."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Harwich.pdf"
+}

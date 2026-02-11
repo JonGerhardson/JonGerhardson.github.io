@@ -1,0 +1,221 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "municipality": "Natick",
+    "response_id": "132",
+    "contact": {
+        "primary_name": "Catherine Sugarman",
+        "primary_email": "csugarman @natickma.org",
+        "primary_phone": "508-647-6623",
+        "secondary_name": "James Errickson",
+        "secondary_email": "jerrickson @natickma.org",
+        "secondary_phone": "508-647-6404"
+    },
+    "funding": {
+        "municipality_name": "Natick",
+        "total_received_all_years": 326344.58,
+        "carryover_from_previous": 151299.22,
+        "fy2024_disbursement": 175045.36,
+        "total_available_fy24": 326344.58,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 326344.58
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "not_engaged"
+            ],
+            "people_in_recovery": [
+                "interviews",
+                "other"
+            ],
+            "families_impacted": [
+                "forum",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "people_in_recovery_other": "In FY2023, Natick conducted key stakeholder interviews w/ persons in recovery via the Natick 180 Coalition, which is a multisector community coalition sponsored by the Natick Health Department. Additionally, Natick 180 has persons in recovery serving on its Steering Committee and on its action teams.",
+            "families_impacted_other": "In FY2023, Natick conducted key stakeholder interviews w/ families impacted via the Natick 180 Coalition. Additionally, Natick 180 has families serving on its Steering Committee and on its action teams, and it sponsors a bereavement group for families who have lost a loved one due to overdose.",
+            "subject_matter_experts_other": "Natick 180 is staffed by a certified prevention specialist and other prevention professionals who carry masters degrees in public health and/or social work. Providers in harm reduction, treatment and recovery from Natick and the surrounding MetroWest regional also serve on Natick 180's action teams.",
+            "barriers_people_who_use_drugs": "While Natick has not hosted any key stakeholder interviews or focus groups for individuals who still use drugs, frontline professionals who serve this population (i.e., first responders, harm reduction and treatment professionals) serve on Natick 180's action teams. In FY2025, Natick 180 will be working with its local harm reduction agency, Program RISE at JRI Health, to conduct site visits in areas in Natick that are frequented by people who use drugs.",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day_opioid_use": [
+                "survey"
+            ],
+            "people_in_recovery": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "treatment_providers": [
+                "groups_meetings"
+            ],
+            "recovery_centers": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "admin_data",
+                "survey",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Natick Police Department incident data, Natick Fire Department/EMS incident data, referral data from MetroWest Care Connection/Behavioral Health Partners MetroWest and William James College INTERFACE service. Data shared includes de- identified data sorted by age, gender, and race/ethnicity. First responder data suggests that white males between the ages of 35-65 experience the highest rates of opioid-related overdose in Natick.",
+            "other_methods": "Natick 180 personnel and coalition members have reviewed substance use and mental health data from the MetroWest Adolescent Health Survey and collected input from focus groups with parents/caregivers of local youth identifying their most pressing mental health and substance use concerns among youth. Additionally, Natick 180 conducts environmental scans and uses multisector Coalition meetings to discuss first hand observations among school and community facing professionals.",
+            "barriers": "None identified at this time."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Opioid treatment programs (MetroWest Care Connection/Behavioral Health Partners MetroWest, Newton Wellesley Hospital, MetroWest Medical Center)",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Syringe service programs (Program RISE/JRI)",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Peer Recovery Support Center (Anchored in Recovery/SMOC)",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "MassCall 3 regional grant collaborative",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities. We consulted with Care Mass.",
+        "consultant_activities": "Other activities (please specify)::",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This population did not emerge as a high priority population during Natick 180's strategic planning process."
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Because the Natick Health Department sponsors the Natick 180 Coalition, which in FY2024 had federal, state and local funding sources in place for community initiatives related to substance use prevention, treatment and recovery, Natick did not expend any of its opioid abatement monies. Withdrawals for abatement-funded activities will begin in FY2025 as federal and state funding will have ended.",
+        "unmet_needs": "N/A",
+        "orrf_recommendations": "N/A"
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Natick.pdf"
+}

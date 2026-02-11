@@ -1,0 +1,189 @@
+{
+    "municipality": "Littleton",
+    "response_id": "108",
+    "contact": {
+        "primary_name": "Francis Dagle",
+        "primary_email": "fdagle @littletonma.org",
+        "primary_phone": "9785402432",
+        "secondary_name": "Ryan Ferrara",
+        "secondary_email": "rferrara @littletonma.org",
+        "secondary_phone": "9785402463"
+    },
+    "funding": {
+        "municipality_name": "Littleton",
+        "total_received_all_years": 99532.99,
+        "carryover_from_previous": 46145.28,
+        "fy2024_disbursement": 53387.71,
+        "total_available_fy24": 99532.99,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 99532.99
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "survey"
+            ],
+            "people_in_recovery": [
+                "survey"
+            ],
+            "families_impacted": [
+                "survey"
+            ],
+            "subject_matter_experts": [
+                "survey"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "survey"
+            ],
+            "health_outcomes_race": [
+                "survey"
+            ],
+            "health_outcomes_wealth": [
+                "survey"
+            ],
+            "stigma_impact": [
+                "survey"
+            ],
+            "provider_diversity": [
+                "survey"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day_opioid_use": [
+                "survey"
+            ],
+            "patients_in_treatment": [
+                "admin_data",
+                "survey"
+            ],
+            "people_in_recovery": [
+                "admin_data",
+                "survey"
+            ],
+            "people_who_use_drugs": [
+                "survey"
+            ],
+            "treatment_providers": [
+                "admin_data"
+            ],
+            "recovery_centers": [
+                "admin_data"
+            ],
+            "mental_health_conditions": [
+                "survey"
+            ],
+            "admin_data_sources": "BSAS Dashboard, findtreatment.gov",
+            "other_methods": "The questions were incorporated into a community-wide survey.",
+            "barriers": "Stigma remains a significant barrier, preventing community members- both those directly and indirectly affected- from coming forward to address the unmet needs they face."
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We consulted with Care Mass.",
+        "consultant_activities": null,
+        "care_mass_activities": "Developed and conducted a community survey",
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The assessment survey was launched at the end of FY24, progress could not be made at this stage of the process."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The assessment survey was launched at the end of FY24, progress could not be made at this stage of the process."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The assessment survey was launched at the end of FY24, progress could not be made at this stage of the process."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The assessment survey was launched at the end of FY24, progress could not be made at this stage of the process."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The assessment survey was launched at the end of FY24, progress could not be made at this stage of the process."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The assessment survey was launched at the end of FY24, progress could not be made at this stage of the process."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The assessment survey was launched at the end of FY24, progress could not be made at this stage of the process."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Littleton.pdf"
+}

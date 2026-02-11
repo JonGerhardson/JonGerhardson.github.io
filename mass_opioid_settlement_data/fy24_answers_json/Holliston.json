@@ -1,0 +1,244 @@
+{
+    "municipality": "Holliston",
+    "response_id": "192",
+    "contact": {
+        "primary_name": "Travis J. Ahern",
+        "primary_email": "ahernt @holliston.k12.ma.us",
+        "primary_phone": "5084290608",
+        "secondary_name": "Chief Cassidy",
+        "secondary_email": "cassidym @holliston.k12.ma.us",
+        "secondary_phone": "5084290608"
+    },
+    "funding": {
+        "municipality_name": "Holliston",
+        "total_received_all_years": 152414.23,
+        "carryover_from_previous": 73940.14,
+        "fy2024_disbursement": 78474.09,
+        "total_available_fy24": 152414.23,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 30911.2,
+        "total_unexpended": 121503.03
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day_opioid_use": [
+                "groups_meetings"
+            ],
+            "patients_in_treatment": [
+                "groups_meetings"
+            ],
+            "people_in_recovery": [
+                "groups_meetings"
+            ],
+            "people_who_use_drugs": [
+                "groups_meetings"
+            ],
+            "treatment_providers": [
+                "groups_meetings"
+            ],
+            "recovery_centers": [
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "MATRIS",
+            "other_methods": "Youth & Family Services has trained clinicians; HPD is engaging a Jail Diversion Practitioners (JDP) (with Sherborn/Hopkinton)",
+            "barriers": "The new JDP support will bridge a gap on the public safety side of the house."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Community Action Fund",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Community Narcan Distribution",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Hidden In Plain Sight Event",
+                    "sources": [
+                        "groups_meetings"
+                    ]
+                },
+                {
+                    "name": "Postvention Services (JDP)",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Faith Based Recovery",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Community Action Fund (CAF)",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We contracted a consultant to support this process. We consulted with Care Mass.",
+        "consultant_activities": "Developed criteria for prioritizing needs and gaps based on findings",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Aging adults",
+            "LGBTQ+",
+            "Non-native English speakers",
+            "Pregnant and/or parenting populations",
+            "Transgender or gender expansive",
+            "Unsheltered or housing-insecure",
+            "Veterans",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 911.2,
+            "how_spent": [
+                "Support the work of Emergency Medical Systems, including peer support specialists and post-overdose response teams...",
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents..."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 30000,
+            "how_spent": [
+                "Program staffing"
+            ],
+            "job_title": "Youth & Family Services - Care Coordinator",
+            "fte": "0.45"
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The Town has numerous department's working together, but the Drug Free Communities Coordinator, Youth & Family Services Director and their new additional staff are the primary practitioners. By the next quarterly report, we expect additional programs to be ready to be announced with this funding.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Holliston.pdf"
+}

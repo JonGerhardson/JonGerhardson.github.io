@@ -1,0 +1,249 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Milford",
+    "response_id": "126",
+    "contact": {
+        "primary_name": "Richard Villani",
+        "primary_email": "rvillani @townofmilford.com",
+        "primary_phone": "508-634-2303",
+        "secondary_name": "Amy Leone",
+        "secondary_email": "communityimpactinc @gmail.com",
+        "secondary_phone": "508-864-6509"
+    },
+    "funding": {
+        "municipality_name": "Milford",
+        "total_received_all_years": 507768.09,
+        "carryover_from_previous": 0,
+        "fy2024_disbursement": 272357.67,
+        "total_available_fy24": 272357.67,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 272357.67
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "interviews"
+            ],
+            "health_outcomes_wealth": [
+                "interviews"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings",
+                "other"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "interviews",
+                "groups_meetings",
+                "other"
+            ],
+            "emt_response": [
+                "admin_data",
+                "interviews",
+                "groups_meetings",
+                "other"
+            ],
+            "admin_data_sources": "We use our own administrative data to track the number of individuals that we encounter through all our various referrals/walk ins and then update the treatment progress on a monthly and quarterly basis to help guide the functions of our program and guide us in future revisions of our program as well as addressing any identified needs and gaps.",
+            "other_methods": "Upon intake with each individual we work with we conduct a BPS in therapy, an intake assessment for recovery clients and a general questionnaire for those being referred to Chris' Corner. We also will work with other treatment providers when they are making the referrals, as well as the courts.",
+            "barriers": "One of the barriers we encountered we have encountered was the ability to have service providers that speak multiple languages to help those in our community. We also have a barrier of seeking placement for individuals where English is not their first language. To address this we have been exploring hiring of a tri-ligule individual in recovery and certified as well as exploring area resources available to those struggling with addiction who English his not their first language."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Chris' Corner Recovery Resource Center",
+                    "sources": [
+                        "admin_data",
+                        "survey",
+                        "interviews",
+                        "groups_meetings",
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Volunteer Group",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Harm Reduction",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Sober Housing",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Treatment Resources",
+                    "sources": [
+                        "community_needs",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Trauma Services",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The Town Of Milford proposes our Opioid Abatement goals in collaboration with Chris' Corner Recovery Resource Center a program of Community Impact with the following goals: 1) To reduce the number of opioid overdoses and overdose deaths in the town of Milford; 2) To decrease the incidence of Opioid Use Disorder in the town of Milford; 3) To increase the number of individuals receiving treatment and recovery support services in he town of Milford; and 4) To increase use of evidence-based programming in schools and youth groups in the town of Milford. Over the last year we had partial grant funding from a BOJ grant for Chris' Corner Recovery Resource Center and funds from our allocated funds through our Town Meeting that we were able to maintain the progress of Chris' Corner a program of Community Impact in partnership with the Town of Milford and not use our opioid abatement funds received this year. As we plan to expand the services of Chris' Corner and the Milford Family Services Unit to address the Abatement Initiative we will be using our funds for FY25 to ensure our expansion goals are met. We will continue the work accomplished under previous funding with our current opioid abatement funds in planning, development, and sustainability of Chris' Corner Recovery Resource Center in Milford Massachusetts. In FY25 we will expand access to recovery services available at Chris' Corner through increased staffing, expanded hours of operation, and development of new programming",
+        "unmet_needs": "Since opening in 2020, Chris' Corner has been staffed with a spectrum of mental health professionals, including Licensed Mental Health Counselors, Licensed Social Workers, Peer Recovery Coaches, and Peer Mentors, as well as Social Work and License Mental Health Counselors and Interns. Program operations have also been supported by a bookkeeper, administrative assistant, and website content manager. Additionally, the volunteer base of people with lived experience has grown significantly. They have taken on roles as group leader, welcomer, and outreach specialist. At the current time the majority of all of the program's paid positions are part-time and primarily less than 20 hours per week. The center operates with a total full-time equivalent (FTE) of four employees. This structure is a barrier to meeting community needs, opening evening and weekend hours, and employing long-term, qualified people. As a result, the needs identified by our community in FY25 will prioritize the use of our Opioid Abatement funds for certified recovery coaching positions and access to clinical services for those without alternative access to care. While clinical therapists through Community Impact will continue to be onsite at Chris' Corner, these services will be primarily billed to third party sources. For those without insurance, time spent with an onsite therapist will be allocated to our current opioid funds at a reduced hourly rate, while the participant works with the program's case manager to obtain health insurance. The addition of a case manager to the staffing structure at Chris' Corner addresses the widespread need for those with SUD to address their basic needs as part of successful recovery. These needs include food insecurity, housing instability, domestic violence, lack of transportation, inadequate health insurance, and unemployment. The case manager will ensure the goals of meeting these needs are incorporated into each participant's recovery plan, then locate resources,complete applications, and advocate for participants. Chris' Corner staffing will be further restructured to include a full- time Program Director/Recovery Coaching Supervisor, three FTE recovery coaches, a full-time administrative assistant, and a part-time bookkeeper. By shifting to a \"payer of last resort\" model of therapeutic care, opioid and matching funding can provide a greater volume of recovery coaching services. The proposed program will service between 150-200 participants each month. This increase in accessible care is needed in our Milford region which continues to see rising rates of substance use, abuse and overdoses. The total cost of Chris' Corner currently per month is approximately $15,000 and for the Fiscal year at the current capacity is $180,000. However with the proposed expansion of Chris' Corner will be a total of $360,000 per year. The cost shared with the Town of Milford will be $180,000 and we are requesting $180,000 from the Mosaic Municipal Matching Grant Program to help incorporate this expansion and sustainability of our efforts.",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Milford.pdf"
+}

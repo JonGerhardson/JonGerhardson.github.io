@@ -1,0 +1,174 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Hanover",
+    "response_id": "86",
+    "contact": {
+        "primary_name": "Joseph Colangelo",
+        "primary_email": "joseph.colangelo @hanover-ma.gov",
+        "primary_phone": "781-826-5000 x1084",
+        "secondary_name": "Chelsea Stevens",
+        "secondary_email": "chelsea.stevens @hanover-ma.gov",
+        "secondary_phone": "781-826-9231"
+    },
+    "funding": {
+        "municipality_name": "Hanover",
+        "total_received_all_years": 284216.07,
+        "carryover_from_previous": 131767.68,
+        "fy2024_disbursement": 152448.39,
+        "total_available_fy24": 284216.07,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 284216.07
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "not_engage"
+            ],
+            "people_in_recovery": [
+                "not_engage"
+            ],
+            "families_impacted": [
+                "not_engage"
+            ],
+            "subject_matter_experts": [
+                "not_engage"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "The town is still working on how best to use the funds",
+            "barriers_people_in_recovery": "The town is still working on how best to use the funds",
+            "barriers_families": "The town is still working on how best to use the funds",
+            "barriers_experts": "The town is still working on how best to use the funds"
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "not_assess"
+            ],
+            "health_outcomes_race": [
+                "not_assess"
+            ],
+            "health_outcomes_wealth": [
+                "not_assess"
+            ],
+            "stigma_impact": [
+                "not_assess"
+            ],
+            "provider_diversity": [
+                "not_assess"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "The town is still working on how best to use the funds"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "not_assess"
+            ],
+            "fatal_overdoses": [
+                "not_assess"
+            ],
+            "emt_response": [
+                "not_assess"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The town is still working on how best to use the funds"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The town is still working on how best to use the funds"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The town is still working on how best to use the funds"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The town is still working on how best to use the funds"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The town is still working on how best to use the funds"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The town is still working on how best to use the funds"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The town is still working on how best to use the funds"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Hanover.pdf"
+}

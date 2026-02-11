@@ -1,0 +1,229 @@
+{
+    "municipality": "Hancock",
+    "response_id": "85",
+    "contact": {
+        "primary_name": "Andy Ottoson",
+        "primary_email": "aottoson @berkshireplanning.org",
+        "primary_phone": "413-442-1521 x37",
+        "secondary_name": "Jan Lillie",
+        "secondary_email": "bos @town.hancock.ma.us",
+        "secondary_phone": "413-738-5225 X-1"
+    },
+    "funding": {
+        "municipality_name": "Hancock",
+        "total_received_all_years": 7637.93,
+        "carryover_from_previous": 3541.08,
+        "fy2024_disbursement": 4096.85,
+        "total_available_fy24": 7637.93,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 7637.93
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "BOAPC's Community Outreach Specialists and via community partners such as Berkshire Harm Reduction and outreach navigators",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "admin_data"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Publicly available data sources, provider data as available, engagement metrics from BRPC outreach initiatives (Community Outreach Specialists and Berkshire Post-Overdose Program)",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "National data sources (NSDUH, CDC, etc), state (DPH/BSAS reports, MATRIS, etc), local (PNAs, EMS agencies, arrest data, etc) and provider data as available",
+            "other_methods": "Outreach/ engagement via Berkshire Harm Reduction and outreach navigators from multiple agencies (Brien Center, Habitat for Human, Crane Center, Pittsfield Health Department, local law enforcement mental health co-responders)",
+            "barriers": "Lack of local quantitative data that can be cross-compared to statewide/ national data, particularly for priority populations (especially LGBTQI+); limited workforce capacity; need for systemic qualitative data structure that can likewise be compared across other regions in MA"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                "Berkshire Harm Reduction",
+                "Brien Center",
+                "Living in Recovery",
+                "BE3C, SPARK",
+                "Berkshire Health Systems"
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Post-Overdose Outreach",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "At-Risk Populations Field Outreach",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Naloxone Distribution Boxes/ Mailing",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Expand StUD treatment, including CM/I",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Strategies from SG to reduce social isolation/ loneliness",
+                    "sources": [
+                        "literature_review",
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Black or African American",
+            "Economically under-resourced",
+            "Immigrant",
+            "Non-native English speakers",
+            "Unsheltered or housing-insecure",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The reporting form is difficult in general, particularly to provide clarity on efforts underway. It is also unclear if we should be reporting on efforts underway through interagency collaborations that this funding is planned to help supplement, even if not with direct funding.",
+        "unmet_needs": "The unaddressed needs are described in further detail in the SUD Landscape Analysis attached... Chief among these include: -Increasing the behavioral health workforce, particularly outreach navigators, harm reductionists and recovery coaches that cannot be funded by reimbursables or other grant funds - Structural funding for Low Threshold Housing, Recovery Housing, Transitional Support Services (TSS), Permanent Supportive Housing and Emergency Shelter beds. Though operational funding may be available, it is often required to have the structures first. -Communications campaigns to reduce stigma and increase awareness of/ willingness to engage with services -Expand the continuum of care for StUD, especially establishing \"cool-down spaces\" -Increase local quantitative and systemically collected qualitative data on general SU patterns and the unique experiences of priority populations, particularly LGBTQI+ people - Community trainings and increased socially stimulating spaces to increase peer-to-peer MH support while reducing social isolation and loneliness",
+        "orrf_recommendations": "As previously discussed, the formulas used to determine municipal allocations did not address present need, and were based on numbers instead of ratios - as such, regions with lower population density received disproportionately low allocations. Fee-for- service models naturally benefit areas with higher population density, but fixed costs tend to be consistent regardless of where they're located\u2014as such, the cost-per-person is higher in rural areas even though the numbers of individuals served is lower. Beyond this systemic inequity, many funders choose not to fund regions with lower numbers. Furthermore, a great deal of program research and development tends to focus on more urban areas, where accessible public transportation and linkage to specialized services is more readily available- as such, these models are often not replicable in more rural areas. To reduce these pervasive inequities in rural areas, including from the municipal allocations, the ORFF should prioritize regions with lower population density, particularly the five more rural counties that continue to have the highest rates of fatal overdoses. It is also vital to recognize that service models developed in higher-resourced areas such as Boston or Springfield often cannot be replicated in rural areas. The Berkshires and the other rural areas have become adept at developing novel strategies to overcome these barriers, but are often unable to fully fund them due to the higher cost per person and/or funder unwillingness to support these novel approaches. Without extensive supplemental funding from the ORFF to reduce these systemic inequities in lower-income, lower-density areas, the more rural regions will continue to see disproportionately high rates of overdose, SUD, poor mental health and related health outcomes."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Hancock.pdf"
+}

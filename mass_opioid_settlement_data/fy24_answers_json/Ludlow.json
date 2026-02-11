@@ -1,0 +1,187 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Ludlow",
+    "response_id": "194",
+    "contact": {
+        "primary_name": "Marc A Strange",
+        "primary_email": "mstrange @ludlow.ma.us",
+        "primary_phone": "4135835600",
+        "secondary_name": null,
+        "secondary_email": null,
+        "secondary_phone": null
+    },
+    "funding": {
+        "municipality_name": "Ludlow",
+        "total_received_all_years": 290193.9,
+        "carryover_from_previous": 134539.16,
+        "fy2024_disbursement": 155654.82,
+        "total_available_fy24": 290193.98,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 13900.82,
+        "total_unexpended": 276293.16
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "groups_meetings"
+            ],
+            "people_in_recovery": [],
+            "families_impacted": [
+                "forum",
+                "groups_meetings"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "groups_meetings"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "Ludlow has a long-standing community organization (Ludlow CARES Coalition) who provides educational programming and support for schools and their families. We do also support the Michael J. Dias Foundation, which provides recovery housing. They have also been awarded funding but those funds have not been distributed/spent yet.",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "other"
+            ],
+            "health_outcomes_race": [
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "other"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Through the Ludlow CARES Coalition"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "other"
+            ],
+            "fatal_overdoses": [
+                "other"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "N/A",
+            "other_methods": "N/A",
+            "barriers": "N/A"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Ludlow Cares Coalition",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "The town plans to support Tapestry Health, which provides these types of services, in FY25."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No barriers. The Town will be funding these efforts in FY25."
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 9630.87,
+            "how_spent": [
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No barriers or challenges"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No barriers or challenges"
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 4269.95,
+            "how_spent": [
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Ludlow.pdf"
+}
