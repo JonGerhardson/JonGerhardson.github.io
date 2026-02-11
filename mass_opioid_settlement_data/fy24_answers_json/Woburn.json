@@ -1,0 +1,251 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Woburn",
+    "response_id": "239",
+    "contact": {
+        "primary_name": "Charles E. Doherty",
+        "primary_email": "cedoherty @cityofwoburn.com",
+        "primary_phone": "7813893346",
+        "secondary_name": "Mackenzie Dezieck",
+        "secondary_email": "mdezieck @cityofwoburn.com",
+        "secondary_phone": "7818975894"
+    },
+    "funding": {
+        "municipality_name": "Woburn",
+        "total_received_all_years": 334149.93,
+        "carryover_from_previous": 154917.92,
+        "fy2024_disbursement": 179232.01,
+        "total_available_fy24": 334149.93,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 25092.61,
+        "total_unexpended": 309057.32
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "other"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "other"
+            ],
+            "families_impacted": [
+                "forum",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "interviews",
+                "focus_groups",
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "pilot drug disposal program, substance abuse awareness event open to providers and general public",
+            "people_in_recovery_other": "substance abuse awareness event open to providers and general public",
+            "families_impacted_other": "substance abuse awareness event open to providers and general public",
+            "subject_matter_experts_other": "Provider resource meetings, pilot drug disposal program, substance abuse awareness event open to providers and general public",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings",
+                "other"
+            ],
+            "health_outcomes_race": [
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "groups_meetings",
+                "other"
+            ],
+            "provider_diversity": [
+                "groups_meetings",
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "substance abuse awareness event where a specialist panel was open to the general public for Q&A, monthly resource provider meeting to discuss disparities and updates"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "groups_meetings",
+                "other"
+            ],
+            "fatal_overdoses": [
+                "groups_meetings",
+                "other"
+            ],
+            "emt_response": [
+                "groups_meetings",
+                "other"
+            ],
+            "past_30_day_opioid_use": [
+                "other"
+            ],
+            "patients_in_treatment": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "treatment_providers": [
+                "other"
+            ],
+            "recovery_centers": [
+                "other"
+            ],
+            "mental_health_conditions": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Co-responding with city police department to mental health and/or substance use related 911 calls to support individuals and their families",
+            "barriers": "Transportation and insurance"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "BSAS Narcan Distribution",
+                    "sources": [
+                        "other"
+                    ]
+                },
+                {
+                    "name": "Jail Diversion Program- DMH",
+                    "sources": [
+                        "other"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Jail Diversion Program- DMH",
+                    "sources": [
+                        "community_needs",
+                        "copied_municipality"
+                    ]
+                },
+                {
+                    "name": "Drug Disposal program",
+                    "sources": [
+                        "community_needs",
+                        "other"
+                    ]
+                }
+            ],
+            "other_methods": "Address root of substance use and mental health issues for those who may otherwise go untreated due to being in the criminal justice system. The drug disposal pouch pilot program was a program the city substance use coordinator had implemented in another municipality and had great success with."
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 4498.5,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders...",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Other (please specify): Safe Drug Disposal program"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 2384.93,
+            "how_spent": [
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Full implementation",
+            "expended": 18135.75,
+            "how_spent": [
+                "Program staffing",
+                "Other (please specify):: printing and office materials for related programming"
+            ],
+            "job_title": "Substance Use and Mental Health Coordinator",
+            "fte": "40 hours"
+        },
+        "other": {
+            "progress": "Full implementation",
+            "expended": 73.43,
+            "how_spent": [
+                "Other (please describe): milage reimbursement for SUD Coordinator"
+            ]
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Woburn.pdf"
+}

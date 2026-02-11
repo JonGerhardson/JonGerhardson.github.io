@@ -1,0 +1,206 @@
+{
+    "municipality": "Yarmouth",
+    "response_id": "241",
+    "contact": {
+        "primary_name": "James Gardiner",
+        "primary_email": "jgardiner @yarmouth.ma.us",
+        "primary_phone": "5083982231",
+        "secondary_name": "Barry Lewis",
+        "secondary_email": "blewis @yarmouth.ma.us",
+        "secondary_phone": "5083982231"
+    },
+    "funding": {
+        "municipality_name": "Yarmouth",
+        "total_received_all_years": 124787.75,
+        "carryover_from_previous": 57853.85,
+        "fy2024_disbursement": 66933.9,
+        "total_available_fy24": 124787.75,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 27446.33,
+        "total_unexpended": 97341.42
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "interviews"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "interviews"
+            ],
+            "families_impacted": [
+                "forum",
+                "interviews"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "interviews"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "admin_data"
+            ],
+            "provider_diversity": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Yarmouth Police Department Data YSAC Data CHNA Data Hyannis Hospital Data DPH DATA",
+            "other_methods": "",
+            "barriers": "Yarmouth Substance Abuse Coilition (YSAC) has expanded its membership to widen / strengthen data."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Yarmouth Substance Abuse Coilition Data (YSAC) Hyannis Hospital - Needs Assessment Police/Fire/ EMS data",
+            "other_methods": "Yarmouth Public Schools",
+            "barriers": "There are numerous data sources for this information, the challenge was sorting through the volume of information to accurately identify gaps."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Monthly Outreach Events",
+                    "sources": [
+                        "literature_review"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We consulted with Care Mass.",
+        "consultant_activities": null,
+        "care_mass_activities": "Developed and conducted a community survey; Developed and conducted individual interviews; Developed and conducted focus groups or a meeting with an affinity group; Developed and conducted listening sessions or community forums; Compiled data and drafted data analysis report; Developed criteria for prioritizing needs and gaps based on findings; Facilitated planning sessions to prioritize needs and gaps; Facilitated planning sessions to set goals and select strategies to address needs and gaps",
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Early implementation",
+            "expended": 7500,
+            "how_spent": [
+                "Expand mobile intervention, treatment, telehealth treatment, and recovery services offered by qualified providers, including recovery coaches",
+                "Support evidence-based withdrawal management services for people with OUD and co-occurring mental health conditions",
+                "Improve or implement trauma-informed treatment services"
+            ],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 4500,
+            "how_spent": [
+                "Provide access to housing for people with OUD, including supportive housing, recovery housing, housing, rent, move-in deposits, and utilities assistance programs, training for housing providers, or recovery housing programs that integrate FDA-approved medication with other support services",
+                "Rehabilitate properties appropriate for low-threshold and recovery housing, including in partnership with DHCD-funded agencies and OUD-specialized organizations",
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Provide community support services, including social and legal services, to assist in deinstitutionalizing persons with OUD",
+                "Support or expand peer-recovery centers, which may include support groups, social events, computer access, or other services for persons with OUD",
+                "Provide transportation to treatment or recovery services for persons with OUD",
+                "Support programs for recovery in schools and/or standalone recovery high schools"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 3750,
+            "how_spent": [
+                "Support school-based services related to OUD, such as school-based contacts that parents can engage with to seek immediate treatment services for their child; and support prevention, intervention, treatment, and recovery programs focused on young people. This should include alternatives to suspension or interaction with school resource officers such as restorative justice approaches",
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 4000,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses",
+                "Support mobile units that offer or provide referrals to harm reduction services, treatment, recovery supports, primary and behavioral health care, recovery support, or other appropriate services with OUD"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Need to build a working relationship with the District Attorney's Office and the court system."
+        },
+        "pregnant_parenting": {
+            "progress": "Early implementation",
+            "expended": 3000,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 4696.33,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Supported community coalitions in developing and implementing a comprehensive strategic plan for substance misuse prevention",
+                "Engage a robust multi-sector coalition of stakeholders in development and implementation of above stated strategic plan",
+                "Supported community-based education or intervention services for families, youth, and adolescents at risk for OUD",
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The Opioid Settlement Initiative is a powerful first step to move this public health crisis from awareness to implementation. Scaling the effort will take time. Building, coordinating, and integrating service providers is essential. Most local public health infrastructures do not possess the internal capacity or relationship and interoperability to immediately rollout a comprehensive program that is required. Public health is reliant on partnerships and collaborations with a diverse cross-section of nonprofits to address to complex needs. Communication, collaborations, timely data, and evaluations tools all need to be firmly established before any sizable progress can be achieved. Like any large-scale and complex program of this magnitude, measurable success will require consistent determination and focus. This public health crisis is winnable. The public is deserving, and I am confident MA public health officials will meet the challenge before them.",
+        "unmet_needs": "Yes. The first phase of settlement funding provided for an opportunity for Yarmouth to move past traditional \"awareness only\" programming and implement initial strategies to address and proactively prevent substance abuse. That said, there are significantly more substance abuse needs in the community that are not being addressed. Much of this work is addressed and achieved one individual / family at a time. Additionally, progress is rarely linier and often complex. The cycle and nature of recovery requires consent attention as this disorder is commonly accompanied by trauma and a comprehensive approach that considers the individual's physical, mental emotional and spiritual needs. Yarmouth continues to suffer the on-going and scaling impact of substance. Moving forward, funds will be allocated to address present unmet needs.",
+        "orrf_recommendations": "The seven allowable strategies outlined in the Municipal Agreement comprehensively address the complex issues confronting progress in this work. Each community needs to evaluate and assess the unique balance and configuration of strategies to best serve their community and well-being of individuals impacted. There are clearly \"best practices\" in this discipline, however the configuration, make-up, and application of each must be evaluated at the local level. Sharing successes among communities can certainly expedient the process. The discipline of public health is built on proactive interventions. If there is one spending priority that can / will deliver long term results, prevention efforts are essential."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Yarmouth.pdf"
+}

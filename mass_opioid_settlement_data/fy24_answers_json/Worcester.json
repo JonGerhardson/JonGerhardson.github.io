@@ -1,0 +1,186 @@
+{
+    "municipality": "Worcester",
+    "response_id": "50",
+    "contact": {
+        "primary_name": "Alex R Arriaga",
+        "primary_email": "arriagaa @worcesterma.gov",
+        "primary_phone": "5087693982",
+        "secondary_name": "Matilde Castiel, M.D.",
+        "secondary_email": "CastielM @worcesterma.gov",
+        "secondary_phone": "5087998486"
+    },
+    "funding": {
+        "municipality_name": "Worcester",
+        "total_received_all_years": 3063019.32,
+        "carryover_from_previous": 0,
+        "fy2024_disbursement": 2217626.33,
+        "total_available_fy24": 2217626.33,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 405002,
+        "total_unexpended": 1812624.33
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "other"
+            ],
+            "people_in_recovery": [
+                "other"
+            ],
+            "families_impacted": [
+                "other"
+            ],
+            "subject_matter_experts": [
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "The City of Worcester actively incorporates the perspectives of various community groups within its Opioid Task Force and subgroups to inform its initiatives. These groups include individuals who use drugs, people in recovery, families affected by substance use, and experts in prevention, harm reduction, treatment, and recovery.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data"
+            ],
+            "health_outcomes_race": [
+                "admin_data"
+            ],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [
+                "interviews",
+                "other"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "State Data through MA Department of Public Health National Data Through CDC Community Partners",
+            "other_methods": "Task force engagement with subgroup such as Clinicians of Color"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "admin_data_sources": "Key data sources include state-provided statistics, local emergency response, and law enforcement data, as well as data collected by the city's Health and Human Services (HHS) outreach team.",
+            "other_methods": "To assess opioid-related issues, the city examines data on opioid overdoses, including fatal incidents, and EMT responses to overdose cases. Additionally, past 30-day opioid use statistics, treatment admissions, and insights from people in recovery and those who currently use drugs help identify trends and gaps in service.",
+            "barriers": "A primary barrier in assessing community needs has been obtaining data from incarcerated individuals and those being released from jails. Additionally, securing timely, relevant data from hospitals had been difficult."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Expand housing solutions specifically for individuals with a history of opioid use.",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Early implementation",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 55831.86,
+            "how_spent": [
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid.",
+                "Other (please specify):: Crisis response model"
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 7672.5,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "A primary barrier in assessing community needs has been obtaining data from incarcerated individuals and those being released from jails. Additionally, securing timely, relevant data from hospitals had been difficult."
+        },
+        "pregnant_parenting": {
+            "progress": "Early implementation",
+            "expended": 10000.33,
+            "how_spent": [
+                "Other (please specify):: This initiative ensures mothers and affected families have access to essential resources for infant care."
+            ],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 331497.41,
+            "how_spent": [
+                "Program staffing"
+            ],
+            "job_title": "Recovery coach, Coordinator of Homelessness, Coordinator of Community Initiatives, Commissioner of HHS, Assistant Commissioner of HHS, Project Administrator, Nursing Chief",
+            "fte": "3.3"
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The City of Worcester's Health and Human Services hybrid model, which incorporates direct services staff, offers unique and valuable insight into the specific challenges faced by individuals impacted by substance use.",
+        "unmet_needs": "",
+        "orrf_recommendations": "Massachusetts, and specifically Worcester, faces a severe shortage of affordable housing, which disproportionately impacts people who use drugs and those in recovery. A targeted investment from the Statewide Opioid Recovery and Remediation Fund (ORFF) can address critical gaps by creating and expanding housing solutions tailored to this vulnerable population."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Worcester.pdf"
+}

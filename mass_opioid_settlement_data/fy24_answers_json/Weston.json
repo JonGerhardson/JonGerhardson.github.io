@@ -1,0 +1,202 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Weston",
+    "response_id": "229",
+    "contact": {
+        "primary_name": "Susan Kelley",
+        "primary_email": "kelley.s @westonma.gov",
+        "primary_phone": "7817865085",
+        "secondary_name": "Leon Gaumond",
+        "secondary_email": "gaumond.l @westonma.gov",
+        "secondary_phone": "7817865020"
+    },
+    "funding": {
+        "municipality_name": "Weston",
+        "total_received_all_years": 215037.85,
+        "carryover_from_previous": 99695.41,
+        "fy2024_disbursement": 115342.44,
+        "total_available_fy24": 215037.85,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 215037.85
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "admin_data_sources": "Newton Wellesley Hospital, SAMHSA-Substance Abuse and Mental Health Services, CIMS, Substance Addiction Data and Reports- DPH, helpline.ma.org",
+            "other_methods": "Collaboration with school department, police department , and COA social worker outreach.",
+            "barriers": "Breaking the stigma around addiction is the largest barrier in our community. We hosted a substance abuse awareness presentation at schools, hosted in Hidden in Plain Sight displays in the schools, hosted multiple education seminars."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Police follow up with social work services",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": true,
+        "populations_list": [
+            "Aging adults",
+            "Arab or Muslim",
+            "Asian, Pacific Islander, or Southeast Asian",
+            "Black or African American",
+            "Disabled",
+            "Economically under-resourced",
+            "Immigrant",
+            "Indigenous or Native American",
+            "Individuals who have been incarcerated and/or under community supervision",
+            "Latino/a/x/e or Hispanic",
+            "LGBTQ+",
+            "Non-native English speakers",
+            "Pregnant and/or parenting populations",
+            "Transgender or gender expansive",
+            "Unsheltered or housing-insecure",
+            "Veterans",
+            "Youth and/or young adults"
+        ],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Weston.pdf"
+}

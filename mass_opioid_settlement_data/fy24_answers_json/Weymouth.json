@@ -1,0 +1,194 @@
+{
+    "municipality": "Weymouth",
+    "response_id": "232",
+    "contact": {
+        "primary_name": "James D. Malary, Sr.",
+        "primary_email": "jmalary @weymouth.ma.us",
+        "primary_phone": "781-682-3550",
+        "secondary_name": "Keryn Jacobs",
+        "secondary_email": "kjacobs @weymouth.ma.us",
+        "secondary_phone": "781-340-5008"
+    },
+    "funding": {
+        "municipality_name": "Weymouth",
+        "total_received_all_years": 539501.55,
+        "carryover_from_previous": 250122.63,
+        "fy2024_disbursement": 289378.92,
+        "total_available_fy24": 539501.55,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 21867.14,
+        "total_unexpended": 517634.41
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [
+                "survey"
+            ],
+            "people_in_recovery": [
+                "survey"
+            ],
+            "families_impacted": [
+                "survey"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "access_to_services": [
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "There is a lack of diverse service providers in Weymouth. In FY25 more diverse community health workers (CHW's) will be onboarded within a new intensive outpatient (IOP) treatment and partial hospitalization plan (PHP)."
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "groups_meetings",
+                "other"
+            ],
+            "admin_data_sources": "N/A",
+            "other_methods": "Case Information Management Systems (CIMS) data from first responders.",
+            "barriers": "These populations don't often attend these coalition meetings but service providers do attend. Future work will include collaboration with those service providers."
+        },
+        "existing_programs": {
+            "programs": [
+                "South Shore Health Bridge Program",
+                "Impact Weymouth: Harm Reduction Drop-in Center",
+                "Recovered Souls"
+            ]
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "South Shore Health Bridge Program",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Impact Weymouth: Harm Reduction Drop-in Center",
+                    "sources": [
+                        "community_needs"
+                    ]
+                },
+                {
+                    "name": "Recvoered Souls",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 10909.57,
+            "how_spent": [
+                "Provide transportation to treatment or recovery services for persons with OUD"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "In our outreach efforts individuals are not identifying themselve as such. In FY25 collaboration with the Norfolk County Sherrif's Office will allow access to this population."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "In our outreach efforts individuals are not identifying themselve as such."
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Early implementation",
+            "expended": 10957.57,
+            "how_spent": [
+                "Program staffing"
+            ],
+            "job_title": "Substance Use Prevention Coordinator",
+            "fte": "1 FTE"
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Weymouth.pdf"
+}

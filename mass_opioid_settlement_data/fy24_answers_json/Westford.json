@@ -1,0 +1,207 @@
+{
+    "municipality": "Westford",
+    "response_id": "227",
+    "contact": {
+        "primary_name": "Dan O'Donnell",
+        "primary_email": "odonnell @westfordma.gov",
+        "primary_phone": "978-399-2573",
+        "secondary_name": "Nicole Laviolette",
+        "secondary_email": "nlaviolette @westfordma.gov",
+        "secondary_phone": "978-399-2503"
+    },
+    "funding": {
+        "municipality_name": "Westford",
+        "total_received_all_years": 280398.7,
+        "carryover_from_previous": 129997.88,
+        "fy2024_disbursement": 150400.82,
+        "total_available_fy24": 280398.7,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 97850.7,
+        "total_unexpended": 182548.0
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "other"
+            ],
+            "families_impacted": [
+                "forum",
+                "other"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "other"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "people_in_recovery_other": "Attended regional and state wide meetings",
+            "families_impacted_other": "Attended regional and state wide meetings",
+            "subject_matter_experts_other": "Attended regional and state wide meetings.",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "BSAS Dashboard",
+            "other_methods": "",
+            "barriers": "Community input Offering focus groups, community survey and suggestion boxes in FY25"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data"
+            ],
+            "fatal_overdoses": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "emt_response": [
+                "groups_meetings"
+            ],
+            "past_30_day_opioid_use": [
+                "admin_data"
+            ],
+            "patients_in_treatment": [
+                "admin_data",
+                "interviews"
+            ],
+            "people_in_recovery": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "people_who_use_drugs": [
+                "interviews"
+            ],
+            "treatment_providers": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "recovery_centers": [
+                "admin_data",
+                "groups_meetings"
+            ],
+            "mental_health_conditions": [
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "BSAS Dashboard Middlesex Valley Substance Use Disorder Guide Bureau of Substance Addiction Services Office of Youth and Young Adult Service HelplineMA.org",
+            "other_methods": "Interviews, group settings, meetings",
+            "barriers": "Community input Continue to have interviews, group settings, meetings Offer community survey, focus groups, suggestion boxes Connect with local providers"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We consulted with Care Mass.",
+        "consultant_activities": "Other activities (please specify)::",
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "n/a"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "n/a"
+        },
+        "connections_to_care": {
+            "progress": "Early implementation",
+            "expended": 407.15,
+            "how_spent": [
+                "Fund services or training to encourage early identification and intervention for families, children, or adolescents who may be struggling with use of drugs or mental health conditions, including peer-based programs and Youth Mental Health First Aid. Training programs may target families, caregivers, school staff, peers, neighbors, health or human services professionals, or other in contact with children or adolescents."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Early implementation",
+            "expended": 5500,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Provide training and education regarding naloxone and other drugs that treat overdoses"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "n/a"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "n/a"
+        },
+        "prevention": {
+            "progress": "Early implementation",
+            "expended": 91943.55,
+            "how_spent": [
+                "Supported programs, policies, and practices that have demonstrated effectiveness in preventing drug misuse among youth",
+                "Increased access to mental health services and support for young people provided either in the school or in the community that, if unaddressed, increases the risk of opioid or other drug use"
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Westford.pdf"
+}

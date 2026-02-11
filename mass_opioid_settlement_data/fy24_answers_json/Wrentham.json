@@ -1,0 +1,182 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "municipality": "Wrentham",
+    "response_id": "240",
+    "contact": {
+        "primary_name": "Stephanie Duquette",
+        "primary_email": "sduquette @wrentham.gov",
+        "primary_phone": "508-384-5400 x5435",
+        "secondary_name": "",
+        "secondary_email": "",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Wrentham",
+        "total_received_all_years": 91731.01,
+        "carryover_from_previous": 42528.14,
+        "fy2024_disbursement": 49202.87,
+        "total_available_fy24": 91731.01,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 42000,
+        "total_unexpended": 49731.01
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "other"
+            ],
+            "health_outcomes_race": [
+                "other"
+            ],
+            "health_outcomes_wealth": [
+                "other"
+            ],
+            "stigma_impact": [
+                "other"
+            ],
+            "provider_diversity": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Allocating funds to applicants who are on the frontline of the crisis to supplement existing programs for prevention & education, harm reduction, connections to care, treatment, and recovery."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "other"
+            ],
+            "fatal_overdoses": [
+                "other"
+            ],
+            "emt_response": [
+                "other"
+            ],
+            "admin_data_sources": "",
+            "other_methods": "Allocating funds to applicants who are on the frontline of the crisis to supplement existing programs for prevention & education, harm reduction, connections to care, treatment, and recovery.",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No challenges encountered."
+        },
+        "recovery_support": {
+            "progress": "Full implementation",
+            "expended": 15500,
+            "how_spent": [
+                "Other (please specify):: Allocating funds to applicants that provide services to support people in treatment and recovery."
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Full implementation",
+            "expended": 12500,
+            "how_spent": [
+                "Other (please specify):: Allocating funds to applicants that provide connections to care."
+            ],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Full implementation",
+            "expended": 2000,
+            "how_spent": [
+                "Other (please specify): Allocating funds to applicants that provide harm reduction."
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No challenges encountered."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "No challenges encountered."
+        },
+        "prevention": {
+            "progress": "Full implementation",
+            "expended": 11000,
+            "how_spent": [
+                "Other (please specify): Allocating funds to applicants that provide prevention education."
+            ],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Full implementation",
+            "expended": 1000,
+            "how_spent": [
+                "Other (please specify):: Allocating funds to applicants that provide prevention education, connections to care, harm reduction, support of those in treatment."
+            ],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Wrentham.pdf"
+}

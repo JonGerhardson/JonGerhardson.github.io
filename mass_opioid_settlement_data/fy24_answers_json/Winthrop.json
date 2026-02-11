@@ -1,0 +1,147 @@
+{
+    "municipality": "Winthrop",
+    "response_id": "238",
+    "contact": {
+        "primary_name": "Robert Powers",
+        "primary_email": "rpowers @winthropma.gov",
+        "primary_phone": "781-747-8138",
+        "secondary_name": "Meredith Hurley",
+        "secondary_email": "mhurley @winthropma.gov",
+        "secondary_phone": "617-846-1750"
+    },
+    "funding": {
+        "municipality_name": "Winthrop",
+        "total_received_all_years": 121609.08,
+        "carryover_from_previous": 33564.1,
+        "fy2024_disbursement": 88044.98,
+        "total_available_fy24": 121609.08,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 121609.08
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "N/A No remediation money spent to date. Additional funding sources were used to engage people who used drugs.",
+            "barriers_people_in_recovery": "N/A No remediation money spent to date. Additional funding sources were used to engage people who are in recovery.",
+            "barriers_families": "N/A No remediation money spent to date. Additional funding sources were used to engage families impacted.",
+            "barriers_experts": "N/A No remediation money spent to date. Additional funding sources were used to engage community coalitions and subject matter experts."
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "N/A",
+            "other_methods": "N/A",
+            "barriers": "N/A"
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A Existing funding sources were used to increase access to opioid use disorder treatment. Remediation planned to be used in FY25 to continue and expand efforts."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A Existing funding sources were used to increase access to opioid use disorder treatment. Remediation planned to be used in FY25 to continue and expand efforts."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A Existing funding sources were used to increase access to opioid use disorder treatment. Remediation planned to be used in FY25 to continue and expand efforts."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A Existing funding sources were used to increase access to opioid use disorder treatment. Remediation planned to be used in FY25 to continue and expand efforts."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A Existing funding sources were used to increase access to opioid use disorder treatment. Remediation planned to be used in FY25 to continue and expand efforts."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A Existing funding sources were used to increase access to opioid use disorder treatment. Remediation planned to be used in FY25 to continue and expand efforts."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "N/A Existing funding sources were used to increase access to opioid use disorder treatment. Remediation planned to be used in FY25 to continue and expand efforts."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "Currently building out strategic budgets for the next five years based on projected payments and existing grant funding.",
+        "unmet_needs": "Not at this time.",
+        "orrf_recommendations": "Increase housing support and job training."
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Winthrop.pdf"
+}

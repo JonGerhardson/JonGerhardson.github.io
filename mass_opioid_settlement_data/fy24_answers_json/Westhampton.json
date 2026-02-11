@@ -1,0 +1,149 @@
+{
+    "municipality": "Westhampton",
+    "response_id": "228",
+    "contact": {
+        "primary_name": "Douglas Finn",
+        "primary_email": "administration@westhamptonama.org",
+        "primary_phone": "413-203-3086",
+        "secondary_name": null,
+        "secondary_email": null,
+        "secondary_phone": null
+    },
+    "funding": {
+        "municipality_name": "Westhampton",
+        "total_received_all_years": 19015.26,
+        "carryover_from_previous": 8815.82,
+        "fy2024_disbursement": 10199.44,
+        "total_available_fy24": 19015.26,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 19015.26
+    },
+    "commitments": {
+        "engagement_grid": {
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "Westhampton is considering options for treatment, education, and harm reduction relative to opioid use. However, no firm or fast decisions have been made as of yet as to how to engage any given population, or how best to use these limited funds.",
+            "barriers_people_in_recovery": "Westhampton is considering options for treatment, education, and harm reduction relative to opioid use. However, no firm or fast decisions have been made as of yet as to how to engage any given population, or how best to use these limited funds.",
+            "barriers_families": "Westhampton is considering options for treatment, education, and harm reduction relative to opioid use. However, no firm or fast decisions have been made as of yet as to how to engage any given population, or how best to use these limited funds.",
+            "barriers_experts": "Westhampton is considering options for treatment, education, and harm reduction relative to opioid use. However, no firm or fast decisions have been made as of yet as to how to engage any given population, or how best to use these limited funds."
+        },
+        "disparities_assessment": {
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": ""
+        },
+        "behavioral_health_assessment": {
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "programs": []
+        },
+        "innovation_practices": {
+            "practices": [
+                {
+                    "name": "supplied narcan to town buildings, departments and schools.",
+                    "sources": [
+                        "community_needs"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "We did not engage in a planning process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "pregnant_parenting": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "prevention": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": ""
+        },
+        "administrative": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "Planning",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "The total amount of settlement funding provided to the Town of Westhampton is extremely low, and will remain low in years to come. The town is assessing the best possible uses for these funds. While it has not yet been ruled out, the town is considering ways to increase education for municipal and regional youth on the potential harm that can come from abuse of opioid-based narcotics, and is committed to ensuring that the town's emergency responders and EMTs are well educated about, supplied for, and prepared to deal with, an overdose incident.",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Westhampton.pdf"
+}

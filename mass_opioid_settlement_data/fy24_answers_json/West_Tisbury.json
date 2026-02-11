@@ -1,0 +1,148 @@
+{
+    "municipality": "West Tisbury",
+    "response_id": "224",
+    "contact": {
+        "primary_name": "Chelsea Joiner",
+        "primary_email": "accountant @westtisbury-ma.gov",
+        "primary_phone": "508-696-0106",
+        "secondary_name": "Alexander Lam",
+        "secondary_email": "boh @westtisbury-ma.gov",
+        "secondary_phone": "508-696-0105"
+    },
+    "funding": {
+        "municipality_name": "West Tisbury",
+        "total_received_all_years": 9459.6,
+        "carryover_from_previous": 4385.63,
+        "fy2024_disbursement": 5073.97,
+        "total_available_fy24": 9459.6,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": true,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 0,
+        "total_unexpended": 9459.6
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities.",
+            "barriers_people_in_recovery": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities.",
+            "barriers_families": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities.",
+            "barriers_experts": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities."
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities."
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We engaged in shared planning with other municipalities.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities."
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities."
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities."
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities."
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities."
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities."
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities.",
+        "unmet_needs": "West Tisbury is collaborating with the County of Dukes County to pool funds with all island Municipalities to design a program by which to expend Abatement Funds received by the island Municipalities, subject to the requirements set forth in State- Subdivision Agreement, and in a manner intended to optimize their impact and serve the public health needs of the island Municipalities.",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/West_Tisbury.pdf"
+}

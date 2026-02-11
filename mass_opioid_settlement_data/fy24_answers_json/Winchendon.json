@@ -1,0 +1,148 @@
+{
+    "municipality": "Winchendon",
+    "response_id": "236",
+    "contact": {
+        "primary_name": "Bill McKinney",
+        "primary_email": "bmckinney@winchendon-ma.gov",
+        "primary_phone": "9782975404",
+        "secondary_name": "",
+        "secondary_email": "",
+        "secondary_phone": ""
+    },
+    "funding": {
+        "municipality_name": "Winchendon",
+        "total_received_all_years": 174604.79,
+        "carryover_from_previous": 80949.93,
+        "fy2024_disbursement": 93654.86,
+        "total_available_fy24": 174604.79,
+        "pooled": true,
+        "pooling_details": {
+            "ima_ssa_name": "GAAMHA",
+            "interested_in_pooling": null,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": false,
+            "fiscal_agent_name": "gaamha",
+            "pooled_all_funding": false
+        },
+        "total_expended_fy24": 66227,
+        "total_unexpended": 108377.79
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [],
+            "people_in_recovery": [],
+            "families_impacted": [],
+            "subject_matter_experts": []
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "will be pooling with GAAMHA",
+            "barriers_people_in_recovery": "will be pooling with GAAMHA",
+            "barriers_families": "will be pooling with GAAMHA",
+            "barriers_experts": "will be pooling with GAAMHA"
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [],
+            "health_outcomes_race": [],
+            "health_outcomes_wealth": [],
+            "stigma_impact": [],
+            "provider_diversity": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": "will be pooling with GAAMHA"
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [],
+            "fatal_overdoses": [],
+            "emt_response": [],
+            "admin_data_sources": "",
+            "other_methods": "",
+            "barriers": ""
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": []
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": []
+        }
+    },
+    "planning": {
+        "process": "We contracted a consultant to support this process.",
+        "consultant_activities": null,
+        "care_mass_activities": null,
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 10500,
+            "how_spent": [],
+            "barriers": "will be pooling with GAAMHA"
+        },
+        "recovery_support": {
+            "progress": "No work in this area",
+            "expended": 20500,
+            "how_spent": [],
+            "barriers": "will be pooling with GAAMHA"
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 2022,
+            "how_spent": [],
+            "barriers": "will be pooling with GAAMHA"
+        },
+        "harm_reduction": {
+            "progress": "No work in this area",
+            "expended": 3500,
+            "how_spent": [],
+            "barriers": "will be pooling with GAAMHA"
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 5000,
+            "how_spent": [],
+            "barriers": "will be pooling with GAAMHA"
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 500,
+            "how_spent": [],
+            "barriers": "will be pooling with GAAMHA"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 2350,
+            "how_spent": [],
+            "barriers": "will be pooling with GAAMHA"
+        },
+        "administrative": {
+            "progress": "No work in this area",
+            "expended": 21855,
+            "how_spent": [],
+            "job_title": "",
+            "fte": ""
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "we are pooling funds with other area towns to be administered by GAAMHA",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Winchendon.pdf"
+}

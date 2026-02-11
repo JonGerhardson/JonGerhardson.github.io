@@ -1,0 +1,254 @@
+{
+    "_comment": "FY2024 Survey Answer Schema - stores only answers, questions are in template",
+    "_savings": "~67% space reduction vs full markdown files",
+    "municipality": "Westfield",
+    "response_id": "226",
+    "contact": {
+        "primary_name": "Vicki Leigh Moro",
+        "primary_email": "vicki.moro @cityofwestfield.org",
+        "primary_phone": "4135726217",
+        "secondary_name": null,
+        "secondary_email": null,
+        "secondary_phone": null
+    },
+    "funding": {
+        "municipality_name": "Westfield",
+        "total_received_all_years": 623597.99,
+        "carryover_from_previous": 289111.24,
+        "fy2024_disbursement": 334486.75,
+        "total_available_fy24": 623597.99,
+        "pooled": false,
+        "pooling_details": {
+            "ima_ssa_name": null,
+            "interested_in_pooling": false,
+            "interested_in_state_fund": false,
+            "is_fiscal_agent": null,
+            "fiscal_agent_name": null,
+            "pooled_all_funding": null
+        },
+        "total_expended_fy24": 53160.03,
+        "total_unexpended": 570437.96
+    },
+    "commitments": {
+        "engagement_grid": {
+            "_comment": "G1: Who was engaged and how",
+            "people_who_use_drugs": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ],
+            "people_in_recovery": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ],
+            "families_impacted": [
+                "forum",
+                "survey",
+                "focus_groups"
+            ],
+            "subject_matter_experts": [
+                "forum",
+                "survey",
+                "interviews",
+                "focus_groups"
+            ]
+        },
+        "engagement_descriptions": {
+            "people_who_use_drugs_other": "",
+            "barriers_people_who_use_drugs": "",
+            "barriers_people_in_recovery": "",
+            "barriers_families": "",
+            "barriers_experts": ""
+        },
+        "disparities_assessment": {
+            "_comment": "G2: How disparities were identified",
+            "access_to_services": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_race": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "health_outcomes_wealth": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "stigma_impact": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "provider_diversity": [
+                "interviews"
+            ],
+            "admin_data_sources": "BSAS Substance Addiction Services Data Dashboard",
+            "other_methods": null
+        },
+        "behavioral_health_assessment": {
+            "_comment": "G3: How behavioral health needs were assessed",
+            "opioid_overdose": [
+                "admin_data",
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "fatal_overdoses": [
+                "admin_data"
+            ],
+            "emt_response": [
+                "admin_data"
+            ],
+            "past_30_day_use": [
+                "admin_data"
+            ],
+            "patients_in_treatment": [
+                "admin_data"
+            ],
+            "people_in_recovery": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "people_who_use_drugs": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "treatment_providers": [
+                "admin_data",
+                "interviews",
+                "groups_meetings"
+            ],
+            "recovery_centers": [
+                "admin_data"
+            ],
+            "mental_health_conditions": [
+                "survey",
+                "interviews",
+                "groups_meetings"
+            ],
+            "admin_data_sources": "BSAS Substance Addiction Services Data Dashboard Bach-Harrison Prevention Needs Assessment Census Data",
+            "other_methods": "Bach-Harrison Prevention Needs Assessment Baystate Noble Community Health Needs Assessment RWJF County Health Rankings",
+            "barriers": "Lack of a community coalition to network and discuss gaps and barriers to resources and implementation of initiatives creates a barrier for providers to making connections to care across the social determinants of health and recovery capital. Planning is underway to reestablish a community coalition to address this challenge."
+        },
+        "existing_programs": {
+            "_comment": "G4: Programs/services to leverage",
+            "programs": [
+                {
+                    "name": "Tapestry Health",
+                    "sources": [
+                        "survey",
+                        "interviews",
+                        "groups_meetings"
+                    ]
+                }
+            ]
+        },
+        "innovation_practices": {
+            "_comment": "G5: Evidence-based practices",
+            "practices": [
+                {
+                    "name": "Peer Recovery Support Center",
+                    "sources": [
+                        "literature_review",
+                        "community_needs",
+                        "hired_consultant",
+                        "care_mass",
+                        "other_municipality"
+                    ]
+                }
+            ]
+        }
+    },
+    "planning": {
+        "process": "Our municipality conducted its own planning process. We contracted a consultant to support this process. We consulted with Care Mass.",
+        "consultant_activities": "Developed and conducted focus groups or a meeting with an affinity group, Developed and conducted listening sessions or community forums",
+        "care_mass_activities": "Developed and conducted focus groups or a meeting with an affinity group",
+        "documents_uploaded": null
+    },
+    "populations_served": {
+        "specific_populations": false,
+        "populations_list": [],
+        "other_populations": "",
+        "barriers": ""
+    },
+    "strategies": {
+        "treatment": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We met with OUD treatment providers for feedback on gaps in resources but have not expended any funds specifically on this strategy."
+        },
+        "recovery_support": {
+            "progress": "Planning",
+            "expended": 1800,
+            "how_spent": [
+                "Provide peer support specialists that support people in accessing OUD treatment, trauma-informed counseling and recovery support, harm reduction services, primary healthcare, or other services support for recovery across the continuum",
+                "Increase the number and capacity of high-quality recovery programs to help people in recovery",
+                "Engage non-profits, faith-based communities, and community coalitions to support people in treatment and recovery and to support family members in their efforts to support the person with OUD in the family",
+                "Support bereaved families and frontline care providers",
+                "Other (please specify):: Began the planning process to assess the feasibility of a Peer Recovery Support Center in Westfield"
+            ],
+            "barriers": ""
+        },
+        "connections_to_care": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "This strategy is encompassed by the funds expended on work being done in other areas, including Supporting People in Treatment and Recovery and Harm Reduction"
+        },
+        "harm_reduction": {
+            "progress": "Planning",
+            "expended": 2700,
+            "how_spent": [
+                "Increase availability of naloxone and other drugs that treat overdoses for first responders, overdose patients, individuals with OUD and their friends and family, schools, community-based organizations, community navigators and outreach workers, persons being released from jail or prison, or the public",
+                "Other (please specify): Partnered with our harm reduction provider to support Overdose Awareness group which provided input for our planning process while encouraging participants to engage with existing services"
+            ],
+            "barriers": ""
+        },
+        "criminal_justice": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Met with a representative from Westfield District Court Public Defender's Office to identify gaps and barriers to accessing resources for this population but have not expended funds directly for this area."
+        },
+        "pregnant_parenting": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "Received input from providers supporting pregnant and parenting women and their families but have not expended any funds in this specific area"
+        },
+        "prevention": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": [],
+            "barriers": "We have been working with our schools and youth-serving organizations to identify areas of need within the YYA population. Potential initiatives have been identified and included on our logic model, but no funds were expended directly in this area for FY24."
+        },
+        "administrative": {
+            "progress": "Full implementation",
+            "expended": 48660.03,
+            "how_spent": [
+                "Program staffing"
+            ],
+            "job_title": "Substance Use Outreach Coodinator",
+            "fte": "1"
+        },
+        "other": {
+            "progress": "No work in this area",
+            "expended": 0,
+            "how_spent": []
+        }
+    },
+    "additional_comments": {
+        "general": "",
+        "unmet_needs": "",
+        "orrf_recommendations": ""
+    },
+    "submission_url": "https://mosaic.rizema.org/wp-content/uploads/datadashboard/Westfield.pdf"
+}
