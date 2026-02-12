@@ -1,4 +1,3 @@
-Several hours after this went live, I noticed a bug that nulled out the expenditures column for FY2024. It has been fixed as of 12:30 p.m. Feb. 12, 2026. 
 
 If you find any bugs with how data is displayed on the dashboard please email jon.gerhardson@proton.me or open an issue on github. 
 
