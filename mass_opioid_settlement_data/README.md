@@ -5,3 +5,4 @@ The original municipal data for FY2023 and FY2024 is avaialble as csv files from
 
 I'll try to add a more throrough technical writeup about this at some point in the future. If in doubt about the accuracy of any information, get it from the source by sending a records request to RAO.DPH.mass.gov. I am not a state employee or any way associated with any secretariat of the Commonwealth of Massachusetts. 
 
+[Muni Raw Data_FY23.csv](Muni Raw Data_FY23.csv)
