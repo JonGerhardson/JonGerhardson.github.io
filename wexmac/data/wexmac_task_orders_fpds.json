@@ -3,7 +3,7 @@
     "description": "WEXMAC TITUS task orders from FPDS ATOM feed",
     "source": "FPDS (Federal Procurement Data System)",
     "query_method": "REF_IDV_PIID for each N00023-25-D-* IDV",
-    "generated_at": "2026-02-14T06:29:39Z",
+    "generated_at": "2026-02-14T19:31:03Z",
     "idv_count": 110,
     "idvs_with_task_orders": 46,
     "total_task_orders": 546,
