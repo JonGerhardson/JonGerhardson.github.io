@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Gerhardson — Work Portfolio</title>
+    <meta name="description"
+        content="Investigative journalism, data reporting, and open-source tools by Jonathan Gerhardson.">
+    <meta property="og:title" content="Jonathan Gerhardson — Work Portfolio">
+    <meta property="og:description" content="Investigative journalism, data reporting, and open-source tools.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/jpeg" href="119974184.jpeg">
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --serif: Georgia, 'Times New Roman', serif;
+            --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            --bg: #fafaf8;
+            --surface: #fff;
+            --text: #1a1a1a;
+            --text-2: #4a4a4a;
+            --text-3: #777;
+            --border: #e0ddd8;
+            --border-light: #eeece7;
+            --accent: #b42318;
+            --accent-dark: #8c1d15;
+            --link: #1a5276;
+            --max-w: 960px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ---- Header ---- */
+        header {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 3rem 1.5rem 2rem;
+            border-bottom: 2px solid var(--text);
+        }
+
+        header h1 {
+            font-family: var(--serif);
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-2);
+            font-size: 0.95rem;
+            max-width: 540px;
+        }
+
+        header nav {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        header nav a {
+            color: var(--text-3);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-weight: 500;
+        }
+
+        header nav a:hover {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        /* ---- Main ---- */
+        main {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* ---- Section ---- */
+        .section {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-head {
+            margin-bottom: 2rem;
+        }
+
+        .section-head h2 {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+
+
+        /* ---- Article list ---- */
+        .article-list {
+            list-style: none;
+        }
+
+        .article-list li {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border-light);
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .article-list li:last-child {
+            border-bottom: none;
+        }
+
+        .article-list h3 {
+            font-family: var(--serif);
+            font-size: 1.15rem;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 0.3rem;
+        }
+
+        .article-list h3 a {
+            color: var(--text);
+        }
+
+        .article-list h3 a:hover {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .article-list p {
+            font-size: 0.9rem;
+            color: var(--text-2);
+            line-height: 1.55;
+        }
+
+        .article-meta {
+            font-size: 0.78rem;
+            color: var(--text-3);
+            white-space: nowrap;
+            padding-top: 0.15rem;
+            text-align: right;
+        }
+
+        .pub-name {
+            font-weight: 600;
+            display: block;
+        }
+
+        /* ---- Data project ---- */
+        .data-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            max-width: 80%;
+        }
+
+        .screenshot-grid .lb-wrap > a:not(.lb-close) {
+            display: block;
+            overflow: hidden;
+        }
+
+        .screenshot-grid img {
+            border: 1px solid var(--border);
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .screenshot-grid img:hover {
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .data-body h3 {
+            font-family: var(--serif);
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+        }
+
+        .data-body p {
+            font-size: 0.9rem;
+            color: var(--text-2);
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .data-body ul {
+            padding-left: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .data-body li {
+            font-size: 0.88rem;
+            color: var(--text-2);
+            margin-bottom: 0.3rem;
+        }
+
+
+
+        /* ---- Tools ---- */
+        .tools-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        .tool-item {
+            display: grid;
+            grid-template-columns: minmax(200px, 280px) 1fr;
+            gap: 1.5rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border-light);
+            align-items: start;
+        }
+
+        .tool-item:last-child {
+            border-bottom: none;
+        }
+
+        .tool-visual {
+            display: block;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            overflow: hidden;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .tool-visual:hover {
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .tool-visual img {
+            width: 100%;
+        }
+
+        .tool-visual.empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f3f1ec;
+            min-height: 120px;
+            font-family: var(--mono);
+            font-size: 0.8rem;
+            color: var(--text-3);
+        }
+
+        .tool-info h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.15rem;
+        }
+
+        .tool-info h3 a {
+            color: var(--text);
+        }
+
+        .tool-info h3 a:hover {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .tool-sub {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            color: var(--text-3);
+            margin-bottom: 0.65rem;
+        }
+
+        .tool-info p {
+            font-size: 0.88rem;
+            color: var(--text-2);
+            line-height: 1.55;
+            margin-bottom: 0.6rem;
+        }
+
+        .tool-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+        }
+
+        .tool-tags span {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            padding: 0.15rem 0.45rem;
+            border: 1px solid var(--border);
+            color: var(--text-3);
+        }
+
+        /* ---- Footer ---- */
+        footer {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+            border-top: 2px solid var(--text);
+            font-size: 0.82rem;
+            color: var(--text-3);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer a {
+            color: var(--text-2);
+        }
+
+        /* ---- Lightbox (CSS-only via :target) ---- */
+        .lb-wrap {
+            position: relative;
+            min-width: 0;
+        }
+
+        .lb-wrap .lb-close {
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.85);
+            cursor: zoom-out;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s ease, visibility 0.25s ease;
+        }
+
+        .lb-wrap:target .lb-close {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lb-wrap:target > img,
+        .lb-wrap:target > a > img {
+            position: fixed;
+            z-index: 1001;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 92vw;
+            max-height: 92vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            box-shadow: 0 4px 40px rgba(0, 0, 0, 0.4);
+            aspect-ratio: auto;
+        }
+
+        .lb-wrap video { pointer-events: none; }
+        .lb-wrap:target > a > video {
+            position: fixed;
+            z-index: 1001;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 92vw;
+            max-height: 92vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            box-shadow: 0 4px 40px rgba(0, 0, 0, 0.4);
+            pointer-events: auto;
+        }
+
+/* ---- Responsive ---- */
+        @media (max-width: 768px) {
+
+            .data-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .tool-item {
+                grid-template-columns: 1fr;
+            }
+
+            .article-list li {
+                grid-template-columns: 1fr;
+                gap: 0.25rem;
+            }
+
+            .article-meta {
+                text-align: left;
+            }
+
+            header h1 {
+                font-size: 1.75rem;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Jonathan Gerhardson</h1>
+        <p>I use public records, data analysis, and open-source tools to help me write stories about people and governments. Based in western Massachusetts.</p>
+        <nav>
+            <a href="#reporting">Reporting</a>
+            <a href="#data">Data Projects</a>
+            <a href="#tools">Code</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Reporting -->
+        <div class="section" id="reporting">
+            <div class="section-head">
+                <h2>Selected Reporting</h2>
+            </div>
+            <ul class="article-list">
+                <li>
+                    <div>
+                        <h3><a href="https://binj.news/2026/02/11/millions-in-opioid-settlement-funds-are-still-sitting-idle-in-mass-municipalities/"
+                                target="_blank" rel="noopener">Millions in opioid settlement funds are still sitting
+                                idle in Mass municipalities</a></h3>
+                        <p>Of $113.7 million disbursed for opioid abatement, cities and towns spent 17%. Nearly half
+                            reported zero expenditures in FY25, during which 1,763 opioid-related deaths occurred
+                            statewide.</p>
+                    </div>
+                    <div class="article-meta">
+                        <span class="pub-name">BINJ</span>
+                        Feb 2026
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3><a href="https://theshoestring.org/2025/12/30/ai-hallucination-proposed-westfield-data-center-appears-abandoned-by-developers/"
+                                target="_blank" rel="noopener">AI Hallucination? Proposed Westfield data center appears
+                                abandoned by developers</a></h3>
+                        <p>A proposed &ldquo;hyper-scale&rdquo; data center pitched by Connecticut energy industry
+                            insiders,
+                            including state Sen. John Fonfara, would have drawn 10&times; more power than the state's
+                            largest existing facility. In 2021, developers refused delivery of their permit and
+                            cut off contact with the city, news outlets continued to report on the project through 2025.
+                        </p>
+                    </div>
+                    <div class="article-meta">
+                        <span class="pub-name">The Shoestring</span>
+                        Dec 2025
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3><a href="https://theshoestring.org/2025/12/06/records-west-springfield-police-partnered-with-ice-division/"
+                                target="_blank" rel="noopener">West Springfield police partnered with ICE division</a>
+                        </h3>
+                        <p>Public records revealed that West Springfield police signed an MOU with Homeland Security
+                            Investigations, one of ICE's two divisions. The city is among the most diverse in the state,
+                            with students speaking over 50 languages.</p>
+                    </div>
+                    <div class="article-meta">
+                        <span class="pub-name">The Shoestring</span>
+                        Dec 2025
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3><a href="https://theshoestring.org/2025/10/28/theres-a-lot-of-money-in-death-funeral-home-consolidation-hits-western-mass/"
+                                target="_blank" rel="noopener">Funeral home consolidation hits western Mass</a></h3>
+                        <p>A private equity-backed firm quietly acquired more than 10% of western Mass funeral homes. A
+                            quarter of the region's homes are now chains, and 46% of directors nationwide plan to retire
+                            within five years.</p>
+                    </div>
+                    <div class="article-meta">
+                        <span class="pub-name">The Shoestring</span>
+                        Oct 2025
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3><a href="https://theshoestring.org/2025/07/24/surveillance-state-comes-to-chicopee/"
+                                target="_blank" rel="noopener">Surveillance state comes to Chicopee</a></h3>
+                        <p>A network of hundreds of cameras, accessible to police at any time for any reason, is concentrated in the city’s poorest areas. 
+                                <a href="https://jongerhardson.github.io/irene/" target="_blank" rel="noopener">View the
+                                interactive map →</a></p>
+                    </div>
+                    <div class="article-meta">
+                        <span class="pub-name">The Shoestring</span>
+                        Jul 2025
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3><a href="https://theshoestring.org/2025/06/09/doxing-death-threats-deportation-how-the-far-right-stifled-campus-activism-and-sent-ice-after-a-local-student/"
+                                target="_blank" rel="noopener">How the far right stifled campus activism and sent ICE
+                                after a local student</a></h3>
+                        <p>A right-wing organization publicly called for a Hampshire College student's deportation. One
+                            day later, the government revoked his visa. A federal judge later found the warrant was
+                            backdated and the arrest attempt unlawful.</p>
+                    </div>
+                    <div class="article-meta">
+                        <span class="pub-name">The Shoestring</span>
+                        Jun 2025<br>
+                        w/ Dan McGlynn
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3><a href="https://binj.news/2025/04/15/mass-municipalities-are-sitting-on-millions-meant-to-mitigate-the-opioid-scourge/"
+                                target="_blank" rel="noopener">Mass municipalities are sitting on millions meant to
+                                mitigate the opioid scourge</a></h3>
+                        <p>Massachusetts will receive around a billion dollars for opioid abatement efforts. Here is how
+                            cities and towns are spending so far.</p>
+                    </div>
+                    <div class="article-meta">
+                        <span class="pub-name">BINJ</span>
+                        Apr 2025
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Data Projects -->
+        <div class="section" id="data">
+            <div class="section-head">
+                <h2>Data Projects</h2>
+            </div>
+            <div class="data-layout">
+                <!-- Chicopee Surveillance Map -->
+                <div>
+                    <div class="screenshot-grid" style="margin-bottom: 1rem;">
+                        <div class="lb-wrap" id="lb-1"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-1"><img src="surveillance_chicopee/Screenshot from 2026-02-15 14-46-11.png"
+                            alt="Heatmap of surveillance cameras overlaid on median household income"></a></div>
+                        <div class="lb-wrap" id="lb-2"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-2"><img src="surveillance_chicopee/Screenshot from 2026-02-15 14-48-03.png"
+                            alt="Interactive map popup showing camera location and embedded video"></a></div>
+                        <div class="lb-wrap" id="lb-vid"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-vid"><video src="slideshow_60s.mp4" controls muted style="border-radius: 6px; width: 100%; height: 100%; object-fit: cover;"></video></a></div>
+                    </div>
+                    <h3><a href="https://jongerhardson.github.io/irene/" target="_blank" rel="noopener">Chicopee
+                            Surveillance Map</a> <span class="article-meta" style="display:inline; white-space:nowrap;">Jul 2025</span></h3>
+                    <p>An interactive map of hundreds of surveillance cameras deployed by Chicopee Police using the Axon Fusus network, overlaid with
+                        Census income data. Built from audit logs obtained through a public records request. Accompanies
+                        <a href="https://theshoestring.org/2025/07/24/surveillance-state-comes-to-chicopee/"
+                            target="_blank" rel="noopener">reporting for The Shoestring</a>. Camera locations were confirmed via in-person observation (see video). 
+                    </p>
+                </div>
+                <!-- Opioid Settlement Dashboard -->
+                <div>
+                    <div class="screenshot-grid" style="margin-bottom: 1rem;">
+                        <div class="lb-wrap" id="lb-3"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-3"><img src="orrf/Screenshot from 2026-02-15 14-53-06.png"
+                            alt="Choropleth map of Massachusetts opioid settlement spending by municipality"></a></div>
+                        <div class="lb-wrap" id="lb-4"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-4"><img src="orrf/Screenshot from 2026-02-15 14-50-46.png"
+                            alt="Entity explorer with sortable municipal spending data"></a></div>
+                        <div class="lb-wrap" id="lb-5"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-5"><img src="orrf/Screenshot from 2026-02-15 14-52-16.png"
+                            alt="Full-text search across settlement expenditures"></a></div>
+                        <div class="lb-wrap" id="lb-6"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-6"><img src="orrf/Screenshot from 2026-02-15 14-51-36.png"
+                            alt="Expenditure detail view with program descriptions"></a></div>
+                    </div>
+                    <h3><a href="https://jongerhardson.github.io/mass_opioid_settlement_data/#statewide" target="_blank"
+                            rel="noopener">Opioid Settlement Dashboard</a> <span class="article-meta" style="display:inline; white-space:nowrap;">Feb 2026</span></h3>
+                    <p>An interactive dashboard tracking reported expenditures for Opioid Remediation and Recovery settlement funds across municipalities and the state executive branch. Includes data for FY2023 throughg FY2025, with full-text search, sortable tables, and spending breakdowns, and a choropleth map. Created for the Boston Institute for Nonprofit Journalism as part of my ongoing coverage of how this settlement money is being used. My initial reporting on this topic helped <a href="https://binj.news/author/jonathan-gerhardson/" target="_blank" rel="noopener">BINJ</a> secure a grant from the Data-Driven Reporting Project. I also appeared on  featured on MuckRock's <a href="https://www.youtube.com/watch?v=YIGfHBJLLzo" target="_blank" rel="noopener">FOIA Friday</a> series to discuss some challenges I faced in obtaining records from Care Mass, the public-private partnership that held these records last year.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Code & tools -->
+        <div class="section" id="tools">
+            <div class="section-head">
+                <h2>Code & Tools</h2>
+            </div>
+            <div class="tools-list">
+
+                <div class="tool-item">
+                    <div class="lb-wrap" id="lb-7"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-7" class="tool-visual"><img src="code/federal_agent_screenshot.png"
+                            alt="federal-agent querying DoD ice cream spending via Claude Code"></a></div>
+                    <div class="tool-info">
+                        <h3><a href="https://github.com/JonGerhardson/federal-agent" target="_blank"
+                                rel="noopener">federal-agent</a></h3>
+                        <div class="tool-sub">Claude Code skill · Python</div>
+                        <p>A skill for Claude Code that queries federal procurement data from FPDS, USAspending.gov, and
+                            SAM.gov. Lets you search contracts by agency, vendor, or NAICS code, analyze spending
+                            patterns, and cross-reference sources through natural language.</p>
+                    </div>
+                </div>
+
+                <div class="tool-item">
+                    <div class="lb-wrap" id="lb-8"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-8" class="tool-visual"><img src="code/Screenshot from 2026-02-15 19-20-25.png"
+                            alt="Terminal showing cthru spending and commbuys_cli vendor search results"></a></div>
+                    <div class="tool-info">
+                        <h3><a href="https://github.com/JonGerhardson/commbuys_cli" target="_blank"
+                                rel="noopener">commbuys_cli</a> &amp; <a
+                                href="https://github.com/JonGerhardson/cthru_cli" target="_blank"
+                                rel="noopener">cthru_cli</a></h3>
+                        <div class="tool-sub">CLI tools · Python</div>
+                        <p>Two command-line tools for querying state financial data in Massachusetts. commbuys_cli
+                            searches bid solicitations, contracts, and vendors on the COMMBUYS procurement portal.
+                            cthru_cli queries spending, payroll, and retirement data from CTHRUspending.mass.gov. Both
+                            support filtering, multiple output formats, and JSON export.</p>
+                    </div>
+                </div>
+
+                <div class="tool-item">
+                    <div class="lb-wrap" id="lb-9"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-9" class="tool-visual"><img src="code/Screenshot from 2026-02-15 15-26-55.png"
+                            alt="Mass.gov update bot Bluesky profile with daily posts"></a></div>
+                    <div class="tool-info">
+                        <h3><a href="https://github.com/JonGerhardson/mapoli" target="_blank" rel="noopener">Mass.gov
+                                Update Bot</a></h3>
+                        <div class="tool-sub">@massgovupdatesbot.bsky.social · Python</div>
+                        <p>Scrapes mass.gov/sitemap.xml daily and posts a summary of updated pages to Bluesky. Tracks
+                            hundreds of state government website changes per day, and logs each day's changes to a csv
+                            file.</p>
+                        <p>This is part of a larger pipeline for discovering potential news leads beyond agency press
+                            releases, that is still a work
+                            in progress.</p>
+                    </div>
+                </div>
+
+                <div class="tool-item">
+                    <div class="lb-wrap" id="lb-10"><a href="#_" class="lb-close" aria-label="Close"></a><a href="#lb-10" class="tool-visual"><img src="code/Screenshot from 2026-02-15 19-36-21.png"
+                            alt="reccomend_from_archive web interface showing playlist recommendations"></a></div>
+                    <div class="tool-info">
+                        <h3><a href="https://github.com/JonGerhardson/reccomend_from_archive" target="_blank"
+                                rel="noopener">reccomend_from_archive</a></h3>
+                        <div class="tool-sub">Web app &amp; CLI · Python</div>
+                        <p>(Personal/for fun project) A music recommender that analyzes your Spotify streaming history
+                            against scraped Spotify
+                            metadata for over 250 million tracks released by Anna's Archive
+                            and finds tracks you'll like based on your listening history, using an algorithm you
+                            control.
+                            <br> Note: no music is streamed or stored, only metadata.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <a href="mailto:jon.gerhardson@proton.me">jon.gerhardson@proton.me</a> ·
+            <a href="https://github.com/JonGerhardson" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://bsky.app/profile/jongerhardson.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+        </div>
+        <div>© 2026</div>
+    </footer>
+
+
+</body>
+
+</html>
