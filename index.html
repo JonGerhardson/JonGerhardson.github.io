@@ -1,123 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Gerhardson - Portfolio</title>
-    <!-- Tailwind CSS for styling the page -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <style>
-        /* General Page Styles */
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: #f3f4f6; /* A light gray background for the whole page */
-        }
+Journalist in western Massachusetts
 
-        /* --- Styles from your Business Card App --- */
+jon.gerhardson@proton.me
+https://bsky.app/profile/jongerhardson.bsky.social 
 
-        /* The container that simulates the 8.5x11 paper on screen */
-        #print-area {
-            width: 8.5in;
-            height: 11in;
-            margin: 2rem auto;
-            background-color: white;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            /* This padding simulates the print margins on screen */
-            padding: 0.5in 0.75in;
-            box-sizing: border-box;
-        }
+https://jongerhardson.github.io/work_portfolio/ 
 
-        #controls {
-            width: 380px;
-            flex-shrink: 0;
-        }
-        
-        /* The grid that holds the 10 business cards */
-        #card-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 3.5in);
-            grid-template-rows: repeat(5, 2in);
-            justify-content: center;
-            align-content: center;
-            width: 100%;
-            height: 100%;
-        }
 
-        /* Dashed border for on-screen guide */
-        .card svg {
-            width: 100%;
-            height: 100%;
-            border: 1px dashed #ccc;
-        }
-        
-        input[type="number"] { -moz-appearance: textfield; }
-        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+Things I made that are also hosted on this page: 
 
-        /* --- Print Specific Styles --- */
+Chicopee Axon Fusus Map (July 2025)
+https://jongerhardson.github.io/irene/
 
-        /* Define the paper size and layout for printing */
-        @page {
-            size: 8.5in 11in;
-            /* We recommend setting margins to "None" in the browser's print dialog */
-            margin: 0; 
-        }
+Massachusetts opioid settlement funds data dashboard FY2023-FY2025 (February 2026)
+https://jongerhardson.github.io/mass_opioid_settlement_data/#statewide
 
-        @media print {
-            /* Hide everything except the print area */
-            body * { visibility: hidden; }
-            #print-area, #print-area * { visibility: visible; }
-
-            /* Make the print area fill the entire page */
-            #print-area {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 8.5in;
-                height: 11in;
-                margin: 0;
-                /* Remove padding to allow the grid to be centered on the whole page */
-                padding: 0; 
-            }
-
-            /* Hide the dashed SVG border when printing */
-            .card svg {
-                border: none;
-            }
-        }
-
-    </style>
-</head>
-<body class="text-gray-800">
-
-    <!-- Main Page Header -->
-    <header class="bg-gray-800 text-white p-6 shadow-lg">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold">Jonathan Gerhardson</h1>
-            <p class="mt-2 text-xl text-gray-300"> "Journalist"</p>
-        </div>
-    </header>
-
-    <!-- Main Content Area -->
-    <main class="container mx-auto p-4 md:p-8">
-
-        <!-- Bio Section -->
-        <section id="bio" class="bg-white p-8 rounded-lg shadow-md mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 border-b pb-3 mb-4">About Me</h2>
-            <p class="text-lg text-gray-700 leading-relaxed">
-Jonathan Gerhardson is a journalist and writer based in Massachuestts. <br>
-<a href="https://muckrack.com/jonathan-gerhardson/articles" class="text-blue-600 hover:text-blue-800">Find my recent bylines here.</a> <br>
-
-I self publish some notes and shoter stories at <a href="https://jonathangerhardson.substack.com" class="text-blue-600 hover:text-blue-800">jonathangerhardson.substack.com</a> <br>
-Browse my public records repository at <a href="https://archive.org/details/@jgerhardson" class="text-blue-600 hover:text-blue-800">The Internet Archive</a> <br>
-Look at some dumb vibe coded software I've made at <a href="https://github.com/JonGerhardson" class="text-blue-600 hover:text-blue-800"> github.com/JonGerhardson</a> <br>
-Follow me on bsky! <a href="https://bsky.app/profile/jongerhardson.bsky.social" class="text-blue-600 hover:text-blue-800">@jongerhardson</a> <br>
-Early experiments with computer generated municipal government meeting reporting at <a href="https://skynet-times.blogspot.com" class="text-blue-600 hover:text-blue-800">The Generative Adversarial News Network (GAN-NET)</a>
-<br> For more recent attempts at trying to automate away any marketable skills I may posess see: <a href="https://github.com/jongerhardson/masshoLLM" class="text-blue-600 hover:text-blue-800">masshoLLM</a>
-
-                
-
-      </p>
-        </section>
-
-     
+Naval Supply Systems Command (NAVSUP) Worldwide Expeditionary Multiple Award Contract (WEXMAC) 2.2 Territorial Integrity of the United States (TITUS) task order tracker (Ongoing)
+https://jongerhardson.github.io/wexmac/
