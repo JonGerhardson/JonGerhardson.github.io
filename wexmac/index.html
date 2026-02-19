@@ -306,33 +306,6 @@
             padding: 0;
         }
         
-        /* Tabs */
-        .tabs {
-            display: flex;
-            gap: 5px;
-            margin-bottom: 20px;
-            background: var(--bg-primary);
-            padding: 5px;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-        }
-        .tab {
-            padding: 12px 24px;
-            border: none;
-            background: transparent;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--text-secondary);
-            border-radius: 6px;
-            transition: all 0.2s;
-        }
-        .tab:hover { background: var(--bg-secondary); }
-        .tab.active {
-            background: var(--primary);
-            color: white;
-        }
-        
         /* Table */
         .table-card {
             background: var(--bg-primary);
@@ -614,7 +587,6 @@ color: white;
             .charts-grid { grid-template-columns: 1fr; }
             .controls-grid { grid-template-columns: 1fr; }
             .table-header { flex-direction: column; gap: 15px; }
-            .tabs { flex-wrap: wrap; }
         }
         
         /* Utility */
@@ -779,16 +751,8 @@ color: white;
             <div class="active-filters" id="activeFilters"></div>
         </div>
 
-        <!-- Tabs -->
-        <div class="tabs">
-            <button class="tab active" onclick="switchTab('taskorders')">📋 Task Orders</button>
-            <button class="tab" onclick="switchTab('contractors')">🏢 Contractors</button>
-            <button class="tab" onclick="switchTab('agencies')">🏛️ Agencies</button>
-            <button class="tab" onclick="switchTab('analytics')">📊 Analytics</button>
-        </div>
-
         <!-- Task Orders Table -->
-        <div id="taskOrdersTab" class="tab-content">
+        <div id="taskOrdersTab">
             <div class="table-card">
                 <div class="table-header">
                     <div class="table-title">Task Orders <span class="text-muted" id="resultCount"></span></div>
@@ -824,75 +788,6 @@ color: white;
             </div>
         </div>
 
-        <!-- Contractors Tab -->
-        <div id="contractorsTab" class="tab-content" style="display: none;">
-            <div class="table-card">
-                <div class="table-header">
-                    <div class="table-title">Contractors Summary</div>
-                </div>
-                <div class="table-container">
-                    <table id="contractorTable">
-                        <thead>
-                            <tr>
-                                <th>Contractor</th>
-                                <th>UEI</th>
-                                <th>Location</th>
-                                <th>Task Orders</th>
-                                <th>Total Obligated</th>
-                                <th>Avg Award</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="contractorTableBody"></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- Agencies Tab -->
-        <div id="agenciesTab" class="tab-content" style="display: none;">
-            <div class="table-card">
-                <div class="table-header">
-                    <div class="table-title">Agency Breakdown</div>
-                </div>
-                <div class="table-container">
-                    <table id="agencyTable">
-                        <thead>
-                            <tr>
-                                <th>Agency</th>
-                                <th>Task Orders</th>
-                                <th>Total Obligated</th>
-                                <th>Avg Award</th>
-                                <th>% of Total</th>
-                            </tr>
-                        </thead>
-                        <tbody id="agencyTableBody"></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- Analytics Tab -->
-        <div id="analyticsTab" class="tab-content" style="display: none;">
-            <div class="charts-grid" style="grid-template-columns: 1fr;">
-                <div class="chart-card">
-                    <div class="chart-title">Geographic Distribution</div>
-                    <div class="table-container" style="max-height: 400px;">
-                        <table id="geoTable">
-                            <thead>
-                                <tr>
-                                    <th>State/Location</th>
-                                    <th>Task Orders</th>
-                                    <th>Total Value</th>
-                                    <th>Contractors</th>
-                                </tr>
-                            </thead>
-                            <tbody id="geoTableBody"></tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Detail Modal -->
@@ -942,9 +837,6 @@ console.log('Processed task orders:', allTaskOrders.length);
 updateStats();
 populateFilters();
 applyFilters();
-renderContractorTable();
-renderAgencyTable();
-renderGeoTable();
 console.log('Dashboard initialization complete');
 })
 .catch(err => {
@@ -1341,91 +1233,6 @@ View
             document.getElementById('resultCount').textContent = `(${filteredTaskOrders.length} results)`;
         }
 
-        // Contractor table
-        function renderContractorTable() {
-            const contractors = {};
-            allTaskOrders.forEach(to => {
-                const name = to.contractor_name || 'Unknown';
-                if (!contractors[name]) {
-                    contractors[name] = {
-                        name,
-                        uei: to.contractor_uei,
-                        location: to.contractor_location,
-                        count: 0,
-                        total: 0
-                    };
-                }
-contractors[name].count++;
-contractors[name].total += to.total_obligated_amount || 0;
-});
-
-            const sorted = Object.values(contractors).sort((a, b) => b.total - a.total);
-            
-            document.getElementById('contractorTableBody').innerHTML = sorted.map(c => `
-                <tr>
-                    <td><strong>${c.name}</strong></td>
-                    <td><code>${c.uei || 'N/A'}</code></td>
-                    <td>${c.location || 'N/A'}</td>
-                    <td>${c.count}</td>
-                    <td>${formatCurrency(c.total)}</td>
-                    <td>${formatCurrency(c.count > 0 ? c.total / c.count : 0)}</td>
-                    <td>
-                        <button class="btn btn-secondary btn-sm" onclick="filterByContractor('${c.name}')">Filter</button>
-                    </td>
-                </tr>
-            `).join('');
-        }
-
-        // Agency table
-        function renderAgencyTable() {
-            const agencies = {};
-            allTaskOrders.forEach(to => {
-                const agency = to.contracting_agency || 'Unknown';
-                if (!agencies[agency]) {
-                    agencies[agency] = { name: agency, count: 0, total: 0 };
-                }
-agencies[agency].count++;
-agencies[agency].total += to.total_obligated_amount || 0;
-});
-
-const totalValue = Object.values(agencies).reduce((sum, a) => sum + a.total, 0);
-            const sorted = Object.values(agencies).sort((a, b) => b.total - a.total);
-
-            document.getElementById('agencyTableBody').innerHTML = sorted.map(a => `
-                <tr>
-                    <td><strong>${a.name}</strong></td>
-                    <td>${a.count}</td>
-                    <td>${formatCurrency(a.total)}</td>
-                    <td>${formatCurrency(a.count > 0 ? a.total / a.count : 0)}</td>
-                    <td>${((a.total / totalValue) * 100).toFixed(1)}%</td>
-                </tr>
-            `).join('');
-        }
-
-        // Geographic table
-        function renderGeoTable() {
-            const locations = {};
-            allTaskOrders.forEach(to => {
-                const loc = to.pop_state || to.pop_country || 'Unknown';
-                if (!locations[loc]) {
-                    locations[loc] = { state: loc, count: 0, total: 0, contractors: new Set() };
-                }
-locations[loc].count++;
-locations[loc].total += to.total_obligated_amount || 0;
-locations[loc].contractors.add(to.contractor_name);
-});
-
-            const sorted = Object.values(locations).sort((a, b) => b.total - a.total);
-
-            document.getElementById('geoTableBody').innerHTML = sorted.map(l => `
-                <tr>
-                    <td><strong>${l.state}</strong></td>
-                    <td>${l.count}</td>
-                    <td>${formatCurrency(l.total)}</td>
-                    <td>${l.contractors.size}</td>
-                </tr>
-            `).join('');
-        }
 
 // Initialize charts
 function initCharts() {
@@ -1599,15 +1406,6 @@ else ranges['$10M+']++;
             });
         }
 
-        // Tab switching
-        function switchTab(tabName) {
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(t => t.style.display = 'none');
-            
-            event.target.classList.add('active');
-            document.getElementById(tabName + 'Tab').style.display = 'block';
-        }
-
         // Detail modal
         function showDetail(piid) {
             const to = allTaskOrders.find(t => t.piid === piid);
@@ -1748,11 +1546,8 @@ else ranges['$10M+']++;
         }
 
         function filterByContractor(name) {
-            switchTab('taskorders');
             document.getElementById('vendorFilter').value = name;
             applyFilters();
-            document.querySelector('.tab.active').classList.remove('active');
-            document.querySelectorAll('.tab')[0].classList.add('active');
         }
 
         // Export functions
