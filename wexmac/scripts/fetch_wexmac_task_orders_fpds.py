@@ -27,7 +27,6 @@ from fpds import fpdsRequest
 REQUEST_DELAY = 1.0  # seconds between FPDS ATOM queries (conservative)
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 RAW_DIR = PROJECT_DIR / "data" / "raw" / "fpds"
-HISTORY_FILE = PROJECT_DIR / "data" / "task_order_history.json"
 
 
 def save_api_response(source, params, data):
@@ -48,27 +47,6 @@ def save_api_response(source, params, data):
     return path
 
 
-def load_history():
-    """Load task order history from file, or return empty dict if not exists."""
-    if HISTORY_FILE.exists():
-        with open(HISTORY_FILE) as f:
-            return json.load(f)
-    return {"first_seen": {}, "last_updated": None}
-
-
-def save_history(history):
-    """Save task order history to file."""
-    HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
-    history["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    with open(HISTORY_FILE, "w") as f:
-        json.dump(history, f, indent=2)
-
-
-def get_task_order_key(task_order):
-    """Generate unique key for a task order: piid|mod_number."""
-    piid = task_order.get("piid", "")
-    mod = task_order.get("mod_number", "") or "0"
-    return f"{piid}|{mod}"
 
 
 def extract_fields(record):
@@ -234,14 +212,7 @@ def main():
     with open(input_file) as f:
         contractors = json.load(f)
 
-    # Load task order history for first_seen tracking
-    history = load_history()
-    first_seen_map = history.get("first_seen", {})
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    new_this_run = []  # Track newly seen task orders
-
     print(f"Loaded {len(contractors)} contractors")
-    print(f"Loaded history with {len(first_seen_map)} tracked task orders")
     print(f"Querying FPDS ATOM feed for task orders under each WEXMAC IDV")
     print(f"Rate limit delay: {REQUEST_DELAY}s between queries")
     print()
@@ -356,27 +327,7 @@ def main():
             print(f"    [Saving intermediate... {total_task_orders} task orders so far]")
             _save_output(output_file, all_idv_results, all_task_orders, total_task_orders, total_obligated, errors)
 
-    # Assign first_seen dates to all task orders
-    for idv_entry in all_idv_results:
-        for to in idv_entry.get("task_orders", []):
-            key = get_task_order_key(to)
-            if key not in first_seen_map:
-                # New task order - use last_modified as initial first_seen, or today
-                initial_date = to.get("last_modified", "")[:10] or today
-                first_seen_map[key] = initial_date
-                new_this_run.append(to)
-            to["first_seen"] = first_seen_map[key]
-
-    # Also update the flat all_task_orders list
-    for to in all_task_orders:
-        key = get_task_order_key(to)
-        to["first_seen"] = first_seen_map.get(key, today)
-
-    # Save updated history
-    history["first_seen"] = first_seen_map
-    save_history(history)
-
-    # Final save (now includes first_seen)
+    # Final save
     _save_output(output_file, all_idv_results, all_task_orders, total_task_orders, total_obligated, errors)
 
     # Summary
@@ -392,19 +343,6 @@ def main():
         for e in errors:
             print(f"    - {e['name']}: {e['error']}")
     print(f"\nOutput: {output_file}")
-    print(f"History: {HISTORY_FILE}")
-
-    # Report new task orders
-    if new_this_run:
-        print(f"\n{'=' * 70}")
-        print(f"NEW TASK ORDERS THIS RUN: {len(new_this_run)}")
-        print(f"{'=' * 70}")
-        for to in sorted(new_this_run, key=lambda x: x.get("obligated_amount", 0), reverse=True)[:20]:
-            print(f"  {to['piid']} | {to['vendor_name'][:30]:<30} | ${to.get('obligated_amount', 0):>14,.2f}")
-        if len(new_this_run) > 20:
-            print(f"  ... and {len(new_this_run) - 20} more")
-    else:
-        print(f"\nNo new task orders found this run.")
 
     if all_task_orders:
         print(f"\nAll WEXMAC task orders found:")
