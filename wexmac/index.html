@@ -605,7 +605,8 @@ color: white;
         <div class="container">
             <div>
                 <h1>WEXMAC Task Order Tracker</h1>
-                <p class="subtitle">FPDS Data &mdash; All Task Orders Under WEXMAC 2.2 TITUS IDVs</p>
+                <p class="subtitle">FPDS Data &mdash; All Task Orders Under WEXMAC 2.2 TITUS IDVs &mdash; <span id="lastModified"></span></p>
+		<p style="opacity: 0.45; font-size: 11px; letter-spacing: 0.04em; font-weight: 400; margin-top: 6px; line-height: 1.6;">Data being fetched from FPDS until the API goes offline, links converted to SAM.gov automatically.<br>Updates pushed intermittently because my GH actions script stopped working.<br>Email: jon.gerhardson@proton.me</p>
             </div>
             <div class="header-actions">
                 <div class="export-menu">
@@ -774,6 +775,7 @@ color: white;
                                 <th onclick="sortTable('total_obligated_amount')">Total Obligated <span class="sort-icon">↕</span></th>
                                 <th onclick="sortTable('signed_date')">Signed Date <span class="sort-icon">↕</span></th>
                                 <th onclick="sortTable('contracting_agency')">Agency <span class="sort-icon">↕</span></th>
+                                <th onclick="sortTable('last_modified')">Last Modified <span class="sort-icon">↕</span></th>
                                 <th>Description</th>
                                 <th onclick="sortTable('idv_piid')">Parent IDV <span class="sort-icon">↕</span></th>
                                 <th>Actions</th>
@@ -905,6 +907,10 @@ document.getElementById('tableBody').innerHTML = `
 const totalObligated = allTaskOrders.reduce((sum, to) => sum + (to.total_obligated_amount || 0), 0);
 const avgTo = allTaskOrders.length > 0 ? totalObligated / allTaskOrders.length : 0;
 
+            if (meta.generated_at) {
+                const d = new Date(meta.generated_at);
+                document.getElementById('lastModified').textContent = 'Last Updated ' + d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+            }
             document.getElementById('statTotalIdvs').textContent = meta.idv_count || 0;
             document.getElementById('statActiveIdvs').textContent = activeIdvs;
             document.getElementById('statTotalTOs').textContent = allTaskOrders.length;
@@ -1139,6 +1145,7 @@ return `
 <td onclick="showDetail('${to.piid}')"><span class="badge ${badgeClass}">${formatCurrency(amt)}</span></td>
 <td onclick="showDetail('${to.piid}')">${formatDate(to.signed_date)}</td>
 <td onclick="showDetail('${to.piid}')">${to.contracting_agency || 'N/A'}</td>
+<td onclick="showDetail('${to.piid}')">${formatDate(to.last_modified)}</td>
 <td style="max-width: 400px;">
 <div id="${descId}-short" style="display: ${isLong ? 'block' : 'none'};">
 ${escapeHtml(description.substring(0, 100))}${isLong ? '...' : ''}
@@ -1531,7 +1538,7 @@ else ranges['$10M+']++;
                 <div class="detail-item mt-20">
                     <div class="detail-label">FPDS Link</div>
                     <div class="detail-value">
-                        ${to.fpds_link ? `<a href="${to.fpds_link}" target="_blank" style="color: var(--primary);">View on FPDS.gov →</a>` : 'N/A'}
+                        ${to.fpds_link ? `<a href="${fpdsToSam(to.fpds_link)}" target="_blank" style="color: var(--primary);">View on SAM.gov →</a>` : 'N/A'}
                     </div>
                 </div>
             `;
@@ -1635,6 +1642,25 @@ else ranges['$10M+']++;
             if (val >= 1e6) return '$' + (val / 1e6).toFixed(1) + 'M';
             if (val >= 1e3) return '$' + (val / 1e3).toFixed(1) + 'K';
             return '$' + val.toFixed(0);
+        }
+
+        function fpdsToSam(fpdsUrl) {
+            try {
+                var u = new URL(fpdsUrl);
+                var q = u.searchParams.get('q');
+                if (!q) return fpdsUrl;
+                var m = q.match(/PIID\s*[:=]\s*"?([A-Za-z0-9\-]+)"?/i);
+                var piid = m ? m[1] : q.trim().split(/\s+/)[0];
+                if (!piid) return fpdsUrl;
+                var p = new URLSearchParams();
+                p.append('page', '1');
+                p.append('sfm[simpleSearch][keywordRadio]', 'ALL');
+                p.append('sfm[simpleSearch][keywordTags][0][key]', piid);
+                p.append('sfm[simpleSearch][keywordTags][0][value]', piid);
+                p.append('sfm[status][is_active]', 'true');
+                p.append('sfm[status][is_inactive]', 'true');
+                return 'https://sam.gov/search/?' + p.toString();
+            } catch(e) { return fpdsUrl; }
         }
 
         function formatDate(dateStr) {
