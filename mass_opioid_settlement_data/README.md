@@ -5,7 +5,7 @@ The original municipal data for FY2023 and FY2024 is avaialble as csv files from
 
 I'll try to add a more throrough technical writeup about this at some point in the future. If in doubt about the accuracy of any information, get it from the source by sending a records request to RAO.DPH.mass.gov. I am not a state employee or any way associated with any secretariat of the Commonwealth of Massachusetts. 
 
-The following files are compiled datasets from multiple sources, and/or modified records, the specific arrangement is copyright Jonathan Gerhardson 2026, released CC 4.0 + Common Clause - You are free to use for non-commercial purposes but you must give credit to Jonathan Gerhardson, BINJ.news, and include a link to this page when doing so. I am only claiming this for the format, because it was moderately annoying to convert it. The data itself is not mine and is probably all public domain. 
+The following files are compiled datasets from multiple sources, and/or modified records, the specific arrangement is copyright Jonathan Gerhardson 2026, released CC 4.0 + Common Clause - You are free to use for non-commercial purposes but you must give credit to Jonathan Gerhardson, BINJ.news, and include a link to this page when doing so. I am only claiming this for the converted formats. The originals are also either available here or from DPH and are public domain AFAIK. 
 
 [opioid_settlement.db](https://github.com/JonGerhardson/JonGerhardson.github.io/blob/main/mass_opioid_settlement_data/opioid_settlement.db) contains tables for 2023-2025 municipal reports, 2023-2025 state agency data, and Mosiac grant awardee data
 
