@@ -78,18 +78,14 @@ export default {
                 </p>
 
                 <h3 class="mt-lg">State Agency Spending Data</h3>
-                <p>State-level spending data comes from the Massachusetts Comptroller's
-                <a href="https://cthruspending.mass.gov" target="_blank" rel="noopener">CTHRU</a>
-                transparency portal, filtered to actual payments from the Opioid Recovery and Remediation Fund
-                by state agencies (primarily the Department of Public Health and Executive Office of Public Safety).</p>
-                <p style="margin-top: var(--space-sm);">
-                    <a href="https://cthru.data.socrata.com/resource/pegc-naaa.json?%24where=budget_fiscal_year+%3D+%272025%27+AND+upper%28fund%29+like+upper%28%27%25opioid%25%27%29"
-                       target="_blank"
-                       rel="noopener"
-                       class="btn btn-secondary"
-                       style="display: inline-flex; align-items: center; gap: var(--space-sm);">
-                        Download State Spending JSON (FY2025)
-                    </a>
+                <p>State-level spending data comes from <strong>EOHHS</strong> (Executive Office of Health and
+                Human Services), reflecting actual expenditures from the Opioid Recovery and Remediation Fund
+                by state agencies (primarily the Department of Public Health). The dataset covers activity
+                through September 8, 2025 and was provided by EOHHS on March 17, 2026.</p>
+                <p style="margin-top: var(--space-sm); color: var(--color-text-muted); font-size: var(--font-size-sm);">
+                    Prior to March 17, 2026 this dashboard used data from the Massachusetts Comptroller's
+                    <a href="https://cthruspending.mass.gov" target="_blank" rel="noopener">CTHRU</a>
+                    transparency portal. The EOHHS-provided records supersede those figures.
                 </p>
 
                 <h2 class="mt-xl mb-md">ORRF Advisory Council</h2>

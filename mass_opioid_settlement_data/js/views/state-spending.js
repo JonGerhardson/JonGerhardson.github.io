@@ -1,6 +1,6 @@
 /**
  * State Agencies Spending View
- * Shows FY25 state-level spending from CTHRU (Opioid Recovery and Remediation Fund)
+ * Shows FY25 state-level spending from EOHHS (Opioid Recovery and Remediation Fund)
  */
 
 import * as Data from '../data.js';
@@ -11,24 +11,24 @@ export default {
   title: 'State Agencies',
 
   async render(container, db, params) {
-    const availableYears = Data.getStateFiscalYears();
+    const availableYears = Data.getItemizedStateFiscalYears();
     const defaultYear = availableYears[0] || 2025;
 
     // Use year from params or state, default to newest
     this.currentFiscalYear = this.currentFiscalYear || defaultYear;
 
-    const summary = Data.getStateSummary(this.currentFiscalYear);
-    const deptData = Data.getStateSpendingByDepartment(this.currentFiscalYear);
-    const vendorData = Data.getStateSpendingByVendor(1000, this.currentFiscalYear);
-    const objectClassData = Data.getStateSpendingByObjectClass(this.currentFiscalYear);
+    const summary = Data.getItemizedStateSummary(this.currentFiscalYear);
+    const deptData = Data.getItemizedStateSpendingByDepartment(this.currentFiscalYear);
+    const vendorData = Data.getItemizedStateSpendingByVendor(1000, this.currentFiscalYear);
+    const programData = Data.getItemizedStateSpendingByProgram(this.currentFiscalYear);
 
     container.innerHTML = `
             <div class="entity-header">
                 <h1 class="mb-sm">
                     State Agencies
-                    <span class="debug-info">CTHRU Data</span>
+                    <span class="debug-info">EOHHS Data</span>
                 </h1>
-                
+
                 ${availableYears.length > 1 ? `
                     <div class="fiscal-year-selector">
                         <label for="state-fy-select" class="sr-only">Fiscal Year</label>
@@ -48,7 +48,7 @@ export default {
                     <div class="stat-value">${Data.formatCurrency(summary.total)}</div>
                     <div class="stat-label">
                         FY${this.currentFiscalYear} State Spending
-                        <span class="debug-info">SUM(amount)</span>
+                        <span class="debug-info">SUM(posting_line_amount)</span>
                     </div>
                 </div>
                 <div class="stat-card">
@@ -62,14 +62,14 @@ export default {
                     <div class="stat-value">${summary.uniqueVendors}</div>
                     <div class="stat-label">
                         Unique Vendors
-                        <span class="debug-info">COUNT(DISTINCT vendor)</span>
+                        <span class="debug-info">COUNT(DISTINCT legal_name)</span>
                     </div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-value">${Data.formatCurrency(summary.recordCount > 0 ? summary.total / summary.recordCount : 0)}</div>
                     <div class="stat-label">
                         Avg Transaction
-                        <span class="debug-info">AVG(amount)</span>
+                        <span class="debug-info">AVG(posting_line_amount)</span>
                     </div>
                 </div>
             </section>
@@ -79,12 +79,13 @@ export default {
                     <h3 class="card-title">About This Data</h3>
                 </div>
                 <p style="color: var(--color-text-muted); margin: 0;">
-                    This shows actual payments from the Massachusetts <strong>Opioid Recovery and Remediation Fund</strong> 
-                    for <strong>Fiscal Year ${this.currentFiscalYear}</strong> as recorded in 
-                    <a href="https://cthruspending.mass.gov" target="_blank" rel="noopener">CTHRU</a>, 
-                    the state's transparency portal. These are state agency expenditures (primarily DPH), 
+                    This shows actual payments from the Massachusetts <strong>Opioid Recovery and Remediation Fund</strong>
+                    for <strong>Fiscal Year ${this.currentFiscalYear}</strong> as reported by
+                    <strong>EOHHS</strong> (Executive Office of Health and Human Services).
+                    These are state agency expenditures (primarily DPH),
                     separate from the municipal spending reported via survey.
-                    <span class="debug-info">table: state_spending, year: ${this.currentFiscalYear}</span>
+                    Dataset covers activity through September 8, 2025; provided by EOHHS on March 17, 2026.
+                    <span class="debug-info">table: itemized_state_spending, year: ${this.currentFiscalYear}</span>
                 </p>
             </div>
 
@@ -92,16 +93,16 @@ export default {
                 <div class="chart-card">
                     <h3 class="chart-title">
                         Spending by Department
-                        <span class="debug-info">department_code, department</span>
+                        <span class="debug-info">department</span>
                     </h3>
                     <div id="dept-chart" class="category-bars"></div>
                 </div>
                 <div class="chart-card">
                     <h3 class="chart-title">
-                        Spending by Category
-                        <span class="debug-info">object_class</span>
+                        Spending by Program
+                        <span class="debug-info">orrf_program_initiative</span>
                     </h3>
-                    <div id="object-class-chart" class="category-bars"></div>
+                    <div id="program-chart" class="category-bars"></div>
                 </div>
             </div>
 
@@ -113,10 +114,9 @@ export default {
                     <table class="data-table" id="vendor-table">
                         <thead>
                             <tr>
-                                <th>Vendor <span class="debug-info">vendor</span></th>
-                                <th>Location <span class="debug-info">city, state</span></th>
-                                <th style="text-align: right;">Total <span class="debug-info">SUM(amount)</span></th>
-                                <th style="text-align: right;"># Payments <span class="debug-info">COUNT(*)</span></th>
+                                <th>Vendor <span class="debug-info">legal_name</span></th>
+                                <th style="text-align: right;">Total <span class="debug-info">SUM(posting_line_amount)</span></th>
+                                <th style="text-align: right;"># Transactions <span class="debug-info">COUNT(*)</span></th>
                             </tr>
                         </thead>
                         <tbody></tbody>
@@ -126,7 +126,7 @@ export default {
         `;
 
     this.renderDeptChart(deptData);
-    this.renderObjectClassChart(objectClassData);
+    this.renderProgramChart(programData);
     this.renderVendorTable(vendorData);
 
     // Add event listener for dropdown
@@ -148,21 +148,26 @@ export default {
       'var(--chart-4)', 'var(--chart-5)', 'var(--chart-6)'
     ];
 
+    const deptNames = {
+      DPH: 'Dept. of Public Health',
+      EHS: 'Executive Office of Health & Human Services',
+      EPS: 'Exec. Office of Public Safety & Security'
+    };
+
     container.innerHTML = depts.map((dept, i) => {
       const pct = maxTotal > 0 ? (dept.total / maxTotal * 100) : 0;
-      const safeName = dept.name || 'Unknown';
-      const displayName = safeName.includes('(') ? safeName.split('(')[0].trim() : safeName;
+      const displayName = deptNames[dept.code] || dept.code;
 
       return `
                 <div class="category-bar-row" style="margin-bottom: var(--space-md);">
                     <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-xs);">
-                        <span style="font-weight: 500;">${escapeHtml(dept.code || 'UNK')} - ${escapeHtml(displayName)}</span>
+                        <span style="font-weight: 500;">${escapeHtml(dept.code)} — ${escapeHtml(displayName)}</span>
                         <span style="color: var(--color-text-muted);">${Data.formatCurrency(dept.total)}</span>
                     </div>
                     <div style="background: var(--color-bg-secondary); border-radius: var(--border-radius-sm); height: 24px; overflow: hidden;">
                         <div style="
-                            width: ${pct}%; 
-                            height: 100%; 
+                            width: ${pct}%;
+                            height: 100%;
                             background: ${chartColors[i % chartColors.length]};
                             border-radius: var(--border-radius-sm);
                             transition: width 0.5s ease;
@@ -176,43 +181,34 @@ export default {
     }).join('');
   },
 
-  renderObjectClassChart(objectClasses) {
-    const container = document.getElementById('object-class-chart');
-    const maxTotal = Math.max(...objectClasses.map(o => o.total));
+  renderProgramChart(programs) {
+    const container = document.getElementById('program-chart');
+    const maxTotal = Math.max(...programs.map(p => p.total));
 
     const chartColors = [
       'var(--chart-2)', 'var(--chart-3)', 'var(--chart-4)',
       'var(--chart-5)', 'var(--chart-6)', 'var(--chart-1)'
     ];
 
-    // Shorten object class names
-    const shortNames = {
-      '(AA) REGULAR EMPLOYEE COMPENSATION': 'Salaries',
-      '(BB) REGULAR EMPLOYEE RELATED EXPEN': 'Benefits',
-      '(CC) SPECIAL EMPLOYEES': 'Contract Staff',
-      '(HH) CONSULTANT SVCS (TO DEPTS)': 'Consultants',
-      '(MM) PURCHASED CLIENT/PROGRAM SVCS': 'Program Services',
-      '(PP) STATE AID/POL SUBS': 'State Aid',
-      '(UU) IT NON-PAYROLL EXPENSE': 'IT'
-    };
-
-    container.innerHTML = objectClasses.map((obj, i) => {
-      const pct = maxTotal > 0 ? (obj.total / maxTotal * 100) : 0;
-      const displayName = shortNames[obj.code] || obj.code;
+    container.innerHTML = programs.map((prog, i) => {
+      const pct = maxTotal > 0 ? (prog.total / maxTotal * 100) : 0;
       return `
                 <div class="category-bar-row" style="margin-bottom: var(--space-md);">
                     <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-xs);">
-                        <span style="font-weight: 500;">${escapeHtml(displayName)}</span>
-                        <span style="color: var(--color-text-muted);">${Data.formatCurrency(obj.total)}</span>
+                        <span style="font-weight: 500;">${escapeHtml(prog.code)}</span>
+                        <span style="color: var(--color-text-muted);">${Data.formatCurrency(prog.total)}</span>
                     </div>
                     <div style="background: var(--color-bg-secondary); border-radius: var(--border-radius-sm); height: 24px; overflow: hidden;">
                         <div style="
-                            width: ${pct}%; 
-                            height: 100%; 
+                            width: ${pct}%;
+                            height: 100%;
                             background: ${chartColors[i % chartColors.length]};
                             border-radius: var(--border-radius-sm);
                             transition: width 0.5s ease;
                         "></div>
+                    </div>
+                    <div style="font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-xs);">
+                        ${prog.count.toLocaleString()} transactions
                     </div>
                 </div>
             `;
@@ -225,9 +221,6 @@ export default {
     tbody.innerHTML = vendors.map(vendor => `
             <tr>
                 <td style="font-weight: 500;">${escapeHtml(vendor.name)}</td>
-                <td style="color: var(--color-text-muted);">
-                    ${vendor.city && vendor.state ? `${escapeHtml(vendor.city)}, ${escapeHtml(vendor.state)}` : '—'}
-                </td>
                 <td style="text-align: right; font-family: var(--font-mono);">${Data.formatCurrency(vendor.total)}</td>
                 <td style="text-align: right;">${vendor.count}</td>
             </tr>

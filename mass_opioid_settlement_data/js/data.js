@@ -17,6 +17,7 @@ let fullEntityCache = new Map(); // Full entity rows keyed by record_id
 let expenditureCache = new Map(); // Pre-computed expenditures by record_id (performance optimization)
 let pdfAttachmentCache = new Map(); // PDF attachments by record_id
 let stateSpendingCache = null; // State-level spending data from CTHRU
+let itemizedStateSpendingCache = null; // State-level itemized spending data from DPH
 
 // Historical data caches (FY2023, FY2024)
 let fy23EntityCache = new Map(); // FY2023 entities keyed by municipality name
@@ -250,6 +251,63 @@ function buildStateSpendingCache() {
   }
 }
 
+function aggregateItemizedStateSpending(rows) {
+  const byDept = {};
+  const byVendor = {};
+  const byProgram = {};
+  let total = 0;
+
+  rows.forEach(row => {
+    const amount = row.posting_line_amount || 0;
+    total += amount;
+
+    // Group by department
+    const deptCode = row.department || 'UNKNOWN';
+    if (!byDept[deptCode]) {
+      byDept[deptCode] = { code: deptCode, name: deptCode, total: 0, count: 0 };
+    }
+    byDept[deptCode].total += amount;
+    byDept[deptCode].count++;
+
+    // Group by vendor
+    const vendor = row.legal_name || 'UNKNOWN';
+    if (!byVendor[vendor]) {
+      byVendor[vendor] = { name: vendor, city: '', state: '', total: 0, count: 0 };
+    }
+    byVendor[vendor].total += amount;
+    byVendor[vendor].count++;
+
+    // Group by program
+    const program = row.orrf_program_initiative || 'UNKNOWN';
+    if (!byProgram[program]) {
+      byProgram[program] = { code: program, total: 0, count: 0 };
+    }
+    byProgram[program].total += amount;
+    byProgram[program].count++;
+  });
+
+  return { total, byDept, byVendor, byProgram };
+}
+
+function buildItemizedStateSpendingCache() {
+  try {
+    const stateRows = query('SELECT * FROM itemized_state_spending');
+    const { total, byDept, byVendor, byProgram } = aggregateItemizedStateSpending(stateRows);
+
+    itemizedStateSpendingCache = {
+      rows: stateRows,
+      total,
+      byDept: Object.values(byDept).sort((a, b) => b.total - a.total),
+      byVendor: Object.values(byVendor).sort((a, b) => b.total - a.total),
+      byProgram: Object.values(byProgram).sort((a, b) => b.total - a.total),
+      uniqueVendors: Object.keys(byVendor).length
+    };
+  } catch (e) {
+    console.warn('Itemized state spending table not found, skipping:', e.message);
+    itemizedStateSpendingCache = { rows: [], total: 0, byDept: [], byVendor: [], byProgram: [], uniqueVendors: 0 };
+  }
+}
+
 /**
  * Build historical data cache from a table
  * @param {string} tableName - Name of the table to query
@@ -336,6 +394,7 @@ async function populateCaches() {
   buildExpenditureCache();
   buildPdfAttachmentCache();
   buildStateSpendingCache();
+  buildItemizedStateSpendingCache();
 
   // Load grants from database (now synchronous SQL queries)
   loadCountyMapping();
@@ -1225,7 +1284,7 @@ export function formatPercent(value, decimals = 1) {
 // ============================================================================
 
 /**
- * Object class labels for state spending
+ * Object class labels for state spending (CTHRU format)
  */
 export const STATE_OBJECT_CLASSES = {
   '(AA) REGULAR EMPLOYEE COMPENSATION': 'Regular Employee Compensation',
@@ -1235,6 +1294,21 @@ export const STATE_OBJECT_CLASSES = {
   '(MM) PURCHASED CLIENT/PROGRAM SVCS': 'Purchased Program Services',
   '(PP) STATE AID/POL SUBS': 'State Aid',
   '(UU) IT NON-PAYROLL EXPENSE': 'IT Expenses'
+};
+
+/**
+ * Object class labels for EOHHS/ORRF itemized spending
+ */
+export const EOHHS_OBJECT_CLASSES = {
+  AA: 'Salaries',
+  BB: 'Employee Benefits',
+  CC: 'Contract Staff',
+  DD: 'Payroll Taxes & Fringe',
+  EE: 'Indirect Costs',
+  HH: 'Consultant Services',
+  MM: 'Purchased Program Services',
+  PP: 'State Aid',
+  UU: 'IT Expenses'
 };
 
 /**
@@ -1404,6 +1478,124 @@ export function searchStateSpending(term) {
       return searchable.includes(termLower);
     })
     .slice(0, 100);
+}
+
+// ============================================================================
+// ITEMIZED STATE SPENDING FUNCTIONS (EOHHS/ORRF data)
+// ============================================================================
+
+/**
+ * Get summary stats for itemized EOHHS state spending
+ * @param {number} fiscalYear - Filter by fiscal year (optional)
+ * @returns {Object} Summary with total, recordCount, uniqueVendors
+ */
+export function getItemizedStateSummary(fiscalYear) {
+  if (!itemizedStateSpendingCache) {
+    return { total: 0, recordCount: 0, uniqueVendors: 0 };
+  }
+
+  let rows = itemizedStateSpendingCache.rows;
+  if (fiscalYear) {
+    rows = rows.filter(r => parseInt(r.budget_fiscal_year) === fiscalYear);
+  }
+
+  const total = rows.reduce((sum, r) => sum + (r.posting_line_amount || 0), 0);
+  const uniqueVendors = new Set(rows.map(r => r.legal_name).filter(Boolean)).size;
+
+  return { total, recordCount: rows.length, uniqueVendors };
+}
+
+/**
+ * Get itemized spending grouped by department
+ * @param {number} fiscalYear - Filter by fiscal year (optional)
+ * @returns {Array<Object>} Departments sorted by total spending
+ */
+export function getItemizedStateSpendingByDepartment(fiscalYear) {
+  if (!itemizedStateSpendingCache) { return []; }
+
+  let rows = itemizedStateSpendingCache.rows;
+  if (fiscalYear) {
+    rows = rows.filter(r => parseInt(r.budget_fiscal_year) === fiscalYear);
+  }
+
+  const depts = {};
+  rows.forEach(r => {
+    const code = r.department || 'UNKNOWN';
+    if (!depts[code]) {
+      depts[code] = { code, name: code, total: 0, count: 0 };
+    }
+    depts[code].total += r.posting_line_amount || 0;
+    depts[code].count++;
+  });
+
+  return Object.values(depts).sort((a, b) => b.total - a.total);
+}
+
+/**
+ * Get top vendors by itemized state spending
+ * @param {number} limit - Max vendors to return
+ * @param {number} fiscalYear - Filter by fiscal year (optional)
+ * @returns {Array<Object>} Vendors sorted by total spending
+ */
+export function getItemizedStateSpendingByVendor(limit = 50, fiscalYear) {
+  if (!itemizedStateSpendingCache) { return []; }
+
+  let rows = itemizedStateSpendingCache.rows;
+  if (fiscalYear) {
+    rows = rows.filter(r => parseInt(r.budget_fiscal_year) === fiscalYear);
+  }
+
+  const vendors = {};
+  rows.forEach(r => {
+    const name = r.legal_name || 'UNKNOWN';
+    if (!vendors[name]) {
+      vendors[name] = { name, total: 0, count: 0 };
+    }
+    vendors[name].total += r.posting_line_amount || 0;
+    vendors[name].count++;
+  });
+
+  return Object.values(vendors).sort((a, b) => b.total - a.total).slice(0, limit);
+}
+
+/**
+ * Get itemized spending grouped by ORRF program/initiative
+ * @param {number} fiscalYear - Filter by fiscal year (optional)
+ * @returns {Array<Object>} Programs sorted by total spending
+ */
+export function getItemizedStateSpendingByProgram(fiscalYear) {
+  if (!itemizedStateSpendingCache) { return []; }
+
+  let rows = itemizedStateSpendingCache.rows;
+  if (fiscalYear) {
+    rows = rows.filter(r => parseInt(r.budget_fiscal_year) === fiscalYear);
+  }
+
+  const programs = {};
+  rows.forEach(r => {
+    const name = r.orrf_program_initiative || 'Unassigned';
+    if (!programs[name]) {
+      programs[name] = { code: name, total: 0, count: 0 };
+    }
+    programs[name].total += r.posting_line_amount || 0;
+    programs[name].count++;
+  });
+
+  return Object.values(programs).sort((a, b) => b.total - a.total);
+}
+
+/**
+ * Get available fiscal years for itemized state spending
+ * @returns {Array<number>} Sorted years descending
+ */
+export function getItemizedStateFiscalYears() {
+  if (!itemizedStateSpendingCache) { return []; }
+  const years = new Set(
+    itemizedStateSpendingCache.rows
+      .map(r => parseInt(r.budget_fiscal_year))
+      .filter(y => !isNaN(y) && y > 2000 && y < 2100)
+  );
+  return Array.from(years).sort((a, b) => b - a);
 }
 
 // ============================================================================

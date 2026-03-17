@@ -13,7 +13,7 @@ export default {
     const summary = Data.getStatewideSummary();
     const topSpenders = Data.getTopSpenders(10);
     const categoryData = Data.getSpendingByCategory();
-    const stateSummary = Data.getStateSummary();
+    const stateSummary = Data.getItemizedStateSummary();
 
     container.innerHTML = `
             <section class="hero-stats">
@@ -66,7 +66,7 @@ export default {
                 <div style="display: flex; gap: var(--space-xl); flex-wrap: wrap; margin-top: var(--space-sm);">
                     <div>
                         <div style="font-size: var(--font-size-2xl); font-weight: 600; color: var(--color-text-primary);">${Data.formatCurrency(stateSummary.total)}</div>
-                        <div style="font-size: var(--font-size-sm); color: var(--color-text-muted);">from CTHRU (FY25)</div>
+                        <div style="font-size: var(--font-size-sm); color: var(--color-text-muted);">EOHHS (FY25)</div>
                     </div>
                     <div>
                         <div style="font-size: var(--font-size-2xl); font-weight: 600; color: var(--color-text-primary);">${stateSummary.uniqueVendors}</div>
