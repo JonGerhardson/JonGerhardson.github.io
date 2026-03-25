@@ -1,2 +1,2 @@
 
-[JonGerhardson.github.io](JonGerhardson.github.io)
+[JonGerhardson.github.io](https://jongerhardson.github.io)
