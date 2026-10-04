@@ -120,7 +120,26 @@
             margin-bottom: 15px;
             font-size: 0.9rem;
             color: var(--text-dim);
+            flex-wrap: wrap;
+            gap: 12px;
         }
+        .sort-control {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .sort-select {
+            padding: 5px 10px;
+            font-size: 0.85rem;
+            border-radius: 6px;
+            background-color: #0f172a;
+            border: 1px solid var(--border);
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .sort-select:focus { border-color: var(--primary); }
         .btn-csv {
             background-color: transparent;
             color: var(--accent);
@@ -143,6 +162,23 @@
         }
         th, td { padding: 12px 16px; text-align: left; vertical-align: top; }
         th { background-color: #172554; color: #93c5fd; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        th.sortable {
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.15s, color 0.15s;
+        }
+        th.sortable:hover {
+            background-color: #1e3a8a;
+            color: #fff;
+        }
+        .sort-icon {
+            font-size: 0.75rem;
+            margin-left: 4px;
+            opacity: 0.7;
+        }
+        th.sortable:hover .sort-icon {
+            opacity: 1;
+        }
         tr:not(:last-child) { border-bottom: 1px solid var(--border); }
         tr:hover { background-color: rgba(255,255,255,0.02); }
         .date-col { white-space: nowrap; color: var(--text-dim); font-size: 0.9rem; }
@@ -432,7 +468,19 @@
 
         <div id="statsBar" class="stats-bar" style="display: none;">
             <span id="statsText">Found 0 items</span>
-            <button id="exportBtn" class="btn-csv" onclick="exportCSV()">⬇ Export Results to CSV</button>
+            <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                <div class="sort-control">
+                    <label for="sortSelect" style="font-size: 0.82rem; color: var(--text-dim); margin-bottom: 0; white-space: nowrap;">Sort by:</label>
+                    <select id="sortSelect" class="sort-select" onchange="handleSortChange(this.value)">
+                        <option value="date-desc">Date (Newest first)</option>
+                        <option value="date-asc">Date (Oldest first)</option>
+                        <option value="state-asc">State (A → Z)</option>
+                        <option value="state-desc">State (Z → A)</option>
+                        <option value="city-asc">City (A → Z)</option>
+                    </select>
+                </div>
+                <button id="exportBtn" class="btn-csv" onclick="exportCSV()">⬇ Export Results to CSV</button>
+            </div>
         </div>
         <div id="resultsContainer">
             <div class="search-card empty-state">
@@ -460,6 +508,7 @@
     <script>
         let allPortals = [];
         let currentResults = [];
+        let currentSort = 'date-desc';
         let activeAbortController = null;
         const CONCURRENCY = 25;
 
@@ -590,7 +639,7 @@
                     const now = performance.now();
                     if (hitsCount > 0 && now - lastRenderTime > 1200) {
                         lastRenderTime = now;
-                        const sortedCopy = [...currentResults].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+                        const sortedCopy = sortItems([...currentResults], currentSort);
                         renderTable(sortedCopy);
                     }
                 }
@@ -609,8 +658,8 @@
             searchBtn.innerText = 'Search';
             stopBtn.style.display = 'none';
 
-            // Final sort descending by date
-            currentResults.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+            // Final sort using current sort setting
+            currentResults = sortItems(currentResults, currentSort);
 
             const munisWithHits = new Set(currentResults.map(r => r.slug)).size;
             statsBar.style.display = 'flex';
@@ -731,6 +780,74 @@
             };
         }
 
+        function sortItems(items, sortKey) {
+            const list = [...items];
+            switch (sortKey) {
+                case 'state-asc':
+                    return list.sort((a, b) => {
+                        const s = (a.state || '').localeCompare(b.state || '');
+                        if (s !== 0) return s;
+                        const c = (a.city || a.slug || '').localeCompare(b.city || b.slug || '');
+                        if (c !== 0) return c;
+                        return (b.date || '').localeCompare(a.date || '');
+                    });
+                case 'state-desc':
+                    return list.sort((a, b) => {
+                        const s = (b.state || '').localeCompare(a.state || '');
+                        if (s !== 0) return s;
+                        const c = (a.city || a.slug || '').localeCompare(b.city || b.slug || '');
+                        if (c !== 0) return c;
+                        return (b.date || '').localeCompare(a.date || '');
+                    });
+                case 'date-asc':
+                    return list.sort((a, b) => {
+                        const d = (a.date || '').localeCompare(b.date || '');
+                        if (d !== 0) return d;
+                        return (a.state || '').localeCompare(b.state || '');
+                    });
+                case 'date-desc':
+                    return list.sort((a, b) => {
+                        const d = (b.date || '').localeCompare(a.date || '');
+                        if (d !== 0) return d;
+                        return (a.state || '').localeCompare(b.state || '');
+                    });
+                case 'city-asc':
+                    return list.sort((a, b) => {
+                        const c = (a.city || a.slug || '').localeCompare(b.city || b.slug || '');
+                        if (c !== 0) return c;
+                        return (b.date || '').localeCompare(a.date || '');
+                    });
+                case 'city-desc':
+                    return list.sort((a, b) => {
+                        const c = (b.city || b.slug || '').localeCompare(a.city || a.slug || '');
+                        if (c !== 0) return c;
+                        return (b.date || '').localeCompare(a.date || '');
+                    });
+                default:
+                    return list.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+            }
+        }
+
+        function handleSortChange(newSort) {
+            currentSort = newSort;
+            currentResults = sortItems(currentResults, currentSort);
+            renderTable(currentResults);
+        }
+
+        function toggleSort(column) {
+            if (column === 'state') {
+                currentSort = (currentSort === 'state-asc') ? 'state-desc' : 'state-asc';
+            } else if (column === 'date') {
+                currentSort = (currentSort === 'date-desc') ? 'date-asc' : 'date-desc';
+            } else if (column === 'city') {
+                currentSort = (currentSort === 'city-asc') ? 'city-desc' : 'city-asc';
+            }
+            const sortSelect = document.getElementById('sortSelect');
+            if (sortSelect) sortSelect.value = currentSort;
+            currentResults = sortItems(currentResults, currentSort);
+            renderTable(currentResults);
+        }
+
         function renderTable(items) {
             const container = document.getElementById('resultsContainer');
             if (items.length === 0) {
@@ -738,13 +855,24 @@
                 return;
             }
 
+            const dateIcon = currentSort === 'date-desc' ? '▼' : (currentSort === 'date-asc' ? '▲' : '⇅');
+            const stateIcon = currentSort === 'state-asc' ? '▲' : (currentSort === 'state-desc' ? '▼' : '⇅');
+            const cityIcon = currentSort === 'city-asc' ? '▲' : (currentSort === 'city-desc' ? '▼' : '⇅');
+
             let html = `
             <table class="results-table">
                 <thead>
                     <tr>
-                        <th style="width: 105px;">Date</th>
-                        <th style="width: 180px;">Location</th>
-                        <th style="width: 160px;">Category</th>
+                        <th style="width: 105px;" class="sortable" onclick="toggleSort('date')" title="Click to sort by Date">
+                            Date <span class="sort-icon ${currentSort.startsWith('date') ? 'active' : ''}">${dateIcon}</span>
+                        </th>
+                        <th style="width: 80px;" class="sortable" onclick="toggleSort('state')" title="Click to sort by State">
+                            State <span class="sort-icon ${currentSort.startsWith('state') ? 'active' : ''}">${stateIcon}</span>
+                        </th>
+                        <th style="width: 170px;" class="sortable" onclick="toggleSort('city')" title="Click to sort by Location">
+                            Location <span class="sort-icon ${currentSort.startsWith('city') ? 'active' : ''}">${cityIcon}</span>
+                        </th>
+                        <th style="width: 135px;">Category</th>
                         <th>Meeting & Matched Documents (CivicClerk)</th>
                     </tr>
                 </thead>
@@ -827,7 +955,11 @@
                 html += `
                     <tr>
                         <td class="date-col">${r.date || 'N/A'}</td>
-                        <td><span class="loc-badge">${loc}</span><div style="font-size: 0.72rem; color: var(--text-dim); margin-top: 3px;">CivicClerk: ${r.slug}</div></td>
+                        <td><span class="loc-badge">${r.state || 'N/A'}</span></td>
+                        <td>
+                            <div style="font-weight: 600; color: #fff;">${r.city || r.slug}</div>
+                            <div style="font-size: 0.72rem; color: var(--text-dim); margin-top: 2px;">CivicClerk: ${r.slug}</div>
+                        </td>
                         <td class="category-text">${r.category || 'General'}</td>
                         <td>
                             <div class="meeting-header-row">
@@ -851,6 +983,11 @@
 
         function exportCSV() {
             if (!currentResults.length) return;
+            const queryVal = (document.getElementById('query').value || '').trim();
+            const safeQuery = queryVal
+                ? queryVal.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '')
+                : 'all';
+
             const headers = [
                 'slug', 'city', 'state', 'date', 'meeting_title',
                 'matched_documents', 'primary_download_url', 'direct_pdf_download_urls',
@@ -879,7 +1016,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `civicclerk_search_${Date.now()}.csv`;
+            a.download = `civicclerk_search_${safeQuery}_${Date.now()}.csv`;
             a.click();
             URL.revokeObjectURL(url);
         }
@@ -1026,6 +1163,7 @@
         function exportDirectoryCSV() {
             const items = getFilteredDirectory();
             if (!items.length) return;
+            const filterVal = directoryFilterText ? `_${directoryFilterText.replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '')}` : '';
             const headers = ['slug', 'city', 'state', 'portal_url'];
             const rows = items.map(m => [
                 m.slug,
@@ -1038,7 +1176,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `civicclerk_municipalities_${Date.now()}.csv`;
+            a.download = `civicclerk_municipalities${filterVal}_${Date.now()}.csv`;
             a.click();
             URL.revokeObjectURL(url);
         }
