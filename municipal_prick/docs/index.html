@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipal Prick — Cross-Municipality CivicClerk Search</title>
+    <meta name="description" content="Cross-municipality search across 1,690+ local government CivicClerk portals. Instant access to agendas, minutes, attachments, and meeting packets.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --border: #334155;
+            --text: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent: #38bdf8;
+            --badge-bg: #0284c7;
+            --danger: #ef4444;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 30px 20px;
+            line-height: 1.5;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header { margin-bottom: 25px; text-align: center; }
+        h1 { font-size: 2.2rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+        p.subtitle { color: var(--text-dim); font-size: 1rem; }
+        .serverless-badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 9999px;
+            padding: 2px 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 6px;
+        }
+        .search-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr auto auto;
+            gap: 15px;
+            align-items: end;
+        }
+        @media (max-width: 900px) {
+            .form-row { grid-template-columns: 1fr; }
+        }
+        label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-dim); }
+        input, select {
+            width: 100%;
+            padding: 10px 14px;
+            background-color: #0f172a;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: #fff;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        input:focus { border-color: var(--primary); }
+        button.btn-search {
+            padding: 10px 22px;
+            background-color: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            height: 42px;
+            white-space: nowrap;
+        }
+        button.btn-search:hover { background-color: var(--primary-hover); }
+        button.btn-search:disabled { opacity: 0.6; cursor: not-allowed; }
+        button.btn-stop {
+            padding: 10px 16px;
+            background-color: rgba(239, 68, 68, 0.15);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            height: 42px;
+            white-space: nowrap;
+        }
+        button.btn-stop:hover { background-color: rgba(239, 68, 68, 0.3); }
+        .progress-box {
+            margin-top: 15px;
+            display: none;
+        }
+        .progress-bar-bg {
+            width: 100%;
+            height: 6px;
+            background: #0f172a;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 6px;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #38bdf8, #2563eb);
+            transition: width 0.1s linear;
+        }
+        .progress-status {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            display: flex;
+            justify-content: space-between;
+        }
+        .stats-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+        }
+        .btn-csv {
+            background-color: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-csv:hover { background-color: rgba(56, 189, 248, 0.1); }
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        th, td { padding: 12px 16px; text-align: left; vertical-align: top; }
+        th { background-color: #172554; color: #93c5fd; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        tr:not(:last-child) { border-bottom: 1px solid var(--border); }
+        tr:hover { background-color: rgba(255,255,255,0.02); }
+        .date-col { white-space: nowrap; color: var(--text-dim); font-size: 0.9rem; }
+        .loc-badge {
+            background-color: #0369a1;
+            color: #e0f2fe;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .category-text { font-size: 0.85rem; color: #cbd5e1; }
+        .meeting-header-row {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 6px;
+        }
+        .title-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.3;
+        }
+        .title-link:hover { color: var(--accent); text-decoration: underline; }
+        .title-link mark, .doc-link-direct mark, .snippet-box mark {
+            background-color: #fef08a;
+            color: #713f12;
+            padding: 0 3px;
+            border-radius: 2px;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .matched-container {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .matched-label {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-dim);
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .matched-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .matched-item {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 6px;
+            padding: 6px 10px;
+        }
+        .matched-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .matched-main {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+        .doc-badge {
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .badge-attachment { background: #0284c7; color: #fff; }
+        .badge-agenda_file { background: #0f766e; color: #fff; }
+        .badge-item { background: #6366f1; color: #fff; }
+        .doc-link-direct {
+            color: #38bdf8;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .doc-link-direct:hover {
+            color: #7dd3fc;
+            text-decoration: underline;
+        }
+        .matched-actions {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .dl-pill {
+            background: #0284c7;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: background 0.15s;
+        }
+        .dl-pill:hover { background: #0369a1; color: #fff; }
+        .portal-pill {
+            background: transparent;
+            color: #94a3b8;
+            border: 1px solid #475569;
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 2px 7px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+            transition: all 0.15s;
+        }
+        .portal-pill:hover {
+            color: #fff;
+            border-color: #cbd5e1;
+            background: rgba(255,255,255,0.06);
+        }
+        .snippet-box {
+            margin-top: 5px;
+            font-size: 0.78rem;
+            color: #cbd5e1;
+            background: rgba(0,0,0,0.3);
+            border-left: 2px solid var(--accent);
+            padding: 4px 8px;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+            line-height: 1.4;
+        }
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 0.8s linear infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .empty-state { text-align: center; padding: 40px; color: var(--text-dim); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ Municipal Prick</h1>
+            <p class="subtitle">Cross-municipality CivicClerk search across <strong id="portalCountText">1,690+ verified local governments</strong></p>
+            <div style="margin-top: 6px;">
+                <span class="serverless-badge">⚡ 100% Client-Side Serverless (GitHub Pages)</span>
+            </div>
+            <div style="margin-top: 14px; display: flex; justify-content: center;">
+                <div style="background: rgba(15, 23, 42, 0.6); padding: 6px; border-radius: 10px; border: 1px solid var(--border); display: inline-flex; flex-direction: column; align-items: center;">
+                    <iframe width="260" height="146" src="https://www.youtube-nocookie.com/embed/2RWcFTNli-I" title="Municiple Prick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 6px; border: none; display: block;"></iframe>
+                </div>
+            </div>
+        </header>
+
+        <div class="search-card">
+            <form id="searchForm" onsubmit="handleSearch(event)">
+                <div class="form-row">
+                    <div>
+                        <label for="query">Keyword or Phrase</label>
+                        <input type="text" id="query" placeholder="e.g. body cameras, artificial intelligence, budget, zoning, PFAS" required autofocus>
+                    </div>
+                    <div>
+                        <label for="state">State (optional)</label>
+                        <input type="text" id="state" placeholder="e.g. TX or CA,FL">
+                    </div>
+                    <div>
+                        <label for="city">City / Muni (optional)</label>
+                        <input type="text" id="city" placeholder="e.g. Austin or County">
+                    </div>
+                    <div>
+                        <button type="submit" id="searchBtn" class="btn-search">Search</button>
+                    </div>
+                    <div>
+                        <button type="button" id="stopBtn" class="btn-stop" style="display: none;" onclick="stopSearch()">Stop</button>
+                    </div>
+                </div>
+
+                <div id="progressBox" class="progress-box">
+                    <div class="progress-bar-bg">
+                        <div id="progressBarFill" class="progress-bar-fill"></div>
+                    </div>
+                    <div class="progress-status">
+                        <span id="progressText">Queried 0 / 0 portals...</span>
+                        <span id="progressHits">0 matches found</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="statsBar" class="stats-bar" style="display: none;">
+            <span id="statsText">Found 0 items</span>
+            <button id="exportBtn" class="btn-csv" onclick="exportCSV()">⬇ Export Results to CSV</button>
+        </div>
+
+        <div id="resultsContainer">
+            <div class="search-card empty-state">
+                Loading municipality inventory...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allPortals = [];
+        let currentResults = [];
+        let activeAbortController = null;
+        const CONCURRENCY = 25;
+
+        // Load portals inventory on startup
+        window.addEventListener('DOMContentLoaded', async () => {
+            const container = document.getElementById('resultsContainer');
+            try {
+                const portalsUrl = new URL('portals.json', window.location.href).href;
+                const res = await fetch(portalsUrl);
+                allPortals = await res.json();
+                document.getElementById('portalCountText').innerText = `${allPortals.length.toLocaleString()}+ verified local governments`;
+                container.innerHTML = '<div class="search-card empty-state">Enter a search term above to begin querying across all local government portals.</div>';
+            } catch (err) {
+                container.innerHTML = `<div class="search-card empty-state" style="color: #ef4444;">Failed to load portals list: ${err.message}. Make sure portals.json is present.</div>`;
+            }
+        });
+
+        function stripHtml(html) {
+            if (!html) return '';
+            const tmp = document.createElement('div');
+            tmp.innerHTML = html;
+            return tmp.textContent || tmp.innerText || '';
+        }
+
+        function stopSearch() {
+            if (activeAbortController) {
+                activeAbortController.abort();
+                activeAbortController = null;
+            }
+        }
+
+        async function handleSearch(e) {
+            e.preventDefault();
+            const query = document.getElementById('query').value.trim();
+            const stateFilter = document.getElementById('state').value.trim();
+            const cityFilter = document.getElementById('city').value.trim();
+            if (!query || !allPortals.length) return;
+
+            // Filter target portals
+            let targets = allPortals;
+            if (stateFilter) {
+                const states = stateFilter.split(',').map(s => s.trim().toUpperCase());
+                targets = targets.filter(p => states.includes((p.state || '').toUpperCase()));
+            }
+            if (cityFilter) {
+                const cf = cityFilter.toLowerCase().trim();
+                targets = targets.filter(p => (p.city || '').toLowerCase().includes(cf) || p.slug.toLowerCase().includes(cf));
+            }
+
+            if (targets.length === 0) {
+                document.getElementById('resultsContainer').innerHTML = '<div class="search-card empty-state">No municipalities match your state/city filter.</div>';
+                return;
+            }
+
+            const searchBtn = document.getElementById('searchBtn');
+            const stopBtn = document.getElementById('stopBtn');
+            const progressBox = document.getElementById('progressBox');
+            const progressBarFill = document.getElementById('progressBarFill');
+            const progressText = document.getElementById('progressText');
+            const progressHits = document.getElementById('progressHits');
+            const statsBar = document.getElementById('statsBar');
+            const container = document.getElementById('resultsContainer');
+
+            searchBtn.disabled = true;
+            searchBtn.innerHTML = '<span class="spinner"></span>Searching...';
+            stopBtn.style.display = 'inline-block';
+            progressBox.style.display = 'block';
+            statsBar.style.display = 'none';
+            progressBarFill.style.width = '0%';
+            progressText.innerText = `Queried 0 / ${targets.length} portals...`;
+            progressHits.innerText = '0 matches found';
+
+            currentResults = [];
+            activeAbortController = new AbortController();
+            const signal = activeAbortController.signal;
+
+            const t0 = performance.now();
+            let completed = 0;
+            let hitsCount = 0;
+
+            // Worker pool execution
+            let queueIndex = 0;
+            let lastRenderTime = performance.now();
+
+            async function worker() {
+                while (!signal.aborted) {
+                    const idx = queueIndex++;
+                    if (idx >= targets.length) break;
+                    const muni = targets[idx];
+
+                    // Per-tenant 10s timeout
+                    const tenantAbort = new AbortController();
+                    const timeoutId = setTimeout(() => tenantAbort.abort(), 10000);
+                    const onParentAbort = () => tenantAbort.abort();
+                    signal.addEventListener('abort', onParentAbort, { once: true });
+
+                    try {
+                        const url = `https://${muni.slug}.api.civicclerk.com/v1/Search?search=${encodeURIComponent(query)}`;
+                        const resp = await fetch(url, { signal: tenantAbort.signal, headers: { 'Accept': 'application/json' } });
+                        if (resp.ok) {
+                            const data = await resp.json();
+                            const rawItems = data.value || [];
+                            for (const item of rawItems) {
+                                const parsed = parseItem(muni, item);
+                                if (parsed) {
+                                    currentResults.push(parsed);
+                                    hitsCount++;
+                                }
+                            }
+                        }
+                    } catch (err) {
+                        // ignore network/timeout/abort errors
+                    } finally {
+                        clearTimeout(timeoutId);
+                        signal.removeEventListener('abort', onParentAbort);
+                    }
+
+                    completed++;
+                    const pct = ((completed / targets.length) * 100).toFixed(0);
+                    progressBarFill.style.width = `${pct}%`;
+                    progressText.innerText = `Queried ${completed} / ${targets.length} portals (${pct}%)...`;
+                    progressHits.innerText = `${hitsCount} matches found`;
+
+                    // Progressive real-time rendering if hits found
+                    const now = performance.now();
+                    if (hitsCount > 0 && now - lastRenderTime > 1200) {
+                        lastRenderTime = now;
+                        const sortedCopy = [...currentResults].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+                        renderTable(sortedCopy);
+                    }
+                }
+            }
+
+            const workers = [];
+            const poolSize = Math.min(CONCURRENCY, targets.length);
+            for (let i = 0; i < poolSize; i++) {
+                workers.push(worker());
+            }
+
+            await Promise.all(workers);
+
+            const elapsed = ((performance.now() - t0) / 1000).toFixed(2);
+            searchBtn.disabled = false;
+            searchBtn.innerText = 'Search';
+            stopBtn.style.display = 'none';
+
+            // Final sort descending by date
+            currentResults.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+            const munisWithHits = new Set(currentResults.map(r => r.slug)).size;
+            statsBar.style.display = 'flex';
+            document.getElementById('statsText').innerText = 
+                `Found ${currentResults.length} matching items across ${munisWithHits} municipalities in ${elapsed}s (${completed} queried)`;
+
+            renderTable(currentResults);
+        }
+
+        function parseItem(muni, item) {
+            const event = item.event;
+            if (!event) return null;
+
+            const resourceLink = event.resourceLink || {};
+            const eventId = resourceLink.resourceId || event.id;
+            const slug = muni.slug;
+
+            const nameRaw = event.name || 'Untitled Event';
+            const meetingDate = event.meetingDate || '';
+            const category = event.categoryName || '';
+
+            let formattedDate = '';
+            if (meetingDate) {
+                formattedDate = meetingDate.slice(0, 10);
+            }
+
+            const portalOverviewUrl = eventId ? `https://${slug}.portal.civicclerk.com/event/${eventId}/overview` : `https://${slug}.portal.civicclerk.com/`;
+            const portalFilesUrl = eventId ? `https://${slug}.portal.civicclerk.com/event/${eventId}/files` : portalOverviewUrl;
+
+            const matchedFiles = [];
+            const matchedDocsRaw = [];
+
+            // 1. Attachments
+            for (const att of (item.attachments || [])) {
+                const attId = att.id;
+                const nRaw = att.name || 'Attachment';
+                matchedDocsRaw.push(nRaw);
+                const dlUrl = attId ? `https://${slug}.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=${attId})` : null;
+                const pUrl = (eventId && attId) ? `https://${slug}.portal.civicclerk.com/event/${eventId}/files/attachment/${attId}` : null;
+                const snippets = att.fileContent || [];
+
+                matchedFiles.push({
+                    type: 'attachment',
+                    type_label: 'Attachment',
+                    id: attId,
+                    name: stripHtml(nRaw),
+                    name_html: nRaw,
+                    download_url: dlUrl,
+                    portal_url: pUrl,
+                    snippets_html: snippets
+                });
+            }
+
+            // 2. Agenda Files
+            for (const af of (item.agendaFiles || [])) {
+                const afId = af.id;
+                const nRaw = af.name || 'Agenda File';
+                matchedDocsRaw.push(nRaw);
+                const dlUrl = afId ? `https://${slug}.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=${afId},plainText=false)` : null;
+                const pUrl = (eventId && afId) ? `https://${slug}.portal.civicclerk.com/event/${eventId}/files/agenda/${afId}` : null;
+                const snippets = af.fileContent || [];
+
+                matchedFiles.push({
+                    type: 'agenda_file',
+                    type_label: 'Agenda File',
+                    id: afId,
+                    name: stripHtml(nRaw),
+                    name_html: nRaw,
+                    download_url: dlUrl,
+                    portal_url: pUrl,
+                    snippets_html: snippets
+                });
+            }
+
+            // 3. Agenda Items
+            for (const it of (item.items || [])) {
+                const itId = it.id;
+                const nRaw = it.name || 'Agenda Item';
+                matchedDocsRaw.push(nRaw);
+                const pUrl = eventId ? `https://${slug}.portal.civicclerk.com/event/${eventId}/overview` : null;
+                const snippets = it.fileContent || [];
+
+                matchedFiles.push({
+                    type: 'item',
+                    type_label: 'Agenda Item',
+                    id: itId,
+                    name: stripHtml(nRaw),
+                    name_html: nRaw,
+                    download_url: null,
+                    portal_url: pUrl,
+                    snippets_html: snippets
+                });
+            }
+
+            let primaryDownloadUrl = null;
+            for (const mf of matchedFiles) {
+                if (mf.download_url) {
+                    primaryDownloadUrl = mf.download_url;
+                    break;
+                }
+            }
+
+            return {
+                slug: slug,
+                city: muni.city,
+                state: muni.state,
+                title: stripHtml(nameRaw),
+                title_html: nameRaw,
+                matched_docs: matchedDocsRaw.map(stripHtml),
+                matched_docs_html: matchedDocsRaw,
+                matched_files: matchedFiles,
+                primary_download_url: primaryDownloadUrl,
+                date: formattedDate,
+                category: category,
+                event_id: eventId,
+                url: portalOverviewUrl,
+                portal_files_url: portalFilesUrl
+            };
+        }
+
+        function renderTable(items) {
+            const container = document.getElementById('resultsContainer');
+            if (items.length === 0) {
+                container.innerHTML = '<div class="search-card empty-state">No matching agendas or meetings found for your query.</div>';
+                return;
+            }
+
+            let html = `
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th style="width: 105px;">Date</th>
+                        <th style="width: 180px;">Location</th>
+                        <th style="width: 160px;">Category</th>
+                        <th>Meeting & Matched Documents</th>
+                    </tr>
+                </thead>
+                <tbody>
+            `;
+
+            for (const r of items) {
+                const loc = r.city ? `${r.city}, ${r.state}` : r.slug;
+                let matchedSection = '';
+                const files = r.matched_files || [];
+                if (files.length > 0) {
+                    let filesHtml = '';
+                    for (const f of files) {
+                        const badgeClass = f.type === 'attachment' ? 'badge-attachment' : (f.type === 'agenda_file' ? 'badge-agenda_file' : 'badge-item');
+                        const label = f.type_label || (f.type === 'attachment' ? 'Attachment' : (f.type === 'agenda_file' ? 'Agenda' : 'Item'));
+                        
+                        let mainLink = '';
+                        let actionsHtml = '';
+
+                        if (f.download_url) {
+                            mainLink = `
+                                <a href="${f.download_url}" target="_blank" rel="noopener" class="doc-link-direct" title="Open or download PDF directly">
+                                    📄 ${f.name_html || f.name}
+                                </a>
+                            `;
+                            actionsHtml += `
+                                <a href="${f.download_url}" target="_blank" rel="noopener" class="dl-pill" title="Direct PDF Download">
+                                    📥 PDF
+                                </a>
+                            `;
+                        } else {
+                            mainLink = `
+                                <a href="${f.portal_url || r.url}" target="_blank" rel="noopener" class="doc-link-direct" style="color: #c7d2fe;" title="View Agenda Item in Portal">
+                                    📌 ${f.name_html || f.name}
+                                </a>
+                            `;
+                        }
+
+                        if (f.portal_url) {
+                            actionsHtml += `
+                                <a href="${f.portal_url}" target="_blank" rel="noopener" class="portal-pill" title="View in CivicClerk Portal Viewer">
+                                    👁️ Portal ↗
+                                </a>
+                            `;
+                        }
+
+                        let snippetHtml = '';
+                        if (f.snippets_html && f.snippets_html.length > 0) {
+                            snippetHtml = `<div class="snippet-box">💬 "${f.snippets_html[0]}"</div>`;
+                        }
+
+                        filesHtml += `
+                            <div class="matched-item">
+                                <div class="matched-row">
+                                    <div class="matched-main">
+                                        <span class="doc-badge ${badgeClass}">${label}</span>
+                                        ${mainLink}
+                                    </div>
+                                    <div class="matched-actions">
+                                        ${actionsHtml}
+                                    </div>
+                                </div>
+                                ${snippetHtml}
+                            </div>
+                        `;
+                    }
+
+                    matchedSection = `
+                        <div class="matched-container">
+                            <div class="matched-label">Matched Documents & Items (${files.length})</div>
+                            <div class="matched-list">
+                                ${filesHtml}
+                            </div>
+                        </div>
+                    `;
+                } else if (r.matched_docs_html && r.matched_docs_html.length > 0) {
+                    matchedSection = `<div style="font-size: 0.8rem; color: #94a3b8; margin-top: 6px;">📎 Matched: ${r.matched_docs_html.join(' • ')}</div>`;
+                }
+
+                html += `
+                    <tr>
+                        <td class="date-col">${r.date || 'N/A'}</td>
+                        <td><span class="loc-badge">${loc}</span></td>
+                        <td class="category-text">${r.category || 'General'}</td>
+                        <td>
+                            <div class="meeting-header-row">
+                                <a href="${r.url}" target="_blank" rel="noopener" class="title-link" title="Open Meeting in CivicClerk Portal">
+                                    ${r.title_html || r.title}
+                                </a>
+                                <div style="display: flex; gap: 6px;">
+                                    ${r.portal_files_url ? `<a href="${r.portal_files_url}" target="_blank" rel="noopener" class="portal-pill" title="View Meeting Files tab in Portal">📁 Files</a>` : ''}
+                                    <a href="${r.url}" target="_blank" rel="noopener" class="portal-pill" title="View Meeting Overview in Portal">Overview ↗</a>
+                                </div>
+                            </div>
+                            ${matchedSection}
+                        </td>
+                    </tr>
+                `;
+            }
+
+            html += '</tbody></table>';
+            container.innerHTML = html;
+        }
+
+        function exportCSV() {
+            if (!currentResults.length) return;
+            const headers = [
+                'slug', 'city', 'state', 'date', 'meeting_title',
+                'matched_documents', 'primary_download_url', 'direct_pdf_download_urls',
+                'civicclerk_overview_url', 'civicclerk_files_url', 'category'
+            ];
+            const rows = currentResults.map(r => {
+                const files = r.matched_files || [];
+                const docNames = files.map(f => f.name).join(' | ') || (r.matched_docs ? r.matched_docs.join(' | ') : '');
+                const pdfUrls = files.filter(f => f.download_url).map(f => `${f.name}: ${f.download_url}`).join(' | ');
+                return [
+                    r.slug,
+                    `"${(r.city || '').replace(/"/g, '""')}"`,
+                    r.state,
+                    r.date,
+                    `"${(r.title || '').replace(/"/g, '""')}"`,
+                    `"${docNames.replace(/"/g, '""')}"`,
+                    r.primary_download_url || '',
+                    `"${pdfUrls.replace(/"/g, '""')}"`,
+                    r.url,
+                    r.portal_files_url || '',
+                    `"${(r.category || '').replace(/"/g, '""')}"`
+                ];
+            });
+            const csvContent = [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `civicclerk_search_${Date.now()}.csv`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
