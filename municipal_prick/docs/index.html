@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Municipal Prick — Cross-Municipality CivicClerk Search</title>
-    <meta name="description" content="Cross-municipality search across 1,690+ local government CivicClerk portals. Instant access to agendas, minutes, attachments, and meeting packets.">
+    <title>Cross-Municipality Search</title>
+    <meta name="description" content="Cross-municipality search across 1,690+ local government portals. Instant access to agendas, minutes, attachments, and meeting packets.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #2563eb;
@@ -22,7 +21,7 @@
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg);
             color: var(--text);
             padding: 30px 20px;
@@ -32,17 +31,6 @@
         header { margin-bottom: 25px; text-align: center; }
         h1 { font-size: 2.2rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
         p.subtitle { color: var(--text-dim); font-size: 1rem; }
-        .serverless-badge {
-            display: inline-block;
-            background: rgba(56, 189, 248, 0.15);
-            color: var(--accent);
-            border: 1px solid rgba(56, 189, 248, 0.3);
-            border-radius: 9999px;
-            padding: 2px 10px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-top: 6px;
-        }
         .search-card {
             background-color: var(--card-bg);
             border: 1px solid var(--border);
@@ -316,24 +304,98 @@
         }
         @keyframes spin { to { transform: rotate(360deg); } }
         .empty-state { text-align: center; padding: 40px; color: var(--text-dim); }
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 22px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        .nav-tab {
+            background: transparent;
+            border: 1px solid transparent;
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.15s;
+        }
+        .nav-tab:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .nav-tab.active {
+            color: #fff;
+            background: var(--card-bg);
+            border-color: var(--border);
+        }
+        .directory-controls {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .directory-search-input {
+            flex: 1;
+            min-width: 260px;
+        }
+        .btn-muni-search {
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.15s;
+        }
+        .btn-muni-search:hover {
+            background: rgba(56, 189, 248, 0.15);
+            color: #fff;
+        }
+        .pagination-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding: 10px 0;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+        .page-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+        .page-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🏛️ Municipal Prick</h1>
-            <p class="subtitle">Cross-municipality CivicClerk search across <strong id="portalCountText">1,690+ verified local governments</strong></p>
-            <div style="margin-top: 6px;">
-                <span class="serverless-badge">⚡ 100% Client-Side Serverless (GitHub Pages)</span>
-            </div>
-            <div style="margin-top: 14px; display: flex; justify-content: center;">
-                <div style="background: rgba(15, 23, 42, 0.6); padding: 6px; border-radius: 10px; border: 1px solid var(--border); display: inline-flex; flex-direction: column; align-items: center;">
-                    <iframe width="260" height="146" src="https://www.youtube-nocookie.com/embed/2RWcFTNli-I" title="Municiple Prick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 6px; border: none; display: block;"></iframe>
-                </div>
-            </div>
+            <h1>🏛️ Cross-Municipality Search</h1>
+            <p class="subtitle">Search meeting agendas, minutes, attachments & items across <strong id="portalCountText">1,690+ local governments</strong></p>
         </header>
 
-        <div class="search-card">
+        <nav class="nav-tabs">
+            <button id="tabSearch" class="nav-tab active" onclick="switchTab('search')">🔍 Search Agendas & Files</button>
+            <button id="tabDirectory" class="nav-tab" onclick="switchTab('directory')">🏛️ Browse Municipalities (<span id="navCount">1,690</span>)</button>
+        </nav>
+
+        <div id="searchView">
+            <div class="search-card">
             <form id="searchForm" onsubmit="handleSearch(event)">
                 <div class="form-row">
                     <div>
@@ -372,11 +434,26 @@
             <span id="statsText">Found 0 items</span>
             <button id="exportBtn" class="btn-csv" onclick="exportCSV()">⬇ Export Results to CSV</button>
         </div>
-
         <div id="resultsContainer">
             <div class="search-card empty-state">
                 Loading municipality inventory...
             </div>
+        </div>
+        </div>
+
+        <!-- Tab 2: Directory View -->
+        <div id="directoryView" style="display: none;">
+            <div class="search-card" style="margin-bottom: 20px;">
+                <div class="directory-controls">
+                    <input type="text" id="dirSearchInput" class="directory-search-input" placeholder="Filter by city, state (e.g. TX), or slug..." oninput="handleDirectoryFilter(event)">
+                    <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+                        <span id="dirCountText" style="font-size: 0.85rem; color: var(--text-dim);">Showing 1,690 CivicClerk municipal portals</span>
+                        <button class="btn-csv" onclick="exportDirectoryCSV()">⬇ Export Directory CSV</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="directoryContainer"></div>
         </div>
     </div>
 
@@ -393,8 +470,11 @@
                 const portalsUrl = new URL('portals.json', window.location.href).href;
                 const res = await fetch(portalsUrl);
                 allPortals = await res.json();
-                document.getElementById('portalCountText').innerText = `${allPortals.length.toLocaleString()}+ verified local governments`;
-                container.innerHTML = '<div class="search-card empty-state">Enter a search term above to begin querying across all local government portals.</div>';
+                document.getElementById('portalCountText').innerText = `${allPortals.length.toLocaleString()}+ local governments`;
+                if (document.getElementById('navCount')) {
+                    document.getElementById('navCount').innerText = allPortals.length.toLocaleString();
+                }
+                container.innerHTML = '<div class="search-card empty-state">Enter a search term above to begin querying across CivicClerk municipal portals.</div>';
             } catch (err) {
                 container.innerHTML = `<div class="search-card empty-state" style="color: #ef4444;">Failed to load portals list: ${err.message}. Make sure portals.json is present.</div>`;
             }
@@ -665,7 +745,7 @@
                         <th style="width: 105px;">Date</th>
                         <th style="width: 180px;">Location</th>
                         <th style="width: 160px;">Category</th>
-                        <th>Meeting & Matched Documents</th>
+                        <th>Meeting & Matched Documents (CivicClerk)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -705,8 +785,8 @@
 
                         if (f.portal_url) {
                             actionsHtml += `
-                                <a href="${f.portal_url}" target="_blank" rel="noopener" class="portal-pill" title="View in CivicClerk Portal Viewer">
-                                    👁️ Portal ↗
+                                <a href="${f.portal_url}" target="_blank" rel="noopener" class="portal-pill" title="View on CivicClerk">
+                                    CivicClerk ↗
                                 </a>
                             `;
                         }
@@ -747,7 +827,7 @@
                 html += `
                     <tr>
                         <td class="date-col">${r.date || 'N/A'}</td>
-                        <td><span class="loc-badge">${loc}</span></td>
+                        <td><span class="loc-badge">${loc}</span><div style="font-size: 0.72rem; color: var(--text-dim); margin-top: 3px;">CivicClerk: ${r.slug}</div></td>
                         <td class="category-text">${r.category || 'General'}</td>
                         <td>
                             <div class="meeting-header-row">
@@ -755,8 +835,8 @@
                                     ${r.title_html || r.title}
                                 </a>
                                 <div style="display: flex; gap: 6px;">
-                                    ${r.portal_files_url ? `<a href="${r.portal_files_url}" target="_blank" rel="noopener" class="portal-pill" title="View Meeting Files tab in Portal">📁 Files</a>` : ''}
-                                    <a href="${r.url}" target="_blank" rel="noopener" class="portal-pill" title="View Meeting Overview in Portal">Overview ↗</a>
+                                    ${r.portal_files_url ? `<a href="${r.portal_files_url}" target="_blank" rel="noopener" class="portal-pill" title="View Meeting Files tab in CivicClerk Portal">📁 Files</a>` : ''}
+                                    <a href="${r.url}" target="_blank" rel="noopener" class="portal-pill" title="View Meeting in CivicClerk Portal">CivicClerk ↗</a>
                                 </div>
                             </div>
                             ${matchedSection}
@@ -800,6 +880,165 @@
             const a = document.createElement('a');
             a.href = url;
             a.download = `civicclerk_search_${Date.now()}.csv`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Directory Management
+        let directoryFilterText = '';
+        let directoryPage = 1;
+        const DIR_PAGE_SIZE = 50;
+
+        function switchTab(tab) {
+            if (tab === 'search') {
+                document.getElementById('searchView').style.display = 'block';
+                document.getElementById('directoryView').style.display = 'none';
+                document.getElementById('tabSearch').classList.add('active');
+                document.getElementById('tabDirectory').classList.remove('active');
+            } else {
+                document.getElementById('searchView').style.display = 'none';
+                document.getElementById('directoryView').style.display = 'block';
+                document.getElementById('tabSearch').classList.remove('active');
+                document.getElementById('tabDirectory').classList.add('active');
+                renderDirectory();
+            }
+        }
+
+        function handleDirectoryFilter(e) {
+            directoryFilterText = e.target.value.trim().toLowerCase();
+            directoryPage = 1;
+            renderDirectory();
+        }
+
+        function getFilteredDirectory() {
+            if (!directoryFilterText) {
+                return [...allPortals].sort((a, b) => {
+                    const st = (a.state || '').localeCompare(b.state || '');
+                    return st !== 0 ? st : (a.city || '').localeCompare(b.city || '');
+                });
+            }
+            return allPortals.filter(p => {
+                const c = (p.city || '').toLowerCase();
+                const s = (p.state || '').toLowerCase();
+                const slug = (p.slug || '').toLowerCase();
+                return c.includes(directoryFilterText) || s === directoryFilterText || slug.includes(directoryFilterText);
+            }).sort((a, b) => {
+                const st = (a.state || '').localeCompare(b.state || '');
+                return st !== 0 ? st : (a.city || '').localeCompare(b.city || '');
+            });
+        }
+
+        function prevDirPage() {
+            if (directoryPage > 1) {
+                directoryPage--;
+                renderDirectory();
+            }
+        }
+
+        function nextDirPage() {
+            const items = getFilteredDirectory();
+            const totalPages = Math.ceil(items.length / DIR_PAGE_SIZE) || 1;
+            if (directoryPage < totalPages) {
+                directoryPage++;
+                renderDirectory();
+            }
+        }
+
+        function selectMuniForSearch(city, state, slug) {
+            switchTab('search');
+            document.getElementById('city').value = city || slug;
+            document.getElementById('state').value = state || '';
+            const q = document.getElementById('query');
+            q.focus();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function renderDirectory() {
+            const container = document.getElementById('directoryContainer');
+            const items = getFilteredDirectory();
+            const total = items.length;
+            const totalPages = Math.ceil(total / DIR_PAGE_SIZE) || 1;
+            if (directoryPage > totalPages) directoryPage = totalPages;
+
+            document.getElementById('dirCountText').innerText = `Showing ${total.toLocaleString()} of ${allPortals.length.toLocaleString()} CivicClerk municipal portals`;
+
+            if (total === 0) {
+                container.innerHTML = '<div class="search-card empty-state">No municipalities found matching your filter.</div>';
+                return;
+            }
+
+            const startIdx = (directoryPage - 1) * DIR_PAGE_SIZE;
+            const pageItems = items.slice(startIdx, startIdx + DIR_PAGE_SIZE);
+
+            let html = `
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th style="width: 250px;">Municipality / City</th>
+                        <th style="width: 80px;">State</th>
+                        <th>CivicClerk Subdomain</th>
+                        <th style="width: 160px;">CivicClerk Portal</th>
+                        <th style="width: 170px;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+            `;
+
+            for (const m of pageItems) {
+                const cleanCity = m.city || m.slug;
+                const safeCity = cleanCity.replace(/'/g, "\\'");
+                const safeState = (m.state || '').replace(/'/g, "\\'");
+                const safeSlug = (m.slug || '').replace(/'/g, "\\'");
+                html += `
+                    <tr>
+                        <td style="font-weight: 600; color: #fff;">${cleanCity}</td>
+                        <td><span class="loc-badge">${m.state || 'N/A'}</span></td>
+                        <td style="font-family: monospace; font-size: 0.85rem; color: #94a3b8;">${m.slug}.portal.civicclerk.com</td>
+                        <td>
+                            <a href="https://${m.slug}.portal.civicclerk.com/" target="_blank" rel="noopener" class="portal-pill" title="Open public CivicClerk portal">
+                                CivicClerk Portal ↗
+                            </a>
+                        </td>
+                        <td>
+                            <button class="btn-muni-search" onclick="selectMuniForSearch('${safeCity}', '${safeState}', '${safeSlug}')" title="Filter search to this municipality">
+                                🔍 Search This Muni
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            }
+
+            html += '</tbody></table>';
+
+            if (totalPages > 1) {
+                html += `
+                <div class="pagination-bar">
+                    <button class="page-btn" onclick="prevDirPage()" ${directoryPage === 1 ? 'disabled' : ''}>← Previous</button>
+                    <span>Page ${directoryPage} of ${totalPages} (${total.toLocaleString()} total)</span>
+                    <button class="page-btn" onclick="nextDirPage()" ${directoryPage === totalPages ? 'disabled' : ''}>Next →</button>
+                </div>
+                `;
+            }
+
+            container.innerHTML = html;
+        }
+
+        function exportDirectoryCSV() {
+            const items = getFilteredDirectory();
+            if (!items.length) return;
+            const headers = ['slug', 'city', 'state', 'portal_url'];
+            const rows = items.map(m => [
+                m.slug,
+                `"${(m.city || '').replace(/"/g, '""')}"`,
+                m.state || '',
+                `https://${m.slug}.portal.civicclerk.com/`
+            ]);
+            const csvContent = [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `civicclerk_municipalities_${Date.now()}.csv`;
             a.click();
             URL.revokeObjectURL(url);
         }
